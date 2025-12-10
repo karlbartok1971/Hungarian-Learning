@@ -1,0 +1,699 @@
+// Prisma 스키마 파일
+// 자세한 문서: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ==========================================
+// 사용자 및 인증
+// ==========================================
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  name      String
+  password  String
+
+  // 학습 설정
+  currentLevel     CEFRLevel
+  targetLevel      CEFRLevel
+  learningGoals    LearningGoal[]
+
+  // 사용자 설정
+  dailyGoal        Int @default(30) // 일일 목표 (분)
+  timezone         String @default("Asia/Seoul")
+  language         String @default("ko") // 인터페이스 언어
+
+  // 프로필 정보
+  profileImage     String?
+  bio              String?
+  ministryInfo     String? // 목회 정보 (교단, 교회)
+
+  // 계정 상태
+  isActive         Boolean @default(true)
+  emailVerified    Boolean @default(false)
+
+  // 타임스탬프
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  lastLoginAt      DateTime?
+
+  // 관계
+  learningPaths          LearningPath[]
+  vocabularyProgress     VocabularyProgress[]
+  grammarProgress        GrammarProgress[]
+  writingSubmissions     WritingSubmission[]
+  sermonDrafts           SermonDraft[]
+  progressRecords        Progress[]
+  reviewSessions         ReviewSession[]
+  assessmentResults      AssessmentResult[]
+
+  @@map("users")
+}
+
+// CEFR 레벨 열거형
+enum CEFRLevel {
+  A1
+  A2
+  B1
+  B2
+}
+
+// 학습 목표 열거형
+enum LearningGoal {
+  SERMON_WRITING      // 설교문 작성 (핵심!)
+  GRAMMAR_MASTERY     // 문법 마스터
+  VOCABULARY_BUILDING // 어휘 확장
+  WRITING_FLUENCY     // 작문 유창성
+  READING_COMPREHENSION // 독해
+  TRANSLATION         // 번역
+}
+
+// ==========================================
+// 문법 학습 시스템 (핵심!)
+// ==========================================
+
+model GrammarLesson {
+  id                String      @id @default(cuid())
+
+  // 기본 정보
+  level             CEFRLevel
+  orderIndex        Int         // 레벨 내 순서
+  titleKorean       String
+  titleHungarian    String?
+
+  // 강의 내용
+  explanationKorean String      @db.Text // 한국어 설명
+  explanationHungarian String?  @db.Text // 헝가리어 설명
+  grammarRules      Json        // 문법 규칙 상세
+  examples          Json        // 예문 배열 [{hu: "", ko: "", context: ""}]
+
+  // 한국인 특화
+  koreanInterferenceNotes String? @db.Text // 한국어 간섭 주의사항
+  commonMistakes    Json?       // 흔한 실수 패턴
+  comparisonWithKorean String?  @db.Text // 한국어와의 비교
+
+  // 메타데이터
+  estimatedDuration Int         // 예상 학습 시간 (분)
+  difficultyScore   Int @default(1) // 1-10
+  prerequisites     String[]    // 선수 강의 ID 배열
+  tags              String[]    // 검색용 태그
+
+  // 신학 관련
+  theologicalRelevance Boolean @default(false)
+  theologicalExamples  String[] // 신학적 예문
+
+  isPublished       Boolean @default(false)
+
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  // 관계
+  exercises         GrammarExercise[]
+  progress          GrammarProgress[]
+
+  @@unique([level, orderIndex])
+  @@map("grammar_lessons")
+}
+
+model GrammarExercise {
+  id                String      @id @default(cuid())
+  lessonId          String
+  lesson            GrammarLesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  exerciseType      ExerciseType
+  orderIndex        Int         // 레슨 내 순서
+
+  // 문제 내용
+  questionKorean    String      @db.Text
+  questionHungarian String?     @db.Text
+  correctAnswer     String
+  options           Json?       // 선택지 (객관식인 경우)
+
+  // 피드백
+  explanationKorean String?     @db.Text
+  explanationHungarian String?  @db.Text
+  hint              String?
+
+  // 메타데이터
+  difficultyLevel   Int @default(1) // 1-5
+  points            Int @default(10) // 획득 포인트
+
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@map("grammar_exercises")
+}
+
+enum ExerciseType {
+  MULTIPLE_CHOICE    // 객관식
+  FILL_BLANK         // 빈칸 채우기
+  TRANSLATION        // 번역
+  SENTENCE_BUILDING  // 문장 만들기
+  ERROR_CORRECTION   // 오류 찾기
+  MATCHING           // 매칭
+}
+
+model GrammarProgress {
+  id                String @id @default(cuid())
+  userId            String
+  user              User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  lessonId          String
+  lesson            GrammarLesson @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  // 진도 상태
+  status            ProgressStatus @default(NOT_STARTED)
+  score             Float?         // 0-100
+  timeSpent         Int @default(0) // 소요 시간 (초)
+  attempts          Int @default(0)
+
+  // 연습문제 완료 현황
+  exercisesCompleted Int @default(0)
+  exercisesTotal     Int @default(0)
+  correctAnswers     Int @default(0)
+
+  lastStudiedAt     DateTime?
+  completedAt       DateTime?
+
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  @@unique([userId, lessonId])
+  @@map("grammar_progress")
+}
+
+// ==========================================
+// 어휘 학습 시스템 (FSRS 통합)
+// ==========================================
+
+model VocabularyItem {
+  id           String            @id @default(cuid())
+
+  // 기본 정보
+  hungarian    String
+  korean       String
+  wordType     WordType          // 품사
+
+  // 레벨 및 분류
+  level        CEFRLevel
+  category     VocabularyCategory
+  frequencyRank Int?             // 사용 빈도 순위
+
+  // 문법 정보
+  conjugations Json?             // 활용형
+  caseForms    Json?             // 격변화
+  gender       String?           // 성별 (해당 시)
+
+  // 학습 지원
+  examples     Json              // 예문 [{hu: "", ko: "", context: ""}]
+  mnemonics    String?           // 암기법
+  relatedWords String[]          // 관련 단어 ID
+
+  // 카테고리 및 태그
+  semanticTags String[]          // 의미 태그
+
+  // 신학 특화
+  isTheological Boolean @default(false)
+  biblicalReferences String[]    // 성경 구절
+  theologicalContext String?     @db.Text // 신학적 맥락
+  pentecostalRelevance Boolean @default(false) // 오순절 관련성
+
+  isActive     Boolean @default(true)
+
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  // 관계
+  userProgress VocabularyProgress[]
+  reviewSessions ReviewSessionItem[]
+
+  @@map("vocabulary_items")
+}
+
+enum WordType {
+  NOUN        // 명사
+  VERB        // 동사
+  ADJECTIVE   // 형용사
+  ADVERB      // 부사
+  PRONOUN     // 대명사
+  PREPOSITION // 전치사
+  CONJUNCTION // 접속사
+  INTERJECTION // 감탄사
+  PARTICLE    // 조사
+}
+
+enum VocabularyCategory {
+  // 신학/종교 (최우선)
+  THEOLOGICAL_CORE      // 핵심 신학 용어
+  BIBLICAL_TERMS        // 성경 용어
+  WORSHIP_LITURGY       // 예배/전례
+  PENTECOSTAL_SPECIFIC  // 오순절 특화
+  PRAYER_DEVOTION       // 기도/경건
+
+  // 일상생활
+  DAILY_LIFE
+  FAMILY
+  FOOD
+  TRAVEL
+  EMOTIONS
+  TIME
+  NUMBERS
+
+  // 학문
+  ACADEMIC
+
+  // 기타
+  CULTURAL
+  ABSTRACT_CONCEPTS
+}
+
+model VocabularyProgress {
+  id             String @id @default(cuid())
+  userId         String
+  user           User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  vocabularyId   String
+  vocabulary     VocabularyItem @relation(fields: [vocabularyId], references: [id], onDelete: Cascade)
+
+  // FSRS 알고리즘 파라미터
+  stability      Float @default(0)      // 기억 안정성
+  difficulty     Float @default(0)      // 난이도
+  elapsedDays    Int @default(0)        // 경과 일수
+  scheduledDays  Int @default(0)        // 예정 일수
+  reps           Int @default(0)        // 반복 횟수
+  lapses         Int @default(0)        // 실수 횟수
+  state          FSRSState @default(NEW) // FSRS 상태
+
+  lastReview     DateTime?
+  nextReviewDate DateTime              // 다음 복습 날짜
+
+  // 학습 통계
+  totalStudyTime Int @default(0)       // 총 학습 시간 (초)
+  correctCount   Int @default(0)
+  incorrectCount Int @default(0)
+
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@unique([userId, vocabularyId])
+  @@map("vocabulary_progress")
+}
+
+enum FSRSState {
+  NEW        // 새로운 단어
+  LEARNING   // 학습 중
+  REVIEW     // 복습 중
+  RELEARNING // 재학습 중
+}
+
+// ==========================================
+// 작문 연습 시스템 (핵심!)
+// ==========================================
+
+model WritingExercise {
+  id                String      @id @default(cuid())
+
+  level             CEFRLevel
+  exerciseType      WritingType
+  orderIndex        Int
+
+  // 문제
+  promptKorean      String      @db.Text
+  promptHungarian   String?     @db.Text
+  requiredGrammar   String[]    // 사용해야 할 문법 포인트 ID
+  requiredVocabulary String[]   // 사용해야 할 어휘 ID
+
+  // 모범 답안
+  sampleAnswerHungarian String? @db.Text
+  sampleAnswerKorean    String? @db.Text
+
+  // 평가 기준
+  evaluationCriteria Json       // {grammar: 40, vocabulary: 30, fluency: 30}
+
+  // 제약 조건
+  minWords          Int?
+  maxWords          Int?
+  estimatedTime     Int         // 예상 소요 시간 (분)
+
+  // 메타데이터
+  difficultyScore   Int @default(1)
+  points            Int @default(20)
+  tags              String[]
+
+  // 신학 관련
+  isTheological     Boolean @default(false)
+  sermonRelevance   Boolean @default(false)
+
+  isPublished       Boolean @default(true)
+
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  // 관계
+  submissions       WritingSubmission[]
+
+  @@map("writing_exercises")
+}
+
+enum WritingType {
+  SENTENCE_TRANSLATION  // 문장 번역
+  PARAGRAPH_WRITING     // 단락 작성
+  ESSAY_WRITING         // 에세이 작성
+  SERMON_OUTLINE        // 설교 개요
+  SERMON_INTRO          // 설교 서론
+  DIALOGUE_COMPLETION   // 대화 완성
+  DESCRIPTION           // 묘사
+  ARGUMENTATION         // 논증
+}
+
+model WritingSubmission {
+  id                String @id @default(cuid())
+  userId            String
+  user              User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  exerciseId        String
+  exercise          WritingExercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+
+  // 제출 내용
+  userAnswer        String @db.Text
+  wordCount         Int
+
+  // AI 평가 결과
+  grammarErrors     Json?          // LanguageTool 결과
+  vocabularyScore   Int?           // 1-100
+  grammarScore      Int?
+  fluencyScore      Int?
+  overallScore      Int?
+
+  // 피드백
+  aiFeedback        String? @db.Text
+  strengths         Json?
+  areasForImprovement Json?
+
+  // 메타데이터
+  submittedAt       DateTime @default(now())
+  reviewedAt        DateTime?
+  timeSpent         Int              // 소요 시간 (초)
+
+  @@map("writing_submissions")
+}
+
+// ==========================================
+// 설교문 작성 시스템 (최종 목표)
+// ==========================================
+
+model SermonDraft {
+  id            String @id @default(cuid())
+  userId        String
+  user          User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // 설교 기본 정보
+  titleKorean        String
+  titleHungarian     String?
+  scriptureReferences String[]        // 성경 구절
+  sermonTheme        String?
+  targetAudience     String?          // 대상 청중
+
+  // 내용
+  contentHungarian   String @db.Text
+  outline            Json?            // 설교 개요
+
+  // AI 지원 결과
+  grammarCheckResults Json?
+  vocabularySuggestions Json?
+  theologicalTermsUsed String[]       // 사용된 신학 용어 ID
+
+  // 통계
+  wordCount          Int @default(0)
+  estimatedDuration  Int?             // 설교 예상 시간 (분)
+  readabilityScore   Int?             // 가독성 점수
+  levelAssessment    CEFRLevel?       // 레벨 평가
+
+  // 상태
+  status             SermonStatus @default(DRAFT)
+
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+  finalizedAt        DateTime?
+
+  // 관계
+  feedback           SermonFeedback[]
+
+  @@map("sermon_drafts")
+}
+
+enum SermonStatus {
+  DRAFT      // 작성 중
+  REVIEW     // 검토 중
+  REVISED    // 수정 완료
+  FINALIZED  // 최종 확정
+}
+
+model SermonFeedback {
+  id           String @id @default(cuid())
+  sermonId     String
+  sermon       SermonDraft @relation(fields: [sermonId], references: [id], onDelete: Cascade)
+
+  type         FeedbackType
+  message      String @db.Text
+  suggestions  String[]
+
+  // 위치 정보
+  lineNumber   Int?
+  startPos     Int?
+  endPos       Int?
+
+  severity     FeedbackSeverity @default(INFO)
+  isResolved   Boolean @default(false)
+
+  createdAt    DateTime @default(now())
+
+  @@map("sermon_feedback")
+}
+
+enum FeedbackType {
+  GRAMMAR        // 문법
+  VOCABULARY     // 어휘
+  STYLE          // 문체
+  THEOLOGICAL    // 신학적 정확성
+  CULTURAL       // 문화적 적절성
+  CLARITY        // 명확성
+  STRUCTURE      // 구조
+}
+
+enum FeedbackSeverity {
+  INFO     // 정보
+  WARNING  // 경고
+  ERROR    // 오류
+}
+
+// ==========================================
+// 학습 경로 및 진도 관리
+// ==========================================
+
+model LearningPath {
+  id               String   @id @default(cuid())
+  userId           String
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  name             String
+  description      String?  @db.Text
+  currentLevel     CEFRLevel
+  targetLevel      CEFRLevel
+  focusAreas       LearningGoal[] // 집중 영역
+
+  estimatedDuration Int     // 예상 학습 기간 (일)
+  progress         Float   @default(0) // 0-100
+
+  isActive         Boolean @default(true)
+  isCustom         Boolean @default(false) // 사용자 커스텀 여부
+
+  completedAt      DateTime?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@map("learning_paths")
+}
+
+model Progress {
+  id          String @id @default(cuid())
+  userId      String
+  user        User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // 진도 타입 (다형성)
+  progressType ProgressType
+  referenceId  String        // Grammar/Vocabulary/Writing ID
+
+  status      ProgressStatus @default(NOT_STARTED)
+  score       Float?         // 0-100
+  timeSpent   Int @default(0) // 소요 시간 (초)
+  attempts    Int @default(0)
+
+  lastAttemptAt DateTime?
+  completedAt   DateTime?
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@unique([userId, progressType, referenceId])
+  @@map("progress")
+}
+
+enum ProgressType {
+  GRAMMAR
+  VOCABULARY
+  WRITING
+  SERMON
+}
+
+enum ProgressStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+  MASTERED
+}
+
+// ==========================================
+// 복습 세션 시스템
+// ==========================================
+
+model ReviewSession {
+  id           String @id @default(cuid())
+  userId       String
+  user         User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  type         ReviewType
+  duration     Int          // 세션 시간 (초)
+  totalItems   Int @default(0)
+  correctItems Int @default(0)
+
+  startedAt    DateTime
+  completedAt  DateTime?
+
+  // 관계
+  items        ReviewSessionItem[]
+
+  @@map("review_sessions")
+}
+
+enum ReviewType {
+  VOCABULARY
+  GRAMMAR
+  WRITING
+  MIXED
+}
+
+model ReviewSessionItem {
+  id           String @id @default(cuid())
+  sessionId    String
+  session      ReviewSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  vocabularyId String?
+  vocabulary   VocabularyItem? @relation(fields: [vocabularyId], references: [id], onDelete: Cascade)
+
+  // 결과
+  isCorrect    Boolean
+  responseTime Int      // 응답 시간 (밀리초)
+  attempts     Int @default(1)
+  rating       Int?     // FSRS 등급 (1-4)
+
+  reviewedAt   DateTime @default(now())
+
+  @@map("review_session_items")
+}
+
+// ==========================================
+// 레벨 평가 시스템
+// ==========================================
+
+model AssessmentResult {
+  id              String @id @default(cuid())
+  userId          String
+  user            User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  sessionId       String @unique
+
+  // 평가 결과
+  overallLevel    CEFRLevel
+  overallConfidence Float        // 0-100
+
+  // 영역별 결과
+  grammarLevel    CEFRLevel?
+  grammarScore    Float?
+  vocabularyLevel CEFRLevel?
+  vocabularyScore Float?
+  writingLevel    CEFRLevel?
+  writingScore    Float?
+
+  // 분석
+  strengths       String[]
+  weaknesses      String[]
+  recommendations Json          // 학습 권장 사항
+
+  // 한국인 특화 분석
+  koreanInterference Json?     // 한국어 간섭 분석
+
+  totalQuestions  Int
+  correctAnswers  Int
+  timeSpent       Int          // 소요 시간 (초)
+
+  createdAt       DateTime @default(now())
+
+  @@map("assessment_results")
+}
+
+// ==========================================
+// 학습 통계 (집계)
+// ==========================================
+
+model LearningStats {
+  id              String @id @default(cuid())
+  userId          String @unique
+
+  // 일별 통계
+  studyStreakDays Int @default(0)
+  longestStreak   Int @default(0)
+  totalStudyTime  Int @default(0) // 총 학습 시간 (분)
+
+  // 문법 통계
+  grammarLessonsCompleted Int @default(0)
+  grammarAverageScore     Float @default(0)
+
+  // 어휘 통계
+  vocabularyTotal     Int @default(0)
+  vocabularyMastered  Int @default(0)
+  vocabularyLearning  Int @default(0)
+
+  // 작문 통계
+  writingExercisesCompleted Int @default(0)
+  writingAverageScore       Float @default(0)
+
+  // 설교문 통계
+  sermonsStarted    Int @default(0)
+  sermonsCompleted  Int @default(0)
+
+  // 점수 통계
+  overallAverageScore    Float @default(0)
+  bestScore              Float @default(0)
+
+  // 목표 관련
+  weeklyGoalMinutes      Int @default(300)  // 주간 목표 (분)
+  weeklyProgressMinutes  Int @default(0)    // 주간 진도 (분)
+
+  // 게임화
+  totalPoints       Int @default(0)
+  currentLevel      Int @default(1)
+  badgesEarned      String[]
+
+  lastCalculated    DateTime @default(now())
+  lastStudyDate     DateTime?
+
+  @@map("learning_stats")
+}

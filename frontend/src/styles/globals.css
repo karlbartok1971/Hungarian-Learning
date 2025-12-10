@@ -1,0 +1,415 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 84% 4.9%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 94.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* 한글 폰트 최적화 */
+  html {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  }
+
+  /* 헝가리어 특수문자 폰트 지원 */
+  .hungarian-text {
+    font-family: 'Noto Sans', 'Liberation Sans', Arial, sans-serif;
+    font-feature-settings: "kern" 1;
+  }
+}
+
+@layer components {
+  /* 커스텀 컴포넌트 스타일 */
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-4 py-2 rounded-md font-medium transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80 px-4 py-2 rounded-md font-medium transition-colors;
+  }
+
+  .btn-destructive {
+    @apply bg-destructive text-destructive-foreground hover:bg-destructive/90 px-4 py-2 rounded-md font-medium transition-colors;
+  }
+
+  /* 카드 스타일 */
+  .card {
+    @apply rounded-lg border bg-card text-card-foreground shadow-sm;
+  }
+
+  .card-header {
+    @apply flex flex-col space-y-1.5 p-6;
+  }
+
+  .card-title {
+    @apply text-2xl font-semibold leading-none tracking-tight;
+  }
+
+  .card-description {
+    @apply text-sm text-muted-foreground;
+  }
+
+  .card-content {
+    @apply p-6 pt-0;
+  }
+
+  .card-footer {
+    @apply flex items-center p-6 pt-0;
+  }
+
+  /* 학습 진도 바 */
+  .progress-bar {
+    @apply w-full bg-secondary rounded-full h-2;
+  }
+
+  .progress-fill {
+    @apply bg-primary h-2 rounded-full transition-all duration-300 ease-in-out;
+  }
+
+  /* 레벨별 배지 */
+  .badge-a1 {
+    @apply bg-level-a1 text-white px-2 py-1 rounded-full text-xs font-medium;
+  }
+
+  .badge-a2 {
+    @apply bg-level-a2 text-white px-2 py-1 rounded-full text-xs font-medium;
+  }
+
+  .badge-b1 {
+    @apply bg-level-b1 text-white px-2 py-1 rounded-full text-xs font-medium;
+  }
+
+  .badge-b2 {
+    @apply bg-level-b2 text-white px-2 py-1 rounded-full text-xs font-medium;
+  }
+
+  /* 발음 연습 파형 시각화 */
+  .waveform-container {
+    @apply w-full h-16 bg-muted rounded-md flex items-center justify-center;
+  }
+
+  .waveform-bar {
+    @apply w-1 bg-primary mx-0.5 rounded-full transition-all duration-100;
+  }
+
+  /* 어휘 카드 */
+  .vocabulary-card {
+    @apply card hover:shadow-md transition-shadow cursor-pointer;
+  }
+
+  .vocabulary-card:hover {
+    @apply border-primary/50;
+  }
+
+  /* 설교문 에디터 */
+  .sermon-editor {
+    @apply min-h-96 p-4 border border-input rounded-md focus:outline-none focus:ring-2 focus:ring-ring;
+  }
+
+  /* 애니메이션 클래스 */
+  .animate-success {
+    @apply animate-pulse-success;
+  }
+
+  .fade-in-up {
+    @apply animate-slide-up;
+  }
+}
+
+@layer utilities {
+  /* 헝가리 문화 애니메이션 */
+  .animate-fadeIn {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slideInLeft {
+    animation: slideInLeft 0.5s ease-out forwards;
+  }
+
+  .animate-slideInRight {
+    animation: slideInRight 0.5s ease-out forwards;
+  }
+
+  .animate-bounceIn {
+    animation: bounceIn 0.8s ease-out forwards;
+  }
+
+  .animate-shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.2) 20%,
+      rgba(255,255,255,0.5) 60%,
+      rgba(255,255,255,0)
+    );
+    background-size: 200px 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  /* 헝가리 전통 색상 팔레트 */
+  .bg-hungarian-red {
+    background-color: #cd212a;
+  }
+
+  .bg-hungarian-white {
+    background-color: #ffffff;
+  }
+
+  .bg-hungarian-green {
+    background-color: #436f4d;
+  }
+
+  .text-hungarian-red {
+    color: #cd212a;
+  }
+
+  .text-hungarian-green {
+    color: #436f4d;
+  }
+
+  .border-hungarian-red {
+    border-color: #cd212a;
+  }
+
+  .border-hungarian-green {
+    border-color: #436f4d;
+  }
+
+  /* 헝가리 패턴 오버레이 */
+  .hungarian-pattern {
+    position: relative;
+  }
+
+  .hungarian-pattern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+      radial-gradient(circle at 25% 25%, rgba(220, 38, 38, 0.1) 2px, transparent 2px),
+      radial-gradient(circle at 75% 75%, rgba(22, 163, 74, 0.1) 2px, transparent 2px);
+    background-size: 20px 20px;
+    pointer-events: none;
+  }
+
+  /* 부드러운 글래스모피즘 효과 */
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* 헝가리 그라데이션 */
+  .hungarian-gradient {
+    background: linear-gradient(135deg, #cd212a 0%, #ffffff 50%, #436f4d 100%);
+  }
+
+  .hungarian-text-gradient {
+    background: linear-gradient(135deg, #cd212a 0%, #436f4d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* 호버 효과 강화 */
+  .hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  /* 유틸리티 클래스 */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* 접근성 개선 */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  /* 포커스 스타일 */
+  .focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  /* 반응형 헝가리 배경 이미지 최적화 */
+  .hungarian-bg {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* 로딩 스키머 효과 */
+  .skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+}
+
+/* 키프레임 애니메이션 정의 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+  .hungarian-bg {
+    background-attachment: scroll; /* 모바일에서는 fixed 대신 scroll 사용 */
+  }
+}
+
+/* 접근성 개선 - 애니메이션 감소 설정 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

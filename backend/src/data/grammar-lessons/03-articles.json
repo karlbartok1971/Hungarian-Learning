@@ -1,0 +1,94 @@
+{
+  "id": "grammar-a1-03",
+  "title": "정관사와 부정관사",
+  "level": "A1",
+  "category": "관사",
+  "order": 3,
+  "estimatedDuration": 30,
+  "difficulty": 1,
+  "tags": ["관사", "정관사", "부정관사", "a/az", "egy"],
+
+  "summary": "헝가리어의 정관사 a/az와 부정관사 egy의 사용법을 배웁니다. 영어의 the/a와 비슷하지만 더 명확한 규칙이 있습니다.",
+
+  "objectives": [
+    "a와 az의 차이를 이해하고 올바르게 선택한다",
+    "egy의 용법을 이해한다",
+    "관사가 동사 활용에 미치는 영향을 안다"
+  ],
+
+  "content": {
+    "introduction": {
+      "text": "헝가리어에는 정관사 a/az ('그', '그 ~')와 부정관사 egy ('하나의', '어떤')가 있습니다. 영어의 the/a와 비슷하지만, 헝가리어에서는 관사 선택이 동사 활용에도 영향을 줍니다.",
+      "keyPoints": [
+        "a = 자음 앞, az = 모음 앞",
+        "egy = 부정관사, '하나'라는 숫자로도 쓰임",
+        "정관사 → 정형활용, 부정관사/무관사 → 부정활용"
+      ]
+    },
+
+    "explanation": {
+      "steps": [
+        {
+          "title": "1단계: 정관사 a/az",
+          "content": "정관사는 특정한 것을 가리킵니다. 뒤에 오는 단어의 첫 소리가 모음이면 az, 자음이면 a를 사용합니다.",
+          "examples": [
+            {"hungarian": "a ház", "korean": "그 집", "rule": "h는 자음 → a"},
+            {"hungarian": "az alma", "korean": "그 사과", "rule": "a는 모음 → az"},
+            {"hungarian": "a templom", "korean": "그 교회", "rule": "t는 자음 → a"},
+            {"hungarian": "az út", "korean": "그 길", "rule": "ú는 모음 → az"},
+            {"hungarian": "a könyv", "korean": "그 책", "rule": "k는 자음 → a"},
+            {"hungarian": "az ember", "korean": "그 사람", "rule": "e는 모음 → az"}
+          ]
+        },
+        {
+          "title": "2단계: 부정관사 egy",
+          "content": "egy는 '하나의', '어떤'을 의미하며, 숫자 '1'로도 사용됩니다.",
+          "examples": [
+            {"hungarian": "egy ház", "korean": "집 한 채 / 어떤 집"},
+            {"hungarian": "egy templom", "korean": "교회 하나 / 어떤 교회"},
+            {"hungarian": "egy könyv", "korean": "책 한 권"},
+            {"hungarian": "Egy ember jön.", "korean": "한 사람이 온다."}
+          ]
+        },
+        {
+          "title": "3단계: 관사와 동사 활용",
+          "content": "관사 선택은 동사 활용에 직접적인 영향을 줍니다!",
+          "examples": [
+            {
+              "withDefinite": "Olvasom a könyvet.",
+              "withIndefinite": "Olvasok egy könyvet.",
+              "korean": "나는 그 책을 읽는다 / 나는 책 한 권을 읽는다",
+              "grammar": "a → 정형활용(-om), egy → 부정활용(-ok)"
+            }
+          ]
+        }
+      ]
+    },
+
+    "examples": [
+      {
+        "category": "일상",
+        "items": [
+          {"hungarian": "A fiú olvas.", "korean": "그 소년이 읽는다."},
+          {"hungarian": "Egy fiú olvas.", "korean": "한 소년이 읽는다."},
+          {"hungarian": "Látom az autót.", "korean": "나는 그 차를 본다."},
+          {"hungarian": "Látok egy autót.", "korean": "나는 차 한 대를 본다."}
+        ]
+      },
+      {
+        "category": "종교",
+        "items": [
+          {"hungarian": "a Biblia", "korean": "그 성경 (특정)"},
+          {"hungarian": "az Isten", "korean": "그 하나님 (유일신)"},
+          {"hungarian": "az ima", "korean": "그 기도"},
+          {"hungarian": "egy templom", "korean": "어떤 교회"}
+        ]
+      }
+    ],
+
+    "commonMistakes": [
+      {"mistake": "❌ az ház", "correction": "✅ a ház", "explanation": "h는 자음"},
+      {"mistake": "❌ a ember", "correction": "✅ az ember", "explanation": "e는 모음"}
+    ]
+  }
+}

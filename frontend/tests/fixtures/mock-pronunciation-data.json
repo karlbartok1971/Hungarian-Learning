@@ -1,0 +1,255 @@
+{
+  "mockAssessmentResults": [
+    {
+      "id": "mock-assessment-1",
+      "exerciseId": "test-word-1",
+      "overallScore": 85,
+      "pronunciation": {
+        "accuracy": 88,
+        "fluency": 82,
+        "completeness": 90,
+        "prosody": 80
+      },
+      "detailedFeedback": {
+        "phonemeScores": [
+          {
+            "phoneme": "s",
+            "position": 0,
+            "expected": "s",
+            "detected": "s",
+            "score": 95,
+            "confidence": 0.92
+          },
+          {
+            "phoneme": "i",
+            "position": 1,
+            "expected": "i",
+            "detected": "i",
+            "score": 90,
+            "confidence": 0.88
+          },
+          {
+            "phoneme": "ɒ",
+            "position": 2,
+            "expected": "ɒ",
+            "detected": "o",
+            "score": 70,
+            "confidence": 0.75
+          }
+        ],
+        "timingAnalysis": {
+          "speechRate": 120,
+          "pauseDuration": 0.2,
+          "rhythmScore": 85
+        },
+        "frequencyAnalysis": {
+          "f0Mean": 180,
+          "f0Range": 50,
+          "formantQuality": 82
+        }
+      },
+      "improvementSuggestions": [
+        {
+          "type": "phoneme",
+          "target": "ɒ",
+          "suggestion": "'ɒ' 음소를 더 낮고 뒤쪽에서 발음해보세요. 입을 더 크게 벌리고 혀를 뒤로 당겨보세요.",
+          "exerciseRecommendation": "헝가리어 'o' 소리 연습하기"
+        },
+        {
+          "type": "prosody",
+          "target": "stress",
+          "suggestion": "첫 음절에 더 강한 강세를 주어보세요.",
+          "exerciseRecommendation": "헝가리어 강세 패턴 연습하기"
+        }
+      ]
+    },
+    {
+      "id": "mock-assessment-2",
+      "exerciseId": "test-word-2",
+      "overallScore": 72,
+      "pronunciation": {
+        "accuracy": 68,
+        "fluency": 75,
+        "completeness": 80,
+        "prosody": 70
+      },
+      "detailedFeedback": {
+        "phonemeScores": [
+          {
+            "phoneme": "k",
+            "position": 0,
+            "expected": "k",
+            "detected": "k",
+            "score": 95,
+            "confidence": 0.95
+          },
+          {
+            "phoneme": "ø",
+            "position": 1,
+            "expected": "ø",
+            "detected": "o",
+            "score": 45,
+            "confidence": 0.60
+          },
+          {
+            "phoneme": "s",
+            "position": 2,
+            "expected": "s",
+            "detected": "s",
+            "score": 90,
+            "confidence": 0.89
+          }
+        ],
+        "timingAnalysis": {
+          "speechRate": 95,
+          "pauseDuration": 0.15,
+          "rhythmScore": 78
+        },
+        "frequencyAnalysis": {
+          "f0Mean": 175,
+          "f0Range": 45,
+          "formantQuality": 70
+        }
+      },
+      "improvementSuggestions": [
+        {
+          "type": "phoneme",
+          "target": "ø",
+          "suggestion": "헝가리어 'ö' 소리는 입술을 둥글게 하고 '어'와 '으'의 중간음으로 발음해야 합니다. 한국어 '오'와는 다릅니다.",
+          "exerciseRecommendation": "헝가리어 전설 원순모음 연습하기"
+        },
+        {
+          "type": "fluency",
+          "target": "word_connection",
+          "suggestion": "각 음절을 더 자연스럽게 연결해보세요.",
+          "exerciseRecommendation": "긴 단어 발음 연습하기"
+        }
+      ]
+    }
+  ],
+  "mockQuickFeedback": [
+    {
+      "targetText": "Szia",
+      "score": 88,
+      "feedback": "좋은 발음입니다! 'sz' 소리가 정확했습니다.",
+      "suggestions": [
+        "'ia' 부분을 더 부드럽게 연결해보세요",
+        "첫 음절에 강세를 더 주어보세요"
+      ]
+    },
+    {
+      "targetText": "köszönöm",
+      "score": 65,
+      "feedback": "'ö' 소리 연습이 더 필요합니다.",
+      "suggestions": [
+        "입술을 더 둥글게 하고 '어'와 '으'의 중간음으로 발음하세요",
+        "각 음절을 명확하게 구분하여 발음하세요",
+        "'sz' 소리를 더 강하게 발음해보세요"
+      ]
+    }
+  ],
+  "mockSessionSummary": {
+    "sessionId": "mock-session-1",
+    "summary": {
+      "totalTime": 450,
+      "exercisesCompleted": 5,
+      "averageScore": 78,
+      "improvementAreas": [
+        "헝가리어 원순모음 (ö, ü)",
+        "강세 패턴",
+        "자음 클러스터"
+      ]
+    },
+    "achievements": [
+      {
+        "name": "첫 발음 연습 완료",
+        "description": "첫 번째 발음 연습 세션을 성공적으로 마쳤습니다!"
+      },
+      {
+        "name": "정확한 발음 달성",
+        "description": "5개 단어 중 3개를 80점 이상으로 발음했습니다."
+      }
+    ]
+  },
+  "mockRecommendations": {
+    "exercises": [
+      {
+        "id": "rec-exercise-1",
+        "hungarianText": "öröm",
+        "koreanTranslation": "기쁨",
+        "phonetic": "ˈørøm",
+        "difficulty": 3,
+        "type": "word",
+        "focusPhonemes": ["ø"],
+        "reason": "'ö' 소리 개선을 위한 추천"
+      },
+      {
+        "id": "rec-exercise-2",
+        "hungarianText": "türelem",
+        "koreanTranslation": "인내",
+        "phonetic": "ˈtyrɛlɛm",
+        "difficulty": 4,
+        "type": "word",
+        "focusPhonemes": ["y"],
+        "reason": "전설 원순모음 연습을 위한 추천"
+      }
+    ],
+    "reason": "원순모음 발음 개선이 필요합니다",
+    "focusAreas": ["전설 원순모음", "입술 동작", "모음 구별"]
+  },
+  "mockStats": {
+    "userId": "test-user-1",
+    "totalPracticeTime": 720,
+    "sessionsCompleted": 8,
+    "averageScore": 75,
+    "improvementRate": 12.5,
+    "strongPhonemes": ["s", "t", "n", "m"],
+    "weakPhonemes": ["ø", "y", "ɟ", "ɲ"],
+    "levelProgress": {
+      "A1": {
+        "exercisesCompleted": 45,
+        "averageScore": 78,
+        "timeSpent": 360
+      },
+      "A2": {
+        "exercisesCompleted": 12,
+        "averageScore": 72,
+        "timeSpent": 180
+      }
+    },
+    "phonemeProgress": {
+      "ø": {
+        "attempts": 15,
+        "averageScore": 65,
+        "lastPracticed": "2024-01-15",
+        "improvementTrend": "improving"
+      },
+      "y": {
+        "attempts": 8,
+        "averageScore": 58,
+        "lastPracticed": "2024-01-14",
+        "improvementTrend": "stable"
+      }
+    },
+    "achievements": [
+      {
+        "id": "first-session",
+        "name": "첫 걸음",
+        "description": "첫 번째 발음 연습 세션 완료",
+        "unlockedAt": "2024-01-01"
+      },
+      {
+        "id": "week-streak",
+        "name": "일주일 연속",
+        "description": "7일 연속 발음 연습",
+        "unlockedAt": "2024-01-08"
+      }
+    ],
+    "weeklyGoals": {
+      "targetMinutes": 180,
+      "completedMinutes": 145,
+      "targetExercises": 20,
+      "completedExercises": 16
+    }
+  }
+}

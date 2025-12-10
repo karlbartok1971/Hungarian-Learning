@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules lang="hu" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../../../../../../../rules.xsd">
+
+    <!-- 헝가리어 설교문 전용 문법 규칙 -->
+
+    <!-- 정관사 규칙: a/az -->
+    <rule id="HU_ARTICLE_AGREEMENT_THEOLOGICAL" name="정관사 a/az 규칙 (신학 용어)">
+        <pattern>
+            <token>a</token>
+            <token regexp="yes">^[aeiouáéíóöőúüűAEIOUÁÉÍÓÖŐÚÜŰ].*</token>
+        </pattern>
+        <message>모음으로 시작하는 단어 앞에는 "az"를 사용해야 합니다.</message>
+        <suggestion>az \2</suggestion>
+        <example correction="az ember">A <marker>a ember</marker> jön.</example>
+        <example>Az ember jön.</example>
+    </rule>
+
+    <rule id="HU_ARTICLE_AGREEMENT_CONSONANT" name="정관사 az/a 규칙 (자음)">
+        <pattern>
+            <token>az</token>
+            <token regexp="yes">^[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ].*</token>
+        </pattern>
+        <message>자음으로 시작하는 단어 앞에는 "a"를 사용해야 합니다.</message>
+        <suggestion>a \2</suggestion>
+        <example correction="a kereszt">Az <marker>az kereszt</marker> jelképe.</example>
+        <example>A kereszt jelképe.</example>
+    </rule>
+
+    <!-- 신학 용어 격변화 규칙 -->
+    <rule id="HU_THEOLOGICAL_CASE_AGREEMENT" name="신학 용어 격변화">
+        <pattern>
+            <token>Isten</token>
+            <token regexp="yes">szeretet.*</token>
+        </pattern>
+        <message>신학적 표현에서는 "Isten szeretete" 형태를 권장합니다.</message>
+        <suggestion>Isten szeretete</suggestion>
+        <example correction="Isten szeretete">Az <marker>Isten szeretet</marker> végtelen.</example>
+        <example>Isten szeretete végtelen.</example>
+    </rule>
+
+    <!-- 설교 인사말 규칙 -->
+    <rule id="HU_SERMON_GREETING" name="설교 인사말 형식">
+        <pattern>
+            <token regexp="yes">(?i)(szia|szevasz|hé)</token>
+        </pattern>
+        <message>설교에서는 격식 있는 인사말을 사용하세요.</message>
+        <suggestion>Kedves testvérek</suggestion>
+        <suggestion>Szeretett gyülekezet</suggestion>
+        <example correction="Kedves testvérek">A <marker>Szia</marker> mindenkinek!</example>
+        <example>Kedves testvérek!</example>
+    </rule>
+
+    <!-- 비격식 대명사 사용 -->
+    <rule id="HU_INFORMAL_PRONOUN" name="비격식 대명사">
+        <pattern>
+            <token regexp="yes">(?i)(ti|gondoltok|vagytok)</token>
+        </pattern>
+        <message>설교에서는 존경하는 표현을 사용하세요.</message>
+        <suggestion>önök</suggestion>
+        <suggestion>gondolnak</suggestion>
+        <suggestion>vannak</suggestion>
+        <example correction="önök gondolnak">Mit <marker>ti gondoltok</marker>?</example>
+        <example>Mit önök gondolnak?</example>
+    </rule>
+
+    <!-- 성경 인용 형식 -->
+    <rule id="HU_BIBLE_CITATION_FORMAT" name="성경 인용 형식">
+        <pattern>
+            <token regexp="yes">(?i)(János|Márk|Máté|Lukács|Római|Galata)</token>
+            <token regexp="yes">\d+</token>
+            <token>:</token>
+            <token regexp="yes">\d+</token>
+        </pattern>
+        <message>성경 인용은 올바른 형식을 사용하세요.</message>
+        <suggestion>\1 \2:\4</suggestion>
+        <example>János 3:16</example>
+    </rule>
+
+    <!-- 설교문 종료 표현 -->
+    <rule id="HU_SERMON_CONCLUSION" name="설교 결론 표현">
+        <pattern>
+            <token regexp="yes">(?i)(vége|kész|befejezem)</token>
+        </pattern>
+        <message>설교 결론에는 축복이나 기도로 마무리하세요.</message>
+        <suggestion>Isten áldása legyen rajtatok</suggestion>
+        <suggestion>Imádkozzunk</suggestion>
+        <example correction="Isten áldása legyen rajtatok">És ezzel <marker>vége</marker>.</example>
+        <example>Isten áldása legyen rajtatok.</example>
+    </rule>
+
+    <!-- 반복적 구조 검사 -->
+    <rule id="HU_REPETITIVE_STRUCTURE" name="반복적 문장 구조">
+        <pattern>
+            <token regexp="yes">(?i)(Isten|Jézus|Krisztus)</token>
+            <token regexp="yes">.*</token>
+            <token>.</token>
+            <token regexp="yes">(?i)(Isten|Jézus|Krisztus)</token>
+            <token regexp="yes">.*</token>
+            <token>.</token>
+            <token regexp="yes">(?i)(Isten|Jézus|Krisztus)</token>
+        </pattern>
+        <message>반복적인 문장 구조를 연결사로 개선하세요.</message>
+        <suggestion>Továbbá</suggestion>
+        <suggestion>Ráadásul</suggestion>
+        <suggestion>Mindezek mellett</suggestion>
+        <example>Isten szeret. Továbbá Isten gondoskodik rólunk.</example>
+    </rule>
+
+    <!-- 신학적 정확성 검사 -->
+    <rule id="HU_THEOLOGICAL_ACCURACY" name="신학적 정확성">
+        <pattern>
+            <token>Jézus</token>
+            <token>isten</token>
+        </pattern>
+        <message>신학적으로 정확한 표현을 사용하세요. "Jézus Krisztus az Isten Fia"</message>
+        <suggestion>Jézus Krisztus az Isten Fia</suggestion>
+        <example correction="Jézus Krisztus az Isten Fia"><marker>Jézus isten</marker>.</example>
+        <example>Jézus Krisztus az Isten Fia.</example>
+    </rule>
+
+    <!-- 헝가리어 어순 검사 -->
+    <rule id="HU_WORD_ORDER_EMPHASIS" name="헝가리어 어순 (강조)">
+        <pattern>
+            <token regexp="yes">(?i)(nagyon|igen|igazán)</token>
+            <token>fontos</token>
+            <token>az</token>
+        </pattern>
+        <message>헝가리어에서는 강조하고 싶은 단어를 문장 앞에 배치합니다.</message>
+        <suggestion>Fontos \1 az</suggestion>
+        <example correction="Fontos nagyon az">A <marker>nagyon fontos az</marker> ima.</example>
+        <example>Fontos nagyon az ima.</example>
+    </rule>
+
+    <!-- 경어 사용 검사 -->
+    <rule id="HU_RESPECTFUL_LANGUAGE" name="경어 사용">
+        <pattern>
+            <token regexp="yes">(?i)(isten|jézus|krisztus)</token>
+        </pattern>
+        <message>신의 이름은 대문자로 시작해야 합니다.</message>
+        <suggestion>Isten</suggestion>
+        <suggestion>Jézus</suggestion>
+        <suggestion>Krisztus</suggestion>
+        <example correction="Isten">Az <marker>isten</marker> szeret.</example>
+        <example>Az Isten szeret.</example>
+    </rule>
+
+</rules>

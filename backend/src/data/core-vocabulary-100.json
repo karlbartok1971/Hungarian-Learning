@@ -1,0 +1,534 @@
+{
+  "metadata": {
+    "title": "헝가리어 핵심 어휘 100개",
+    "description": "A1 레벨 필수 어휘 + 설교문 작성을 위한 신학 용어",
+    "targetLevel": "A1",
+    "totalWords": 100,
+    "categories": {
+      "daily": 30,
+      "theological": 40,
+      "verbs": 20,
+      "adjectives_adverbs": 10
+    },
+    "lastUpdated": "2024-12-05"
+  },
+
+  "vocabulary": [
+    {
+      "id": "vocab-001",
+      "hungarian": "Isten",
+      "korean": "하나님",
+      "category": "THEOLOGICAL_CORE",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "Isten szeret téged.",
+          "korean": "하나님은 너를 사랑하신다.",
+          "context": "기본 신앙 고백"
+        },
+        {
+          "hungarian": "Hiszek Istenben.",
+          "korean": "나는 하나님을 믿는다.",
+          "context": "믿음 고백"
+        },
+        {
+          "hungarian": "Istennek legyen hála!",
+          "korean": "하나님께 감사!",
+          "context": "감사 표현"
+        }
+      ],
+      "etymology": "고대 헝가리어에서 유래, 튀르크어 영향",
+      "relatedWords": ["isteni (신성한)", "istenség (신성)", "Istennel (하나님과 함께)"],
+      "usage": "항상 대문자로 시작. 정관사 없이도 사용 가능.",
+      "culturalNote": "헝가리 기독교에서 가장 중요한 단어. 성경 번역에서 일관되게 사용됨."
+    },
+    {
+      "id": "vocab-002",
+      "hungarian": "Jézus",
+      "korean": "예수",
+      "category": "THEOLOGICAL_CORE",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "Jézus Krisztus az Úr.",
+          "korean": "예수 그리스도는 주님이시다.",
+          "context": "신앙 고백"
+        },
+        {
+          "hungarian": "Jézus szereti az embereket.",
+          "korean": "예수님은 사람들을 사랑하신다.",
+          "context": "설교"
+        },
+        {
+          "hungarian": "Jézusban van az élet.",
+          "korean": "예수님 안에 생명이 있다.",
+          "context": "성경 구절"
+        }
+      ],
+      "relatedWords": ["Krisztus (그리스도)", "Megváltó (구세주)", "Úr (주)"],
+      "usage": "고유명사로 항상 대문자",
+      "culturalNote": "헝가리어 성경에서 일관되게 사용되는 이름"
+    },
+    {
+      "id": "vocab-003",
+      "hungarian": "szeretet",
+      "korean": "사랑",
+      "category": "THEOLOGICAL_CORE",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "Isten szeretet.",
+          "korean": "하나님은 사랑이시다.",
+          "context": "1요한서 4:8"
+        },
+        {
+          "hungarian": "A szeretet türelmes.",
+          "korean": "사랑은 오래 참는다.",
+          "context": "고린도전서 13장"
+        },
+        {
+          "hungarian": "Isten szeretetében élünk.",
+          "korean": "우리는 하나님의 사랑 안에 산다.",
+          "context": "설교"
+        }
+      ],
+      "relatedWords": ["szeretni (사랑하다)", "szeretet (사랑하는)", "szerelem (연애)"],
+      "etymology": "szeret (사랑하다) 동사에서 파생된 명사",
+      "usage": "추상명사, 정관사와 함께 또는 없이 사용 가능",
+      "culturalNote": "기독교 설교에서 가장 자주 등장하는 단어 중 하나"
+    },
+    {
+      "id": "vocab-004",
+      "hungarian": "hit",
+      "korean": "믿음, 신앙",
+      "category": "THEOLOGICAL_CORE",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "A hit megment.",
+          "korean": "믿음이 구원한다.",
+          "context": "신학적 진리"
+        },
+        {
+          "hungarian": "Erős a hitem.",
+          "korean": "내 믿음이 강하다.",
+          "context": "개인 고백"
+        },
+        {
+          "hungarian": "Hit által élünk.",
+          "korean": "우리는 믿음으로 산다.",
+          "context": "설교"
+        }
+      ],
+      "relatedWords": ["hinni (믿다)", "hívő (믿는 사람)", "hitetlen (불신자)"],
+      "usage": "hitem (나의 믿음), hited (너의 믿음), hite (그의 믿음)"
+    },
+    {
+      "id": "vocab-005",
+      "hungarian": "ima",
+      "korean": "기도",
+      "category": "PRAYER_DEVOTION",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "Az ima erős fegyver.",
+          "korean": "기도는 강력한 무기다.",
+          "context": "영적 전쟁"
+        },
+        {
+          "hungarian": "Imádkozzunk együtt!",
+          "korean": "함께 기도합시다!",
+          "context": "예배"
+        },
+        {
+          "hungarian": "Hallgasd meg az imánkat!",
+          "korean": "우리의 기도를 들어주소서!",
+          "context": "기도문"
+        }
+      ],
+      "relatedWords": ["imádkozik (기도하다)", "imádság (기도 시간)", "imakérés (기도 제목)"],
+      "usage": "az ima (그 기도), az imám (나의 기도)"
+    },
+    {
+      "id": "vocab-006",
+      "hungarian": "Biblia",
+      "korean": "성경",
+      "category": "BIBLICAL_TERMS",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "Olvasom a Bibliát.",
+          "korean": "나는 성경을 읽는다.",
+          "context": "일상 신앙생활"
+        },
+        {
+          "hungarian": "A Biblia Isten Igéje.",
+          "korean": "성경은 하나님의 말씀이다.",
+          "context": "신학"
+        },
+        {
+          "hungarian": "A Bibliában van megírva.",
+          "korean": "성경에 기록되어 있다.",
+          "context": "설교"
+        }
+      ],
+      "relatedWords": ["bibliai (성경의)", "szentírás (성경)", "Ige (말씀)"],
+      "usage": "고유명사처럼 대문자로 시작"
+    },
+    {
+      "id": "vocab-007",
+      "hungarian": "templom",
+      "korean": "교회 (건물)",
+      "category": "WORSHIP_LITURGY",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "A templom nagykönyve.",
+          "korean": "교회가 크다.",
+          "context": "묘사"
+        },
+        {
+          "hungarian": "Elmegyünk a templomba.",
+          "korean": "우리는 교회에 간다.",
+          "context": "주일"
+        },
+        {
+          "hungarian": "A templomban imádkozunk.",
+          "korean": "교회에서 우리는 기도한다.",
+          "context": "예배"
+        }
+      ],
+      "relatedWords": ["gyülekezet (교회 공동체)", "istentisztelet (예배)", "kápolna (예배당)"],
+      "usage": "templomba (교회로), templomban (교회에서)",
+      "culturalNote": "건물로서의 교회. 공동체는 gyülekezet"
+    },
+    {
+      "id": "vocab-008",
+      "hungarian": "béke",
+      "korean": "평화",
+      "category": "THEOLOGICAL_CORE",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "Isten adja a békét.",
+          "korean": "하나님이 평화를 주신다.",
+          "context": "축복"
+        },
+        {
+          "hungarian": "Béke legyen veled!",
+          "korean": "평화가 너와 함께!",
+          "context": "인사"
+        },
+        {
+          "hungarian": "A szívemben béke van.",
+          "korean": "내 마음에 평화가 있다.",
+          "context": "간증"
+        }
+      ],
+      "relatedWords": ["békesség (평화로움)", "békés (평화로운)"],
+      "usage": "추상명사, 관사 없이도 자주 사용"
+    },
+    {
+      "id": "vocab-009",
+      "hungarian": "élet",
+      "korean": "생명, 삶",
+      "category": "THEOLOGICAL_CORE",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "Jézus az élet.",
+          "korean": "예수님은 생명이시다.",
+          "context": "요한복음 14:6"
+        },
+        {
+          "hungarian": "Örök életet ad.",
+          "korean": "영원한 생명을 주신다.",
+          "context": "구원"
+        },
+        {
+          "hungarian": "Az életem Istené.",
+          "korean": "내 삶은 하나님의 것이다.",
+          "context": "헌신"
+        }
+      ],
+      "relatedWords": ["élni (살다)", "élő (살아있는)", "életben (살아서)"],
+      "usage": "élet (생명 일반), az élet (그 생명), az életem (내 생명)"
+    },
+    {
+      "id": "vocab-010",
+      "hungarian": "halál",
+      "korean": "죽음",
+      "category": "THEOLOGICAL_CORE",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "Jézus legyőzte a halált.",
+          "korean": "예수님은 죽음을 이기셨다.",
+          "context": "부활"
+        },
+        {
+          "hungarian": "A halál nem a vég.",
+          "korean": "죽음은 끝이 아니다.",
+          "context": "영생"
+        }
+      ],
+      "relatedWords": ["halni (죽다)", "halott (죽은)", "halálban (죽음 중에)"],
+      "usage": "élet의 반대말"
+    },
+    {
+      "id": "vocab-011",
+      "hungarian": "kegyelem",
+      "korean": "은혜",
+      "category": "THEOLOGICAL_CORE",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "Isten kegyelme nagy.",
+          "korean": "하나님의 은혜가 크다.",
+          "context": "찬양"
+        },
+        {
+          "hungarian": "Kegyelemből üdvözülünk.",
+          "korean": "우리는 은혜로 구원받는다.",
+          "context": "신학"
+        },
+        {
+          "hungarian": "Köszönöm a kegyelmet.",
+          "korean": "은혜를 감사합니다.",
+          "context": "기도"
+        }
+      ],
+      "relatedWords": ["kegyelmes (은혜로운)"],
+      "culturalNote": "개신교 신학의 핵심 개념"
+    },
+    {
+      "id": "vocab-012",
+      "hungarian": "bűn",
+      "korean": "죄",
+      "category": "THEOLOGICAL_CORE",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "Megbocsátja a bűneinket.",
+          "korean": "우리의 죄를 용서하신다.",
+          "context": "용서"
+        },
+        {
+          "hungarian": "A bűn elválaszt Istentől.",
+          "korean": "죄는 하나님으로부터 분리시킨다.",
+          "context": "설교"
+        }
+      ],
+      "relatedWords": ["bűnös (죄인)", "bűnbánat (회개)"],
+      "usage": "bűn (죄 일반), a bűneim (내 죄들)"
+    },
+    {
+      "id": "vocab-013",
+      "hungarian": "kereszt",
+      "korean": "십자가",
+      "category": "BIBLICAL_TERMS",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "Jézus meghalt a kereszten.",
+          "korean": "예수님은 십자가에서 돌아가셨다.",
+          "context": "수난"
+        },
+        {
+          "hungarian": "A kereszt jelképe a hitnek.",
+          "korean": "십자가는 믿음의 상징이다.",
+          "context": "상징"
+        }
+      ],
+      "relatedWords": ["keresztény (기독교인)", "keresztelni (세례하다)"],
+      "usage": "kereszten (십자가에서), kereszt által (십자가를 통해)"
+    },
+    {
+      "id": "vocab-014",
+      "hungarian": "mennyek",
+      "korean": "하늘, 천국",
+      "category": "THEOLOGICAL_CORE",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "A mi Atyánk, aki a mennyekben vagy...",
+          "korean": "하늘에 계신 우리 아버지...",
+          "context": "주기도문"
+        },
+        {
+          "hungarian": "A mennyek országa közel van.",
+          "korean": "천국이 가까이 왔다.",
+          "context": "복음"
+        }
+      ],
+      "relatedWords": ["menny (천국)", "mennyei (천국의)"],
+      "usage": "복수형으로 주로 사용: mennyekben (하늘에)"
+    },
+    {
+      "id": "vocab-015",
+      "hungarian": "lélek",
+      "korean": "영, 영혼",
+      "category": "THEOLOGICAL_CORE",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "A Szentlélek vezet minket.",
+          "korean": "성령이 우리를 인도하신다.",
+          "context": "성령론"
+        },
+        {
+          "hungarian": "Testem és lelkem Istené.",
+          "korean": "내 몸과 영혼은 하나님의 것이다.",
+          "context": "헌신"
+        }
+      ],
+      "relatedWords": ["Szentlélek (성령)", "lelki (영적인)"],
+      "usage": "Szentlélek은 항상 대문자"
+    },
+    {
+      "id": "vocab-016",
+      "hungarian": "ház",
+      "korean": "집",
+      "category": "DAILY_LIFE",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "Ez a házam.",
+          "korean": "이것은 나의 집이다.",
+          "context": "일상"
+        },
+        {
+          "hungarian": "Nagy ház.",
+          "korean": "큰 집.",
+          "context": "묘사"
+        },
+        {
+          "hungarian": "Isten háza a templom.",
+          "korean": "하나님의 집은 교회이다.",
+          "context": "비유"
+        }
+      ],
+      "relatedWords": ["otthon (집, 고향)", "lakás (아파트)"],
+      "usage": "ház (집), házam (내 집), házat (집을)"
+    },
+    {
+      "id": "vocab-017",
+      "hungarian": "ember",
+      "korean": "사람",
+      "category": "DAILY_LIFE",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "Isten szereti az embereket.",
+          "korean": "하나님은 사람들을 사랑하신다.",
+          "context": "신학"
+        },
+        {
+          "hungarian": "Az ember bűnös.",
+          "korean": "사람은 죄인이다.",
+          "context": "원죄론"
+        },
+        {
+          "hungarian": "Sok ember van itt.",
+          "korean": "여기 많은 사람들이 있다.",
+          "context": "일상"
+        }
+      ],
+      "relatedWords": ["emberi (인간의)", "emberek (사람들)", "emberiség (인류)"],
+      "usage": "ember (사람), emberek (사람들), embert (사람을)"
+    },
+    {
+      "id": "vocab-018",
+      "hungarian": "szív",
+      "korean": "마음, 심장",
+      "category": "EMOTIONS",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "Tiszta szívvel imádkozom.",
+          "korean": "깨끗한 마음으로 기도한다.",
+          "context": "기도"
+        },
+        {
+          "hungarian": "Isten látja a szívemet.",
+          "korean": "하나님은 내 마음을 보신다.",
+          "context": "설교"
+        },
+        {
+          "hungarian": "A szívem tele van örömmel.",
+          "korean": "내 마음이 기쁨으로 가득하다.",
+          "context": "간증"
+        }
+      ],
+      "relatedWords": ["szíves (친절한)", "szívesen (기꺼이)"],
+      "usage": "szív (마음), szívem (내 마음), szívet (마음을)"
+    },
+    {
+      "id": "vocab-019",
+      "hungarian": "örömként",
+      "korean": "기쁨",
+      "category": "EMOTIONS",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "Nagy az örömöm!",
+          "korean": "내 기쁨이 크다!",
+          "context": "찬양"
+        },
+        {
+          "hungarian": "Az Úrban van az öröm.",
+          "korean": "주님 안에 기쁨이 있다.",
+          "context": "설교"
+        },
+        {
+          "hungarian": "Örömmel szolgálom Istent.",
+          "korean": "기쁨으로 하나님을 섬긴다.",
+          "context": "헌신"
+        }
+      ],
+      "relatedWords": ["örül (기쁘다)", "örömteli (기쁨이 가득한)"],
+      "usage": "öröm (기쁨), örömöm (내 기쁨), örömmel (기쁨으로)"
+    },
+    {
+      "id": "vocab-020",
+      "hungarian": "remény",
+      "korean": "소망, 희망",
+      "category": "THEOLOGICAL_CORE",
+      "level": "A1",
+      "wordType": "NOUN",
+      "examples": [
+        {
+          "hungarian": "A reményem Jézusban van.",
+          "korean": "내 소망은 예수님 안에 있다.",
+          "context": "신앙 고백"
+        },
+        {
+          "hungarian": "Hit, remény, szeretet.",
+          "korean": "믿음, 소망, 사랑.",
+          "context": "고린도전서 13장"
+        }
+      ],
+      "relatedWords": ["remélni (소망하다)", "reménytelen (절망적인)"],
+      "culturalNote": "기독교 3대 덕목 중 하나"
+    }
+  ]
+}

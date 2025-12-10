@@ -1,0 +1,439 @@
+{
+  "id": "grammar-a1-02",
+  "title": "동사 현재형 변화 (규칙 동사)",
+  "level": "A1",
+  "category": "동사",
+  "order": 2,
+  "estimatedDuration": 60,
+  "difficulty": 2,
+  "tags": ["동사", "현재형", "인칭변화", "활용"],
+
+  "summary": "헝가리어 규칙 동사의 현재형 변화를 배웁니다. 주어의 인칭과 수에 따라 동사가 어떻게 변하는지, 그리고 목적어의 종류에 따른 두 가지 활용(부정활용/정형활용)을 이해합니다.",
+
+  "objectives": [
+    "6가지 인칭(나, 너, 그/그녀, 우리, 너희, 그들)에 따른 동사 변화를 안다",
+    "부정활용(indefinite)과 정형활용(definite)의 차이를 이해한다",
+    "규칙 동사의 현재형을 올바르게 활용할 수 있다",
+    "모음조화를 동사 활용에 적용할 수 있다"
+  ],
+
+  "content": {
+    "introduction": {
+      "text": "헝가리어 동사는 주어의 인칭과 수에 따라 변화합니다. 더 특별한 점은, 목적어가 특정한 것(정관사가 붙은 것)인지 불특정한 것인지에 따라서도 동사 형태가 달라진다는 것입니다.\n\n이것을 '부정활용'(indefinite conjugation)과 '정형활용'(definite conjugation)이라고 합니다. 처음에는 어렵게 느껴지지만, 패턴을 익히면 자연스럽게 사용할 수 있습니다.",
+      "keyPoints": [
+        "동사 = 어간 + 인칭어미",
+        "부정활용: 목적어가 없거나 부정관사(egy)가 붙을 때",
+        "정형활용: 목적어에 정관사(a/az)가 붙을 때",
+        "모음조화 규칙이 적용됨"
+      ]
+    },
+
+    "explanation": {
+      "steps": [
+        {
+          "title": "1단계: 동사의 기본 - 부정활용",
+          "content": "부정활용은 목적어가 없거나, 불특정한 목적어를 가질 때 사용합니다. 먼저 이것부터 완벽하게 익혀야 합니다.",
+          "examples": [
+            {
+              "verb": "olvas (읽다)",
+              "type": "후설모음 동사",
+              "conjugation": {
+                "én": "olvasok (나는 읽는다)",
+                "te": "olvasol (너는 읽는다)",
+                "ő": "olvas (그/그녀는 읽는다)",
+                "mi": "olvasunk (우리는 읽는다)",
+                "ti": "olvastok (너희는 읽는다)",
+                "ők": "olvasnak (그들은 읽는다)"
+              },
+              "pattern": "olvas + -ok/-ol/-∅/-unk/-tok/-nak"
+            },
+            {
+              "verb": "ért (이해하다)",
+              "type": "전설모음 동사",
+              "conjugation": {
+                "én": "értek (나는 이해한다)",
+                "te": "értesz (너는 이해한다)",
+                "ő": "ért (그/그녀는 이해한다)",
+                "mi": "értünk (우리는 이해한다)",
+                "ti": "értetek (너희는 이해한다)",
+                "ők": "értenek (그들은 이해한다)"
+              },
+              "pattern": "ért + -ek/-esz/-∅/-ünk/-etek/-enek"
+            }
+          ],
+          "note": "3인칭 단수(ő)는 어간 그대로 사용합니다!"
+        },
+        {
+          "title": "2단계: 부정활용 어미 패턴",
+          "content": "모음조화에 따라 어미가 달라집니다. 패턴을 외우면 모든 규칙 동사에 적용할 수 있습니다.",
+          "table": {
+            "headers": ["인칭", "후설모음 어미", "전설모음 어미", "예시 (olvas)", "예시 (keres)"],
+            "rows": [
+              ["én (나)", "-ok", "-ek/-ök", "olvasok", "keresek"],
+              ["te (너)", "-ol/-sz", "-el/-esz/-öl", "olvasol", "keresel"],
+              ["ő (그/그녀)", "-∅", "-∅", "olvas", "keres"],
+              ["mi (우리)", "-unk", "-ünk", "olvasunk", "keresünk"],
+              ["ti (너희)", "-tok", "-tek/-tök", "olvastok", "kerestek"],
+              ["ők (그들)", "-nak", "-nek", "olvasnak", "keresnek"]
+            ]
+          },
+          "examples": [
+            {
+              "hungarian": "Olvasok egy könyvet.",
+              "korean": "나는 책 한 권을 읽는다.",
+              "grammar": "egy (부정관사) → 부정활용 사용"
+            },
+            {
+              "hungarian": "Keresünk egy templomot.",
+              "korean": "우리는 교회를 찾는다.",
+              "grammar": "egy → 부정활용"
+            }
+          ]
+        },
+        {
+          "title": "3단계: 정형활용 - 정관사가 있을 때",
+          "content": "목적어에 정관사 'a/az'가 붙거나, 특정한 대상을 가리킬 때는 정형활용을 사용합니다.",
+          "examples": [
+            {
+              "verb": "olvas (읽다)",
+              "type": "정형활용",
+              "conjugation": {
+                "én": "olvasom (나는 그것을 읽는다)",
+                "te": "olvasod (너는 그것을 읽는다)",
+                "ő": "olvassa (그/그녀는 그것을 읽는다)",
+                "mi": "olvassuk (우리는 그것을 읽는다)",
+                "ti": "olvassátok (너희는 그것을 읽는다)",
+                "ők": "olvassák (그들은 그것을 읽는다)"
+              },
+              "pattern": "olvas + -om/-od/-sa/-suk/-sátok/-sák"
+            },
+            {
+              "verb": "keres (찾다)",
+              "type": "정형활용",
+              "conjugation": {
+                "én": "keresem (나는 그것을 찾는다)",
+                "te": "keresed (너는 그것을 찾는다)",
+                "ő": "keresi (그/그녀는 그것을 찾는다)",
+                "mi": "keressük (우리는 그것을 찾는다)",
+                "ti": "keresitek (너희는 그것을 찾는다)",
+                "ők": "keresik (그들은 그것을 찾는다)"
+              },
+              "pattern": "keres + -em/-ed/-i/-sük/-itek/-ik"
+            }
+          ],
+          "note": "정형활용은 '특정한 그것을'이라는 의미가 포함되어 있습니다!"
+        },
+        {
+          "title": "4단계: 부정활용 vs 정형활용 비교",
+          "content": "같은 동사라도 목적어에 따라 형태가 완전히 달라집니다. 이것이 헝가리어의 독특한 특징입니다.",
+          "comparisons": [
+            {
+              "indefinite": {
+                "hungarian": "Olvasok egy könyvet.",
+                "korean": "나는 책 한 권을 읽는다.",
+                "form": "olvasok",
+                "reason": "egy (부정관사)"
+              },
+              "definite": {
+                "hungarian": "Olvasom a könyvet.",
+                "korean": "나는 그 책을 읽는다.",
+                "form": "olvasom",
+                "reason": "a (정관사)"
+              }
+            },
+            {
+              "indefinite": {
+                "hungarian": "Keresünk templomot.",
+                "korean": "우리는 교회를 찾는다.",
+                "form": "keresünk",
+                "reason": "관사 없음 (불특정)"
+              },
+              "definite": {
+                "hungarian": "Keressük a templomot.",
+                "korean": "우리는 그 교회를 찾는다.",
+                "form": "keressük",
+                "reason": "a (정관사)"
+              }
+            },
+            {
+              "indefinite": {
+                "hungarian": "Szeretek embereket.",
+                "korean": "나는 사람들을 좋아한다.",
+                "form": "szeretek",
+                "reason": "관사 없음 (일반적)"
+              },
+              "definite": {
+                "hungarian": "Szeretem az embereket.",
+                "korean": "나는 그 사람들을 사랑한다.",
+                "form": "szeretem",
+                "reason": "az (정관사)"
+              }
+            }
+          ]
+        },
+        {
+          "title": "5단계: 자주 쓰이는 규칙 동사들",
+          "content": "설교문과 일상 대화에서 가장 많이 사용하는 규칙 동사들입니다.",
+          "verbs": [
+            {
+              "infinitive": "beszél (말하다)",
+              "type": "전설모음",
+              "examples": [
+                "Beszélek magyarul. (나는 헝가리어를 말한다.)",
+                "Beszélem a nyelvet. (나는 그 언어를 말한다.)"
+              ]
+            },
+            {
+              "infinitive": "tanul (배우다)",
+              "type": "후설모음",
+              "examples": [
+                "Tanulok magyart. (나는 헝가리어를 배운다.)",
+                "Tanulom a leckét. (나는 그 교훈을 배운다.)"
+              ]
+            },
+            {
+              "infinitive": "imádkozik (기도하다)",
+              "type": "후설모음 + -ik동사",
+              "examples": [
+                "Imádkozom. (나는 기도한다.)",
+                "Imádkozzuk az Úr imáját. (우리는 주기도문을 기도한다.)"
+              ],
+              "note": "-ik 동사는 약간 특별하지만, 기본 패턴은 같습니다"
+            },
+            {
+              "infinitive": "ad (주다)",
+              "type": "후설모음, 짧은 어간",
+              "examples": [
+                "Adok neked valamit. (나는 너에게 무언가를 준다.)",
+                "Adom a könyvet. (나는 그 책을 준다.)"
+              ]
+            },
+            {
+              "infinitive": "hall (듣다)",
+              "type": "후설모음, 짧은 어간",
+              "examples": [
+                "Hallok hangokat. (나는 소리들을 듣는다.)",
+                "Hallom a szót. (나는 그 말씀을 듣는다.)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    "examples": [
+      {
+        "category": "일상 대화",
+        "items": [
+          {
+            "hungarian": "Beszélsz magyarul?",
+            "korean": "너는 헝가리어를 말하니?",
+            "vocabulary": ["beszél (말하다)", "magyarul (헝가리어로)"],
+            "grammar": "beszél + -sz (2인칭 단수, 부정활용)"
+          },
+          {
+            "hungarian": "Tanulunk egy új nyelvet.",
+            "korean": "우리는 새로운 언어를 배운다.",
+            "vocabulary": ["tanul (배우다)", "új (새로운)", "nyelv (언어)"],
+            "grammar": "tanul + -unk (1인칭 복수, 부정활용: egy)"
+          },
+          {
+            "hungarian": "Szereted a kávét?",
+            "korean": "너는 커피를 좋아하니?",
+            "vocabulary": ["szeret (좋아하다)", "kávé (커피)"],
+            "grammar": "szeret + -ed (2인칭 단수, 정형활용: a)"
+          },
+          {
+            "hungarian": "Értik a kérdést.",
+            "korean": "그들은 질문을 이해한다.",
+            "vocabulary": ["ért (이해하다)", "kérdés (질문)"],
+            "grammar": "ért + -ik (3인칭 복수, 정형활용: a)"
+          },
+          {
+            "hungarian": "Várok téged.",
+            "korean": "나는 너를 기다린다.",
+            "vocabulary": ["vár (기다리다)", "te (너)"],
+            "grammar": "vár + -ok (1인칭 단수, 부정활용), téged = 2인칭 대명사 대격"
+          }
+        ]
+      },
+      {
+        "category": "종교적 맥락",
+        "items": [
+          {
+            "hungarian": "Imádkozom minden nap.",
+            "korean": "나는 매일 기도한다.",
+            "vocabulary": ["imádkozik (기도하다)", "minden (모든)", "nap (날)"],
+            "grammar": "imádkoz + -om (1인칭 단수, -ik동사는 -om으로 끝남)"
+          },
+          {
+            "hungarian": "Isten szeret minket.",
+            "korean": "하나님은 우리를 사랑하신다.",
+            "vocabulary": ["Isten (하나님)", "szeret (사랑하다)", "mi (우리)"],
+            "grammar": "szeret + ∅ (3인칭 단수, 부정활용)"
+          },
+          {
+            "hungarian": "Olvassuk a Bibliát.",
+            "korean": "우리는 성경을 읽는다.",
+            "vocabulary": ["olvas (읽다)", "Biblia (성경)"],
+            "grammar": "olvas + -suk (1인칭 복수, 정형활용: a)"
+          },
+          {
+            "hungarian": "Hallom Isten hangját.",
+            "korean": "나는 하나님의 음성을 듣는다.",
+            "vocabulary": ["hall (듣다)", "hang (소리, 음성)"],
+            "grammar": "hall + -om (1인칭 단수, 정형활용: 소유격 있음)"
+          },
+          {
+            "hungarian": "Keresik az igazságot.",
+            "korean": "그들은 진리를 찾는다.",
+            "vocabulary": ["keres (찾다)", "igazság (진리)"],
+            "grammar": "keres + -ik (3인칭 복수, 정형활용: az)"
+          },
+          {
+            "hungarian": "Tanulják Jézus tanítását.",
+            "korean": "그들은 예수님의 가르침을 배운다.",
+            "vocabulary": ["tanul (배우다)", "Jézus (예수)", "tanítás (가르침)"],
+            "grammar": "tanul + -ják (3인칭 복수, 정형활용: 소유격)"
+          }
+        ]
+      },
+      {
+        "category": "설교문 표현",
+        "items": [
+          {
+            "hungarian": "Látjuk Isten szeretetét.",
+            "korean": "우리는 하나님의 사랑을 본다.",
+            "vocabulary": ["lát (보다)", "szeretet (사랑)"],
+            "grammar": "lát + -juk (1인칭 복수, 정형활용)"
+          },
+          {
+            "hungarian": "Hiszünk Istenben.",
+            "korean": "우리는 하나님을 믿는다.",
+            "vocabulary": ["hisz (믿다)", "Isten (하나님)", "-ben (안에)"],
+            "grammar": "hisz + -ünk (1인칭 복수, 부정활용)"
+          },
+          {
+            "hungarian": "Érezem a békét.",
+            "korean": "나는 평화를 느낀다.",
+            "vocabulary": ["érez (느끼다)", "béke (평화)"],
+            "grammar": "érez + -em (1인칭 단수, 정형활용)"
+          }
+        ]
+      }
+    ],
+
+    "commonMistakes": [
+      {
+        "mistake": "❌ Olvasok a könyvet.",
+        "correction": "✅ Olvasom a könyvet.",
+        "explanation": "정관사 'a'가 있으므로 정형활용 -om을 사용해야 합니다."
+      },
+      {
+        "mistake": "❌ Szeretek a kávét.",
+        "correction": "✅ Szeretem a kávét.",
+        "explanation": "정관사가 있으면 정형활용! szeret + -em"
+      },
+      {
+        "mistake": "❌ Tanulom magyart.",
+        "correction": "✅ Tanulok magyart.",
+        "explanation": "관사가 없으므로 부정활용 -ok를 사용합니다."
+      },
+      {
+        "mistake": "❌ Olvas a Bibliát. (주어가 '나'일 때)",
+        "correction": "✅ Olvasom a Bibliát.",
+        "explanation": "1인칭 단수 + 정형활용 = -om"
+      },
+      {
+        "mistake": "❌ Keresel a templomot? (정관사 있음)",
+        "correction": "✅ Keresed a templomot?",
+        "explanation": "2인칭 단수 + 정형활용 = -ed"
+      }
+    ],
+
+    "practiceExercises": [
+      {
+        "type": "conjugation",
+        "instruction": "동사를 올바른 형태로 활용하세요.",
+        "questions": [
+          {
+            "question": "Én _____ magyart. (tanul, 배우다)",
+            "answer": "tanulok",
+            "explanation": "1인칭 단수 + 부정활용 (관사 없음)"
+          },
+          {
+            "question": "Mi _____ a Bibliát. (olvas, 읽다)",
+            "answer": "olvassuk",
+            "explanation": "1인칭 복수 + 정형활용 (a Bibliát)"
+          },
+          {
+            "question": "Te _____ Istenben? (hisz, 믿다)",
+            "answer": "hiszel",
+            "explanation": "2인칭 단수 + 부정활용 (-ben은 정관사가 아님)"
+          },
+          {
+            "question": "Ők _____ egy új templomot. (keres, 찾다)",
+            "answer": "keresnek",
+            "explanation": "3인칭 복수 + 부정활용 (egy)"
+          },
+          {
+            "question": "Én _____ téged. (szeret, 사랑하다)",
+            "answer": "szeretlek",
+            "explanation": "1인칭 → 2인칭 특별활용: -lak/-lek"
+          }
+        ]
+      }
+    ],
+
+    "culturalNotes": [
+      {
+        "title": "정형활용의 독특함",
+        "content": "헝가리어의 정형활용은 매우 독특한 특징입니다. 대부분의 유럽 언어에는 이런 구분이 없습니다. 하지만 이것 덕분에 헝가리어는 매우 정확하고 명확한 의사소통이 가능합니다."
+      },
+      {
+        "title": "-ik 동사",
+        "content": "imádkozik, dolgozik 같은 -ik로 끝나는 동사들은 약간 특별한 변화를 합니다. 하지만 걱정하지 마세요! 기본 패턴은 똑같습니다."
+      },
+      {
+        "title": "1인칭 → 2인칭 특별활용",
+        "content": "'내가 너를'의 경우 특별한 어미 -lak/-lek을 사용합니다. 'Szeretlek.' (나는 너를 사랑해)처럼 자주 쓰이는 표현입니다."
+      }
+    ],
+
+    "nextSteps": {
+      "review": [
+        "부정활용 6개 인칭 완벽히 외우기",
+        "정형활용 6개 인칭 완벽히 외우기",
+        "자주 쓰는 동사 20개로 연습",
+        "부정활용 vs 정형활용 구분 연습"
+      ],
+      "preview": "다음 강의에서는 정관사와 부정관사를 자세히 배웁니다. 이것을 알아야 정형/부정활용을 완벽하게 사용할 수 있습니다!"
+    }
+  },
+
+  "additionalResources": [
+    {
+      "type": "interactive",
+      "title": "동사 활용 퀴즈",
+      "description": "랜덤으로 동사와 인칭이 주어지면 올바르게 활용하는 게임"
+    },
+    {
+      "type": "flashcard",
+      "title": "필수 동사 50개 암기",
+      "description": "가장 자주 쓰이는 동사 50개의 활용을 플래시카드로 학습"
+    },
+    {
+      "type": "practice",
+      "title": "문장 만들기 연습",
+      "description": "배운 동사 활용으로 실제 문장 만들어보기"
+    }
+  ],
+
+  "aiTutorPrompts": [
+    "부정활용과 정형활용을 언제 사용하는지 간단히 설명해주세요.",
+    "-ik 동사가 뭔가요? 일반 동사와 어떻게 다른가요?",
+    "1인칭에서 2인칭으로 갈 때 -lak/-lek을 왜 쓰나요?",
+    "정관사가 없어도 정형활용을 쓸 수 있나요?",
+    "모음조화를 동사 활용에 어떻게 적용하나요?"
+  ]
+}

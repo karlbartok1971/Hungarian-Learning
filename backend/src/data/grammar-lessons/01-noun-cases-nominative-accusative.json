@@ -1,0 +1,369 @@
+{
+  "id": "grammar-a1-01",
+  "title": "명사의 격 변화: 주격과 대격",
+  "level": "A1",
+  "category": "명사",
+  "order": 1,
+  "estimatedDuration": 45,
+  "difficulty": 1,
+  "tags": ["명사", "격변화", "대격", "기초문법"],
+
+  "summary": "헝가리어 명사의 가장 기본적인 두 가지 격인 주격(nominative)과 대격(accusative)을 배웁니다. 대격은 '~를/을'에 해당하며, 문장에서 동작의 대상을 나타냅니다.",
+
+  "objectives": [
+    "주격과 대격의 개념을 이해한다",
+    "대격 어미 -t/-ot/-at/-et/-öt를 올바르게 선택할 수 있다",
+    "모음조화 규칙을 적용할 수 있다",
+    "간단한 문장에서 대격을 사용할 수 있다"
+  ],
+
+  "content": {
+    "introduction": {
+      "text": "헝가리어는 격변화 언어입니다. 명사가 문장에서 어떤 역할을 하느냐에 따라 어미가 붙습니다. 한국어의 조사 '이/가', '을/를'과 비슷하다고 생각하면 됩니다.\n\n주격(Nominative)은 문장의 주어를 나타내며, 별도의 어미가 붙지 않습니다. 대격(Accusative)은 동작의 대상, 즉 목적어를 나타내며 '-t' 어미가 붙습니다.",
+      "keyPoints": [
+        "주격 = 기본형 (어미 없음)",
+        "대격 = 기본형 + -t 계열 어미",
+        "모음조화 규칙이 적용됨",
+        "정관사가 있으면 대격 형태가 달라짐"
+      ]
+    },
+
+    "explanation": {
+      "steps": [
+        {
+          "title": "1단계: 주격 이해하기",
+          "content": "주격은 문장의 주어를 나타냅니다. 기본형 그대로 사용하며, 별도의 어미가 붙지 않습니다.",
+          "examples": [
+            {
+              "hungarian": "A fiú olvas.",
+              "korean": "그 소년이 읽는다.",
+              "note": "fiú (소년)가 주어이므로 주격 = 기본형"
+            },
+            {
+              "hungarian": "Az anya imádkozik.",
+              "korean": "어머니가 기도하신다.",
+              "note": "anya (어머니)가 주어이므로 주격 = 기본형"
+            }
+          ]
+        },
+        {
+          "title": "2단계: 대격의 기본 - 자음으로 끝나는 명사",
+          "content": "자음으로 끝나는 명사에는 모음조화에 따라 -ot, -et, -öt 중 하나가 붙습니다.",
+          "examples": [
+            {
+              "hungarian": "Látom a házat.",
+              "korean": "나는 집을 본다.",
+              "note": "ház → házat (후설모음 a,o이므로 -at)",
+              "breakdown": "ház (집) + -at = házat"
+            },
+            {
+              "hungarian": "Olvasom a könyvet.",
+              "korean": "나는 책을 읽는다.",
+              "note": "könyv → könyvet (전설모음 ö,ü,é,í이므로 -et)",
+              "breakdown": "könyv (책) + -et = könyvet"
+            },
+            {
+              "hungarian": "Szeretem a templomot.",
+              "korean": "나는 교회를 사랑한다.",
+              "note": "templom → templomot (후설모음이므로 -ot)",
+              "breakdown": "templom (교회) + -ot = templomot"
+            }
+          ],
+          "pattern": "자음 끝 명사 + -ot/-et/-öt (모음조화에 따라)"
+        },
+        {
+          "title": "3단계: 대격의 기본 - 모음으로 끝나는 명사",
+          "content": "모음으로 끝나는 명사에는 -t만 붙습니다.",
+          "examples": [
+            {
+              "hungarian": "Szeretem a kávét.",
+              "korean": "나는 커피를 좋아한다.",
+              "note": "kávé → kávét (é로 끝나므로 -t만)",
+              "breakdown": "kávé (커피) + -t = kávét"
+            },
+            {
+              "hungarian": "Nézem a televíziót.",
+              "korean": "나는 TV를 본다.",
+              "note": "televízió → televíziót (ó로 끝나므로 -t만)",
+              "breakdown": "televízió (TV) + -t = televíziót"
+            },
+            {
+              "hungarian": "Ismerem Pistát.",
+              "korean": "나는 Pista를 안다.",
+              "note": "Pista → Pistát (a로 끝나므로 -t만)",
+              "breakdown": "Pista (이름) + -t = Pistát"
+            }
+          ],
+          "pattern": "모음 끝 명사 + -t"
+        },
+        {
+          "title": "4단계: 모음조화 규칙 완전 정복",
+          "content": "헝가리어는 모음조화 언어입니다. 단어 안의 모음들이 조화를 이루어야 합니다.",
+          "rules": [
+            {
+              "type": "후설모음 (뒤쪽 모음)",
+              "vowels": "a, á, o, ó, u, ú",
+              "suffix": "-at, -ot",
+              "examples": ["ház → házat", "ablak → ablakot", "autó → autót"]
+            },
+            {
+              "type": "전설모음 (앞쪽 모음)",
+              "vowels": "e, é, i, í, ö, ő, ü, ű",
+              "suffix": "-et, -öt",
+              "examples": ["könyv → könyvet", "kép → képet", "föld → földet"]
+            }
+          ],
+          "examples": [
+            {
+              "hungarian": "Látom az autót.",
+              "korean": "나는 차를 본다.",
+              "note": "autó는 후설모음이므로 -t만 (모음 끝)",
+              "breakdown": "autó + -t = autót"
+            },
+            {
+              "hungarian": "Keresem az utat.",
+              "korean": "나는 길을 찾는다.",
+              "note": "út는 후설모음 u가 있으므로 -at",
+              "breakdown": "út + -at = utat"
+            },
+            {
+              "hungarian": "Várom a leckét.",
+              "korean": "나는 수업을 기다린다.",
+              "note": "lecke는 전설모음 e가 있으므로 -t만 (e로 끝남)",
+              "breakdown": "lecke + -t = leckét"
+            }
+          ]
+        },
+        {
+          "title": "5단계: 불규칙 변화 - 알아두면 좋은 것들",
+          "content": "일부 명사는 대격을 만들 때 특별한 변화를 합니다.",
+          "examples": [
+            {
+              "hungarian": "Látom a vizet.",
+              "korean": "나는 물을 본다.",
+              "note": "víz → vizet (í → i 변화)",
+              "breakdown": "víz의 í가 i로 바뀌고 -et 추가"
+            },
+            {
+              "hungarian": "Ismerem a fiút.",
+              "korean": "나는 그 소년을 안다.",
+              "note": "fiú → fiút (ú는 유지)",
+              "breakdown": "fiú + -t = fiút"
+            },
+            {
+              "hungarian": "Szeretem a testvéremet.",
+              "korean": "나는 내 형제를 사랑한다.",
+              "note": "testvér + 소유격 -em + 대격 -et",
+              "breakdown": "소유격과 대격이 함께 올 수 있음"
+            }
+          ],
+          "warning": "일부 단어는 어간이 변하므로 사전을 참고하세요!"
+        }
+      ]
+    },
+
+    "examples": [
+      {
+        "category": "일상 대화",
+        "items": [
+          {
+            "hungarian": "Szeretek téged.",
+            "korean": "나는 너를 사랑해.",
+            "vocabulary": ["szeret (사랑하다)", "te → téged (너를)"],
+            "grammar": "인칭대명사 te의 대격형은 téged (불규칙)"
+          },
+          {
+            "hungarian": "Látom a hegyet.",
+            "korean": "나는 산을 본다.",
+            "vocabulary": ["lát (보다)", "hegy (산)"],
+            "grammar": "hegy + -et = hegyet"
+          },
+          {
+            "hungarian": "Ismerem ezt a várost.",
+            "korean": "나는 이 도시를 안다.",
+            "vocabulary": ["ismer (알다)", "ez (이것)", "város (도시)"],
+            "grammar": "város + -t = várost (s로 끝나는 명사)"
+          },
+          {
+            "hungarian": "Kérek egy kávét.",
+            "korean": "커피 한 잔 주세요.",
+            "vocabulary": ["kér (요청하다)", "egy (하나)", "kávé (커피)"],
+            "grammar": "kávé + -t = kávét (모음으로 끝남)"
+          },
+          {
+            "hungarian": "Várom a buszt.",
+            "korean": "나는 버스를 기다린다.",
+            "vocabulary": ["vár (기다리다)", "busz (버스)"],
+            "grammar": "busz + -t = buszt (sz는 한 글자 취급)"
+          }
+        ]
+      },
+      {
+        "category": "종교적 맥락",
+        "items": [
+          {
+            "hungarian": "Isten szereti az embereket.",
+            "korean": "하나님은 사람들을 사랑하신다.",
+            "vocabulary": ["Isten (하나님)", "ember (사람)"],
+            "grammar": "ember + -ek (복수) + -et = embereket"
+          },
+          {
+            "hungarian": "Olvasom a Bibliát.",
+            "korean": "나는 성경을 읽는다.",
+            "vocabulary": ["Biblia (성경)"],
+            "grammar": "Biblia + -t = Bibliát"
+          },
+          {
+            "hungarian": "Hallom Isten szavát.",
+            "korean": "나는 하나님의 말씀을 듣는다.",
+            "vocabulary": ["hall (듣다)", "szó (말씀)", "szava (그의 말씀)"],
+            "grammar": "szó + -a (소유) + -t = szavát"
+          },
+          {
+            "hungarian": "Keresem az igazságot.",
+            "korean": "나는 진리를 찾는다.",
+            "vocabulary": ["keres (찾다)", "igazság (진리)"],
+            "grammar": "igazság + -ot = igazságot"
+          },
+          {
+            "hungarian": "Szeretem a gyülekezetet.",
+            "korean": "나는 교회(공동체)를 사랑한다.",
+            "vocabulary": ["gyülekezet (교회, 공동체)"],
+            "grammar": "gyülekezet + -et = gyülekezetet"
+          }
+        ]
+      },
+      {
+        "category": "설교문에서 자주 쓰이는 표현",
+        "items": [
+          {
+            "hungarian": "Isten adja a békét.",
+            "korean": "하나님이 평화를 주신다.",
+            "vocabulary": ["ad (주다)", "béke (평화)"],
+            "grammar": "béke + -t = békét"
+          },
+          {
+            "hungarian": "Lássuk a jelet!",
+            "korean": "표적을 보자!",
+            "vocabulary": ["lát (보다)", "jel (표적)"],
+            "grammar": "jel + -et = jelet (명령형에서도 대격 사용)"
+          },
+          {
+            "hungarian": "Tanuljuk a leckét!",
+            "korean": "교훈을 배우자!",
+            "vocabulary": ["tanul (배우다)", "lecke (교훈)"],
+            "grammar": "lecke + -t = leckét"
+          }
+        ]
+      }
+    ],
+
+    "commonMistakes": [
+      {
+        "mistake": "❌ Látom a ház.",
+        "correction": "✅ Látom a házat.",
+        "explanation": "목적어에는 대격 어미 -at를 붙여야 합니다."
+      },
+      {
+        "mistake": "❌ Szeretek a könyv.",
+        "correction": "✅ Szeretem a könyvet.",
+        "explanation": "1) 목적어에 대격 -et 필요 2) 정관사가 있으면 동사가 '-om/-em/-öm' 형태로 변화"
+      },
+      {
+        "mistake": "❌ Kérek egy kávé.",
+        "correction": "✅ Kérek egy kávét.",
+        "explanation": "모음으로 끝나는 명사에도 대격 -t를 붙여야 합니다."
+      },
+      {
+        "mistake": "❌ Ismerem Mariát.",
+        "correction": "✅ Ismerem Mariát. (이건 맞음!)",
+        "explanation": "이건 틀린 게 아닙니다! Maria + -t = Mariát (모음으로 끝나면 -t만)"
+      },
+      {
+        "mistake": "❌ Látom templomot.",
+        "correction": "✅ Látom a templomot.",
+        "explanation": "정관사 'a/az'를 빼먹지 마세요. 특정한 대상을 가리킬 때 필요합니다."
+      }
+    ],
+
+    "practiceExercises": [
+      {
+        "type": "fill-in-the-blank",
+        "instruction": "괄호 안의 명사를 대격으로 바꾸세요.",
+        "questions": [
+          {
+            "question": "Látom a _____. (ház)",
+            "answer": "házat",
+            "explanation": "ház + -at = házat (후설모음)"
+          },
+          {
+            "question": "Szeretem a _____. (könyv)",
+            "answer": "könyvet",
+            "explanation": "könyv + -et = könyvet (전설모음)"
+          },
+          {
+            "question": "Kérek egy _____. (kávé)",
+            "answer": "kávét",
+            "explanation": "kávé + -t = kávét (모음으로 끝남)"
+          },
+          {
+            "question": "Olvasom a _____. (Biblia)",
+            "answer": "Bibliát",
+            "explanation": "Biblia + -t = Bibliát"
+          },
+          {
+            "question": "Ismerem a _____. (város)",
+            "answer": "várost",
+            "explanation": "város + -t = várost (s로 끝남)"
+          }
+        ]
+      }
+    ],
+
+    "culturalNotes": [
+      {
+        "title": "격변화의 중요성",
+        "content": "헝가리어는 격변화가 매우 발달한 언어입니다. 총 18개 이상의 격이 있으며, 각각이 한국어의 조사처럼 특정 의미를 나타냅니다. 대격은 그 중에서도 가장 기본적이고 자주 사용되는 격입니다."
+      },
+      {
+        "title": "정관사와 대격",
+        "content": "헝가리어에서 정관사가 붙은 목적어를 사용하면, 동사의 형태도 달라집니다(정형활용). 이는 다음 강의에서 배우게 됩니다."
+      }
+    ],
+
+    "nextSteps": {
+      "review": [
+        "대격 어미 선택 연습 (모음조화)",
+        "일상 명사 50개로 대격 만들기 연습",
+        "간단한 문장 만들기 연습"
+      ],
+      "preview": "다음 강의에서는 동사의 현재형 변화를 배웁니다. 대격과 함께 사용하면 완전한 문장을 만들 수 있게 됩니다!"
+    }
+  },
+
+  "additionalResources": [
+    {
+      "type": "video",
+      "title": "대격 발음 연습",
+      "description": "원어민의 대격 발음을 듣고 따라해보세요"
+    },
+    {
+      "type": "practice",
+      "title": "대격 마스터 게임",
+      "description": "게임을 통해 대격 변화를 자동으로 만들 수 있을 때까지 연습"
+    },
+    {
+      "type": "reading",
+      "title": "간단한 헝가리어 문장 읽기",
+      "description": "대격이 포함된 실제 문장들을 읽어보세요"
+    }
+  ],
+
+  "aiTutorPrompts": [
+    "대격 어미를 언제 -ot, -et, -öt 중 어떤 걸 선택하나요?",
+    "모음조화가 정확히 뭔가요? 쉽게 설명해주세요.",
+    "왜 어떤 단어는 대격이 불규칙적으로 변하나요?",
+    "정관사가 있을 때와 없을 때 차이가 뭔가요?",
+    "복수형 명사의 대격은 어떻게 만드나요?"
+  ]
+}

@@ -1,0 +1,1755 @@
+openapi: 3.0.3
+info:
+  title: Hungarian Language Learning Platform API
+  description: |
+    A comprehensive API for Korean speakers learning Hungarian, with special focus on sermon writing capabilities.
+
+    **Features:**
+    - CEFR-based progressive learning (A1-B2)
+    - Real-time pronunciation assessment
+    - Adaptive spaced repetition
+    - Sermon composition tools
+    - Offline synchronization
+
+  version: 1.0.0
+  contact:
+    name: Hungarian Learning Platform Team
+    email: dev@hungarian-learning.com
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+
+servers:
+  - url: https://api.hungarian-learning.com/v1
+    description: Production server
+  - url: https://staging-api.hungarian-learning.com/v1
+    description: Staging server
+  - url: http://localhost:3000/api/v1
+    description: Development server
+
+security:
+  - bearerAuth: []
+
+paths:
+  # Authentication & User Management
+  /auth/register:
+    post:
+      tags: [Authentication]
+      summary: Register new user
+      description: Register a new Korean user for Hungarian language learning
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserRegistration'
+      responses:
+        '201':
+          description: User registered successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/User'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '409':
+          $ref: '#/components/responses/Conflict'
+
+  /auth/login:
+    post:
+      tags: [Authentication]
+      summary: User login
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+      responses:
+        '200':
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/LoginResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /users/me:
+    get:
+      tags: [Users]
+      summary: Get current user profile
+      responses:
+        '200':
+          description: User profile retrieved successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/UserProfile'
+
+    put:
+      tags: [Users]
+      summary: Update user profile
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserProfileUpdate'
+      responses:
+        '200':
+          description: Profile updated successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/UserProfile'
+
+  # Learning Progress & Analytics
+  /progress:
+    get:
+      tags: [Progress]
+      summary: Get user learning progress
+      parameters:
+        - name: cefr_level
+          in: query
+          schema:
+            type: string
+            enum: [A1, A2, B1, B2]
+        - name: skill
+          in: query
+          schema:
+            type: string
+            enum: [reading, writing, speaking, listening]
+        - name: from_date
+          in: query
+          schema:
+            type: string
+            format: date
+        - name: to_date
+          in: query
+          schema:
+            type: string
+            format: date
+      responses:
+        '200':
+          description: Progress data retrieved successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/UserProgress'
+
+    post:
+      tags: [Progress]
+      summary: Update learning progress
+      description: Update user's progress after completing lessons or exercises
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProgressUpdate'
+      responses:
+        '200':
+          description: Progress updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+
+  # Lesson Content
+  /lessons:
+    get:
+      tags: [Lessons]
+      summary: Get available lessons
+      parameters:
+        - name: cefr_level
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [A1, A2, B1, B2]
+        - name: lesson_type
+          in: query
+          schema:
+            type: string
+            enum: [vocabulary, grammar, speaking, writing, reading, listening]
+        - name: religious_focus
+          in: query
+          schema:
+            type: boolean
+        - name: page
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 50
+            default: 20
+      responses:
+        '200':
+          description: Lessons retrieved successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        type: object
+                        properties:
+                          lessons:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/Lesson'
+                          pagination:
+                            $ref: '#/components/schemas/Pagination'
+
+  /lessons/{lessonId}:
+    get:
+      tags: [Lessons]
+      summary: Get specific lesson content
+      parameters:
+        - name: lessonId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Lesson content retrieved successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/LessonDetail'
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  # Vocabulary Management
+  /vocabulary:
+    get:
+      tags: [Vocabulary]
+      summary: Get vocabulary items
+      parameters:
+        - name: cefr_level
+          in: query
+          schema:
+            type: string
+            enum: [A1, A2, B1, B2]
+        - name: religious_context
+          in: query
+          schema:
+            type: boolean
+        - name: category
+          in: query
+          schema:
+            type: string
+        - name: search
+          in: query
+          description: Search in Hungarian or Korean text
+          schema:
+            type: string
+        - name: page
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+      responses:
+        '200':
+          description: Vocabulary retrieved successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        type: object
+                        properties:
+                          vocabulary:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/VocabularyItem'
+                          pagination:
+                            $ref: '#/components/schemas/Pagination'
+
+  /vocabulary/due-for-review:
+    get:
+      tags: [Vocabulary]
+      summary: Get vocabulary due for spaced repetition review
+      parameters:
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 50
+            default: 20
+      responses:
+        '200':
+          description: Due vocabulary retrieved successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        type: array
+                        items:
+                          $ref: '#/components/schemas/VocabularyReview'
+
+  /vocabulary/{vocabularyId}/review:
+    post:
+      tags: [Vocabulary]
+      summary: Submit vocabulary review result
+      description: Update spaced repetition data based on review performance
+      parameters:
+        - name: vocabularyId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VocabularyReviewSubmission'
+      responses:
+        '200':
+          description: Review submitted successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/VocabularyProgress'
+
+  # Pronunciation Assessment
+  /pronunciation/assess:
+    post:
+      tags: [Pronunciation]
+      summary: Assess pronunciation quality
+      description: Submit audio for real-time pronunciation assessment
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                audio:
+                  type: string
+                  format: binary
+                  description: Audio file (WebM, MP3, WAV)
+                target_text:
+                  type: string
+                  description: Expected Hungarian text
+                vocabulary_id:
+                  type: string
+                  format: uuid
+                  description: Optional vocabulary item ID
+              required:
+                - audio
+                - target_text
+      responses:
+        '200':
+          description: Pronunciation assessed successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/PronunciationAssessment'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+
+  # Sermon Writing Tools
+  /sermons/drafts:
+    get:
+      tags: [Sermons]
+      summary: Get user's sermon drafts
+      parameters:
+        - name: status
+          in: query
+          schema:
+            type: string
+            enum: [draft, review, completed]
+        - name: page
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 50
+            default: 10
+      responses:
+        '200':
+          description: Sermon drafts retrieved successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        type: object
+                        properties:
+                          drafts:
+                            type: array
+                            items:
+                              $ref: '#/components/schemas/SermonDraft'
+                          pagination:
+                            $ref: '#/components/schemas/Pagination'
+
+    post:
+      tags: [Sermons]
+      summary: Create new sermon draft
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SermonDraftCreate'
+      responses:
+        '201':
+          description: Sermon draft created successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/SermonDraft'
+
+  /sermons/drafts/{draftId}:
+    get:
+      tags: [Sermons]
+      summary: Get specific sermon draft
+      parameters:
+        - name: draftId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Sermon draft retrieved successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/SermonDraftDetail'
+
+    put:
+      tags: [Sermons]
+      summary: Update sermon draft
+      parameters:
+        - name: draftId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SermonDraftUpdate'
+      responses:
+        '200':
+          description: Sermon draft updated successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/SermonDraftDetail'
+
+  /sermons/analyze:
+    post:
+      tags: [Sermons]
+      summary: Analyze sermon text
+      description: Get AI analysis of Hungarian sermon text for grammar, style, and theological accuracy
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/TextAnalysisRequest'
+      responses:
+        '200':
+          description: Text analysis completed successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/TextAnalysisResult'
+
+  # Audio Content
+  /audio/{audioId}:
+    get:
+      tags: [Audio]
+      summary: Get audio file
+      parameters:
+        - name: audioId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+        - name: quality
+          in: query
+          schema:
+            type: string
+            enum: [high, medium, low]
+            default: medium
+      responses:
+        '200':
+          description: Audio file retrieved successfully
+          content:
+            audio/opus:
+              schema:
+                type: string
+                format: binary
+            audio/mpeg:
+              schema:
+                type: string
+                format: binary
+            audio/wav:
+              schema:
+                type: string
+                format: binary
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  # Search
+  /search:
+    get:
+      tags: [Search]
+      summary: Search across content
+      parameters:
+        - name: q
+          in: query
+          required: true
+          description: Search query
+          schema:
+            type: string
+            minLength: 1
+        - name: type
+          in: query
+          description: Content type to search
+          schema:
+            type: string
+            enum: [vocabulary, lessons, sermons, all]
+            default: all
+        - name: cefr_level
+          in: query
+          schema:
+            type: string
+            enum: [A1, A2, B1, B2]
+        - name: page
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 50
+            default: 20
+      responses:
+        '200':
+          description: Search results retrieved successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/SearchResults'
+
+  # Offline Synchronization
+  /sync:
+    post:
+      tags: [Sync]
+      summary: Synchronize offline data
+      description: Upload offline changes and resolve conflicts
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SyncRequest'
+      responses:
+        '200':
+          description: Synchronization completed successfully
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiResponse'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/SyncResponse'
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    # Common Schemas
+    ApiResponse:
+      type: object
+      required:
+        - success
+        - message
+        - timestamp
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+        request_id:
+          type: string
+          format: uuid
+
+    Pagination:
+      type: object
+      properties:
+        page:
+          type: integer
+          minimum: 1
+        limit:
+          type: integer
+          minimum: 1
+        total_pages:
+          type: integer
+          minimum: 0
+        total_items:
+          type: integer
+          minimum: 0
+        has_next:
+          type: boolean
+        has_previous:
+          type: boolean
+
+    # User Management Schemas
+    UserRegistration:
+      type: object
+      required:
+        - email
+        - password
+        - full_name
+        - current_cefr_level
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+          minLength: 8
+        full_name:
+          type: string
+          minLength: 2
+          maxLength: 100
+        current_cefr_level:
+          type: string
+          enum: [A1, A2, B1, B2]
+        learning_goal:
+          type: string
+          default: sermon_writing
+        ministry_background:
+          type: string
+        timezone:
+          type: string
+          default: Asia/Seoul
+
+    LoginRequest:
+      type: object
+      required:
+        - email
+        - password
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+        remember_me:
+          type: boolean
+          default: false
+
+    LoginResponse:
+      type: object
+      properties:
+        access_token:
+          type: string
+        refresh_token:
+          type: string
+        expires_in:
+          type: integer
+        user:
+          $ref: '#/components/schemas/User'
+
+    User:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        email:
+          type: string
+          format: email
+        full_name:
+          type: string
+        current_cefr_level:
+          type: string
+          enum: [A1, A2, B1, B2]
+        learning_goal:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        premium_until:
+          type: string
+          format: date-time
+          nullable: true
+
+    UserProfile:
+      allOf:
+        - $ref: '#/components/schemas/User'
+        - type: object
+          properties:
+            ministry_background:
+              type: string
+            hungarian_experience_years:
+              type: integer
+            study_time_preference:
+              type: integer
+            notification_settings:
+              type: object
+            accessibility_settings:
+              type: object
+            current_streak:
+              type: integer
+            total_study_time:
+              type: integer
+            last_login:
+              type: string
+              format: date-time
+
+    UserProfileUpdate:
+      type: object
+      properties:
+        full_name:
+          type: string
+        ministry_background:
+          type: string
+        study_time_preference:
+          type: integer
+          minimum: 5
+          maximum: 240
+        notification_settings:
+          type: object
+        accessibility_settings:
+          type: object
+
+    # Progress Tracking Schemas
+    UserProgress:
+      type: object
+      properties:
+        overall_progress:
+          type: object
+          properties:
+            current_cefr_level:
+              type: string
+              enum: [A1, A2, B1, B2]
+            completion_percentage:
+              type: number
+              format: float
+              minimum: 0
+              maximum: 100
+        skill_breakdown:
+          type: object
+          properties:
+            reading:
+              $ref: '#/components/schemas/SkillProgress'
+            writing:
+              $ref: '#/components/schemas/SkillProgress'
+            speaking:
+              $ref: '#/components/schemas/SkillProgress'
+            listening:
+              $ref: '#/components/schemas/SkillProgress'
+        recent_activity:
+          type: array
+          items:
+            $ref: '#/components/schemas/ActivitySummary'
+        streak_info:
+          type: object
+          properties:
+            current_streak:
+              type: integer
+            max_streak:
+              type: integer
+            last_study_date:
+              type: string
+              format: date
+
+    SkillProgress:
+      type: object
+      properties:
+        cefr_level:
+          type: string
+          enum: [A1, A2, B1, B2]
+        progress_percentage:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 100
+        confidence_score:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 1
+        last_assessment:
+          type: string
+          format: date-time
+        strengths:
+          type: array
+          items:
+            type: string
+        areas_for_improvement:
+          type: array
+          items:
+            type: string
+
+    ActivitySummary:
+      type: object
+      properties:
+        date:
+          type: string
+          format: date
+        activity_type:
+          type: string
+          enum: [lesson, vocabulary_review, pronunciation_practice, sermon_writing]
+        duration_minutes:
+          type: integer
+        items_completed:
+          type: integer
+        average_score:
+          type: number
+          format: float
+
+    ProgressUpdate:
+      type: object
+      required:
+        - lesson_id
+        - completion_percentage
+        - time_spent_minutes
+      properties:
+        lesson_id:
+          type: string
+          format: uuid
+        completion_percentage:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 100
+        time_spent_minutes:
+          type: integer
+          minimum: 0
+        exercise_scores:
+          type: object
+          additionalProperties:
+            type: number
+            format: float
+        skill_assessments:
+          type: object
+          additionalProperties:
+            type: number
+            format: float
+
+    # Lesson Content Schemas
+    Lesson:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        title:
+          $ref: '#/components/schemas/MultilingualText'
+        description:
+          $ref: '#/components/schemas/MultilingualText'
+        cefr_level:
+          type: string
+          enum: [A1, A2, B1, B2]
+        lesson_type:
+          type: string
+          enum: [vocabulary, grammar, speaking, writing, reading, listening]
+        religious_focus:
+          type: boolean
+        estimated_duration_minutes:
+          type: integer
+        difficulty_score:
+          type: integer
+          minimum: 1
+          maximum: 10
+        prerequisites_met:
+          type: boolean
+        completion_status:
+          type: string
+          enum: [not_started, in_progress, completed]
+        tags:
+          type: array
+          items:
+            type: string
+
+    LessonDetail:
+      allOf:
+        - $ref: '#/components/schemas/Lesson'
+        - type: object
+          properties:
+            content_sections:
+              type: array
+              items:
+                $ref: '#/components/schemas/ContentSection'
+            exercises:
+              type: array
+              items:
+                $ref: '#/components/schemas/Exercise'
+            vocabulary_introduced:
+              type: array
+              items:
+                $ref: '#/components/schemas/VocabularyItem'
+
+    ContentSection:
+      type: object
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+          enum: [text, audio, video, interactive]
+        title:
+          type: string
+        content:
+          type: object
+        order:
+          type: integer
+        optional:
+          type: boolean
+
+    Exercise:
+      type: object
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+          enum: [multiple_choice, fill_blank, pronunciation, composition, matching]
+        instructions:
+          $ref: '#/components/schemas/MultilingualText'
+        content:
+          type: object
+        points:
+          type: integer
+        time_limit_seconds:
+          type: integer
+        difficulty:
+          type: integer
+          minimum: 1
+          maximum: 10
+
+    MultilingualText:
+      type: object
+      properties:
+        korean:
+          type: string
+        hungarian:
+          type: string
+
+    # Vocabulary Schemas
+    VocabularyItem:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        hungarian:
+          type: string
+        korean:
+          type: string
+        english:
+          type: string
+        pronunciation:
+          type: object
+          properties:
+            ipa:
+              type: string
+            hangul_approximation:
+              type: string
+        part_of_speech:
+          type: string
+        cefr_level:
+          type: string
+          enum: [A1, A2, B1, B2]
+        religious_context:
+          type: boolean
+        category:
+          type: string
+        examples:
+          type: array
+          items:
+            $ref: '#/components/schemas/VocabularyExample'
+        audio_files:
+          type: array
+          items:
+            $ref: '#/components/schemas/AudioReference'
+        difficulty_factors:
+          type: object
+          properties:
+            pronunciation_difficulty:
+              type: integer
+              minimum: 1
+              maximum: 10
+            grammatical_complexity:
+              type: integer
+              minimum: 1
+              maximum: 10
+        user_progress:
+          $ref: '#/components/schemas/VocabularyProgress'
+
+    VocabularyExample:
+      type: object
+      properties:
+        hungarian:
+          type: string
+        korean:
+          type: string
+        context:
+          type: string
+          enum: [formal, informal, religious, academic]
+        audio_id:
+          type: string
+          format: uuid
+
+    VocabularyProgress:
+      type: object
+      properties:
+        mastery_level:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 1
+        review_count:
+          type: integer
+        correct_count:
+          type: integer
+        last_reviewed:
+          type: string
+          format: date-time
+        next_review:
+          type: string
+          format: date-time
+        ease_factor:
+          type: number
+          format: float
+        stability_days:
+          type: number
+          format: float
+        difficulty:
+          type: number
+          format: float
+
+    VocabularyReview:
+      allOf:
+        - $ref: '#/components/schemas/VocabularyItem'
+        - type: object
+          properties:
+            review_type:
+              type: string
+              enum: [recognition, recall, pronunciation]
+            time_since_last_review:
+              type: integer
+              description: Hours since last review
+
+    VocabularyReviewSubmission:
+      type: object
+      required:
+        - quality_rating
+        - response_time_ms
+      properties:
+        quality_rating:
+          type: integer
+          minimum: 1
+          maximum: 5
+          description: User's self-assessment of recall quality
+        response_time_ms:
+          type: integer
+          minimum: 0
+        correct:
+          type: boolean
+        user_answer:
+          type: string
+        review_notes:
+          type: string
+
+    # Pronunciation Assessment Schemas
+    PronunciationAssessment:
+      type: object
+      properties:
+        overall_score:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 100
+        phoneme_scores:
+          type: array
+          items:
+            $ref: '#/components/schemas/PhonemeScore'
+        feedback:
+          type: object
+          properties:
+            strengths:
+              type: array
+              items:
+                type: string
+            improvements:
+              type: array
+              items:
+                type: string
+            specific_tips:
+              type: array
+              items:
+                type: string
+        confidence:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 1
+        processing_time_ms:
+          type: integer
+
+    PhonemeScore:
+      type: object
+      properties:
+        phoneme:
+          type: string
+        position:
+          type: integer
+        score:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 100
+        expected:
+          type: string
+        actual:
+          type: string
+        advice:
+          type: string
+
+    # Sermon Writing Schemas
+    SermonDraft:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        title:
+          type: string
+        content:
+          type: string
+        status:
+          type: string
+          enum: [draft, review, completed]
+        biblical_reference:
+          type: string
+        language:
+          type: string
+          enum: [ko, hu]
+        word_count:
+          type: integer
+        estimated_reading_time:
+          type: integer
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+
+    SermonDraftDetail:
+      allOf:
+        - $ref: '#/components/schemas/SermonDraft'
+        - type: object
+          properties:
+            ai_analysis:
+              $ref: '#/components/schemas/TextAnalysisResult'
+            revision_history:
+              type: array
+              items:
+                $ref: '#/components/schemas/SermonRevision'
+            mentor_feedback:
+              $ref: '#/components/schemas/MentorFeedback'
+
+    SermonDraftCreate:
+      type: object
+      required:
+        - title
+        - language
+      properties:
+        title:
+          type: string
+          minLength: 1
+          maxLength: 200
+        biblical_reference:
+          type: string
+        language:
+          type: string
+          enum: [ko, hu]
+        initial_content:
+          type: string
+
+    SermonDraftUpdate:
+      type: object
+      properties:
+        title:
+          type: string
+        content:
+          type: string
+        biblical_reference:
+          type: string
+        status:
+          type: string
+          enum: [draft, review, completed]
+
+    SermonRevision:
+      type: object
+      properties:
+        version:
+          type: integer
+        content:
+          type: string
+        changes_summary:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+        change_type:
+          type: string
+          enum: [grammar, content, structure, vocabulary]
+
+    MentorFeedback:
+      type: object
+      properties:
+        mentor_id:
+          type: string
+          format: uuid
+        feedback:
+          type: string
+        score:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 100
+        created_at:
+          type: string
+          format: date-time
+
+    # Text Analysis Schemas
+    TextAnalysisRequest:
+      type: object
+      required:
+        - text
+        - language
+      properties:
+        text:
+          type: string
+          minLength: 10
+        language:
+          type: string
+          enum: [hu, ko]
+        analysis_type:
+          type: array
+          items:
+            type: string
+            enum: [grammar, vocabulary, style, theological_accuracy]
+        context:
+          type: string
+          enum: [sermon, prayer, academic, general]
+
+    TextAnalysisResult:
+      type: object
+      properties:
+        grammar_score:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 100
+        vocabulary_level:
+          type: string
+          enum: [A1, A2, B1, B2]
+        complexity_score:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 10
+        naturalness_score:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 100
+        theological_accuracy:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 100
+        grammar_errors:
+          type: array
+          items:
+            $ref: '#/components/schemas/GrammarError'
+        vocabulary_suggestions:
+          type: array
+          items:
+            $ref: '#/components/schemas/VocabularySuggestion'
+        style_feedback:
+          type: object
+          properties:
+            tone:
+              type: string
+            formality_level:
+              type: string
+            recommendations:
+              type: array
+              items:
+                type: string
+
+    GrammarError:
+      type: object
+      properties:
+        position:
+          type: integer
+        length:
+          type: integer
+        message:
+          type: string
+        suggestions:
+          type: array
+          items:
+            type: string
+        error_type:
+          type: string
+        severity:
+          type: string
+          enum: [low, medium, high]
+
+    VocabularySuggestion:
+      type: object
+      properties:
+        position:
+          type: integer
+        original_word:
+          type: string
+        suggestions:
+          type: array
+          items:
+            type: object
+            properties:
+              word:
+                type: string
+              reason:
+                type: string
+              cefr_level:
+                type: string
+
+    # Search Schemas
+    SearchResults:
+      type: object
+      properties:
+        query:
+          type: string
+        total_results:
+          type: integer
+        search_time_ms:
+          type: integer
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/SearchResult'
+        suggestions:
+          type: array
+          items:
+            type: string
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+
+    SearchResult:
+      type: object
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+          enum: [vocabulary, lesson, sermon, audio]
+        title:
+          type: string
+        content_preview:
+          type: string
+        cefr_level:
+          type: string
+        relevance_score:
+          type: number
+          format: float
+        highlight:
+          type: object
+        url:
+          type: string
+
+    # Audio Schemas
+    AudioReference:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        duration_seconds:
+          type: number
+          format: float
+        speaker_gender:
+          type: string
+          enum: [male, female]
+        speaker_region:
+          type: string
+        quality:
+          type: string
+          enum: [high, medium, low]
+        file_size_bytes:
+          type: integer
+
+    # Sync Schemas
+    SyncRequest:
+      type: object
+      properties:
+        last_sync_timestamp:
+          type: string
+          format: date-time
+        client_changes:
+          type: array
+          items:
+            $ref: '#/components/schemas/OfflineChange'
+        conflict_resolution_preferences:
+          type: object
+
+    SyncResponse:
+      type: object
+      properties:
+        sync_timestamp:
+          type: string
+          format: date-time
+        server_changes:
+          type: array
+          items:
+            $ref: '#/components/schemas/ServerChange'
+        conflicts:
+          type: array
+          items:
+            $ref: '#/components/schemas/DataConflict'
+        sync_summary:
+          type: object
+          properties:
+            items_synced:
+              type: integer
+            conflicts_resolved:
+              type: integer
+            errors:
+              type: integer
+
+    OfflineChange:
+      type: object
+      properties:
+        id:
+          type: string
+        entity_type:
+          type: string
+        entity_id:
+          type: string
+        operation:
+          type: string
+          enum: [create, update, delete]
+        data:
+          type: object
+        timestamp:
+          type: string
+          format: date-time
+        checksum:
+          type: string
+
+    ServerChange:
+      type: object
+      properties:
+        entity_type:
+          type: string
+        entity_id:
+          type: string
+        operation:
+          type: string
+          enum: [create, update, delete]
+        data:
+          type: object
+        version:
+          type: integer
+        timestamp:
+          type: string
+          format: date-time
+
+    DataConflict:
+      type: object
+      properties:
+        entity_type:
+          type: string
+        entity_id:
+          type: string
+        client_version:
+          type: object
+        server_version:
+          type: object
+        recommended_resolution:
+          type: string
+          enum: [use_client, use_server, merge]
+
+  responses:
+    BadRequest:
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '#/components/schemas/ApiResponse'
+              - type: object
+                properties:
+                  error:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                      details:
+                        type: array
+                        items:
+                          type: string
+
+    Unauthorized:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '#/components/schemas/ApiResponse'
+              - type: object
+                properties:
+                  error:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                        example: "UNAUTHORIZED"
+                      message:
+                        type: string
+                        example: "Invalid or expired token"
+
+    Forbidden:
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '#/components/schemas/ApiResponse'
+              - type: object
+                properties:
+                  error:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                        example: "FORBIDDEN"
+
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '#/components/schemas/ApiResponse'
+              - type: object
+                properties:
+                  error:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                        example: "NOT_FOUND"
+
+    Conflict:
+      description: Conflict
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '#/components/schemas/ApiResponse'
+              - type: object
+                properties:
+                  error:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                        example: "CONFLICT"
+
+    TooManyRequests:
+      description: Too many requests
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '#/components/schemas/ApiResponse'
+              - type: object
+                properties:
+                  error:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                        example: "RATE_LIMIT_EXCEEDED"
+                      retry_after:
+                        type: integer
+
+    InternalServerError:
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '#/components/schemas/ApiResponse'
+              - type: object
+                properties:
+                  error:
+                    type: object
+                    properties:
+                      code:
+                        type: string
+                        example: "INTERNAL_ERROR"
+                      request_id:
+                        type: string
+                        format: uuid
+
+tags:
+  - name: Authentication
+    description: User registration and authentication
+  - name: Users
+    description: User profile management
+  - name: Progress
+    description: Learning progress tracking and analytics
+  - name: Lessons
+    description: Lesson content and structure
+  - name: Vocabulary
+    description: Vocabulary management and spaced repetition
+  - name: Pronunciation
+    description: Real-time pronunciation assessment
+  - name: Sermons
+    description: Sermon writing tools and analysis
+  - name: Audio
+    description: Audio content delivery
+  - name: Search
+    description: Content search and discovery
+  - name: Sync
+    description: Offline synchronization

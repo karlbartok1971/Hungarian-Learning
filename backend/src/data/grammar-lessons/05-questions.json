@@ -1,0 +1,136 @@
+{
+  "id": "grammar-a1-05",
+  "title": "의문문 만들기",
+  "level": "A1",
+  "category": "문장구조",
+  "order": 5,
+  "estimatedDuration": 40,
+  "difficulty": 1,
+  "tags": ["의문문", "질문", "의문사", "yes/no 질문"],
+
+  "summary": "헝가리어로 질문하는 두 가지 방법을 배웁니다: Yes/No 질문과 의문사 질문. 영어와 달리 어순이 바뀌지 않습니다!",
+
+  "objectives": [
+    "Yes/No 질문을 만들 수 있다 (-e 사용)",
+    "주요 의문사를 알고 사용할 수 있다",
+    "질문의 억양과 어순을 이해한다"
+  ],
+
+  "content": {
+    "introduction": {
+      "text": "헝가리어 질문은 영어보다 간단합니다! 어순을 바꿀 필요 없이, -e 어미를 붙이거나 의문사를 문장 앞에 놓으면 됩니다.",
+      "keyPoints": [
+        "Yes/No 질문 = 동사 + -e",
+        "의문사 질문 = 의문사 + 평서문 어순",
+        "억양으로도 질문 가능"
+      ]
+    },
+
+    "explanation": {
+      "steps": [
+        {
+          "title": "1단계: Yes/No 질문 (-e)",
+          "content": "대답이 '예/아니오'인 질문은 동사에 -e를 붙입니다.",
+          "examples": [
+            {
+              "statement": "Olvasol. (너는 읽는다.)",
+              "question": "Olvasol-e? (너는 읽니?)",
+              "answer": "Igen. / Nem. (예 / 아니오)"
+            },
+            {
+              "statement": "Szereted a kávét. (너는 커피를 좋아한다.)",
+              "question": "Szereted-e a kávét? (너는 커피를 좋아하니?)",
+              "answer": "Igen, szeretem. (예, 좋아해요.)"
+            },
+            {
+              "statement": "Imádkozol. (너는 기도한다.)",
+              "question": "Imádkozol-e? (너는 기도하니?)",
+              "answer": "Igen, imádkozom. (예, 기도해요.)"
+            }
+          ],
+          "note": "-e는 동사 뒤에 하이픈으로 붙입니다"
+        },
+        {
+          "title": "2단계: 주요 의문사",
+          "content": "가장 자주 사용하는 의문사들",
+          "questionWords": [
+            {"word": "Ki?", "meaning": "누구?", "example": "Ki vagy? (너는 누구니?)"},
+            {"word": "Mi?", "meaning": "무엇?", "example": "Mi ez? (이것은 무엇?)"},
+            {"word": "Hol?", "meaning": "어디? (장소)", "example": "Hol vagy? (너는 어디 있니?)"},
+            {"word": "Mikor?", "meaning": "언제?", "example": "Mikor jössz? (언제 오니?)"},
+            {"word": "Miért?", "meaning": "왜?", "example": "Miért sírsz? (왜 우니?)"},
+            {"word": "Hogyan?", "meaning": "어떻게?", "example": "Hogyan vagy? (어떻게 지내?)"},
+            {"word": "Hány?", "meaning": "몇? (개수)", "example": "Hány éves vagy? (몇 살이니?)"},
+            {"word": "Mennyi?", "meaning": "얼마? (양)", "example": "Mennyi? (얼마예요?)"}
+          ]
+        },
+        {
+          "title": "3단계: 의문사 질문 어순",
+          "content": "의문사를 문장 맨 앞에 놓고, 나머지는 평서문 어순 그대로!",
+          "examples": [
+            {"hungarian": "Ki vagy?", "korean": "너는 누구니?", "breakdown": "Ki (누구) + vagy (너는-이다)"},
+            {"hungarian": "Mit csinálsz?", "korean": "너는 무엇을 하니?", "breakdown": "Mi-t (무엇을) + csinál-sz (하다-너는)"},
+            {"hungarian": "Hol van a templom?", "korean": "교회가 어디 있나요?", "breakdown": "Hol (어디) + van (있다) + a templom (그 교회)"},
+            {"hungarian": "Mikor jön Jézus?", "korean": "예수님은 언제 오시나요?", "breakdown": "Mikor (언제) + jön (온다) + Jézus (예수)"},
+            {"hungarian": "Miért sírsz?", "korean": "왜 우니?", "breakdown": "Miért (왜) + sír-sz (울다-너는)"}
+          ]
+        }
+      ]
+    },
+
+    "examples": [
+      {
+        "category": "일상 질문",
+        "items": [
+          {"hungarian": "Hogy vagy?", "korean": "어떻게 지내? / 잘 지내?"},
+          {"hungarian": "Hol laksz?", "korean": "어디 사니?"},
+          {"hungarian": "Mit csinálsz?", "korean": "뭐 하니?"},
+          {"hungarian": "Beszélsz magyarul?", "korean": "헝가리어 하니?"},
+          {"hungarian": "Szereted-e a kávét?", "korean": "커피 좋아하니?"}
+        ]
+      },
+      {
+        "category": "종교적 질문",
+        "items": [
+          {"hungarian": "Hiszel-e Istenben?", "korean": "하나님을 믿니?"},
+          {"hungarian": "Ki Jézus?", "korean": "예수님은 누구신가?"},
+          {"hungarian": "Hol van a templom?", "korean": "교회가 어디 있나요?"},
+          {"hungarian": "Mikor imádkozol?", "korean": "언제 기도하니?"},
+          {"hungarian": "Miért szenvedett Jézus?", "korean": "예수님은 왜 고난받으셨나?"}
+        ]
+      },
+      {
+        "category": "설교에서 사용하는 수사적 질문",
+        "items": [
+          {"hungarian": "Ki teremtette a világot?", "korean": "누가 세상을 창조했는가?"},
+          {"hungarian": "Mit keres Isten tőlünk?", "korean": "하나님은 우리에게 무엇을 원하시는가?"},
+          {"hungarian": "Hol van a szeretet?", "korean": "사랑은 어디 있는가?"}
+        ]
+      }
+    ],
+
+    "commonMistakes": [
+      {"mistake": "❌ Vagy ki? (영어 어순)", "correction": "✅ Ki vagy?", "explanation": "의문사가 맨 앞"},
+      {"mistake": "❌ Szereted a kávé? (대격 누락)", "correction": "✅ Szereted a kávét? 또는 Szereted-e a kávét?", "explanation": "목적어에 대격 필요"}
+    ],
+
+    "practiceExercises": [
+      {
+        "type": "transform",
+        "instruction": "평서문을 질문으로 바꾸세요",
+        "questions": [
+          {
+            "statement": "Olvasol.",
+            "answer": "Olvasol-e? / Olvasol?",
+            "explanation": "-e를 붙이거나 억양으로"
+          },
+          {
+            "statement": "Te vagy Péter.",
+            "answer": "Ki vagy?",
+            "explanation": "Péter → Ki (누구)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+# HuSpaCy 헝가리어 NLP 처리를 위한 Python 의존성
+spacy>=3.7.0
+hu-core-news-lg>=3.7.0
+fastapi>=0.104.0
+uvicorn>=0.24.0
+pydantic>=2.5.0
+requests>=2.31.0
+
+# 추가 NLP 도구들
+langdetect>=1.0.9
+polyglot>=16.07.04
+pyicu>=2.11
+
+# 헝가리어 특화 도구
+hungarian-stemmer>=1.0.0
+
+# API 통신
+httpx>=0.25.0
+aiofiles>=23.2.1
+
+# 유틸리티
+python-dotenv>=1.0.0
+loguru>=0.7.2
