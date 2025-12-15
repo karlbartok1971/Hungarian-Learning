@@ -60,7 +60,7 @@ const GrammarLessonDetailPage = () => {
   const fetchLesson = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`http://localhost:3001/api/grammar-lessons/${id}`);
+      const response = await fetch(`http://localhost:3901/api/grammar-lessons/${id}`);
 
       if (!response.ok) {
         throw new Error('강의를 불러오는데 실패했습니다');

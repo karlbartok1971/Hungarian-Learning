@@ -45,7 +45,7 @@ const A1GrammarPage = () => {
   const fetchLessons = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:3001/api/grammar-lessons?level=A1');
+      const response = await fetch('http://localhost:3901/api/grammar-lessons?level=A1');
 
       if (!response.ok) {
         throw new Error('문법 강의를 불러오는데 실패했습니다');

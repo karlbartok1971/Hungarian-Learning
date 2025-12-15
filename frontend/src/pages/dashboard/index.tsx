@@ -137,10 +137,10 @@ const DashboardPage = () => {
       setLoading(true);
 
       const [statsRes, activitiesRes, recommendationsRes, achievementsRes] = await Promise.all([
-        fetch('http://localhost:3001/api/dashboard/stats'),
-        fetch('http://localhost:3001/api/dashboard/recent-activities'),
-        fetch('http://localhost:3001/api/dashboard/recommendations'),
-        fetch('http://localhost:3001/api/dashboard/achievements'),
+        fetch('http://localhost:3901/api/dashboard/stats'),
+        fetch('http://localhost:3901/api/dashboard/recent-activities'),
+        fetch('http://localhost:3901/api/dashboard/recommendations'),
+        fetch('http://localhost:3901/api/dashboard/achievements'),
       ]);
 
       const [statsData, activitiesData, recommendationsData, achievementsData] = await Promise.all([

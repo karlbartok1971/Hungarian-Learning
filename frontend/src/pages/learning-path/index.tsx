@@ -72,7 +72,7 @@ const LearningPathPage = () => {
       setLoading(true);
 
       // TODO: 실제 API 연동 (현재는 Mock 데이터)
-      // const response = await fetch('http://localhost:3001/api/learning-path');
+      // const response = await fetch('http://localhost:3901/api/learning-path');
 
       // Mock 데이터
       const mockMyPaths: LearningPath[] = [

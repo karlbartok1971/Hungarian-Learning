@@ -46,7 +46,7 @@ export function VocabularyExplainer({ word, userLevel, compact = false }: Vocabu
     setLoadingTabs((prev) => new Set(prev).add(requestType));
 
     try {
-      const response = await fetch('http://localhost:3001/api/ai-tutor/vocabulary-explain', {
+      const response = await fetch('http://localhost:3901/api/ai-tutor/vocabulary-explain', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
