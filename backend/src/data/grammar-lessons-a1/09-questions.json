@@ -1,0 +1,224 @@
+{
+  "level": "A1",
+  "orderIndex": 9,
+  "titleKorean": "의문문 만들기 - 질문하는 방법",
+  "titleHungarian": "Kérdéses mondatok",
+  "explanationKorean": "헝가리어에서 질문을 만드는 방법은 크게 두 가지입니다. 첫째, 의문사(ki, mi, hol, mikor 등)를 사용하는 방법이고, 둘째, 문장 끝에 -e를 붙여서 예/아니오 질문을 만드는 방법입니다. 이 강의에서는 A1 레벨의 기본 질문 만들기를 배웁니다.",
+  "explanationHungarian": "A magyar nyelvben kétféleképpen lehet kérdéseket feltenni: kérdőszavakkal vagy az -e utótaggal.",
+  "grammarRules": {
+    "rules": [
+      {
+        "title": "기본 의문사 (Kérdőszavak)",
+        "description": "가장 자주 쓰이는 의문사들입니다. 이들은 문장의 앞에 위치합니다.",
+        "pattern": "의문사 + 동사/형용사 + ...",
+        "examples": [
+          {
+            "hu": "Ki vagy?",
+            "ko": "넌 누구니?",
+            "context": "사람을 묻는 질문"
+          },
+          {
+            "hu": "Mi ez?",
+            "ko": "이게 뭐야?",
+            "context": "사물을 묻는 질문"
+          },
+          {
+            "hu": "Hol vagy?",
+            "ko": "넌 어디에 있니?",
+            "context": "위치를 묻는 질문"
+          }
+        ]
+      },
+      {
+        "title": "예/아니오 질문 (-e 붙이기)",
+        "description": "진술문을 의문문으로 만들 때는 문장 끝에 -e를 붙입니다. 모음조화를 따릅니다.",
+        "pattern": "진술문 + -e",
+        "examples": [
+          {
+            "hu": "Te vagy Péter? (Are you Peter?)",
+            "ko": "넌 페테르니?",
+            "context": "진술을 질문으로 변환"
+          },
+          {
+            "hu": "A ház nagy-e?",
+            "ko": "집이 크니?",
+            "context": "-e 붙임"
+          },
+          {
+            "hu": "Szereted a kávét?",
+            "ko": "넌 커피를 좋아하니?",
+            "context": "-e 붙임 (모음 뒤)"
+          }
+        ]
+      },
+      {
+        "title": "주요 의문사 목록",
+        "description": "A1 레벨에서 배워야 할 가장 중요한 의문사들입니다.",
+        "pattern": "의문사 + 문장",
+        "examples": [
+          {
+            "hu": "Mikor jössz? (When will you come?)",
+            "ko": "너 언제 와?",
+            "context": "시간을 묻는 질문"
+          },
+          {
+            "hu": "Hogyan vagy? (How are you?)",
+            "ko": "너 어때?",
+            "context": "상태를 묻는 질문"
+          },
+          {
+            "hu": "Mennyit? (How much?)",
+            "ko": "얼마나?",
+            "context": "수량을 묻는 질문"
+          }
+        ]
+      },
+      {
+        "title": "의문사를 포함한 복잡한 문장",
+        "description": "격변화를 포함한 의문문 만들기입니다.",
+        "pattern": "의문사 + 동사 + 목적어(대격)",
+        "examples": [
+          {
+            "hu": "Mit eszesz?",
+            "ko": "넌 뭘 먹어?",
+            "context": "mit = mi의 대격형"
+          },
+          {
+            "hu": "Kihez meszel?",
+            "ko": "넌 누구에게 가?",
+            "context": "kihez = ki의 대향격형"
+          },
+          {
+            "hu": "Kitől kapod ezt?",
+            "ko": "넌 이걸 누구로부터 받아?",
+            "context": "kitől = ki의 출발격형"
+          }
+        ]
+      }
+    ]
+  },
+  "examples": [
+    {
+      "hu": "Ki vagy?",
+      "ko": "넌 누구니?",
+      "context": "일상 - 인사",
+      "grammarPoint": "기본 의문사 ki"
+    },
+    {
+      "hu": "Hol bírsz?",
+      "ko": "넌 어디에 있니?",
+      "context": "일상 - 위치 질문",
+      "grammarPoint": "의문사 hol"
+    },
+    {
+      "hu": "Mit csinálsz?",
+      "ko": "넌 뭘 하고 있니?",
+      "context": "일상 - 활동 질문",
+      "grammarPoint": "mit (mi의 대격)"
+    },
+    {
+      "hu": "Mikor jössz haza?",
+      "ko": "넌 언제 집에 와?",
+      "context": "일상 - 시간 질문",
+      "grammarPoint": "의문사 mikor"
+    },
+    {
+      "hu": "Mennyibe kerül?",
+      "ko": "이게 얼마지?",
+      "context": "일상 - 가격 질문",
+      "grammarPoint": "의문사 mennyibe"
+    },
+    {
+      "hu": "Ki az Isten?",
+      "ko": "하나님은 누구신가?",
+      "context": "신학/설교",
+      "grammarPoint": "신학적 질문"
+    },
+    {
+      "hu": "Mi a szeretet?",
+      "ko": "사랑이 뭐지?",
+      "context": "신학/설교",
+      "grammarPoint": "추상 개념 질문"
+    },
+    {
+      "hu": "Hol van az Isten?",
+      "ko": "하나님은 어디에 계신가?",
+      "context": "신학/설교",
+      "grammarPoint": "신학적 위치 질문"
+    },
+    {
+      "hu": "Hogyan kell imádkozni?",
+      "ko": "어떻게 기도해야 하나?",
+      "context": "신학/설교",
+      "grammarPoint": "방법 질문"
+    },
+    {
+      "hu": "Miért szenvednek az emberek?",
+      "ko": "왜 사람들이 고통받지?",
+      "context": "신학/설교",
+      "grammarPoint": "이유 질문"
+    },
+    {
+      "hu": "Ki volt Jézus?",
+      "ko": "예수님은 누구셨나?",
+      "context": "성경 - 기독교 기본",
+      "grammarPoint": "성경인물 질문"
+    },
+    {
+      "hu": "Mit tanított az Úr?",
+      "ko": "주님은 뭘 가르치셨나?",
+      "context": "성경 - 예수님의 가르침",
+      "grammarPoint": "성경적 질문"
+    },
+    {
+      "hu": "Hol született Jézus?",
+      "ko": "예수님은 어디서 태어나셨나?",
+      "context": "성경 - 성탄절 이야기",
+      "grammarPoint": "위치 질문"
+    },
+    {
+      "hu": "Szép a nap?",
+      "ko": "날씨 좋지?",
+      "context": "일상",
+      "grammarPoint": "-e를 이용한 예/아니오 질문"
+    },
+    {
+      "hu": "Szereted a templomot?",
+      "ko": "넌 교회를 좋아하니?",
+      "context": "신학/설교",
+      "grammarPoint": "-e를 이용한 질문"
+    }
+  ],
+  "koreanInterferenceNotes": "한국인 학습자 주의사항:\n\n1. **의문사의 위치**: 한국어는 의문사가 문장 어디든 올 수 있지만, 헝가리어는 거의 항상 문장 맨 앞에 옵니다.\n   - 한국어: '넌 뭘 먹어?' = '먹어 뭘?' (둘 다 자연스러움)\n   - 헝가리어: Mit eszesz? (의문사는 항상 맨 앞)\n\n2. **-e 붙이기**: 한국어에는 없는 개념입니다. 헝가리어에서는 진술문을 질문으로 바꿀 때 문장 끝에 -e를 붙입니다.\n   - 진술: A ház nagy (집은 크다)\n   - 질문: A ház nagy-e? (집이 크니?)\n\n3. **의문사의 격변화**: 의문사도 대격, 여격 등으로 변합니다.\n   - ki (누구) → kit (누구를), kinek (누구에게), kitől (누구로부터)\n   - mi (뭐) → mit (뭘), minek (뭐를 위해), mitől (뭐로부터)\n   - 한국어에는 이런 변화가 없습니다!\n\n4. **주의**: -e 붙일 때 모음이 있으면 -e, 자음이 있으면 -e를 붙입니다 (한국인에게는 헷갈릴 수 있습니다).\n\n**암기 팁**: 의문사 = '질문의 화살표(?)'. 헝가리어에서는 항상 맨 앞에 와서 '이 문장은 질문입니다'라고 알려줍니다!",
+  "commonMistakes": [
+    {
+      "mistake": "Te Ki vagy?",
+      "correct": "Ki vagy?",
+      "explanation": "의문사는 문장의 맨 앞에만 와야 합니다. 주어 대명사 뒤에 올 수 없습니다."
+    },
+    {
+      "mistake": "Szereted a kávé?",
+      "correct": "Szereted a kávét?",
+      "explanation": "질문이 아닐 때도 대격을 사용해야 합니다. -e는 질문을 만드는 것이지 대격을 대체하는 게 아닙니다."
+    },
+    {
+      "mistake": "Mit az eredmény?",
+      "correct": "Mi az eredmény?",
+      "explanation": "술어 자리에는 기본형(mi)을 사용합니다. mit는 목적어일 때만 사용합니다."
+    }
+  ],
+  "comparisonWithKorean": "한국어 vs 헝가리어 질문:\n\n의문사 위치:\n- 한국어: '뭘 먹어?', '먹어 뭘?' (유연함)\n- 헝가리어: 'Mit eszesz?' (항상 맨 앞)\n\n예/아니오 질문:\n- 한국어: '넌 먹어?' (음성 어조)\n- 헝가리어: 'Eszel-e?' (-e 붙임)\n\n의문사 격변화:\n- 한국어: '누구를', '누구에게' (조사로 표현)\n- 헝가리어: 'kit', 'kinek' (의문사 자체가 변함)",
+  "estimatedDuration": 35,
+  "difficultyScore": 2,
+  "prerequisites": ["01-nouns-basics", "02-nominative-accusative"],
+  "tags": ["의문문", "의문사", "질문", "기초문법", "중요"],
+  "theologicalRelevance": true,
+  "theologicalExamples": [
+    "Ki az Isten? (하나님은 누구신가?)",
+    "Mi a szeretet? (사랑이 뭐지?)",
+    "Hol van az Isten? (하나님은 어디에 계신가?)",
+    "Miért kell imádkozni? (왜 기도해야 하나?)",
+    "Mit tanított az Úr? (주님은 뭘 가르치셨나?)"
+  ],
+  "isPublished": true
+}

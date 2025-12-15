@@ -1,0 +1,223 @@
+{
+  "level": "A1",
+  "orderIndex": 4,
+  "titleKorean": "관사 사용법 - a와 az의 모든 것",
+  "titleHungarian": "A határozott névelő használata",
+  "explanationKorean": "헝가리어에는 정관사(the) a/az가 있지만, 영어처럼 부정관사(a/an)는 egy(하나)를 사용합니다. 관사 사용은 매우 중요하며, 특히 a와 az의 구분이 핵심입니다!",
+  "explanationHungarian": "A magyar nyelvben a határozott névelő 'a' vagy 'az' alakban szerepel, a következő szó kezdőhangjától függően.",
+  "grammarRules": {
+    "rules": [
+      {
+        "title": "정관사 a/az (영어의 the)",
+        "description": "특정한 것을 가리킬 때 사용합니다. 뒤에 오는 단어의 첫 글자에 따라 a 또는 az를 선택합니다.",
+        "pattern": "자음으로 시작 → a / 모음으로 시작 → az",
+        "examples": [
+          {
+            "hu": "a ház",
+            "ko": "그 집",
+            "context": "h는 자음 → a 사용"
+          },
+          {
+            "hu": "az ember",
+            "ko": "그 사람",
+            "context": "e는 모음 → az 사용"
+          },
+          {
+            "hu": "az Isten",
+            "ko": "하나님 (그 하나님)",
+            "context": "I는 모음 → az 사용"
+          }
+        ]
+      },
+      {
+        "title": "부정관사 egy (영어의 a/an)",
+        "description": "'하나의, 어떤'을 의미하며, 숫자 1(egy)과 같은 형태입니다.",
+        "pattern": "egy + 명사 (변화 없음)",
+        "examples": [
+          {
+            "hu": "egy ház",
+            "ko": "한 집, 어떤 집",
+            "context": "불특정한 집"
+          },
+          {
+            "hu": "egy ember",
+            "ko": "한 사람, 어떤 사람",
+            "context": "불특정한 사람"
+          },
+          {
+            "hu": "egy templom",
+            "ko": "한 교회, 어떤 교회",
+            "context": "불특정한 교회"
+          }
+        ]
+      },
+      {
+        "title": "관사 생략",
+        "description": "추상명사, 일반적 개념, 복수형에서 관사를 생략할 수 있습니다.",
+        "pattern": "관사 없이 명사만 사용",
+        "examples": [
+          {
+            "hu": "Isten szeretet.",
+            "ko": "하나님은 사랑이다.",
+            "context": "추상 명사 - 관사 없음"
+          },
+          {
+            "hu": "Emberek élnek itt.",
+            "ko": "사람들이 여기 산다.",
+            "context": "일반적 복수 - 관사 없음"
+          },
+          {
+            "hu": "Kenyeret eszem.",
+            "ko": "나는 빵을 먹는다.",
+            "context": "일반적 명사 - 관사 없음"
+          }
+        ]
+      },
+      {
+        "title": "고유명사와 관사",
+        "description": "고유명사는 일반적으로 관사 없이 사용하지만, 특정 경우 az를 붙입니다.",
+        "pattern": "Isten, Jézus (관사 없음) / az Úr (관사 있음)",
+        "examples": [
+          {
+            "hu": "Isten jó.",
+            "ko": "하나님은 선하시다.",
+            "context": "Isten은 관사 없이"
+          },
+          {
+            "hu": "az Úr",
+            "ko": "주님",
+            "context": "Úr는 az와 함께"
+          },
+          {
+            "hu": "Jézus Krisztus",
+            "ko": "예수 그리스도",
+            "context": "고유명사 - 관사 없음"
+          }
+        ]
+      }
+    ]
+  },
+  "examples": [
+    {
+      "hu": "A ház nagy.",
+      "ko": "그 집은 크다.",
+      "context": "일상",
+      "grammarPoint": "정관사 a (자음 앞)"
+    },
+    {
+      "hu": "Az ember olvas.",
+      "ko": "그 사람이 읽는다.",
+      "context": "일상",
+      "grammarPoint": "정관사 az (모음 앞)"
+    },
+    {
+      "hu": "Egy könyvet olvasok.",
+      "ko": "나는 책 한 권을 읽는다.",
+      "context": "일상",
+      "grammarPoint": "부정관사 egy"
+    },
+    {
+      "hu": "Az Úr az én pásztorom.",
+      "ko": "주님은 나의 목자이시다.",
+      "context": "성경 - 시편 23:1",
+      "grammarPoint": "az Úr (주님)"
+    },
+    {
+      "hu": "Isten szeretet.",
+      "ko": "하나님은 사랑이시다.",
+      "context": "성경 - 요한일서 4:8",
+      "grammarPoint": "관사 생략 (추상명사)"
+    },
+    {
+      "hu": "A Biblia szent könyv.",
+      "ko": "성경은 거룩한 책이다.",
+      "context": "신학/설교",
+      "grammarPoint": "정관사 a"
+    },
+    {
+      "hu": "Az evangélium jó hír.",
+      "ko": "복음은 좋은 소식이다.",
+      "context": "신학/설교",
+      "grammarPoint": "정관사 az"
+    },
+    {
+      "hu": "Egy angyal jelent meg.",
+      "ko": "천사 한 명이 나타났다.",
+      "context": "성경",
+      "grammarPoint": "부정관사 egy"
+    },
+    {
+      "hu": "A hit ajándék.",
+      "ko": "믿음은 선물이다.",
+      "context": "신학/설교",
+      "grammarPoint": "정관사 a"
+    },
+    {
+      "hu": "Az Atya, a Fiú és a Szentlélek.",
+      "ko": "성부, 성자, 성령.",
+      "context": "신학 - 삼위일체",
+      "grammarPoint": "정관사 반복"
+    },
+    {
+      "hu": "Emberek Istent keresik.",
+      "ko": "사람들이 하나님을 찾는다.",
+      "context": "신학/설교",
+      "grammarPoint": "복수형 - 관사 없음"
+    },
+    {
+      "hu": "A templom csöndes.",
+      "ko": "교회는 조용하다.",
+      "context": "일상",
+      "grammarPoint": "정관사 a"
+    },
+    {
+      "hu": "Az ima erős.",
+      "ko": "기도는 강하다.",
+      "context": "신학/설교",
+      "grammarPoint": "정관사 az"
+    },
+    {
+      "hu": "Egy zsoltárt éneklek.",
+      "ko": "나는 시편 한 편을 노래한다.",
+      "context": "신학/설교",
+      "grammarPoint": "부정관사 egy"
+    },
+    {
+      "hu": "A kereszt jelképe a szeretetnek.",
+      "ko": "십자가는 사랑의 상징이다.",
+      "context": "신학/설교",
+      "grammarPoint": "정관사 a"
+    }
+  ],
+  "koreanInterferenceNotes": "한국인 학습자 주의사항:\n\n1. **한국어에는 관사가 없습니다!**\n   - 한국어: 집, 그 집, 어떤 집 (관사 개념 없음)\n   - 헝가리어: ház (집 일반), a ház (그 집), egy ház (어떤 집)\n\n2. **a vs az 구분이 중요합니다**:\n   - 뒤에 오는 단어의 '첫 소리'로 판단\n   - 자음 → a (a ház, a templom)\n   - 모음 → az (az ember, az Isten)\n   - 철자가 아니라 '발음'이 기준!\n\n3. **egy의 이중 의미**:\n   - 숫자: egy = 1 (하나)\n   - 부정관사: egy = a/an (어떤)\n   - 맥락으로 구분!\n\n4. **관사 생략 경우**:\n   - 추상 명사: szeretet (사랑), hit (믿음)\n   - 일반적 복수: emberek (사람들)\n   - 물질 명사: víz (물), kenyér (빵)\n\n5. **신학 용어 특별 규칙**:\n   - Isten (하나님) - 관사 없음\n   - az Úr (주님) - 관사 있음\n   - Jézus (예수님) - 관사 없음\n\n**암기 팁**: 'az'는 'an'처럼 모음 앞에서 사용한다고 기억하세요!",
+  "commonMistakes": [
+    {
+      "mistake": "a ember",
+      "correct": "az ember",
+      "explanation": "ember는 모음(e)으로 시작하므로 az를 씁니다."
+    },
+    {
+      "mistake": "az ház",
+      "correct": "a ház",
+      "explanation": "ház는 자음(h)으로 시작하므로 a를 씁니다."
+    },
+    {
+      "mistake": "az Isten",
+      "correct": "Isten",
+      "explanation": "Isten(하나님)은 보통 관사 없이 씁니다. 하지만 az Isten도 틀린 것은 아닙니다."
+    }
+  ],
+  "comparisonWithKorean": "관사 개념:\n- 한국어: 관사 없음 (그, 어떤 등으로 표현)\n- 영어: the (정관사), a/an (부정관사)\n- 헝가리어: a/az (정관사), egy (부정관사)\n\n한국어 vs 헝가리어:\n- 한국어: '그 사람' = 관형사 '그' + 명사\n- 헝가리어: 'az ember' = 관사 + 명사\n\n특징: 헝가리어는 영어처럼 관사 시스템이 발달했습니다!",
+  "estimatedDuration": 25,
+  "difficultyScore": 1,
+  "prerequisites": ["01-nouns-basics"],
+  "tags": ["관사", "정관사", "부정관사", "기초문법", "필수"],
+  "theologicalRelevance": true,
+  "theologicalExamples": [
+    "az Úr (주님)",
+    "a Biblia (성경)",
+    "az evangélium (복음)",
+    "egy ima (한 기도)"
+  ],
+  "isPublished": true
+}

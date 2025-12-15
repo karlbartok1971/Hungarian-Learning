@@ -1,0 +1,219 @@
+{
+  "level": "A1",
+  "orderIndex": 13,
+  "titleKorean": "일상 동사 20개 - 매일 사용하는 필수 동사",
+  "titleHungarian": "Hétköznapi igék - Alapvető igék",
+  "explanationKorean": "헝가리어 학습자가 가장 먼저 배워야 할 20개의 일상 동사입니다. 이 동사들은 먹기, 마시기, 걷기, 읽기, 말하기 등 매일 사용하는 기본 동작들입니다. 헝가리어 동사는 시제와 인칭에 따라 변합니다. 이 강의에서는 현재 단순형(Present Simple)을 중심으로 배웁니다.",
+  "explanationHungarian": "Az alapvető igék gyakorlása a magyar nyelvtanulás kezdetében. Az igék ragozódnak a személy és szám szerint.",
+  "grammarRules": {
+    "rules": [
+      {
+        "title": "정규 동사 현재형 - -ok/-ek/-ök 활용",
+        "description": "헝가리어 정규 동사 1인칭 단수 현재형은 -ok, -ek, -ök 어미를 사용합니다. 모음조화 규칙을 따릅니다.",
+        "pattern": "동사어간 + -ok/-ek/-ök (1인칭 단수)",
+        "examples": [
+          {
+            "hu": "én olvasok (나는 읽다)",
+            "ko": "I read",
+            "context": "1인칭 단수 현재형"
+          },
+          {
+            "hu": "én eszem (나는 먹다)",
+            "ko": "I eat",
+            "context": "1인칭 단수 현재형"
+          },
+          {
+            "hu": "én beszélek (나는 말하다)",
+            "ko": "I speak",
+            "context": "1인칭 단수 현재형"
+          }
+        ]
+      },
+      {
+        "title": "자동사(intransitive) vs 타동사(transitive)",
+        "description": "헝가리어 동사는 자동사와 타동사로 나뉘며, 목적어를 취하는 타동사는 대격 목적어가 필요합니다.",
+        "pattern": "타동사 + 대격 목적어 / 자동사 + 추가 목적어 불필요",
+        "examples": [
+          {
+            "hu": "Olvasom a könyvet. (나는 책을 읽습니다)",
+            "ko": "I read the book (타동사 + 대격)",
+            "context": "타동사"
+          },
+          {
+            "hu": "Sétálok az utcán. (나는 거리를 산책합니다)",
+            "ko": "I walk on the street (자동사)",
+            "context": "자동사"
+          }
+        ]
+      },
+      {
+        "title": "부정형(Infinitive) - -ni 어미",
+        "description": "동사의 기본형은 -ni 어미로 끝납니다. 사전에 나오는 형태입니다.",
+        "pattern": "동사 + -ni",
+        "examples": [
+          {
+            "hu": "olvasni (읽다)",
+            "ko": "to read",
+            "context": "부정형"
+          },
+          {
+            "hu": "enni (먹다)",
+            "ko": "to eat",
+            "context": "부정형"
+          },
+          {
+            "hu": "inni (마시다)",
+            "ko": "to drink",
+            "context": "부정형"
+          }
+        ]
+      },
+      {
+        "title": "불규칙 동사 - van(있다), lesz(되다)",
+        "description": "헝가리어에서 가장 중요한 불규칙 동사들입니다. 현재형과 과거형이 완전히 다릅니다.",
+        "pattern": "불규칙 변화: van → vagyok (1인칭), vagy (2인칭), van (3인칭)",
+        "examples": [
+          {
+            "hu": "Én vagyok. (나는 있다/존재한다)",
+            "ko": "I am",
+            "context": "현재형 1인칭"
+          },
+          {
+            "hu": "Ő van. (그/그녀는 있다)",
+            "ko": "He/She is",
+            "context": "현재형 3인칭"
+          },
+          {
+            "hu": "Milyen lesz? (어떻게 될까요?)",
+            "ko": "What will it be?",
+            "context": "미래형"
+          }
+        ]
+      }
+    ]
+  },
+  "examples": [
+    {
+      "hu": "Olvasok.",
+      "ko": "나는 읽습니다.",
+      "context": "일상",
+      "grammarPoint": "1인칭 단수 현재형 -ok"
+    },
+    {
+      "hu": "Eszem kenyeret.",
+      "ko": "나는 빵을 먹습니다.",
+      "context": "일상",
+      "grammarPoint": "타동사 + 대격"
+    },
+    {
+      "hu": "Iszom vizet.",
+      "ko": "나는 물을 마십니다.",
+      "context": "일상",
+      "grammarPoint": "타동사 + 대격"
+    },
+    {
+      "hu": "Sétálok.",
+      "ko": "나는 산책합니다.",
+      "context": "일상",
+      "grammarPoint": "자동사 현재형"
+    },
+    {
+      "hu": "Dolgozom az irodában.",
+      "ko": "나는 사무실에서 일합니다.",
+      "context": "일상",
+      "grammarPoint": "위치 표현과 함께 사용"
+    },
+    {
+      "hu": "Imádkozom az Istenhez.",
+      "ko": "나는 하나님께 기도합니다.",
+      "context": "신학/설교",
+      "grammarPoint": "동사 + 향격(-nak/-nek)"
+    },
+    {
+      "hu": "Énekelek énekeket.",
+      "ko": "나는 노래를 노래합니다.",
+      "context": "신학/설교 (찬양)",
+      "grammarPoint": "타동사 + 대격"
+    },
+    {
+      "hu": "Hallgatom a prédikációt.",
+      "ko": "나는 설교를 듣습니다.",
+      "context": "신학/설교",
+      "grammarPoint": "타동사 + 대격"
+    },
+    {
+      "hu": "Tanulmányozom a Bibliát.",
+      "ko": "나는 성경을 공부합니다.",
+      "context": "신학/설교",
+      "grammarPoint": "타동사 + 대격"
+    },
+    {
+      "hu": "Hirdetem az evangéliumot.",
+      "ko": "나는 복음을 전파합니다.",
+      "context": "신학/설교",
+      "grammarPoint": "타동사 + 대격"
+    },
+    {
+      "hu": "Beszélek az emberekhez.",
+      "ko": "나는 사람들에게 말합니다.",
+      "context": "일상",
+      "grammarPoint": "향격 사용"
+    },
+    {
+      "hu": "Tanítok magyar nyelvet.",
+      "ko": "나는 헝가리어를 가르칩니다.",
+      "context": "일상",
+      "grammarPoint": "타동사 + 대격"
+    },
+    {
+      "hu": "Jézus szereti az embereket.",
+      "ko": "예수님은 사람들을 사랑합니다.",
+      "context": "성경 - 요한복음 3:16",
+      "grammarPoint": "3인칭 단수 + 복수 대격"
+    },
+    {
+      "hu": "Az Úr vezet engem.",
+      "ko": "주님은 나를 인도하십니다.",
+      "context": "성경 - 시편 23편",
+      "grammarPoint": "3인칭 단수 + 대격"
+    },
+    {
+      "hu": "Ő szeret engem.",
+      "ko": "그/그녀는 나를 사랑합니다.",
+      "context": "성경",
+      "grammarPoint": "3인칭 단수"
+    }
+  ],
+  "koreanInterferenceNotes": "한국인 학습자 주의사항:\n\n1. **동사 변화가 많음**: 한국어는 동사 어간이 비교적 안정적이지만, 헝가리어는 인칭과 수, 시제에 따라 크게 변합니다.\n   - 한국어: 먹다 → 먹어, 먹습니다, 먹었다\n   - 헝가리어: enni → eszem, eszel, eszik, eszünk, esztek, esznek\n\n2. **대격 목적어 필수**: 한국어처럼 목적어를 생략할 수 없습니다.\n   - 틀린 예: Olvasok. (X - 무엇을 읽나요?)\n   - 올바른 예: Olvasom a könyvet. (O - 책을 읽습니다)\n\n3. **자동사 vs 타동사**: 헝가리어에서 목적어 유무에 따라 구분이 명확합니다.\n   - Sétálok. (나는 산책합니다 - 자동사)\n   - Olvasom a könyvet. (나는 책을 읽습니다 - 타동사)\n\n4. **불규칙 동사**: van(있다)와 lesz(되다)는 반드시 외워야 합니다.\n   - van: vagyok, vagy, van, vagyunk, vagytok, vannak\n   - lesz: leszek, leszel, lesz, leszünk, lesztek, lesznek\n\n5. **부정형(-ni)**: 한국어와 달리 사전형이 -ni로 끝나므로 주의하세요.\n   - 한국어: 먹다, 마시다\n   - 헝가리어: enni, inni\n\n**암기 팁**: 자주 사용하는 20개 동사를 먼저 암기하고, 각 동사마다 현재형의 6가지 변화(1인칭, 2인칭, 3인칭 + 단복수)를 그룹으로 외우세요. '~합니다'라는 3인칭 단수형이 가장 기본이 됩니다.",
+  "commonMistakes": [
+    {
+      "mistake": "Olvasok a könyvet.",
+      "correct": "Olvasom a könyvet.",
+      "explanation": "1인칭 단수 현재형일 때, 목적어를 취하는 동사는 정의적 활용(-om/-em)을 사용해야 합니다."
+    },
+    {
+      "mistake": "Én van.",
+      "correct": "Én vagyok.",
+      "explanation": "van(있다)의 1인칭 단수는 vagyok입니다. 완전히 다른 형태이므로 외워야 합니다."
+    },
+    {
+      "mistake": "Beszélek a beszédek.",
+      "correct": "Beszélek az emberekhez / Elmondok egy beszédet.",
+      "explanation": "'말한다'는 자동사로도, '~를 말한다'는 타동사로도 사용되며, '~에게 말한다'는 향격을 사용합니다."
+    }
+  ],
+  "comparisonWithKorean": "동사 활용 비교:\n\n한국어:\n- 기본: 먹다\n- 현재: 먹어, 먹습니다\n- 과거: 먹었다\n\n헝가리어:\n- 부정형: enni\n- 현재 1인칭: eszem\n- 현재 3인칭: eszik\n- 과거 1인칭: ettem\n\n공통점: 시제 변화가 있습니다.\n차이점: 헝가리어는 인칭과 수에 따라 어간도 변할 수 있습니다!",
+  "estimatedDuration": 45,
+  "difficultyScore": 3,
+  "prerequisites": ["01-nouns-basics", "02-nominative-accusative"],
+  "tags": ["동사", "현재형", "기초동사", "필수", "일상회화"],
+  "theologicalRelevance": true,
+  "theologicalExamples": [
+    "Imádkozom (나는 기도합니다)",
+    "Olvasom a Bibliát (나는 성경을 읽습니다)",
+    "Énekelek (나는 노래합니다/찬양합니다)",
+    "Hirdetem az evangéliumot (나는 복음을 전파합니다)",
+    "Szeretlek Istent (나는 하나님을 사랑합니다)"
+  ],
+  "isPublished": true
+}

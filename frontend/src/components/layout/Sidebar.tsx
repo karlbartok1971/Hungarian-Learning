@@ -17,7 +17,8 @@ import {
   Flame as FireIcon,
   Trophy as TrophyIcon,
   Star as StarIcon,
-  FileText as FileTextIcon
+  FileText as FileTextIcon,
+  Book as BibleIcon
 } from 'lucide-react';
 import { getDailyHungarianPhrase, getRandomCulturalElement } from '@/lib/hungarianCulture';
 
@@ -117,7 +118,16 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       ],
     },
 
-    // 4. 어휘 학습
+    // 4. 성경 일일 학습 (NEW!)
+    {
+      id: 'bible-study',
+      label: '📖 성경 일일 학습',
+      icon: <BibleIcon className="w-5 h-5" />,
+      href: '/bible-study',
+      badge: 'NEW',
+    },
+
+    // 5. 어휘 학습
     {
       id: 'vocabulary',
       label: '어휘 학습',
@@ -125,7 +135,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       href: '/vocabulary',
     },
 
-    // 5. 작문 연습
+    // 6. 작문 연습
     {
       id: 'writing',
       label: '작문 연습',
@@ -133,7 +143,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       href: '/writing',
     },
 
-    // 6. 레벨 평가
+    // 7. 레벨 평가
     {
       id: 'assessment',
       label: '레벨 평가',
@@ -155,7 +165,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       ],
     },
 
-    // 7. 종합 연습
+    // 8. 종합 연습
     {
       id: 'exercises',
       label: '종합 연습',
@@ -163,7 +173,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       href: '/exercises',
     },
 
-    // 8. 학습 분석
+    // 9. 학습 분석
     {
       id: 'analytics',
       label: '학습 분석',

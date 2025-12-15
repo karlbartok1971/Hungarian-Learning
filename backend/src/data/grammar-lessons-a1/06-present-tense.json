@@ -1,0 +1,249 @@
+{
+  "level": "A1",
+  "orderIndex": 6,
+  "titleKorean": "현재시제 - 규칙 동사 활용 (정/부분 활)",
+  "titleHungarian": "Jelen idő - Reguláris igék konjugációja",
+  "explanationKorean": "헝가리어 규칙 동사들의 현재시제 활용을 배웁니다. 정동사(definite conjugation, 목적어가 정해짐)와 부분동사(indefinite conjugation, 목적어가 정해지지 않음)로 나뉘어 활용됩니다. 이는 헝가리어의 가장 특징적인 문법 체계입니다.",
+  "explanationHungarian": "A magyar nyelvben az igék két módon ragozódnak: határozott és határozatlan ragozás. Ez az egyik legbonyolultabb rész a magyar nyelvtanban.",
+  "grammarRules": {
+    "rules": [
+      {
+        "title": "부분동사(Indefinite) 활용 - 정해지지 않은 목적어",
+        "description": "목적어가 없거나, 부정관사가 붙은 목적어를 가질 때 사용합니다. 더 간단한 형태입니다.",
+        "pattern": "어간 + 인칭어미 (-ok, -sz, -0, -unk, -tok, -nak)",
+        "examples": [
+          {
+            "hu": "dolgozom",
+            "ko": "나는 일한다",
+            "context": "dolgo'z' + 'om' (1인칭 단수)"
+          },
+          {
+            "hu": "dolgozol",
+            "ko": "너는 일한다",
+            "context": "dolgo'z' + 'ol' (2인칭 단수)"
+          },
+          {
+            "hu": "dolgozik",
+            "ko": "그는 일한다",
+            "context": "dolgo'z' + 'ik' (3인칭 단수)"
+          },
+          {
+            "hu": "dolgozunk",
+            "ko": "우리는 일한다",
+            "context": "dolgo'z' + 'unk' (1인칭 복수)"
+          },
+          {
+            "hu": "dolgoztok",
+            "ko": "너희는 일한다",
+            "context": "dolgo'z' + 'tok' (2인칭 복수)"
+          },
+          {
+            "hu": "dolgoznak",
+            "ko": "그들은 일한다",
+            "context": "dolgo'z' + 'nak' (3인칭 복수)"
+          }
+        ]
+      },
+      {
+        "title": "정동사(Definite) 활용 - 정해진 목적어",
+        "description": "목적어가 명확하게 정해져 있을 때(정관사 a/az가 붙거나 고유명사) 사용합니다. 더 많은 인칭변화가 있습니다.",
+        "pattern": "어간 + 정동사 인칭어미 (-om, -od, -ja/-i, -juk, -játok, -ják)",
+        "examples": [
+          {
+            "hu": "dolgozom a házat",
+            "ko": "나는 그 집을 일한다",
+            "context": "dolgoz + om (1인칭 단수) - 'a házat'는 정해진 목적어"
+          },
+          {
+            "hu": "dolgozod a házat",
+            "ko": "너는 그 집을 일한다",
+            "context": "dolgoz + od (2인칭 단수)"
+          },
+          {
+            "hu": "dolgozza a házat",
+            "ko": "그는 그 집을 일한다",
+            "context": "dolgoz + za (3인칭 단수) - ja/i로 끝남"
+          },
+          {
+            "hu": "dolgozzuk a házat",
+            "ko": "우리는 그 집을 일한다",
+            "context": "dolgoz + zuk (1인칭 복수)"
+          }
+        ]
+      },
+      {
+        "title": "자음조화에 따른 어미 변화",
+        "description": "어간의 마지막 자음에 따라 어미가 변합니다. 특히 자음 뒤에서 -sz, -s 변화가 생깁니다.",
+        "pattern": "자음조화 규칙 적용 (어간 끝 자음 + 어미)",
+        "examples": [
+          {
+            "hu": "iszom / iszod / issza",
+            "ko": "마신다 (마시 + 활용)",
+            "context": "sz-자음 뒤 어미 변화"
+          },
+          {
+            "hu": "tanítom / tanítod / tanítja",
+            "ko": "가르친다 (tanít + 활용)",
+            "context": "기본 규칙 적용"
+          },
+          {
+            "hu": "szeretlek",
+            "ko": "나는 너를 사랑한다",
+            "context": "특수한 2인칭 단수 정동사 형태"
+          }
+        ]
+      },
+      {
+        "title": "부정형 - nem + 동사",
+        "description": "부정은 nem을 동사 앞에 붙입니다. 부분동사와 정동사의 구분은 여전히 유지됩니다.",
+        "pattern": "nem + 동사 (부분/정동사)",
+        "examples": [
+          {
+            "hu": "Nem dolgozom",
+            "ko": "나는 일하지 않는다",
+            "context": "부분동사 부정"
+          },
+          {
+            "hu": "Nem dolgozom a házat",
+            "ko": "나는 그 집을 일하지 않는다",
+            "context": "정동사 부정"
+          }
+        ]
+      }
+    ]
+  },
+  "examples": [
+    {
+      "hu": "Dolgozom az iskolában.",
+      "ko": "나는 학교에서 일합니다.",
+      "context": "일상 대화",
+      "grammarPoint": "부분동사 (정해지지 않은 목적어)"
+    },
+    {
+      "hu": "Tanítom az angol nyelvet.",
+      "ko": "나는 영어를 가르칩니다.",
+      "context": "일상 대화",
+      "grammarPoint": "정동사 (정해진 목적어)"
+    },
+    {
+      "hu": "Olvasol egy könyvet?",
+      "ko": "너는 책을 읽니?",
+      "context": "일상 대화",
+      "grammarPoint": "부분동사 (부정관사 목적어)"
+    },
+    {
+      "hu": "Szereti az édesanyját.",
+      "ko": "그는 어머니를 사랑합니다.",
+      "context": "일상 대화",
+      "grammarPoint": "정동사 (소유사 포함 정해진 목적어)"
+    },
+    {
+      "hu": "Iszunk teát.",
+      "ko": "우리는 차를 마십니다.",
+      "context": "일상 대화",
+      "grammarPoint": "부분동사 복수"
+    },
+    {
+      "hu": "Imádkozik az Istenhez.",
+      "ko": "그는 하나님께 기도합니다.",
+      "context": "신학/설교",
+      "grammarPoint": "부분동사 (영적 행동)"
+    },
+    {
+      "hu": "Szeretik az Úr Istent.",
+      "ko": "그들은 주 하나님을 사랑합니다.",
+      "context": "신학/설교",
+      "grammarPoint": "정동사 복수 (정해진 신의 대상)"
+    },
+    {
+      "hu": "Tanítja a hívőket az igét.",
+      "ko": "그는 신자들에게 말씀을 가르칩니다.",
+      "context": "신학/설교",
+      "grammarPoint": "정동사 (정해진 청중과 메시지)"
+    },
+    {
+      "hu": "Olvassa az egyház az Igét az istentiszteleten.",
+      "ko": "교회는 예배에서 말씀을 읽습니다.",
+      "context": "신학/설교",
+      "grammarPoint": "정동사 (성경을 명시적 대상으로)"
+    },
+    {
+      "hu": "Szolgál az Isten népe között.",
+      "ko": "그는 하나님의 백성 가운데서 섬깁니다.",
+      "context": "성경 기반 - 디아코니아",
+      "grammarPoint": "부분동사"
+    },
+    {
+      "hu": "Hirdetik az evangéliumot.",
+      "ko": "그들은 복음을 선포합니다.",
+      "context": "성경 기반",
+      "grammarPoint": "정동사"
+    },
+    {
+      "hu": "Nem dolgozik ma.",
+      "ko": "그는 오늘 일하지 않습니다.",
+      "context": "일상 대화",
+      "grammarPoint": "부분동사 부정형"
+    },
+    {
+      "hu": "Nem szereted a dolgot?",
+      "ko": "너는 그 일을 좋아하지 않니?",
+      "context": "일상 대화",
+      "grammarPoint": "정동사 부정형 (2인칭)"
+    },
+    {
+      "hu": "Részesülnek az Isten kegyelméből.",
+      "ko": "그들은 하나님의 은혜를 받습니다.",
+      "context": "신학/설교",
+      "grammarPoint": "정동사 (은혜를 명시적 대상으로)"
+    },
+    {
+      "hu": "Szólnak az emberek az evangéliumról.",
+      "ko": "사람들은 복음에 대해 말합니다.",
+      "context": "신학/설교",
+      "grammarPoint": "부분동사 (대상이 부정 전치사구)"
+    }
+  ],
+  "koreanInterferenceNotes": "한국인 학습자가 가장 어려워하는 점:\n\n1. **정동사 vs 부분동사 구분**: 한국어에는 이런 구분이 없습니다! 목적어의 성질에 따라 동사 활용이 달라집니다.\n   - 부분동사: 정해지지 않은 목적어 (dolgozom = I work/I am working)\n   - 정동사: 정해진 목적어 (dolgozom a házat = I work on that house)\n\n2. **목적어에 따른 선택**: 반드시 목적어를 확인하고 어느 활용을 쓸지 결정해야 합니다.\n   - 부정관사: 부분동사 (olvasok egy könyvet)\n   - 정관사/고유명사: 정동사 (olvasom a könyvet)\n   - 소유사: 정동사 (olvasom az apám könyvét)\n\n3. **3인칭 단수 차이**:\n   - 부분동사: -ik (dolgozik)\n   - 정동사: -ja/-i (dolgozza, tanítja)\n   - 한국인이 가장 자주 혼동하는 부분입니다.\n\n4. **2인칭 특수형**: 너를 직접 목적어로 하는 경우 특수한 형태가 있습니다.\n   - szeretlek (나는 너를 사랑한다)\n   - hívlak (나는 너를 부른다)\n   - 이 형태들을 별도로 외워야 합니다.\n\n5. **모음조화의 추가 적용**: 어간의 마지막 자음에 따라 어미도 변합니다.\n   - s로 끝남: iszom (마신다) - 어미가 sz에서 변함\n\n**암기 팁**: 부분동사는 '미정명사'라고 생각하세요. '나는 일한다'는 무엇을 하는지 모르는 상태이고, 정동사는 '정명사'라고 생각하여 무엇을 명확히 하는지 아는 상태입니다.",
+  "commonMistakes": [
+    {
+      "mistake": "Szeretom az apámat",
+      "correct": "Szeretem az apámat",
+      "explanation": "정동사 1인칭 단수는 -om이 아니라 -em입니다 (moyon 조화)."
+    },
+    {
+      "mistake": "Dolgozik a házat",
+      "correct": "Dolgozza a házat",
+      "explanation": "정해진 목적어를 가지면 정동사를 써야 하므로 dolgozza입니다."
+    },
+    {
+      "mistake": "Olvasok a könyvet",
+      "correct": "Olvasom a könyvet",
+      "explanation": "정관사 a/az가 붙은 목적어는 정동사를 요구합니다."
+    },
+    {
+      "mistake": "Szeretik ők az Istent",
+      "correct": "Szeretik az Istent",
+      "explanation": "헝가리어는 주어 대명사를 자주 생략합니다. ők는 불필요합니다."
+    },
+    {
+      "mistake": "Nem szeretez az apádat",
+      "correct": "Nem szereted az apádat",
+      "explanation": "2인칭 단수 정동사는 -ed입니다 (-ez가 아님)."
+    }
+  ],
+  "comparisonWithKorean": "한국어: 나는 일한다 / 나는 그 일을 한다 (동사 형태 같음)\n헝가리어: Dolgozom / Dolgozom a házat (정동사/부분동사 구분)\n\n한국어: 그는 책을 읽는다\n헝가리어: Olvasom a könyvet (정해진 목적어 = 정동사)\n\n한국어: 나는 책을 읽는다\n헝가리어: Olvasok egy könyvet (부정관사 = 부분동사)",
+  "estimatedDuration": 45,
+  "difficultyScore": 3,
+  "prerequisites": ["01-nouns-basics", "02-nominative-accusative", "05-be-verb"],
+  "tags": ["동사", "현재시제", "핵심문법", "정동사", "부분동사"],
+  "theologicalRelevance": true,
+  "theologicalExamples": [
+    "Imádkozik az Istenhez (그는 하나님께 기도한다)",
+    "Szereti az Istent (그는 하나님을 사랑한다)",
+    "Hirdetik az evangéliumot (그들은 복음을 선포한다)",
+    "Tanítja a hívőket az igét (그는 신자들에게 말씀을 가르친다)",
+    "Olvasol az egyházban az Igét (너는 교회에서 성경을 읽는다)"
+  ],
+  "isPublished": true
+}

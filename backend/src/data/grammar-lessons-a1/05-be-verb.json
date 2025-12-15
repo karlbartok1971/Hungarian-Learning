@@ -1,0 +1,239 @@
+{
+  "level": "A1",
+  "orderIndex": 5,
+  "titleKorean": "Be 동사 - van/vannak (있다/이다)",
+  "titleHungarian": "A 'van' ige - létezés és jelenlét",
+  "explanationKorean": "헝가리어의 '있다/이다'를 나타내는 가장 기본적인 동사인 van/vannak을 배웁니다. 한국어의 '이다'와 '있다'를 모두 표현할 수 있습니다. 현재시제에서는 음성적으로 불규칙이지만, 과거시제부터는 규칙적입니다.",
+  "explanationHungarian": "A 'van' ige az egyik legfontosabb magyar ige. Jelenti az 'ezt', az 'ott van' és sok más fogalmat.",
+  "grammarRules": {
+    "rules": [
+      {
+        "title": "Van/Vannak의 기본 활용",
+        "description": "현재시제에서 van은 불규칙적으로 활용됩니다. 단수 3인칭은 van, 복수 3인칭은 vannak입니다.",
+        "pattern": "주어 + van/vannak",
+        "examples": [
+          {
+            "hu": "Én vagyok",
+            "ko": "나는 있다/이다",
+            "context": "1인칭 단수"
+          },
+          {
+            "hu": "Te vagy",
+            "ko": "너는 있다/이다",
+            "context": "2인칭 단수"
+          },
+          {
+            "hu": "Ő van",
+            "ko": "그/그녀는 있다/이다",
+            "context": "3인칭 단수"
+          },
+          {
+            "hu": "Mi vagyunk",
+            "ko": "우리는 있다/이다",
+            "context": "1인칭 복수"
+          },
+          {
+            "hu": "Ti vagytok",
+            "ko": "너희는 있다/이다",
+            "context": "2인칭 복수"
+          },
+          {
+            "hu": "Ők vannak",
+            "ko": "그들은 있다/이다",
+            "context": "3인칭 복수"
+          }
+        ]
+      },
+      {
+        "title": "Van의 두 가지 의미",
+        "description": "'존재'를 나타낼 때 (물리적 위치)와 '상태'를 나타낼 때 (정의/속성) 둘 다 사용됩니다.",
+        "pattern": "주어 + van + (장소/상태)",
+        "examples": [
+          {
+            "hu": "A könyv az asztalon van.",
+            "ko": "책이 테이블 위에 있습니다.",
+            "context": "위치 표현 (물리적 존재)"
+          },
+          {
+            "hu": "Ő tanár.",
+            "ko": "그녀는 교사입니다.",
+            "context": "정의/직업 (van은 생략 가능, 특히 현대 헝가리어에서)"
+          },
+          {
+            "hu": "Az idő jó.",
+            "ko": "날씨가 좋습니다.",
+            "context": "상태 표현"
+          }
+        ]
+      },
+      {
+        "title": "부정형 - nincs/nincsenek",
+        "description": "'없다'를 나타내는 부정형입니다. 단수 3인칭은 nincs, 복수는 nincsenek입니다.",
+        "pattern": "주어 + nincs/nincsenek",
+        "examples": [
+          {
+            "hu": "Nincs könyvem.",
+            "ko": "나는 책이 없습니다.",
+            "context": "소유 부정"
+          },
+          {
+            "hu": "Nincsenek tanárok.",
+            "ko": "선생님들이 없습니다.",
+            "context": "존재 부정"
+          }
+        ]
+      },
+      {
+        "title": "소유 표현 - Vannak-e?",
+        "description": "소유를 표현할 때는 van + 소유대격형을 사용합니다. 영어의 'I have'처럼 작동합니다.",
+        "pattern": "주어 + van + 소유대격형 목적어",
+        "examples": [
+          {
+            "hu": "Van nekem egy macskám.",
+            "ko": "나는 고양이가 하나 있습니다.",
+            "context": "소유 표현"
+          },
+          {
+            "hu": "Vannak neki gyerekei.",
+            "ko": "그는 자녀들이 있습니다.",
+            "context": "소유 표현 (복수)"
+          }
+        ]
+      }
+    ]
+  },
+  "examples": [
+    {
+      "hu": "Én vagyok János.",
+      "ko": "나는 János입니다.",
+      "context": "일상 대화 - 자기소개",
+      "grammarPoint": "1인칭 단수 vagyok"
+    },
+    {
+      "hu": "Te vagy szép.",
+      "ko": "너는 아름답습니다.",
+      "context": "일상 대화",
+      "grammarPoint": "2인칭 단수 vagy"
+    },
+    {
+      "hu": "Ő tanár van.",
+      "ko": "그는 교사입니다.",
+      "context": "일상 대화 - 직업",
+      "grammarPoint": "3인칭 단수 van"
+    },
+    {
+      "hu": "Mi magyarok vagyunk.",
+      "ko": "우리는 헝가리인입니다.",
+      "context": "일상 대화 - 국적",
+      "grammarPoint": "1인칭 복수 vagyunk"
+    },
+    {
+      "hu": "Vannak gyerekek az iskolában.",
+      "ko": "학교에 아이들이 있습니다.",
+      "context": "일상 대화",
+      "grammarPoint": "3인칭 복수 vannak"
+    },
+    {
+      "hu": "Isten van.",
+      "ko": "하나님이 계십니다.",
+      "context": "신학/설교 - 신의 존재",
+      "grammarPoint": "3인칭 단수 van (신적 존재)"
+    },
+    {
+      "hu": "Istenben van az erő.",
+      "ko": "힘이 하나님 안에 있습니다.",
+      "context": "신학/설교",
+      "grammarPoint": "위치격과 van의 결합"
+    },
+    {
+      "hu": "Az egyház Isten házaváltása.",
+      "ko": "교회는 하나님의 집입니다.",
+      "context": "신학/설교 - 영적 의미",
+      "grammarPoint": "3인칭 단수 van"
+    },
+    {
+      "hu": "Vannak papok a templomban.",
+      "ko": "교회에 사제들이 있습니다.",
+      "context": "신학/설교",
+      "grammarPoint": "3인칭 복수 vannak"
+    },
+    {
+      "hu": "Az Úr velem van.",
+      "ko": "주님이 나와 함께 계십니다.",
+      "context": "성경 - 시편 23:4",
+      "grammarPoint": "3인칭 단수 van (영적 함께함)"
+    },
+    {
+      "hu": "Isten szeretete az életben van.",
+      "ko": "하나님의 사랑이 삶에 있습니다.",
+      "context": "성경 기반 영적 표현",
+      "grammarPoint": "추상명사와 van의 결합"
+    },
+    {
+      "hu": "Nem vagyok beteg.",
+      "ko": "나는 아프지 않습니다.",
+      "context": "일상 대화 - 부정",
+      "grammarPoint": "부정 표현"
+    },
+    {
+      "hu": "Nincs időm.",
+      "ko": "나는 시간이 없습니다.",
+      "context": "일상 대화",
+      "grammarPoint": "nincs 사용"
+    },
+    {
+      "hu": "Van vizem.",
+      "ko": "나는 물이 있습니다.",
+      "context": "일상 대화",
+      "grammarPoint": "소유 표현"
+    },
+    {
+      "hu": "Vannak virágok a kertben.",
+      "ko": "정원에 꽃들이 있습니다.",
+      "context": "일상 대화",
+      "grammarPoint": "3인칭 복수 vannak"
+    }
+  ],
+  "koreanInterferenceNotes": "한국인 학습자가 가장 어려워하는 점:\n\n1. **'이다'와 '있다'의 구분**: 한국어는 '이다'와 '있다'를 명확히 구분하지만, 헝가리어의 van은 둘 다 표현합니다.\n   - 한국어: 나는 학생이다 / 나는 학교에 있다\n   - 헝가리어: Diák vagyok / Az iskolában vagyok\n\n2. **주어 생략**: 헝가리어는 주어를 자주 생략하지만, 동사 활용으로 인칭을 구분합니다.\n   - Vagyok (나입니다) - 주어 생략 가능\n   - Vagy (너입니다) - 주어 생략 가능\n\n3. **Vannak의 발음**: /반:nok/으로 발음되며, 한국인이 자주 놓치는 이중자음을 주의해야 합니다.\n\n4. **부정형 Nincs**: '없다'를 표현하는 별도의 동사로, van과 완전히 다릅니다.\n   - Van (있다/이다) vs Nincs (없다)\n   - 이는 영어의 'is/have' vs 'is not/don't have'처럼 다릅니다.\n\n5. **소유 표현**: 한국어는 '내가 책이 있다'라고 하지만, 헝가리어는 'Van nekem egy könyvem' (내게 책이 하나 있다)라고 합니다.\n   - 한국어: 소유자(주어) + 소유물(목적어)\n   - 헝가리어: 소유자(여격) + 소유물(주어)\n\n**암기 팁**: van은 헝가리어에서 가장 자주 사용하는 동사입니다! vagyok, vagy, van, vagyunk, vagytok, vannak 6개 형태를 무조건 외워야 합니다.",
+  "commonMistakes": [
+    {
+      "mistake": "Én van",
+      "correct": "Én vagyok",
+      "explanation": "1인칭 단수는 vagyok입니다. van은 3인칭 단수에만 사용됩니다."
+    },
+    {
+      "mistake": "Vannak gyermek",
+      "correct": "Vannak gyermekek",
+      "explanation": "vannak을 사용하면 명사도 반드시 복수형이어야 합니다."
+    },
+    {
+      "mistake": "Az könyv van az asztal",
+      "correct": "A könyv az asztalon van",
+      "explanation": "위치를 나타낼 때는 기본 명사가 아닌 위치격을 사용해야 합니다."
+    },
+    {
+      "mistake": "Nem van időm",
+      "correct": "Nincs időm",
+      "explanation": "부정은 nem + van보다 nincs/nincsenek을 사용하는 것이 더 자연스럽습니다."
+    },
+    {
+      "mistake": "Van én egy könyv",
+      "correct": "Van egy könyvem (또는 Nekem van egy könyvem)",
+      "explanation": "소유 표현은 '나에게 책이 있다'로 표현하며, 소유자는 소유 접미사로 표현됩니다."
+    }
+  ],
+  "comparisonWithKorean": "한국어: 나는 이다 (정의) / 나는 있다 (존재)\n헝가리어: Vagyok (정의와 존재 모두)\n\n한국어: 나는 책이 있다 (주어가 소유자)\n헝가리어: Van egy könyvem (책이 주어, 나는 소유자 표시)\n\n공통점: 둘 다 주어-서술어 어순을 기본으로 합니다.",
+  "estimatedDuration": 25,
+  "difficultyScore": 1,
+  "prerequisites": ["01-nouns-basics"],
+  "tags": ["동사", "기초문법", "현재시제", "필수"],
+  "theologicalRelevance": true,
+  "theologicalExamples": [
+    "Isten van (하나님이 계신다)",
+    "Az Úr velem van (주님이 나와 함께 계신다)",
+    "Van Isten a térben és időben (하나님은 공간과 시간에 존재한다)",
+    "Vannak hívők az egyházban (신자들이 교회에 있다)",
+    "Az Isten szeretete örökké van (하나님의 사랑은 영원하다)"
+  ],
+  "isPublished": true
+}

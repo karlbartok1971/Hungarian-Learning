@@ -53,6 +53,8 @@ model User {
   progressRecords        Progress[]
   reviewSessions         ReviewSession[]
   assessmentResults      AssessmentResult[]
+  bibleStudyProgress     BibleStudyProgress[]
+  dailyBiblePlans        DailyBiblePlan[]
 
   @@map("users")
 }
@@ -696,4 +698,151 @@ model LearningStats {
   lastStudyDate     DateTime?
 
   @@map("learning_stats")
+}
+
+// ==========================================
+// 성경 일일 학습 시스템 (Daily Bible Study)
+// ==========================================
+
+model BibleVerse {
+  id          String @id @default(cuid())
+
+  // 성경 정보
+  book        String        // "마태복음", "창세기" 등
+  bookHungarian String      // "Máté evangéliuma", "Genezis" 등
+  chapter     Int           // 장 번호
+  verse       Int           // 절 번호
+
+  // 본문
+  textHungarian String @db.Text
+  textKorean    String @db.Text
+
+  // 문법 분석 (단어별 상세 정보)
+  grammarAnalysis Json  // [{word, lemma, pos, meaning, grammarFeature, level, relatedLesson}]
+
+  // 메타데이터
+  difficulty  CEFRLevel     // 이 구절의 문법 난이도
+  grammarTopics String[]    // 포함된 문법 주제들 (예: ["격변화", "과거시제"])
+  vocabularyCount Int @default(0)  // 단어 수
+
+  // 설교 연계
+  sermonRelevance Boolean @default(false)
+  theologicalTheme String?  // 신학적 주제
+
+  // 학습 자료
+  audioUrl String?          // 음성 파일 URL (TTS)
+  notes String? @db.Text    // 추가 해설
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // 관계
+  studyProgress BibleStudyProgress[]
+
+  @@unique([book, chapter, verse])
+  @@index([difficulty])
+  @@index([book, chapter])
+  @@map("bible_verses")
+}
+
+model BibleStudyProgress {
+  id         String @id @default(cuid())
+  userId     String
+  user       User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  verseId    String
+  verse      BibleVerse @relation(fields: [verseId], references: [id], onDelete: Cascade)
+
+  // 학습 활동
+  studiedAt  DateTime @default(now())
+  timeSpent  Int @default(0)  // 소요 시간 (초)
+
+  // 단어 학습
+  wordsStudied Int @default(0)      // 분석한 단어 수
+  wordsMarked  String[]             // 북마크한 단어들
+
+  // 퀴즈 결과
+  quizScore    Int?                 // 0-100
+  quizAttempts Int @default(0)
+
+  // 메모
+  notes        String? @db.Text     // 사용자 메모
+  highlights   Json?                // 형광펜 표시
+
+  // 설교 아이디어
+  sermonIdeas  String? @db.Text     // 이 구절로 설교 아이디어
+
+  isCompleted  Boolean @default(false)
+
+  @@unique([userId, verseId])
+  @@index([userId, studiedAt])
+  @@map("bible_study_progress")
+}
+
+model DailyBiblePlan {
+  id          String @id @default(cuid())
+  userId      String
+  user        User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // 계획 정보
+  planName    String              // "창세기 읽기", "복음서 통독" 등
+  description String? @db.Text
+
+  // 진행 상태
+  currentBook    String
+  currentChapter Int
+  currentVerse   Int
+
+  // 설정
+  dailyVerseCount Int @default(1)  // 하루 몇 절씩 읽을지
+  level          CEFRLevel?        // 난이도 필터
+
+  // 통계
+  totalVersesPlanned  Int @default(0)
+  totalVersesCompleted Int @default(0)
+
+  startedAt   DateTime @default(now())
+  completedAt DateTime?
+  lastStudiedAt DateTime?
+
+  isActive    Boolean @default(true)
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([userId, isActive])
+  @@map("daily_bible_plans")
+}
+
+model BibleWordAnalysis {
+  id          String @id @default(cuid())
+
+  // 단어 정보
+  word        String        // 실제 단어 (활용형)
+  lemma       String        // 원형
+  hungarian   String        // 헝가리어 원형
+  korean      String        // 한국어 뜻
+
+  // 문법 정보
+  partOfSpeech String       // 품사
+  grammarFeatures Json      // 격, 시제, 인칭 등
+
+  // 난이도 및 분류
+  level       CEFRLevel
+  frequency   Int @default(0)  // 성경 내 출현 빈도
+
+  // 학습 자료
+  explanation String? @db.Text  // 문법 설명
+  relatedGrammarLessonId String?  // 연관 문법 강의 ID
+
+  // 예문
+  examples    Json          // [{hu, ko, context}]
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@unique([word, lemma])
+  @@index([lemma])
+  @@index([level])
+  @@map("bible_word_analysis")
 }

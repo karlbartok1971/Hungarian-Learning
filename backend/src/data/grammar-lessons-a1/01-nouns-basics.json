@@ -1,0 +1,197 @@
+{
+  "level": "A1",
+  "orderIndex": 1,
+  "titleKorean": "명사의 기초 - 헝가리어 명사 시스템 이해하기",
+  "titleHungarian": "Főnevek alapjai",
+  "explanationKorean": "헝가리어 명사는 한국어와 매우 다른 시스템을 가지고 있습니다. 헝가리어는 17가지 격변화를 통해 문장 내 역할을 표현하는 반면, 한국어는 조사를 사용합니다. 이 강의에서는 명사의 기본 개념과 성별, 수에 대해 배웁니다.",
+  "explanationHungarian": "A magyar főnevek 17 esetben ragozódnak, ami kifejezi a mondatban betöltött szerepüket.",
+  "grammarRules": {
+    "rules": [
+      {
+        "title": "헝가리어 명사의 특징",
+        "description": "헝가리어 명사는 성별 구분이 없고, 격변화를 통해 문장 내 역할을 표현합니다.",
+        "pattern": "명사 + 격어미",
+        "examples": [
+          {
+            "hu": "ház",
+            "ko": "집",
+            "context": "기본형 (사전에 나오는 형태)"
+          },
+          {
+            "hu": "házban",
+            "ko": "집에서/집 안에",
+            "context": "장소격 (-ban/-ben)"
+          }
+        ]
+      },
+      {
+        "title": "단수와 복수",
+        "description": "복수형은 -k를 붙여서 만듭니다. 모음조화 규칙을 따릅니다.",
+        "pattern": "명사 + -k/-ak/-ek/-ok/-ök",
+        "examples": [
+          {
+            "hu": "ház → házak",
+            "ko": "집 → 집들",
+            "context": "뒤 모음이 a이므로 -ak"
+          },
+          {
+            "hu": "ember → emberek",
+            "ko": "사람 → 사람들",
+            "context": "뒤 모음이 e이므로 -ek"
+          },
+          {
+            "hu": "könyv → könyvek",
+            "ko": "책 → 책들",
+            "context": "뒤 모음이 ö이므로 -ek"
+          }
+        ]
+      },
+      {
+        "title": "모음조화 (Magánhangzó-harmónia)",
+        "description": "헝가리어에서 가장 중요한 규칙! 단어의 뒤 모음에 따라 어미가 변합니다.",
+        "pattern": "뒤 모음(a, á, o, ó, u, ú) = 뒤 어미 / 앞 모음(e, é, i, í, ö, ő, ü, ű) = 앞 어미",
+        "examples": [
+          {
+            "hu": "ablak (창문) → ablakban",
+            "ko": "뒤 모음 → -ban 사용",
+            "context": "a가 뒤 모음"
+          },
+          {
+            "hu": "iskola (학교) → iskolában",
+            "ko": "뒤 모음 → -ban 사용",
+            "context": "o와 a가 뒤 모음"
+          },
+          {
+            "hu": "kert (정원) → kertben",
+            "ko": "앞 모음 → -ben 사용",
+            "context": "e가 앞 모음"
+          }
+        ]
+      }
+    ]
+  },
+  "examples": [
+    {
+      "hu": "Ez egy ház.",
+      "ko": "이것은 집입니다.",
+      "context": "일상 대화 - 기본형",
+      "grammarPoint": "주격 (변화 없음)"
+    },
+    {
+      "hu": "A házak nagyok.",
+      "ko": "그 집들은 큽니다.",
+      "context": "일상 대화 - 복수형",
+      "grammarPoint": "복수형 -ak"
+    },
+    {
+      "hu": "Az ember jó.",
+      "ko": "그 사람은 좋습니다.",
+      "context": "일상 대화",
+      "grammarPoint": "단수형"
+    },
+    {
+      "hu": "Az emberek kedvesek.",
+      "ko": "사람들은 친절합니다.",
+      "context": "일상 대화",
+      "grammarPoint": "복수형 -ek"
+    },
+    {
+      "hu": "Isten szereti az embereket.",
+      "ko": "하나님은 사람들을 사랑하십니다.",
+      "context": "신학/설교",
+      "grammarPoint": "복수 대격형"
+    },
+    {
+      "hu": "A templom szép.",
+      "ko": "교회는 아름답습니다.",
+      "context": "신학/설교",
+      "grammarPoint": "기본형"
+    },
+    {
+      "hu": "A templomok Istennek szenteltek.",
+      "ko": "교회들은 하나님께 봉헌되었습니다.",
+      "context": "신학/설교",
+      "grammarPoint": "복수형"
+    },
+    {
+      "hu": "Isten a teremtő.",
+      "ko": "하나님은 창조주이십니다.",
+      "context": "성경 - 창세기 1:1 기반",
+      "grammarPoint": "기본형"
+    },
+    {
+      "hu": "Az Úr pásztorom.",
+      "ko": "주님은 나의 목자이십니다.",
+      "context": "성경 - 시편 23:1",
+      "grammarPoint": "소유형"
+    },
+    {
+      "hu": "A könyv az asztalon van.",
+      "ko": "책이 테이블 위에 있습니다.",
+      "context": "일상 대화",
+      "grammarPoint": "위치 표현"
+    },
+    {
+      "hu": "A gyermekek játszanak.",
+      "ko": "아이들이 놀고 있습니다.",
+      "context": "일상 대화",
+      "grammarPoint": "복수 주어"
+    },
+    {
+      "hu": "A Biblia szent könyv.",
+      "ko": "성경은 거룩한 책입니다.",
+      "context": "신학/설교",
+      "grammarPoint": "복합 명사"
+    },
+    {
+      "hu": "A hívők imádkoznak.",
+      "ko": "신자들이 기도합니다.",
+      "context": "신학/설교",
+      "grammarPoint": "복수형 주어"
+    },
+    {
+      "hu": "Az áldás Istentől jön.",
+      "ko": "축복은 하나님으로부터 옵니다.",
+      "context": "신학/설교",
+      "grammarPoint": "출발격"
+    },
+    {
+      "hu": "A szeretet a legnagyobb.",
+      "ko": "사랑이 가장 큽니다.",
+      "context": "성경 - 고린도전서 13:13",
+      "grammarPoint": "추상 명사"
+    }
+  ],
+  "koreanInterferenceNotes": "한국인 학습자가 가장 어려워하는 점:\n\n1. **조사 vs 격변화**: 한국어는 '은/는/이/가/을/를'처럼 독립된 조사를 사용하지만, 헝가리어는 명사 뒤에 직접 붙는 어미로 표현합니다.\n   - 한국어: 집 + 에서 (분리됨)\n   - 헝가리어: ház + ban (붙음) = házban\n\n2. **모음조화**: 한국어에는 없는 개념! 반드시 외워야 합니다.\n   - 뒤 모음 단어는 뒤 모음 어미와 결합\n   - 앞 모음 단어는 앞 모음 어미와 결합\n   - 예: ablakban (O), ablakben (X)\n\n3. **복수형 생략 불가**: 한국어는 '사람들이 간다' 또는 '사람이 간다'로 복수를 생략할 수 있지만, 헝가리어는 복수면 반드시 -k를 붙여야 합니다.\n\n4. **성별 없음**: 독일어나 프랑스어와 달리 명사에 성별이 없어서 한국인에게는 오히려 쉽습니다!\n\n**암기 팁**: '모음조화'는 '소리의 조화'입니다. 뒤 모음은 입을 크게 벌려서 나는 소리(a, o, u), 앞 모음은 입을 좁혀서 나는 소리(e, i, ö, ü)로 기억하세요!",
+  "commonMistakes": [
+    {
+      "mistake": "házben",
+      "correct": "házban",
+      "explanation": "ház는 뒤 모음 단어이므로 -ban을 써야 합니다."
+    },
+    {
+      "mistake": "emberak",
+      "correct": "emberek",
+      "explanation": "ember는 앞 모음 단어이므로 -ek를 써야 합니다."
+    },
+    {
+      "mistake": "könyv-k",
+      "correct": "könyvek",
+      "explanation": "복수형 어미는 띄어쓰기 없이 붙여서 씁니다."
+    }
+  ],
+  "comparisonWithKorean": "한국어: 집 + 에서 (조사 분리)\n헝가리어: ház + ban = házban (어미 붙음)\n\n한국어: 사람들 (-들 접미사)\n헝가리어: emberek (-ek 접미사)\n\n공통점: 둘 다 교착어(agglutinative language)로 어미를 붙여서 의미를 확장합니다!",
+  "estimatedDuration": 30,
+  "difficultyScore": 1,
+  "prerequisites": [],
+  "tags": ["명사", "기초문법", "모음조화", "복수형", "필수"],
+  "theologicalRelevance": true,
+  "theologicalExamples": [
+    "Isten (하나님)",
+    "templom (교회)",
+    "Biblia (성경)",
+    "imádság (기도)",
+    "áldás (축복)"
+  ],
+  "isPublished": true
+}

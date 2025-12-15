@@ -1,0 +1,677 @@
+[
+  {
+    "book": "마태복음",
+    "bookHungarian": "Máté evangéliuma",
+    "chapter": 5,
+    "verse": 1,
+    "textHungarian": "Amikor látta a tömeget, felment a hegyre, és miután leült, odajöttek hozzá tanítványai.",
+    "textKorean": "예수께서 무리를 보시고 산에 올라가 앉으시니 제자들이 나아온지라",
+    "difficulty": "B1",
+    "grammarTopics": ["과거시제", "시간접속사", "장소격", "동사활용"],
+    "vocabularyCount": 11,
+    "sermonRelevance": true,
+    "theologicalTheme": "산상수훈의 시작 - 예수님의 가르침",
+    "grammarAnalysis": [
+      {
+        "word": "Amikor",
+        "lemma": "amikor",
+        "pos": "접속사",
+        "meaning": "~할 때",
+        "grammarFeature": "시간을 나타내는 종속접속사",
+        "level": "A2",
+        "relatedLesson": "접속사 마스터",
+        "relatedLessonTitle": "A2-접속사 마스터"
+      },
+      {
+        "word": "látta",
+        "lemma": "lát",
+        "pos": "동사",
+        "meaning": "보았다",
+        "grammarFeature": "과거시제 3인칭 단수 (-ta 과거접미사)",
+        "level": "A2",
+        "relatedLesson": "과거시제 기본",
+        "relatedLessonTitle": "A2-과거시제 기본"
+      },
+      {
+        "word": "a",
+        "lemma": "a",
+        "pos": "관사",
+        "meaning": "그",
+        "grammarFeature": "정관사 (자음 앞)",
+        "level": "A1",
+        "relatedLesson": "관사 사용법",
+        "relatedLessonTitle": "A1-관사 사용법"
+      },
+      {
+        "word": "tömeget",
+        "lemma": "tömeg",
+        "pos": "명사",
+        "meaning": "무리를",
+        "grammarFeature": "대격 (-et) - 목적어 표시",
+        "level": "A1",
+        "relatedLesson": "주격과 대격",
+        "relatedLessonTitle": "A1-주격과 대격"
+      },
+      {
+        "word": "felment",
+        "lemma": "felmegy",
+        "pos": "동사",
+        "meaning": "올라갔다",
+        "grammarFeature": "과거시제 3인칭 단수 (접두사 fel- + megy)",
+        "level": "A2",
+        "relatedLesson": "과거시제 기본",
+        "relatedLessonTitle": "A2-과거시제 기본"
+      },
+      {
+        "word": "a",
+        "lemma": "a",
+        "pos": "관사",
+        "meaning": "그",
+        "grammarFeature": "정관사",
+        "level": "A1",
+        "relatedLesson": "관사 사용법",
+        "relatedLessonTitle": "A1-관사 사용법"
+      },
+      {
+        "word": "hegyre",
+        "lemma": "hegy",
+        "pos": "명사",
+        "meaning": "산으로/산에",
+        "grammarFeature": "승격 (-re) - 방향/목적지 표시",
+        "level": "A2",
+        "relatedLesson": "장소격 3형제",
+        "relatedLessonTitle": "A2-장소격 3형제"
+      },
+      {
+        "word": "leült",
+        "lemma": "leül",
+        "pos": "동사",
+        "meaning": "앉았다",
+        "grammarFeature": "과거시제 3인칭 단수",
+        "level": "A2",
+        "relatedLesson": "과거시제 기본",
+        "relatedLessonTitle": "A2-과거시제 기본"
+      },
+      {
+        "word": "odajöttek",
+        "lemma": "odajön",
+        "pos": "동사",
+        "meaning": "나아왔다 (그들이)",
+        "grammarFeature": "과거시제 3인칭 복수 (-tek)",
+        "level": "A2",
+        "relatedLesson": "과거시제 기본",
+        "relatedLessonTitle": "A2-과거시제 기본"
+      },
+      {
+        "word": "hozzá",
+        "lemma": "ő",
+        "pos": "대명사",
+        "meaning": "그에게",
+        "grammarFeature": "향격 대명사 (hozzá = 그/그녀에게)",
+        "level": "A2",
+        "relatedLesson": "소유격과 여격",
+        "relatedLessonTitle": "A1-소유격과 여격"
+      },
+      {
+        "word": "tanítványai",
+        "lemma": "tanítvány",
+        "pos": "명사",
+        "meaning": "제자들이 (그의)",
+        "grammarFeature": "복수 소유형 3인칭 단수 (-ai = 그의 ~들)",
+        "level": "A2",
+        "relatedLesson": "소유격과 여격",
+        "relatedLessonTitle": "A1-소유격과 여격"
+      }
+    ]
+  },
+  {
+    "book": "요한복음",
+    "bookHungarian": "János evangéliuma",
+    "chapter": 3,
+    "verse": 16,
+    "textHungarian": "Mert úgy szerette Isten a világot, hogy egyszülött Fiát adta, hogy aki hisz őbenne, el ne vesszen, hanem örök élete legyen.",
+    "textKorean": "하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니 이는 그를 믿는 자마다 멸망하지 않고 영생을 얻게 하려 하심이라",
+    "difficulty": "B1",
+    "grammarTopics": ["접속법", "목적절", "부정사", "소유형"],
+    "vocabularyCount": 16,
+    "sermonRelevance": true,
+    "theologicalTheme": "하나님의 사랑과 구원 - 복음의 핵심",
+    "grammarAnalysis": [
+      {
+        "word": "Mert",
+        "lemma": "mert",
+        "pos": "접속사",
+        "meaning": "왜냐하면, ~이기 때문에",
+        "grammarFeature": "이유를 나타내는 접속사",
+        "level": "A2",
+        "relatedLesson": "접속사 마스터",
+        "relatedLessonTitle": "A2-접속사 마스터"
+      },
+      {
+        "word": "úgy",
+        "lemma": "úgy",
+        "pos": "부사",
+        "meaning": "그렇게, 이처럼",
+        "grammarFeature": "방식/정도를 나타내는 부사",
+        "level": "A2",
+        "relatedLesson": "부사의 활용",
+        "relatedLessonTitle": "A2-부사의 활용"
+      },
+      {
+        "word": "szerette",
+        "lemma": "szeret",
+        "pos": "동사",
+        "meaning": "사랑했다",
+        "grammarFeature": "과거시제 3인칭 단수",
+        "level": "A2",
+        "relatedLesson": "과거시제 기본",
+        "relatedLessonTitle": "A2-과거시제 기본"
+      },
+      {
+        "word": "Isten",
+        "lemma": "Isten",
+        "pos": "고유명사",
+        "meaning": "하나님",
+        "grammarFeature": "주격 (주어)",
+        "level": "A1",
+        "relatedLesson": "명사의 기초",
+        "relatedLessonTitle": "A1-명사의 기초"
+      },
+      {
+        "word": "a",
+        "lemma": "a",
+        "pos": "관사",
+        "meaning": "그",
+        "grammarFeature": "정관사",
+        "level": "A1",
+        "relatedLesson": "관사 사용법",
+        "relatedLessonTitle": "A1-관사 사용법"
+      },
+      {
+        "word": "világot",
+        "lemma": "világ",
+        "pos": "명사",
+        "meaning": "세상을",
+        "grammarFeature": "대격 (-ot) - 목적어",
+        "level": "A1",
+        "relatedLesson": "주격과 대격",
+        "relatedLessonTitle": "A1-주격과 대격"
+      },
+      {
+        "word": "hogy",
+        "lemma": "hogy",
+        "pos": "접속사",
+        "meaning": "~하도록, ~하기 위해",
+        "grammarFeature": "목적절을 이끄는 접속사",
+        "level": "A2",
+        "relatedLesson": "접속사 마스터",
+        "relatedLessonTitle": "A2-접속사 마스터"
+      },
+      {
+        "word": "egyszülött",
+        "lemma": "egyszülött",
+        "pos": "형용사",
+        "meaning": "독생의, 외아들",
+        "grammarFeature": "복합형용사 (egy + szülött)",
+        "level": "B1",
+        "relatedLesson": "형용사 심화",
+        "relatedLessonTitle": "B1-형용사 심화"
+      },
+      {
+        "word": "Fiát",
+        "lemma": "fiú",
+        "pos": "명사",
+        "meaning": "아들을 (그의)",
+        "grammarFeature": "대격 + 소유형 3인칭 단수 (-át)",
+        "level": "A2",
+        "relatedLesson": "소유격과 대격 결합",
+        "relatedLessonTitle": "A2-격변화 복합"
+      },
+      {
+        "word": "adta",
+        "lemma": "ad",
+        "pos": "동사",
+        "meaning": "주었다",
+        "grammarFeature": "과거시제 3인칭 단수",
+        "level": "A2",
+        "relatedLesson": "과거시제 불규칙",
+        "relatedLessonTitle": "A2-과거시제 불규칙"
+      },
+      {
+        "word": "aki",
+        "lemma": "aki",
+        "pos": "관계대명사",
+        "meaning": "~하는 사람",
+        "grammarFeature": "관계대명사 (사람)",
+        "level": "A2",
+        "relatedLesson": "관계대명사",
+        "relatedLessonTitle": "A2-관계대명사"
+      },
+      {
+        "word": "hisz",
+        "lemma": "hisz",
+        "pos": "동사",
+        "meaning": "믿다",
+        "grammarFeature": "현재시제 3인칭 단수",
+        "level": "A1",
+        "relatedLesson": "현재시제 동사 활용",
+        "relatedLessonTitle": "A1-현재시제 동사 활용"
+      },
+      {
+        "word": "őbenne",
+        "lemma": "ő",
+        "pos": "대명사",
+        "meaning": "그를 (내격 - 안에)",
+        "grammarFeature": "내격 대명사 (őbenne = 그 안에)",
+        "level": "A2",
+        "relatedLesson": "대명사 격변화",
+        "relatedLessonTitle": "A2-대명사 격변화"
+      },
+      {
+        "word": "ne",
+        "lemma": "ne",
+        "pos": "부정사",
+        "meaning": "~하지 않도록",
+        "grammarFeature": "명령법/접속법 부정",
+        "level": "B1",
+        "relatedLesson": "부정문 고급",
+        "relatedLessonTitle": "B1-부정문 고급"
+      },
+      {
+        "word": "vesszen",
+        "lemma": "vész",
+        "pos": "동사",
+        "meaning": "멸망하다",
+        "grammarFeature": "접속법 현재 3인칭 단수",
+        "level": "B1",
+        "relatedLesson": "접속법 마스터",
+        "relatedLessonTitle": "B1-접속법 마스터"
+      },
+      {
+        "word": "hanem",
+        "lemma": "hanem",
+        "pos": "접속사",
+        "meaning": "그러나, ~이 아니라",
+        "grammarFeature": "대조 접속사",
+        "level": "A2",
+        "relatedLesson": "접속사 마스터",
+        "relatedLessonTitle": "A2-접속사 마스터"
+      },
+      {
+        "word": "örök",
+        "lemma": "örök",
+        "pos": "형용사",
+        "meaning": "영원한",
+        "grammarFeature": "형용사 (명사 수식)",
+        "level": "A2",
+        "relatedLesson": "형용사의 기초",
+        "relatedLessonTitle": "A1-형용사의 기초"
+      },
+      {
+        "word": "élete",
+        "lemma": "élet",
+        "pos": "명사",
+        "meaning": "생명이 (그의)",
+        "grammarFeature": "주격 + 소유형 3인칭 단수",
+        "level": "A2",
+        "relatedLesson": "소유격",
+        "relatedLessonTitle": "A1-소유격과 여격"
+      },
+      {
+        "word": "legyen",
+        "lemma": "van",
+        "pos": "동사",
+        "meaning": "있다 (접속법)",
+        "grammarFeature": "접속법 현재 3인칭 단수 (legyen)",
+        "level": "B1",
+        "relatedLesson": "접속법 마스터",
+        "relatedLessonTitle": "B1-접속법 마스터"
+      }
+    ]
+  },
+  {
+    "book": "시편",
+    "bookHungarian": "Zsoltárok",
+    "chapter": 23,
+    "verse": 1,
+    "textHungarian": "Az Úr az én pásztorom, nem szűkölködöm.",
+    "textKorean": "여호와는 나의 목자시니 내게 부족함이 없으리로다",
+    "difficulty": "A2",
+    "grammarTopics": ["소유형", "부정문", "be동사"],
+    "vocabularyCount": 6,
+    "sermonRelevance": true,
+    "theologicalTheme": "하나님의 인도하심과 공급하심",
+    "grammarAnalysis": [
+      {
+        "word": "Az",
+        "lemma": "az",
+        "pos": "관사",
+        "meaning": "그",
+        "grammarFeature": "정관사 (모음 앞)",
+        "level": "A1",
+        "relatedLesson": "관사 사용법",
+        "relatedLessonTitle": "A1-관사 사용법"
+      },
+      {
+        "word": "Úr",
+        "lemma": "Úr",
+        "pos": "고유명사",
+        "meaning": "주님",
+        "grammarFeature": "주격 (주어)",
+        "level": "A1",
+        "relatedLesson": "명사의 기초",
+        "relatedLessonTitle": "A1-명사의 기초"
+      },
+      {
+        "word": "az",
+        "lemma": "az",
+        "pos": "관사",
+        "meaning": "그",
+        "grammarFeature": "정관사",
+        "level": "A1",
+        "relatedLesson": "관사 사용법",
+        "relatedLessonTitle": "A1-관사 사용법"
+      },
+      {
+        "word": "én",
+        "lemma": "én",
+        "pos": "대명사",
+        "meaning": "나의",
+        "grammarFeature": "1인칭 단수 대명사 (강조용)",
+        "level": "A1",
+        "relatedLesson": "대명사 기초",
+        "relatedLessonTitle": "A1-인사와 자기소개"
+      },
+      {
+        "word": "pásztorom",
+        "lemma": "pásztor",
+        "pos": "명사",
+        "meaning": "목자 (나의)",
+        "grammarFeature": "소유형 1인칭 단수 (-om)",
+        "level": "A1",
+        "relatedLesson": "소유격",
+        "relatedLessonTitle": "A1-소유격과 여격"
+      },
+      {
+        "word": "nem",
+        "lemma": "nem",
+        "pos": "부정사",
+        "meaning": "~하지 않다",
+        "grammarFeature": "부정 부사",
+        "level": "A1",
+        "relatedLesson": "부정문 만들기",
+        "relatedLessonTitle": "A1-부정문 만들기"
+      },
+      {
+        "word": "szűkölködöm",
+        "lemma": "szűkölködik",
+        "pos": "동사",
+        "meaning": "부족하다 (나는)",
+        "grammarFeature": "현재시제 1인칭 단수 (-öm)",
+        "level": "A2",
+        "relatedLesson": "현재시제 동사 활용",
+        "relatedLessonTitle": "A1-현재시제 동사 활용"
+      }
+    ]
+  },
+  {
+    "book": "창세기",
+    "bookHungarian": "Genezis",
+    "chapter": 1,
+    "verse": 1,
+    "textHungarian": "Kezdetben teremtette Isten az eget és a földet.",
+    "textKorean": "태초에 하나님이 천지를 창조하시니라",
+    "difficulty": "A2",
+    "grammarTopics": ["과거시제", "대격", "접속사"],
+    "vocabularyCount": 7,
+    "sermonRelevance": true,
+    "theologicalTheme": "창조 - 하나님의 전능하심",
+    "grammarAnalysis": [
+      {
+        "word": "Kezdetben",
+        "lemma": "kezdet",
+        "pos": "명사",
+        "meaning": "시작에, 처음에",
+        "grammarFeature": "내격 (-ben) - 시간 표현",
+        "level": "A2",
+        "relatedLesson": "장소격 3형제",
+        "relatedLessonTitle": "A2-장소격 3형제"
+      },
+      {
+        "word": "teremtette",
+        "lemma": "teremt",
+        "pos": "동사",
+        "meaning": "창조했다",
+        "grammarFeature": "과거시제 3인칭 단수 (-te 과거접미사)",
+        "level": "A2",
+        "relatedLesson": "과거시제 기본",
+        "relatedLessonTitle": "A2-과거시제 기본"
+      },
+      {
+        "word": "Isten",
+        "lemma": "Isten",
+        "pos": "고유명사",
+        "meaning": "하나님",
+        "grammarFeature": "주격 (주어)",
+        "level": "A1",
+        "relatedLesson": "명사의 기초",
+        "relatedLessonTitle": "A1-명사의 기초"
+      },
+      {
+        "word": "az",
+        "lemma": "az",
+        "pos": "관사",
+        "meaning": "그",
+        "grammarFeature": "정관사 (모음 앞)",
+        "level": "A1",
+        "relatedLesson": "관사 사용법",
+        "relatedLessonTitle": "A1-관사 사용법"
+      },
+      {
+        "word": "eget",
+        "lemma": "ég",
+        "pos": "명사",
+        "meaning": "하늘을",
+        "grammarFeature": "대격 (-et) - 목적어",
+        "level": "A1",
+        "relatedLesson": "주격과 대격",
+        "relatedLessonTitle": "A1-주격과 대격"
+      },
+      {
+        "word": "és",
+        "lemma": "és",
+        "pos": "접속사",
+        "meaning": "그리고",
+        "grammarFeature": "등위 접속사",
+        "level": "A1",
+        "relatedLesson": "접속사 마스터",
+        "relatedLessonTitle": "A2-접속사 마스터"
+      },
+      {
+        "word": "a",
+        "lemma": "a",
+        "pos": "관사",
+        "meaning": "그",
+        "grammarFeature": "정관사 (자음 앞)",
+        "level": "A1",
+        "relatedLesson": "관사 사용법",
+        "relatedLessonTitle": "A1-관사 사용법"
+      },
+      {
+        "word": "földet",
+        "lemma": "föld",
+        "pos": "명사",
+        "meaning": "땅을",
+        "grammarFeature": "대격 (-et) - 목적어",
+        "level": "A1",
+        "relatedLesson": "주격과 대격",
+        "relatedLessonTitle": "A1-주격과 대격"
+      }
+    ]
+  },
+  {
+    "book": "고린도전서",
+    "bookHungarian": "Korinthusiakhoz írt első levél",
+    "chapter": 13,
+    "verse": 13,
+    "textHungarian": "Most azért megmarad a hit, remény, szeretet, e három; ezek között pedig legnagyobb a szeretet.",
+    "textKorean": "그런즉 믿음, 소망, 사랑, 이 세 가지는 항상 있을 것인데 그 중의 제일은 사랑이라",
+    "difficulty": "B1",
+    "grammarTopics": ["현재시제", "비교급", "최상급", "복수형"],
+    "vocabularyCount": 12,
+    "sermonRelevance": true,
+    "theologicalTheme": "믿음, 소망, 사랑 - 가장 큰 것은 사랑",
+    "grammarAnalysis": [
+      {
+        "word": "Most",
+        "lemma": "most",
+        "pos": "부사",
+        "meaning": "지금",
+        "grammarFeature": "시간 부사",
+        "level": "A1",
+        "relatedLesson": "시간 표현",
+        "relatedLessonTitle": "A1-숫자와 시간"
+      },
+      {
+        "word": "azért",
+        "lemma": "azért",
+        "pos": "부사",
+        "meaning": "그러므로",
+        "grammarFeature": "인과관계 부사",
+        "level": "A2",
+        "relatedLesson": "접속사와 부사",
+        "relatedLessonTitle": "A2-접속사 마스터"
+      },
+      {
+        "word": "megmarad",
+        "lemma": "megmarad",
+        "pos": "동사",
+        "meaning": "남다, 머물다",
+        "grammarFeature": "현재시제 3인칭 단수",
+        "level": "A2",
+        "relatedLesson": "현재시제",
+        "relatedLessonTitle": "A1-현재시제 동사 활용"
+      },
+      {
+        "word": "a",
+        "lemma": "a",
+        "pos": "관사",
+        "meaning": "그",
+        "grammarFeature": "정관사",
+        "level": "A1",
+        "relatedLesson": "관사",
+        "relatedLessonTitle": "A1-관사 사용법"
+      },
+      {
+        "word": "hit",
+        "lemma": "hit",
+        "pos": "명사",
+        "meaning": "믿음",
+        "grammarFeature": "주격 (주어)",
+        "level": "A2",
+        "relatedLesson": "추상명사",
+        "relatedLessonTitle": "A2-추상 개념 표현"
+      },
+      {
+        "word": "remény",
+        "lemma": "remény",
+        "pos": "명사",
+        "meaning": "소망",
+        "grammarFeature": "주격",
+        "level": "A2",
+        "relatedLesson": "추상명사",
+        "relatedLessonTitle": "A2-추상 개념 표현"
+      },
+      {
+        "word": "szeretet",
+        "lemma": "szeretet",
+        "pos": "명사",
+        "meaning": "사랑",
+        "grammarFeature": "주격",
+        "level": "A1",
+        "relatedLesson": "기본 명사",
+        "relatedLessonTitle": "A1-명사의 기초"
+      },
+      {
+        "word": "e",
+        "lemma": "ez",
+        "pos": "지시대명사",
+        "meaning": "이",
+        "grammarFeature": "지시형용사",
+        "level": "A1",
+        "relatedLesson": "지시대명사",
+        "relatedLessonTitle": "A1-명사의 기초"
+      },
+      {
+        "word": "három",
+        "lemma": "három",
+        "pos": "수사",
+        "meaning": "세",
+        "grammarFeature": "기수",
+        "level": "A1",
+        "relatedLesson": "숫자",
+        "relatedLessonTitle": "A1-숫자와 시간"
+      },
+      {
+        "word": "ezek",
+        "lemma": "ez",
+        "pos": "지시대명사",
+        "meaning": "이것들",
+        "grammarFeature": "복수형 지시대명사",
+        "level": "A1",
+        "relatedLesson": "복수형",
+        "relatedLessonTitle": "A1-명사의 기초"
+      },
+      {
+        "word": "között",
+        "lemma": "között",
+        "pos": "후치사",
+        "meaning": "사이에, 중에",
+        "grammarFeature": "위치 후치사",
+        "level": "A2",
+        "relatedLesson": "위치 전치사",
+        "relatedLessonTitle": "A1-위치 전치사"
+      },
+      {
+        "word": "pedig",
+        "lemma": "pedig",
+        "pos": "접속사",
+        "meaning": "그런데, 하지만",
+        "grammarFeature": "대조 접속사",
+        "level": "A2",
+        "relatedLesson": "접속사",
+        "relatedLessonTitle": "A2-접속사 마스터"
+      },
+      {
+        "word": "legnagyobb",
+        "lemma": "nagy",
+        "pos": "형용사",
+        "meaning": "가장 큰",
+        "grammarFeature": "최상급 (leg- + -obb)",
+        "level": "A2",
+        "relatedLesson": "비교급과 최상급",
+        "relatedLessonTitle": "A2-비교급과 최상급"
+      },
+      {
+        "word": "a",
+        "lemma": "a",
+        "pos": "관사",
+        "meaning": "그",
+        "grammarFeature": "정관사",
+        "level": "A1",
+        "relatedLesson": "관사",
+        "relatedLessonTitle": "A1-관사 사용법"
+      },
+      {
+        "word": "szeretet",
+        "lemma": "szeretet",
+        "pos": "명사",
+        "meaning": "사랑",
+        "grammarFeature": "주격 (서술어)",
+        "level": "A1",
+        "relatedLesson": "명사",
+        "relatedLessonTitle": "A1-명사의 기초"
+      }
+    ]
+  }
+]

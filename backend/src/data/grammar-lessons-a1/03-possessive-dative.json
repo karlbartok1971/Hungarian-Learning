@@ -1,0 +1,217 @@
+{
+  "level": "A1",
+  "orderIndex": 3,
+  "titleKorean": "소유격과 여격 - 나의, 너의, ~에게",
+  "titleHungarian": "Birtokos eset és részeshatározó eset",
+  "explanationKorean": "소유격(Possessive)은 '~의'를 나타내고, 여격(Dative)은 '~에게'를 나타냅니다. 헝가리어에서는 소유를 명사에 직접 표시하는 독특한 방법을 사용합니다. 이 강의에서는 '나의 집', '너에게' 같은 표현을 배웁니다.",
+  "explanationHungarian": "A birtokos jelzők és a részeshatározó ragok segítségével fejezzük ki a tulajdonlást és a címzettet.",
+  "grammarRules": {
+    "rules": [
+      {
+        "title": "소유 표현 - 인칭별 소유 접미사",
+        "description": "헝가리어는 명사 뒤에 소유자를 나타내는 접미사를 붙입니다.",
+        "pattern": "명사 + 소유접미사 (-(e)m, -(e)d, -(j)a/-(j)e)",
+        "examples": [
+          {
+            "hu": "ház + -am = házam",
+            "ko": "집 + 나의 = 나의 집",
+            "context": "1인칭 단수 소유"
+          },
+          {
+            "hu": "könyv + -em = könyvem",
+            "ko": "책 + 나의 = 나의 책",
+            "context": "1인칭 단수 소유"
+          },
+          {
+            "hu": "ház + -ad = házad",
+            "ko": "집 + 너의 = 너의 집",
+            "context": "2인칭 단수 소유"
+          }
+        ]
+      },
+      {
+        "title": "소유 접미사 전체 표",
+        "description": "인칭별 소유 접미사",
+        "pattern": "뒤 모음 / 앞 모음",
+        "examples": [
+          {
+            "hu": "나의: -(a)m / -(e)m",
+            "ko": "házam / könyvem",
+            "context": "1인칭 단수"
+          },
+          {
+            "hu": "너의: -(o)d / -(e)d",
+            "ko": "házad / könyved",
+            "context": "2인칭 단수"
+          },
+          {
+            "hu": "그의/그녀의: -(j)a / -(j)e",
+            "ko": "háza / könyve",
+            "context": "3인칭 단수"
+          }
+        ]
+      },
+      {
+        "title": "여격 (Dative Case)",
+        "description": "'~에게, ~을 위해'를 나타냅니다. -nak/-nek을 붙입니다.",
+        "pattern": "명사 + -nak/-nek",
+        "examples": [
+          {
+            "hu": "ember + -nek = embernek",
+            "ko": "사람에게",
+            "context": "앞 모음 → -nek"
+          },
+          {
+            "hu": "anya + -nak = anyának",
+            "ko": "어머니에게",
+            "context": "뒤 모음 → -nak"
+          },
+          {
+            "hu": "Isten + -nek = Istennek",
+            "ko": "하나님께",
+            "context": "신학적 표현"
+          }
+        ]
+      },
+      {
+        "title": "소유형 + 여격 결합",
+        "description": "소유 접미사 뒤에 여격을 붙일 수 있습니다.",
+        "pattern": "명사 + 소유접미사 + -nak/-nek",
+        "examples": [
+          {
+            "hu": "ház + -am + -nak = házamnak",
+            "ko": "나의 집에게 (나의 집을 위해)",
+            "context": "소유 + 여격"
+          },
+          {
+            "hu": "barát + -om + -nak = barátomnak",
+            "ko": "나의 친구에게",
+            "context": "소유 + 여격"
+          }
+        ]
+      }
+    ]
+  },
+  "examples": [
+    {
+      "hu": "Ez az én házam.",
+      "ko": "이것은 나의 집입니다.",
+      "context": "일상",
+      "grammarPoint": "소유 -am"
+    },
+    {
+      "hu": "A te könyved érdekes.",
+      "ko": "너의 책은 흥미롭다.",
+      "context": "일상",
+      "grammarPoint": "소유 -ed"
+    },
+    {
+      "hu": "Adok neki egy ajándékot.",
+      "ko": "나는 그/그녀에게 선물을 줍니다.",
+      "context": "일상",
+      "grammarPoint": "여격 (neki = 그에게)"
+    },
+    {
+      "hu": "Isten az én pásztorum.",
+      "ko": "하나님은 나의 목자이십니다.",
+      "context": "성경 - 시편 23:1",
+      "grammarPoint": "소유 -om"
+    },
+    {
+      "hu": "Imádkozom Istennek.",
+      "ko": "나는 하나님께 기도합니다.",
+      "context": "신학/설교",
+      "grammarPoint": "여격 -nek"
+    },
+    {
+      "hu": "A mi Atyánk a mennyben.",
+      "ko": "하늘에 계신 우리 아버지.",
+      "context": "성경 - 주기도문",
+      "grammarPoint": "소유 -nk (우리의)"
+    },
+    {
+      "hu": "Ez a ti templomotok.",
+      "ko": "이것은 너희의 교회입니다.",
+      "context": "신학/설교",
+      "grammarPoint": "소유 -otok (너희들의)"
+    },
+    {
+      "hu": "Jézus az ő Megváltójuk.",
+      "ko": "예수님은 그들의 구원자이십니다.",
+      "context": "신학/설교",
+      "grammarPoint": "소유 -juk (그들의)"
+    },
+    {
+      "hu": "Adok neked egy Bibliát.",
+      "ko": "나는 너에게 성경 한 권을 줍니다.",
+      "context": "신학/설교",
+      "grammarPoint": "여격 대명사 neked"
+    },
+    {
+      "hu": "A családomnak fontos a hit.",
+      "ko": "나의 가족에게 믿음은 중요합니다.",
+      "context": "일상",
+      "grammarPoint": "소유 + 여격"
+    },
+    {
+      "hu": "Isten szeretete örök.",
+      "ko": "하나님의 사랑은 영원합니다.",
+      "context": "신학/설교",
+      "grammarPoint": "소유 관계"
+    },
+    {
+      "hu": "Az én lelkem dicséri az Urat.",
+      "ko": "나의 영혼이 주님을 찬양합니다.",
+      "context": "성경 - 누가복음 1:46",
+      "grammarPoint": "소유 -em"
+    },
+    {
+      "hu": "Segítek a barátomnak.",
+      "ko": "나는 나의 친구를 돕습니다.",
+      "context": "일상",
+      "grammarPoint": "소유 + 여격"
+    },
+    {
+      "hu": "A gyülekezetünk nagy.",
+      "ko": "우리 교회는 큽니다.",
+      "context": "신학/설교",
+      "grammarPoint": "소유 -ünk"
+    },
+    {
+      "hu": "Hálát adok Istennek.",
+      "ko": "나는 하나님께 감사드립니다.",
+      "context": "신학/설교",
+      "grammarPoint": "여격 -nek"
+    }
+  ],
+  "koreanInterferenceNotes": "한국인 학습자 주의사항:\n\n1. **소유 표현 방식의 차이**:\n   - 한국어: 나의 + 집 (분리된 형태)\n   - 헝가리어: ház + am = házam (붙는 형태)\n   \n2. **소유대명사 생략 가능**:\n   - 한국어: '나의 집'에서 '나의'를 빼면 어색함\n   - 헝가리어: házam만으로 '나의 집' 의미 완전 전달\n   - én házam (X, 불필요한 중복)\n   - házam (O)\n\n3. **여격 vs 한국어 조사**:\n   - 한국어: ~에게 (독립 조사)\n   - 헝가리어: -nak/-nek (붙는 어미)\n   - Istennek (하나님께) = Isten + -nek\n\n4. **모음조화 적용**:\n   - 소유: -am/-em, -ad/-ed, -a/-e\n   - 여격: -nak/-nek\n   - házam (뒤 모음), könyvem (앞 모음)\n\n5. **복수 소유**:\n   - 우리의: -nk/-ünk/-unk\n   - 너희의: -tok/-tek/-tök\n   - 그들의: -juk/-jük/-uk\n\n**암기 팁**: 소유 접미사를 외울 때 '나-너-그'로 순서를 기억하세요!\n- 나의(m) → 너의(d) → 그의(a/e)",
+  "commonMistakes": [
+    {
+      "mistake": "én házam",
+      "correct": "házam",
+      "explanation": "소유 접미사가 이미 '나의'를 나타내므로 én은 불필요합니다."
+    },
+    {
+      "mistake": "embernak",
+      "correct": "embernek",
+      "explanation": "ember는 앞 모음이므로 -nek을 씁니다."
+    },
+    {
+      "mistake": "könyvnek",
+      "correct": "könyvnek",
+      "explanation": "이것은 맞습니다! könyv는 앞 모음이므로 -nek이 맞습니다."
+    }
+  ],
+  "comparisonWithKorean": "소유 표현:\n- 한국어: 나의 집, 너의 책 (관형격 조사 '의')\n- 헝가리어: házam, könyved (소유 접미사)\n\n여격:\n- 한국어: 사람에게, 하나님께 (조사 '에게/께')\n- 헝가리어: embernek, Istennek (여격 어미 -nak/-nek)\n\n공통점: 둘 다 관계를 명확히 표시합니다!",
+  "estimatedDuration": 45,
+  "difficultyScore": 3,
+  "prerequisites": ["01-nouns-basics", "02-nominative-accusative"],
+  "tags": ["소유격", "여격", "인칭", "기초문법"],
+  "theologicalRelevance": true,
+  "theologicalExamples": [
+    "Imádkozom Istennek (하나님께 기도합니다)",
+    "Az én Istenem (나의 하나님)",
+    "Hálát adok az Úrnak (주님께 감사드립니다)"
+  ],
+  "isPublished": true
+}

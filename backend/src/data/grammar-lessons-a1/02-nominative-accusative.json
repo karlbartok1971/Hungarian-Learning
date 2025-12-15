@@ -1,0 +1,222 @@
+{
+  "level": "A1",
+  "orderIndex": 2,
+  "titleKorean": "주격과 대격 - 가장 기본적인 두 가지 격",
+  "titleHungarian": "Alanyeset és tárgyeset",
+  "explanationKorean": "헝가리어의 17가지 격 중에서 가장 먼저 배워야 할 주격(Nominative)과 대격(Accusative)입니다. 주격은 '~이/가'에 해당하고, 대격은 '~을/를'에 해당합니다. 이 두 격만 잘 이해해도 기본적인 문장을 만들 수 있습니다!",
+  "explanationHungarian": "Az alanyeset és a tárgyeset a magyar nyelv két legalapvetőbb esete.",
+  "grammarRules": {
+    "rules": [
+      {
+        "title": "주격 (Nominative Case - Alanyeset)",
+        "description": "문장의 주어를 나타냅니다. 한국어의 '~이/가'에 해당하며, 명사의 기본형 그대로 사용합니다.",
+        "pattern": "명사 원형 (변화 없음)",
+        "examples": [
+          {
+            "hu": "A ház nagy.",
+            "ko": "집이 큽니다.",
+            "context": "주어 역할"
+          },
+          {
+            "hu": "Az ember olvas.",
+            "ko": "사람이 읽습니다.",
+            "context": "주어 역할"
+          },
+          {
+            "hu": "Isten szeretet.",
+            "ko": "하나님은 사랑이십니다.",
+            "context": "신학적 표현"
+          }
+        ]
+      },
+      {
+        "title": "대격 (Accusative Case - Tárgyeset)",
+        "description": "문장의 목적어를 나타냅니다. 한국어의 '~을/를'에 해당하며, 명사 뒤에 -t/-ot/-et/-öt를 붙입니다.",
+        "pattern": "명사 + -t/-ot/-et/-öt (모음조화)",
+        "examples": [
+          {
+            "hu": "Látom a házat.",
+            "ko": "나는 집을 봅니다.",
+            "context": "목적어 -t"
+          },
+          {
+            "hu": "Szeretem az embert.",
+            "ko": "나는 그 사람을 사랑합니다.",
+            "context": "목적어 -t"
+          },
+          {
+            "hu": "Olvasom a könyvet.",
+            "ko": "나는 책을 읽습니다.",
+            "context": "목적어 -et"
+          }
+        ]
+      },
+      {
+        "title": "대격의 모음조화",
+        "description": "대격 어미도 모음조화 규칙을 따릅니다.",
+        "pattern": "뒤 모음: -ot / 앞 모음: -et/-öt",
+        "examples": [
+          {
+            "hu": "ablak → ablakot",
+            "ko": "창문 → 창문을",
+            "context": "뒤 모음 a → -ot"
+          },
+          {
+            "hu": "kenyér → kenyeret",
+            "ko": "빵 → 빵을",
+            "context": "앞 모음 e → -et"
+          },
+          {
+            "hu": "tükör → tükröt",
+            "ko": "거울 → 거울을",
+            "context": "앞 모음 ö → -öt"
+          }
+        ]
+      },
+      {
+        "title": "모음으로 끝나는 명사의 대격",
+        "description": "모음으로 끝나는 명사는 -t만 붙입니다.",
+        "pattern": "모음으로 끝나는 명사 + -t",
+        "examples": [
+          {
+            "hu": "alma → almát",
+            "ko": "사과 → 사과를",
+            "context": "-t만 추가"
+          },
+          {
+            "hu": "kávé → kávét",
+            "ko": "커피 → 커피를",
+            "context": "-t만 추가"
+          },
+          {
+            "hu": "kapu → kaput",
+            "ko": "문 → 문을",
+            "context": "-t만 추가"
+          }
+        ]
+      }
+    ]
+  },
+  "examples": [
+    {
+      "hu": "A fiú olvas.",
+      "ko": "소년이 읽습니다.",
+      "context": "일상 - 주격",
+      "grammarPoint": "주어 (주격)"
+    },
+    {
+      "hu": "A lány látja a fiút.",
+      "ko": "소녀가 소년을 봅니다.",
+      "context": "일상 - 대격",
+      "grammarPoint": "목적어 (대격 -t)"
+    },
+    {
+      "hu": "Szeretem a kávét.",
+      "ko": "나는 커피를 좋아합니다.",
+      "context": "일상",
+      "grammarPoint": "대격 -t (모음 뒤)"
+    },
+    {
+      "hu": "Olvasom a Bibliát.",
+      "ko": "나는 성경을 읽습니다.",
+      "context": "신학/설교",
+      "grammarPoint": "대격 -t"
+    },
+    {
+      "hu": "Isten teremtette a világot.",
+      "ko": "하나님이 세상을 창조하셨습니다.",
+      "context": "신학/설교",
+      "grammarPoint": "대격 -ot"
+    },
+    {
+      "hu": "Szeretjük az Urat.",
+      "ko": "우리는 주님을 사랑합니다.",
+      "context": "신학/설교",
+      "grammarPoint": "대격 -t"
+    },
+    {
+      "hu": "Jézus szereti az embereket.",
+      "ko": "예수님은 사람들을 사랑하십니다.",
+      "context": "성경 - 요한복음 3:16 기반",
+      "grammarPoint": "복수 대격"
+    },
+    {
+      "hu": "Hallom az Isten hangját.",
+      "ko": "나는 하나님의 음성을 듣습니다.",
+      "context": "성경",
+      "grammarPoint": "대격 -t"
+    },
+    {
+      "hu": "Az emberek keresik Istent.",
+      "ko": "사람들이 하나님을 찾습니다.",
+      "context": "신학/설교",
+      "grammarPoint": "대격 -t"
+    },
+    {
+      "hu": "Látom a templomot.",
+      "ko": "나는 교회를 봅니다.",
+      "context": "일상",
+      "grammarPoint": "대격 -ot"
+    },
+    {
+      "hu": "A pásztor vezeti a nyájat.",
+      "ko": "목자가 양떼를 인도합니다.",
+      "context": "성경 - 시편 23편 기반",
+      "grammarPoint": "대격 -t"
+    },
+    {
+      "hu": "Énekeljük a dicséretet.",
+      "ko": "우리는 찬양을 노래합니다.",
+      "context": "신학/설교",
+      "grammarPoint": "대격 -et"
+    },
+    {
+      "hu": "Az apostolok hirdetik az evangéliumot.",
+      "ko": "사도들이 복음을 전파합니다.",
+      "context": "신학/설교",
+      "grammarPoint": "대격 -ot"
+    },
+    {
+      "hu": "Tanulmányozom a Szentírást.",
+      "ko": "나는 성경을 연구합니다.",
+      "context": "신학/설교",
+      "grammarPoint": "대격 -t"
+    },
+    {
+      "hu": "A hívők tisztelik Istent.",
+      "ko": "신자들이 하나님을 존경합니다.",
+      "context": "신학/설교",
+      "grammarPoint": "대격 -t"
+    }
+  ],
+  "koreanInterferenceNotes": "한국인 학습자 주의사항:\n\n1. **대격 표지 필수**: 한국어에서는 '나는 밥 먹어'처럼 '을/를'을 생략할 수 있지만, 헝가리어에서는 대격 어미(-t/-ot/-et/-öt)를 반드시 붙여야 합니다.\n   - 틀린 예: Eszem kenyér (X)\n   - 올바른 예: Eszem kenyeret (O)\n\n2. **모음조화 적용**: 대격 어미도 모음조화를 따릅니다.\n   - 뒤 모음 단어: -ot (ablakot, almát)\n   - 앞 모음 단어: -et/-öt (kenyeret, tükröt)\n\n3. **주어와 목적어 구분**: 한국어는 어순이 자유롭지만 헝가리어는 격변화로 역할을 구분합니다.\n   - 한국어: '철수가 영희를 본다' = '영희를 철수가 본다' (둘 다 가능)\n   - 헝가리어: 격변화로 명확히 구분\n\n4. **복수형 + 대격**: 복수형에도 대격을 붙입니다.\n   - emberek (사람들) → embereket (사람들을)\n   - házak (집들) → házakat (집들을)\n\n**암기 팁**: 대격 = '목적어를 가리키는 화살표(→)'라고 생각하세요. 동작의 대상을 명확히 표시합니다!",
+  "commonMistakes": [
+    {
+      "mistake": "Szeretem Isten",
+      "correct": "Szeretem Istent",
+      "explanation": "목적어에는 반드시 대격 어미를 붙여야 합니다."
+    },
+    {
+      "mistake": "Látom a házot",
+      "correct": "Látom a házat",
+      "explanation": "ház는 뒤 모음이지만 모음으로 끝나지 않으므로 -at이 아닌 -at를 씁니다. (ház + -at = házat)"
+    },
+    {
+      "mistake": "Olvasom könyv",
+      "correct": "Olvasom a könyvet",
+      "explanation": "관사(a)와 대격 어미(-et) 모두 필요합니다."
+    }
+  ],
+  "comparisonWithKorean": "한국어 조사 vs 헝가리어 격변화\n\n주격:\n- 한국어: 집이, 사람이 (조사 '이/가')\n- 헝가리어: ház, ember (변화 없음)\n\n대격:\n- 한국어: 집을, 사람을 (조사 '을/를')\n- 헝가리어: házat, embert (어미 -at/-et 붙음)\n\n공통점: 둘 다 주어와 목적어를 명확히 구분합니다!",
+  "estimatedDuration": 40,
+  "difficultyScore": 2,
+  "prerequisites": ["01-nouns-basics"],
+  "tags": ["격변화", "주격", "대격", "필수", "기초문법"],
+  "theologicalRelevance": true,
+  "theologicalExamples": [
+    "Szeretem Istent (나는 하나님을 사랑합니다)",
+    "Olvasom a Bibliát (나는 성경을 읽습니다)",
+    "Hirdetem az evangéliumot (나는 복음을 전파합니다)"
+  ],
+  "isPublished": true
+}

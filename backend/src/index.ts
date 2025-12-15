@@ -17,6 +17,7 @@ import { learningPathRoutes } from './api/learningPath';
 import aiTutorRoutes from './api/aiTutor';
 import grammarLessonsRoutes from './api/grammarLessons';
 import dashboardRoutes from './api/dashboard';
+import bibleRoutes from './api/bible';
 
 // 환경 변수 로드
 dotenv.config();
@@ -61,6 +62,7 @@ app.use('/api/learning-path', learningPathRoutes);
 app.use('/api/ai-tutor', aiTutorRoutes); // AI 튜터 API
 app.use('/api/grammar-lessons', grammarLessonsRoutes); // 문법 강의 API
 app.use('/api/dashboard', dashboardRoutes); // 대시보드 API
+app.use('/api/bible', bibleRoutes); // 성경 일일 학습 API
 
 // 404 핸들러
 app.use('*', (_, res) => {
