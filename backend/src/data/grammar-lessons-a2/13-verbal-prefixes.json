@@ -1,0 +1,152 @@
+{
+    "level": "A2",
+    "orderIndex": 13,
+    "titleKorean": "동사 접두사 - 의미를 바꾸는 마법",
+    "titleHungarian": "Igekötők",
+    "explanationKorean": "동사 앞에 붙어서 방향, 완료, 혹은 완전히 새로운 의미를 만드는 접두사(Meg, El, Be, Ki 등)입니다. 헝가리어의 꽃입니다.",
+    "explanationHungarian": "Az igekötők megváltoztatják az ige jelentését.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "주요 접두사",
+                "description": "be(안으로), ki(밖으로), le(아래로), fel(위로), el(멀리/완료), meg(완료/강조).",
+                "pattern": "megy (가다) -> be-megy (들어가다) -> ki-megy (나가다)",
+                "examples": [
+                    {
+                        "hu": "Bemenjünk.",
+                        "ko": "들어가자."
+                    }
+                ]
+            },
+            {
+                "title": "Meg- (완료/Perfective)",
+                "description": "동작의 완성을 나타냅니다. 가장 흔하게 쓰입니다.",
+                "pattern": "eszik (먹다) -> megeszik (다 먹어치우다)",
+                "examples": [
+                    {
+                        "hu": "Megváltott.",
+                        "ko": "구속하셨다(완료)."
+                    }
+                ]
+            },
+            {
+                "title": "분리 현상 (Separation)",
+                "description": "부정문(nem), 의문문, 강조할 때 접두사가 동사 뒤로 떨어집니다.",
+                "pattern": "Nem megyek be. (I don't go in.)",
+                "examples": [
+                    {
+                        "hu": "Elment? (갔니?)",
+                        "ko": "Nem ment el. (안 갔다.)"
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Megváltó.",
+            "ko": "구세주 (Meg + vált: 바꾸다/구속하다).",
+            "context": "기독교 핵심"
+        },
+        {
+            "hu": "Feltámadt.",
+            "ko": "부활하셨다 (Fel: 위로 + támad: 일어나다).",
+            "context": "부활절"
+        },
+        {
+            "hu": "Megtértem.",
+            "ko": "회심했다 (Meg + tér: 돌다).",
+            "context": "간증"
+        },
+        {
+            "hu": "Bocsáss meg.",
+            "ko": "용서해라 (Meg + bocsát: 놓아주다).",
+            "context": "기도"
+        },
+        {
+            "hu": "Kiment a pusztába.",
+            "ko": "광야로 나갔다 (Ki: 밖으로).",
+            "context": "성경"
+        },
+        {
+            "hu": "Lejött a mennyből.",
+            "ko": "하늘에서 내려오셨다 (Le: 아래로).",
+            "context": "성탄절"
+        },
+        {
+            "hu": "Elveszett juh.",
+            "ko": "잃어버린 양 (El: 분리/상실).",
+            "context": "성경"
+        },
+        {
+            "hu": "Bemegyek a templomba.",
+            "ko": "교회에 들어갑니다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Átment a tengeren.",
+            "ko": "바다를 건넜다 (Át: 통과/횡단).",
+            "context": "성경(홍해)"
+        },
+        {
+            "hu": "Visszajön.",
+            "ko": "다시 오신다/재림 (Vissza: 다시/Back).",
+            "context": "종말론"
+        },
+        {
+            "hu": "Összegyűltek.",
+            "ko": "함께 모였다 (Össze: 함께/Together).",
+            "context": "초대교회"
+        },
+        {
+            "hu": "Szétmentek.",
+            "ko": "흩어졌다 (Szét: 사방으로/Apart).",
+            "context": "디아스포라"
+        },
+        {
+            "hu": "Megértette?",
+            "ko": "이해했습니까? (이해의 완료)",
+            "context": "학습"
+        },
+        {
+            "hu": "Nem adom fel.",
+            "ko": "포기하지 않는다 (Felad: 포기하다).",
+            "context": "다짐"
+        },
+        {
+            "hu": "Ránéz.",
+            "ko": "~를 쳐다보다 (Rá: ~위에).",
+            "context": "성경"
+        }
+    ],
+    "koreanInterferenceNotes": "접두사가 떨어지는 현상(Nem megyek el)이 가장 어렵습니다. '부정어(Nem) + 동사 + 접두사' 순서를 꼭 기억하세요.",
+    "commonMistakes": [
+        {
+            "mistake": "Nem elmegyek.",
+            "correct": "Nem megyek el.",
+            "explanation": "부정문에서는 접두사가 동사 뒤로 도망갑니다."
+        },
+        {
+            "mistake": "Meg nem bocsátok.",
+            "correct": "Nem bocsátok meg.",
+            "explanation": "Nem이 접두사와 동사 사이에 끼어들어 분리시킵니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어의 보조용언(먹어 '버리다', 가 '버리다')이나 영어의 구동사(Give 'up', Go 'out')와 비슷합니다.",
+    "estimatedDuration": 55,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "A2-1"
+    ],
+    "tags": [
+        "접두사",
+        "동사",
+        "어순"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Megváltó (구세주)",
+        "Feltámadás (부활)",
+        "Megtérés (회심)"
+    ]
+}

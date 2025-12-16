@@ -1,0 +1,120 @@
+{
+    "level": "B2",
+    "orderIndex": 16,
+    "titleKorean": "추상명사 만들기 [-ság/-ség] - 진리, 거룩함",
+    "titleHungarian": "Főnévképzés (-ság/-ség)",
+    "explanationKorean": "### 1. 명사를 만드는 마법의 꼬리\n\n형용사나 명사 뒤에 **-ság/-ség**를 붙이면 추상적인 개념(상태, 자질, 신분)이 됩니다.\n영어의 '-ness', '-hood', '-ship'과 같습니다.\n- *Jó* (좋은) -> *Jó**ság*** (선함/Goodness)\n- *Igaz* (참된) -> *Igaz**ság*** (진리/의/Truth)\n- *Király* (왕) -> *Király**ság*** (왕국/Kingdom)\n\n### 2. 신학적 필수 어휘\n성경의 핵심 단어들이 대부분 이 형태로 되어 있습니다. (구원, 거룩함, 신실함 등)",
+    "explanationHungarian": "Melléknevekből vagy főnevekből elvont fogalmak képzése -ság/-ség toldalékkal.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "-ság/-ség 접미사",
+                "description": "모음조화에 따라 붙입니다.",
+                "table": {
+                    "headers": [
+                        "원형 (Adj/Noun)",
+                        "추상명사",
+                        "의미"
+                    ],
+                    "rows": [
+                        [
+                            "Szabad (자유로운)",
+                            "Szabad**ság**",
+                            "자유 (Freedom)"
+                        ],
+                        [
+                            "Boldog (행복한)",
+                            "Boldog**ság**",
+                            "행복 (Happiness)"
+                        ],
+                        [
+                            "Egész (전체의)",
+                            "Egész**ség**",
+                            "건강 (Health/Wholeness)"
+                        ],
+                        [
+                            "Szent (거룩한)",
+                            "Szent**ség**",
+                            "거룩함/성결 (Holiness)"
+                        ],
+                        [
+                            "Atya (아버지)",
+                            "Atya**ság**",
+                            "부성 (Fatherhood)"
+                        ]
+                    ]
+                }
+            }
+        ]
+    },
+    "examples": [
+        {
+            "items": [
+                {
+                    "hu": "Én vagyok az út, az igazság és az élet.",
+                    "ko": "내가 곧 길이요 진리(Igazság)요 생명이니... (요 14:6)",
+                    "grammar": "Igaz (참된/의로운) + ság -> 진리/의",
+                    "vocabulary": [
+                        "igazság (진리/의)"
+                    ]
+                },
+                {
+                    "hu": "Mert tiétek a mennyek országa.",
+                    "ko": "천국(Menny-ország: 하늘의 나라)이 너희 것임이요.",
+                    "grammar": "Ország (나라/국가 - 울타리가 쳐진 곳)",
+                    "vocabulary": [
+                        "ország (나라/국가)"
+                    ]
+                }
+            ],
+            "category": "핵심 교리"
+        },
+        {
+            "items": [
+                {
+                    "hu": "Jó egészséget kívánok!",
+                    "ko": "건강하시길 빕니다! (Good health I wish)",
+                    "grammar": "Egész-ség-et (Health-acc)",
+                    "vocabulary": [
+                        "kíván (원하다/빌다)"
+                    ]
+                },
+                {
+                    "hu": "Ez butaság.",
+                    "ko": "이건 바보 같은 짓이야(어리석음이야).",
+                    "grammar": "Buta (멍청한) + ság",
+                    "vocabulary": [
+                        "butaság (어리석음/바보짓)"
+                    ]
+                }
+            ],
+            "category": "일상 회화"
+        }
+    ],
+    "koreanInterferenceNotes": "### 🧠 한국인 뇌 구조 바꾸기: '형용사' vs '명사'\n\n- 하나님은 거룩하다 -> *Isten szent.* (형용사)\n- 하나님의 거룩함 -> *Isten szentsége.* (명사 + 소유격)\n\n한국어는 '거룩하다'가 동사처럼 쓰여서 헷갈릴 수 있지만, 헝가리어에선 품사를 명확히 구분해야(-ság/-ség) 문장이 고급스러워집니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Igaz vagyok.",
+            "correct": "Igazam van.",
+            "explanation": "헝가리어로 '나는 옳다(I am right)'는 '나는 진리를 가지고 있다(Igazam van)'라고 표현합니다. *Igaz vagyok*은 '나는 (거짓이 아닌) 진짜 사람이다'라는 뜻이 될 수 있습니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어의 '-함', '-음', '-성' (거룩함, 믿음, 신성) 접미사와 같습니다.",
+    "estimatedDuration": 35,
+    "difficultyScore": 2,
+    "prerequisites": [
+        "A1-8"
+    ],
+    "tags": [
+        "명사화",
+        "추상명사",
+        "진리",
+        "자유"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Szentháromság (성삼위일체 - Szent + Három + Ság)",
+        "Hűség (신실함)"
+    ],
+    "isPublished": true
+}

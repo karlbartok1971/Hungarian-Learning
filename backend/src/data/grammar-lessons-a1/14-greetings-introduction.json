@@ -1,97 +1,46 @@
 {
   "level": "A1",
   "orderIndex": 14,
-  "titleKorean": "인사와 자기소개 - 첫 만남의 기본 표현",
-  "titleHungarian": "Üdvözlések és bemutatás",
-  "explanationKorean": "헝가리어로 처음 만나는 사람과 인사하고 자신을 소개하는 표현들입니다. 기본적인 인사말부터 시작하여 '내 이름은...', '나는 ...에서 왔습니다', '나는 ...직업입니다' 같은 자기소개 표현을 배웁니다. 이 표현들은 일상 대화에서 가장 빈번하게 사용되며, 신학 공부나 교회 모임에서도 필수적입니다.",
-  "explanationHungarian": "Az alapvető üdvözlések és a bemutatás fontosak a magyar nyelvtanulásban. Ezek a kifejezések az első találkozásokhoz szükségesek.",
+  "titleKorean": "인사와 자기소개 - 실전 대화",
+  "titleHungarian": "Bemutatkozás és Köszöntés",
+  "explanationKorean": "헝가리 사람들과의 첫 만남, 교회에서의 인사, 자기소개에 필요한 표현들을 배웁니다.",
+  "explanationHungarian": "Alapvető kommunikációs formulák a mindennapokban és a gyülekezetben.",
   "grammarRules": {
     "rules": [
       {
-        "title": "기본 인사말 - van, jó, szép 형용사",
-        "description": "헝가리어 인사는 '안녕하세요(Jó napot!)'처럼 '좋은 하루'라는 의미를 담고 있습니다. 시간대에 따라 다른 인사말을 사용합니다.",
-        "pattern": "형용사 + 명사 (인사말)",
+        "title": "기본 인사",
+        "description": "시간대에 따른 인사와 일반적인 인사법.",
+        "pattern": "Jó reggelt/napot/estét (아침/낮/저녁), Szia (안녕)",
         "examples": [
           {
-            "hu": "Jó reggelt! (좋은 아침!)",
-            "ko": "Good morning! (8시-12시경)",
-            "context": "아침 인사"
+            "hu": "Jó napot kívánok!",
+            "ko": "안녕하세요! (격식)"
           },
           {
-            "hu": "Jó napot! (좋은 하루!)",
-            "ko": "Good afternoon! (12시-17시경)",
-            "context": "낮 인사"
-          },
-          {
-            "hu": "Jó estét! (좋은 저녁!)",
-            "ko": "Good evening! (17시 이후)",
-            "context": "저녁 인사"
+            "hu": "Sziasztok!",
+            "ko": "안녕, 얘들아! (복수)"
           }
         ]
       },
       {
-        "title": "자기소개 - 'Én vagyok' 구문",
-        "description": "자신의 이름을 소개할 때 사용합니다. 'A nevem...' (내 이름은...)도 많이 사용됩니다.",
-        "pattern": "Én vagyok [이름] / A nevem [이름]",
+        "title": "교회 인사 (중요)",
+        "description": "기독교인끼리의 전통적인 인사법이 있습니다.",
+        "pattern": "Áldás, békesség! (축복과 평화를 빕니다)",
         "examples": [
           {
-            "hu": "Én vagyok János.",
-            "ko": "나는 János입니다.",
-            "context": "자기소개"
-          },
-          {
-            "hu": "A nevem Maria.",
-            "ko": "내 이름은 Maria입니다.",
-            "context": "자기소개"
-          },
-          {
-            "hu": "Én vagyok a lelkész.",
-            "ko": "나는 목사입니다.",
-            "context": "직업 소개"
+            "hu": "Isten hozott!",
+            "ko": "환영합니다! (하나님이 보내셨다)"
           }
         ]
       },
       {
-        "title": "출신지 표현 - 출발격(-ból/-ből)",
-        "description": "어디서 왔는지를 표현할 때 사용합니다. 출발격 어미를 사용합니다.",
-        "pattern": "장소 + -ból/-ből (출발격)",
+        "title": "자기소개 패턴",
+        "description": "이름, 출신, 직업/신분 말하기.",
+        "pattern": "[이름] vagyok. [나라]ból jöttem. [직업] vagyok.",
         "examples": [
           {
-            "hu": "Én vagyok a Magyarországból. (더 정확하게는: Magyarországról vagyok.)",
-            "ko": "나는 헝가리에서 왔습니다.",
-            "context": "국가 출신"
-          },
-          {
-            "hu": "Budapest-ből vagyok.",
-            "ko": "나는 부다페스트에서 왔습니다.",
-            "context": "도시 출신"
-          },
-          {
-            "hu": "Szöulból vagyok.",
-            "ko": "나는 서울에서 왔습니다.",
-            "context": "도시 출신 (외국)"
-          }
-        ]
-      },
-      {
-        "title": "직업 표현 - 직업명 + vagyok",
-        "description": "자신의 직업을 소개할 때 단순히 직업명 + vagyok를 사용합니다. 한국어와 달리 관사나 복잡한 구조 없이 직업명만 사용합니다.",
-        "pattern": "직업명 + vagyok / A ... vagyok",
-        "examples": [
-          {
-            "hu": "Tanár vagyok.",
-            "ko": "나는 선생님입니다.",
-            "context": "직업 소개"
-          },
-          {
-            "hu": "Orvos vagyok.",
-            "ko": "나는 의사입니다.",
-            "context": "직업 소개"
-          },
-          {
-            "hu": "A lelkész vagyok.",
-            "ko": "나는 목사입니다.",
-            "context": "종교 직업"
+            "hu": "Koreai misszionárius vagyok.",
+            "ko": "한국 선교사입니다."
           }
         ]
       }
@@ -99,126 +48,104 @@
   },
   "examples": [
     {
-      "hu": "Jó napot!",
-      "ko": "좋은 하루입니다! (안녕하세요!)",
-      "context": "일상 - 기본 인사",
-      "grammarPoint": "기본 인사말"
+      "hu": "Áldás, békesség!",
+      "ko": "축복과 평화! (개신교 전통 인사)",
+      "context": "교회 인사"
     },
     {
-      "hu": "Jó reggelt! Hogy vagy?",
-      "ko": "좋은 아침! 어떻게 지내세요?",
-      "context": "일상",
-      "grammarPoint": "인사 + 상태 물음"
+      "hu": "Isten éltessen!",
+      "ko": "생일 축하해! (하나님이 살게 하시길)",
+      "context": "축하"
     },
     {
-      "hu": "Én vagyok János. Mi a neved?",
-      "ko": "나는 János입니다. 너의 이름이 뭐니?",
-      "context": "일상 - 처음 만남",
-      "grammarPoint": "자기소개 + 상대 물음"
+      "hu": "Békesség Istentől!",
+      "ko": "하나님으로부터의 평화! (인사)",
+      "context": "교회"
     },
     {
-      "hu": "A nevem Maria.",
-      "ko": "내 이름은 Maria입니다.",
-      "context": "일상",
-      "grammarPoint": "이름 소개"
+      "hu": "Jónás lelkész vagyok.",
+      "ko": "저는 요나 목사입니다.",
+      "context": "자기소개"
     },
     {
-      "hu": "Budapest-ből vagyok.",
-      "ko": "나는 부다페스트에서 왔습니다.",
-      "context": "일상",
-      "grammarPoint": "출발격 표현"
+      "hu": "Örülök, hogy találkoztunk.",
+      "ko": "만나서 반갑습니다.",
+      "context": "인사"
     },
     {
-      "hu": "Szöulból vagyok, de itt lakom Magyarországon.",
-      "ko": "나는 서울에서 왔지만 지금 헝가리에 살고 있습니다.",
-      "context": "일상",
-      "grammarPoint": "출발격 + 현재 위치"
+      "hu": "Hogy vagy?",
+      "ko": "잘 지내?",
+      "context": "일상"
     },
     {
-      "hu": "Tanár vagyok.",
-      "ko": "나는 선생님입니다.",
-      "context": "일상 - 직업 소개",
-      "grammarPoint": "직업명 + vagyok"
+      "hu": "Köszönöm szépen.",
+      "ko": "매우 감사합니다.",
+      "context": "감사"
     },
     {
-      "hu": "Orvos vagyok és szeretem az embereket.",
-      "ko": "나는 의사이고 사람들을 사랑합니다.",
-      "context": "일상",
-      "grammarPoint": "직업 + 성격/취미"
+      "hu": "Szívesen.",
+      "ko": "천만에요.",
+      "context": "응답"
     },
     {
-      "hu": "Öröm, hogy megismerlek!",
-      "ko": "너를 만나서 기쁩니다!",
-      "context": "일상",
-      "grammarPoint": "감정 표현"
+      "hu": "Elnézést.",
+      "ko": "실례합니다/죄송합니다.",
+      "context": "사과"
     },
     {
-      "hu": "Vagyok a lelkész az első magyar gyülekezet.",
-      "ko": "나는 첫 번째 헝가리 교회의 목사입니다.",
-      "context": "신학/설교",
-      "grammarPoint": "직업 + 소속 표현"
+      "hu": "Viszontlátásra!",
+      "ko": "안녕히 가세요 (다시 봅시다).",
+      "context": "작별"
     },
     {
-      "hu": "Én vagyok a János, és én tanítok a Biblia.",
-      "ko": "나는 János이고, 나는 성경을 가르칩니다.",
-      "context": "신학/설교",
-      "grammarPoint": "자기소개 + 역할"
+      "hu": "Dél-Koreából jöttem.",
+      "ko": "남한에서 왔습니다.",
+      "context": "소개"
     },
     {
-      "hu": "A nevem Péter, és én vagyok a pastori.",
-      "ko": "내 이름은 Péter이고, 나는 목사입니다.",
-      "context": "신학/설교",
-      "grammarPoint": "종교 역할 소개"
+      "hu": "Teológiai hallgató vagyok.",
+      "ko": "신학생입니다.",
+      "context": "소개"
     },
     {
-      "hu": "Isten áldja meg az új barátokat!",
-      "ko": "하나님이 새 친구들을 축복하시길!",
-      "context": "신학/설교",
-      "grammarPoint": "축복 표현"
+      "hu": "Isten áldjon meg!",
+      "ko": "하나님의 축복이 있기를! (작별/축복)",
+      "context": "교회"
     },
     {
-      "hu": "Az én gyülekezetem nagyon szeretetteljes.",
-      "ko": "우리 교회는 매우 사랑이 가득합니다.",
-      "context": "신학/설교",
-      "grammarPoint": "소유 표현"
+      "hu": "Jó étvágyat!",
+      "ko": "맛있게 드세요!",
+      "context": "식사"
     },
     {
-      "hu": "Tiszta szívből örülök, hogy találkoztunk!",
-      "ko": "순수한 마음으로 우리가 만난 것을 기뻐합니다!",
-      "context": "성경",
-      "grammarPoint": "종교적 표현"
+      "hu": "Megtért keresztény vagyok.",
+      "ko": "저는 거듭난 그리스도인입니다.",
+      "context": "신앙고백"
     }
   ],
-  "koreanInterferenceNotes": "한국인 학습자 주의사항:\n\n1. **시간대별 인사말**: 한국어는 '안녕하세요'로 통일되지만, 헝가리어는 시간에 따라 다릅니다.\n   - Jó reggelt! (아침 8시-12시)\n   - Jó napot! (낮 12시-17시)\n   - Jó estét! (저녁 17시-자정)\n   - Jó éjszakát! (밤 자정-아침)\n\n2. **직업명은 관사 없음**: 한국어는 '나는 선생님입니다'처럼 쓰지만, 헝가리어는 관사 없이 직업명만 사용합니다.\n   - 틀린 예: Én vagyok a tanár. (X - 대개는 X)\n   - 올바른 예: Tanár vagyok. (O - 일반적)\n   - 예외: A lelkész vagyok. (O - 특정 직업/역할은 관사 사용 가능)\n\n3. **출발격 vs 위치격**: 어디서 왔는지(출발격 -ból/-ből)와 어디에 사는지(위치격 -ban/-ben)를 구분해야 합니다.\n   - 한국어: '서울에서 왔습니다' / '서울에 삽니다' (모두 '에')\n   - 헝가리어: Budapest-ből vagyok / Budapesten lakom\n\n4. **자기소개 구문**: 한국어와 달리 주어(Én)를 명시하는 것이 일반적입니다.\n   - 한국어: 저는 박철수입니다 (주어 생략 가능)\n   - 헝가리어: Én vagyok János / A nevem János\n\n5. **인사의 답변**: Jó napot! 같은 인사에는 같은 인사로 답합니다.\n   - A: Jó napot!\n   - B: Jó napot! (또는 같은 인사로 답하기)\n\n**암기 팁**: '안녕하세요'에 해당하는 기본 인사 4가지를 시간대에 따라 외우세요. 그리고 자기소개 구문 3가지(이름, 직업, 출신지)를 하나의 블록으로 연습하세요!",
+  "koreanInterferenceNotes": "헝가리어는 이름을 말할 때 성+이름 순서로 말합니다 (한국과 동일). 하지만 인사말은 아침, 점심, 저녁이 다르므로 주의해야 합니다.",
   "commonMistakes": [
     {
-      "mistake": "Jó napot vagyok.",
-      "correct": "Jó napot! / Tanár vagyok.",
-      "explanation": "인사말(Jó napot!)과 자기소개 동사(vagyok)를 섞으면 안 됩니다."
-    },
-    {
-      "mistake": "Én vagyok a tanár.",
-      "correct": "Tanár vagyok.",
-      "explanation": "일반 직업명 앞에는 관사를 붙이지 않습니다. (예외: A lelkész vagyok는 가능)"
-    },
-    {
-      "mistake": "Szöulban vagyok. (나는 서울에 있습니다)",
-      "correct": "Szöulból vagyok. (나는 서울에서 왔습니다) 또는 Szöulban lakom. (나는 서울에 살고 있습니다)",
-      "explanation": "출발격(-ból/-ből)과 위치격(-ban/-ben)을 구분해야 합니다."
+      "mistake": "Szia (어른에게)",
+      "correct": "Jó napot kívánok / Kezét csókolom",
+      "explanation": "Szia는 반말에 가깝습니다. 목사님이나 어르신께는 격식체를 써야 합니다. 교회에서는 Áldás, békesség이 가장 좋습니다."
     }
   ],
-  "comparisonWithKorean": "인사와 자기소개 비교:\n\n한국어:\n- 인사: 안녕하세요 (시간 구분 없음)\n- 직업: (관사) + 직업명\n- 예: 저는 선생님입니다\n\n헝가리어:\n- 인사: 시간대에 따라 다름 (Jó reggelt/napot/estét/éjszakát)\n- 직업: 직업명만 사용 (관사 X)\n- 예: Tanár vagyok\n\n공통점: 둘 다 상대방을 존중하는 인사 문화가 있습니다!",
-  "estimatedDuration": 35,
+  "comparisonWithKorean": "존댓말/반말 체계가 뚜렷합니다. 교회 용어(형제님, 자매님 - Testvér)를 잘 활용하면 좋습니다.",
+  "estimatedDuration": 30,
   "difficultyScore": 1,
-  "prerequisites": ["01-nouns-basics"],
-  "tags": ["인사", "자기소개", "일상회화", "기초", "필수"],
+  "prerequisites": [
+    "A1-1"
+  ],
+  "tags": [
+    "회화",
+    "인사",
+    "자기소개"
+  ],
   "theologicalRelevance": true,
   "theologicalExamples": [
-    "Lelkész vagyok (나는 목사입니다)",
-    "A templom lelkésze vagyok (나는 교회의 목사입니다)",
-    "Keresztény vagyok (나는 기독교인입니다)",
-    "Az Isten áldjon meg! (하나님이 축복하시길!)",
-    "Tisztelettel bemutatkozom (경의를 담아 소개합니다)"
-  ],
-  "isPublished": true
+    "Áldás, békesség (평화 인사)",
+    "Isten hozott (환영합니다)",
+    "Isten áldjon (축복합니다)"
+  ]
 }

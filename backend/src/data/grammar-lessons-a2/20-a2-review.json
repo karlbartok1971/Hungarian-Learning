@@ -1,0 +1,137 @@
+{
+    "level": "A2",
+    "orderIndex": 20,
+    "titleKorean": "A2 종합 리뷰 - 기초 탈출",
+    "titleHungarian": "A2 Összefoglalás",
+    "explanationKorean": "A2에서 배운 17개 격변화, 과거/미래/조건/명령법, 그리고 각종 대명사를 총정리합니다. 이제 중급 문법으로 넘어갈 준비가 되었습니다.",
+    "explanationHungarian": "Az A2 szintű nyelvtan ismétlése és gyakorlása.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "격변화 시스템 (Cases)",
+                "description": "장소(ba/ban/ból...), 도구(val), 원인(ért).",
+                "pattern": "Házban, Istenért, Kézzel",
+                "examples": [
+                    {
+                        "hu": "Busszal megyek a templomba.",
+                        "ko": "버스로 교회에 간다."
+                    }
+                ]
+            },
+            {
+                "title": "동사 활용 (Verbs)",
+                "description": "과거(t), 미래(fog), 조건(na), 명령(j).",
+                "pattern": "Vártam, Várni fogok, Várnék, Várj",
+                "examples": [
+                    {
+                        "hu": "Jöjjön el a Te országod.",
+                        "ko": "나라가 임하옵소서."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Hiszek egy Istenben.",
+            "ko": "나는 한 분 하나님을 믿는다 (사도신경).",
+            "context": "신앙고백"
+        },
+        {
+            "hu": "Jézus Krisztusért.",
+            "ko": "예수 그리스도를 위하여/말미암아.",
+            "context": "기도"
+        },
+        {
+            "hu": "Ha Isten velünk, kicsoda ellenünk?",
+            "ko": "하나님이 우리 편이면 누가 대적하리요?",
+            "context": "롬 8:31"
+        },
+        {
+            "hu": "Meg van írva: Nem csak kenyérrel él az ember.",
+            "ko": "기록되었으되 사람은 떡으로만 살 것이 아니요.",
+            "context": "마태 4:4"
+        },
+        {
+            "hu": "Szeresd felebarátodat, mint magadat.",
+            "ko": "이웃을 네 몸과 같이 사랑하라.",
+            "context": "계명"
+        },
+        {
+            "hu": "Aki kér, mind kap.",
+            "ko": "구하는 이마다 받을 것이다.",
+            "context": "성경"
+        },
+        {
+            "hu": "Mikor jössz haza?",
+            "ko": "언제 집에 오니?",
+            "context": "일상"
+        },
+        {
+            "hu": "Nem láttam senkit.",
+            "ko": "아무도 못 봤어.",
+            "context": "일상"
+        },
+        {
+            "hu": "Örülnék, ha segítenél.",
+            "ko": "도와주시면 기쁘겠습니다.",
+            "context": "부탁"
+        },
+        {
+            "hu": "Az ajtó nyitva van.",
+            "ko": "문이 열려 있다.",
+            "context": "상태"
+        },
+        {
+            "hu": "Azt mondta, hogy nem ér rá.",
+            "ko": "그는 시간이 없다고 말했다.",
+            "context": "전달"
+        },
+        {
+            "hu": "Nagyobb vagy a világmindenségnél.",
+            "ko": "주님은 온 우주보다 크십니다.",
+            "context": "찬양"
+        },
+        {
+            "hu": "Imádkozzunk érette.",
+            "ko": "그를 위해 기도합시다.",
+            "context": "중보"
+        },
+        {
+            "hu": "Vettem egy új Bibliát.",
+            "ko": "새 성경책을 샀다.",
+            "context": "쇼핑"
+        },
+        {
+            "hu": "Isten áldjon meg!",
+            "ko": "하나님이 축복하시기를! (인사)",
+            "context": "축복"
+        }
+    ],
+    "koreanInterferenceNotes": "이제 문법 지식은 충분합니다. A2의 핵심은 '머리로 아는 것'을 '입으로 내뱉는 훈련'입니다. 특히 격변화가 0.1초 만에 튀어나와야 합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Házban megyek.",
+            "correct": "Házba megyek.",
+            "explanation": "이동 동사에는 방향 격(-ba)을 쓰는 습관을 계속 들여야 합니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어로 생각하고 번역하지 말고, 헝가리어 구조(동사 중심, 후치사) 그 자체로 생각하는 훈련이 필요합니다.",
+    "estimatedDuration": 60,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "A2-1",
+        "A2-19"
+    ],
+    "tags": [
+        "총정리",
+        "복습",
+        "A2완성"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Hiszek (신앙고백)",
+        "Áldjon meg (축도)",
+        "Imádkozzunk (청유)"
+    ]
+}

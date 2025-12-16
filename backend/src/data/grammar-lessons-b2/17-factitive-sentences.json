@@ -1,0 +1,120 @@
+{
+    "level": "B2",
+    "orderIndex": 17,
+    "titleKorean": "이중 목적어 구문 - 물을 포도주로 만드시다",
+    "titleHungarian": "Tárgy és Eredményhatározó (Tedd... -vá)",
+    "explanationKorean": "'~를 ~로 만들다/삼다'. 목적격(-t)과 변격(-vá/-vé)이 한 문장에 쓰입니다. '너를 내 백성으로 삼겠다'.",
+    "explanationHungarian": "Valamit valamilyenné tesz.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "구조: A-t B-vé tesz",
+                "description": "A를(Accusative) B로(Translative) 만들다(Tesz).",
+                "pattern": "A vizet(물) borrá(포도주) változtatta(변화시켰다).",
+                "examples": [
+                    {
+                        "hu": "Tedd teljessé az örömömet.",
+                        "ko": "나의 기쁨을 충만하게(완전하게) 하라."
+                    }
+                ]
+            },
+            {
+                "title": "Nevez (Call/Name)",
+                "description": "'~를 ~라고 부르다'. 이때는 변격(-nak/nek)을 씁니다.",
+                "pattern": "Péternek nevezte őt. (그를 베드로라 불렀다).",
+                "examples": [
+                    {
+                        "hu": "Minek nevezzelek?",
+                        "ko": "너를 무엇이라 부를까? (시 제목)."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Néppé teszlek.",
+            "ko": "너를 민족으로 만들겠다 (큰 민족을 이루고).",
+            "context": "아브라함 언약"
+        },
+        {
+            "hu": "Emberhalászokká teszlek titeket.",
+            "ko": "너희를 사람 낚는 어부가 되게 하리라.",
+            "context": "소명"
+        },
+        {
+            "hu": "A vizet borrá változtatta.",
+            "ko": "물을 포도주로 바꾸셨다.",
+            "context": "가나 혼인잔치"
+        },
+        {
+            "hu": "Fiává fogadott.",
+            "ko": "아들로 삼으셨다 (양자됨).",
+            "context": "양자됨"
+        },
+        {
+            "hu": "Semmivé tesz.",
+            "ko": "무효화하다 / 멸하다 (Nothing-into make).",
+            "context": "심판"
+        },
+        {
+            "hu": "Jobbá teszi a világot.",
+            "ko": "세상을 더 좋게 만든다.",
+            "context": "비전"
+        },
+        {
+            "hu": "Fővárossá lett.",
+            "ko": "수도가 되었다.",
+            "context": "역사"
+        },
+        {
+            "hu": "Barátokká váltunk.",
+            "ko": "우리는 친구가 되었다.",
+            "context": "관계"
+        },
+        {
+            "hu": "Tedd szabaddá magad.",
+            "ko": "너 자신을 자유롭게 해라.",
+            "context": "조언"
+        },
+        {
+            "hu": "Bolonddá tette a bölcsességet.",
+            "ko": "세상의 지혜를 미련하게 하셨다.",
+            "context": "고전 1:20"
+        },
+        {
+            "hu": "Világossággá.",
+            "ko": "빛이 되게 (빛으로).",
+            "context": "이사야"
+        },
+        {
+            "hu": "Kenyérré.",
+            "ko": "떡덩이가 되게 (돌들에게 명하여).",
+            "context": "시험"
+        }
+    ],
+    "koreanInterferenceNotes": "'~를 ~로'라는 한국어 조사와 1:1 매칭됩니다. 다만 '부르다(Nevez)' 동사는 -nak/-nek(Dative)을 쓴다는 예외를 기억하세요.",
+    "commonMistakes": [
+        {
+            "mistake": "Péterré nevezte.",
+            "correct": "Péternek nevezte.",
+            "explanation": "Nevez(이름 부르다) 동사는 -nak/-nek과 짝입니다. Változtat(바꾸다)는 -vá/-vé와 짝입니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 격조사 활용과 매우 유사합니다.",
+    "estimatedDuration": 50,
+    "difficultyScore": 6,
+    "prerequisites": [
+        "A2-3"
+    ],
+    "tags": [
+        "변격",
+        "문장구조",
+        "사역"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Emberhalászokká (사람 낚는 어부가 되게)",
+        "Fiává fogadott (양자 삼으셨다)"
+    ]
+}

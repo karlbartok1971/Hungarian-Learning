@@ -1,0 +1,152 @@
+{
+    "level": "A2",
+    "orderIndex": 2,
+    "titleKorean": "장소격 3형제 - 내부, 표면, 근처",
+    "titleHungarian": "Helyhatározó ragok rendszere",
+    "explanationKorean": "헝가리어 장소 표현의 핵심인 3×3 매트릭스를 완벽하게 익힙니다. 이것만 알면 장소 표현의 90%가 해결됩니다.",
+    "explanationHungarian": "A belső, külső és közelítő helyhatározó ragok rendszere.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "내부 (Inside): -ba/-ban/-ból",
+                "description": "공간 안으로(ba), 안에서(ban), 안으로부터(ból).",
+                "pattern": "Házba (In), Házban (At), Házból (From)",
+                "examples": [
+                    {
+                        "hu": "Szívből.",
+                        "ko": "마음으로부터."
+                    }
+                ]
+            },
+            {
+                "title": "표면 (Surface): -ra/-n/-ról",
+                "description": "표면 위로(ra), 위에(n/on/en/ön), 위에서(ról). 부다페스트와 헝가리는 '표면' 취급합니다.",
+                "pattern": "Magyarországra, Magyarországon, Magyarországról",
+                "examples": [
+                    {
+                        "hu": "A hegyre.",
+                        "ko": "산 위로."
+                    }
+                ]
+            },
+            {
+                "title": "근처 (Proximity): -hoz/-nál/-től",
+                "description": "옆으로(hoz), 옆에(nál), 옆에서(től). 사람에게 갈 때도 이 격을 씁니다.",
+                "pattern": "Istenhez, Istennél, Istentől",
+                "examples": [
+                    {
+                        "hu": "Jöjjetek énhozzám.",
+                        "ko": "내게로 오라."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Menjetek be a szűk kapun.",
+            "ko": "좁은 문으로 들어가라. (-n: 표면 경로)",
+            "context": "성경"
+        },
+        {
+            "hu": "A mennyből szállt alá.",
+            "ko": "하늘로부터 내려오셨다. (-ből: 내부 출처)",
+            "context": "신앙고백"
+        },
+        {
+            "hu": "A kereszten halt meg.",
+            "ko": "십자가에서(위에서) 죽으셨다. (-en: 표면)",
+            "context": "설교"
+        },
+        {
+            "hu": "Jézushoz mentek.",
+            "ko": "예수님께(에게로) 갔다. (-hoz: 인격체 접근)",
+            "context": "성경"
+        },
+        {
+            "hu": "Istennél nincs lehetetlen.",
+            "ko": "하나님께는(곁에는) 불가능이 없다. (-nál: 근접/소유)",
+            "context": "성경"
+        },
+        {
+            "hu": "Szabadíts meg a gonosztól.",
+            "ko": "악에서 구하소서. (-tól: 분리/이탈)",
+            "context": "주기도문"
+        },
+        {
+            "hu": "Budapesten élek.",
+            "ko": "부다페스트에(위에) 산다. (-en: 도시)",
+            "context": "일상"
+        },
+        {
+            "hu": "Magyarországra utazom.",
+            "ko": "헝가리로(위로) 여행간다. (-ra: 국가)",
+            "context": "일상"
+        },
+        {
+            "hu": "A templomban vagyunk.",
+            "ko": "우리는 교회(안)에 있다. (-ban: 건물)",
+            "context": "교회"
+        },
+        {
+            "hu": "Tégy a tűzre.",
+            "ko": "불 위에 올려라. (-re: 표면)",
+            "context": "일상"
+        },
+        {
+            "hu": "Az asztalról esett le.",
+            "ko": "책상에서(위에서) 떨어졌다. (-ról: 표면 이탈)",
+            "context": "일상"
+        },
+        {
+            "hu": "A szék alatt.",
+            "ko": "의자 아래. (후치사)",
+            "context": "위치"
+        },
+        {
+            "hu": "Lelkésznél vagyok.",
+            "ko": "목사님 댁에(곁에) 있습니다. (-nál: 사람 위치)",
+            "context": "일상"
+        },
+        {
+            "hu": "A piacról jövök.",
+            "ko": "시장(터)에서 온다. (-ról: 개방된 공간)",
+            "context": "일상"
+        },
+        {
+            "hu": "Szöulból jöttem.",
+            "ko": "서울에서(안에서) 왔습니다. (-ból: 외국 도시)",
+            "context": "소개"
+        }
+    ],
+    "koreanInterferenceNotes": "가장 큰 혼동은 '사람'에게 갈 때 -ba/-be(내부)를 쓰지 않고 -hoz/-hez/-höz(근처/방향)를 쓴다는 점입니다. 사람 속으로 들어갈 수는 없으니까요!",
+    "commonMistakes": [
+        {
+            "mistake": "Orvosba megyek.",
+            "correct": "Orvoshoz megyek.",
+            "explanation": "의사(사람)에게 갈 때는 -hoz를 씁니다. 병원(건물) Kórházba는 -ba가 맞습니다."
+        },
+        {
+            "mistake": "Budapestben.",
+            "correct": "Budapesten.",
+            "explanation": "부다페스트는 헝가리 사람들에게 '넓은 표면'으로 인식됩니다. 외국 도시(Szöul, London)는 보통 -ban을 씁니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '에게'는 -hoz(방향), -nek(수여) 두 가지로 나뉩니다.",
+    "estimatedDuration": 50,
+    "difficultyScore": 4,
+    "prerequisites": [
+        "A2-1"
+    ],
+    "tags": [
+        "장소격",
+        "전치사",
+        "필수"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Mennyből (하늘로부터)",
+        "Földön (땅에서)",
+        "Istenhez (하나님께로)"
+    ]
+}

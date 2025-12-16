@@ -1,0 +1,145 @@
+{
+    "level": "A2",
+    "orderIndex": 3,
+    "titleKorean": "도구격(-val)과 변격(-vá) - 수단과 변화",
+    "titleHungarian": "Eszközhatározó és Eredményhatározó",
+    "explanationKorean": "무엇을 가지고(With) 하느냐, 무엇으로(Into) 변하느냐를 나타내는 두 가지 중요한 격입니다. 자음 동화 현상이 일어납니다.",
+    "explanationHungarian": "A -val/-vel és -vá/-vé ragok használata és hasonulása.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "도구격 -val/-vel (With/By)",
+                "description": "도구, 수단, 동반을 나타냅니다. 단어 끝 자음과 만나면 v가 그 자음으로 변합니다(동화).",
+                "pattern": "kéz + vel -> kézzel (손으로), Isten + vel -> Istennel (하나님과)",
+                "examples": [
+                    {
+                        "hu": "Autóval.",
+                        "ko": "자동차로. (모음 뒤라 v 유지)"
+                    },
+                    {
+                        "hu": "Busszal.",
+                        "ko": "버스로. (s + v -> ssz)"
+                    }
+                ]
+            },
+            {
+                "title": "변격 -vá/-vé (Turn into)",
+                "description": "~이 되다. 변화의 결과를 나타냅니다. 역시 자음 동화가 일어납니다.",
+                "pattern": "bor + rá -> borrá (포도주로)",
+                "examples": [
+                    {
+                        "hu": "Sóvá lett.",
+                        "ko": "소금이 되었다."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Istennel.",
+            "ko": "하나님과 함께. (-vel: 동반)",
+            "context": "인사"
+        },
+        {
+            "hu": "Szentlélekkel.",
+            "ko": "성령으로. (-vel: 수단/충만)",
+            "context": "성경"
+        },
+        {
+            "hu": "Tűzzel és vízzel.",
+            "ko": "불과 물로. (-vel: 수단)",
+            "context": "성경"
+        },
+        {
+            "hu": "Az Ige testté lett.",
+            "ko": "말씀이 육신이 되었다. (-té: 변화)",
+            "context": "요한복음 1:14"
+        },
+        {
+            "hu": "Borrá változtatta.",
+            "ko": "포도주로 바꾸셨다. (-rá: 변화)",
+            "context": "가나 혼인잔치"
+        },
+        {
+            "hu": "Kivel mész?",
+            "ko": "누구랑 가니? (Ki + vel)",
+            "context": "일상"
+        },
+        {
+            "hu": "Mivel utazol?",
+            "ko": "무엇을 타고(무엇으로) 여행하니?",
+            "context": "일상"
+        },
+        {
+            "hu": "Jézussal járok.",
+            "ko": "예수님과 동행합니다.",
+            "context": "찬양"
+        },
+        {
+            "hu": "Örömmel.",
+            "ko": "기쁨으로. (기쁘게)",
+            "context": "태도"
+        },
+        {
+            "hu": "Szívvel-lélekkel.",
+            "ko": "마음과 영혼을 다해 (전심으로).",
+            "context": "관용구"
+        },
+        {
+            "hu": "Kenyérré.",
+            "ko": "빵으로 (변하다).",
+            "context": "성경"
+        },
+        {
+            "hu": "Parrá lesz.",
+            "ko": "티끌(먼지)이 되리라.",
+            "context": "창세기"
+        },
+        {
+            "hu": "Busszal megyek.",
+            "ko": "버스로 갑니다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Villamossal.",
+            "ko": "트램으로.",
+            "context": "일상"
+        },
+        {
+            "hu": "Ámennel válaszolt.",
+            "ko": "아멘으로 화답했다.",
+            "context": "교회"
+        }
+    ],
+    "koreanInterferenceNotes": "자음 동화(Assimilation)가 핵심입니다. v가 앞 자음과 똑같이 변해서 '쌍자음'이 된다는 것을 기억하세요. (víz + vel -> vízzel)",
+    "commonMistakes": [
+        {
+            "mistake": "Kézhvel",
+            "correct": "Kézzel",
+            "explanation": "z 뒤에 v가 오면 v가 z로 변해서 zz가 됩니다."
+        },
+        {
+            "mistake": "Istenvél",
+            "correct": "Istennel",
+            "explanation": "n 뒤에 v가 오면 nn이 됩니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '손으로', '물로' 처럼 수단을 나타내는 조사 '-로'와 정확히 대응되지만, 발음 변화가 일어나는 점이 다릅니다.",
+    "estimatedDuration": 40,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "A2-1"
+    ],
+    "tags": [
+        "도구격",
+        "변격",
+        "동화"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Testté lett (육신이 되었다)",
+        "Szentlélekkel (성령으로)",
+        "Hittel (믿음으로)"
+    ]
+}

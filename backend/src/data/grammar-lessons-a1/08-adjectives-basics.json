@@ -1,0 +1,149 @@
+{
+    "level": "A1",
+    "orderIndex": 8,
+    "titleKorean": "형용사의 기초 - 수식과 서술",
+    "titleHungarian": "Melléknevek",
+    "explanationKorean": "형용사는 명사를 꾸며주거나(수식), 주어의 상태를 설명(서술)합니다. 위치에 따라 변화 여부가 달라집니다.",
+    "explanationHungarian": "A melléknevek tulajdonságot fejeznek ki, és állhatnak jelzőként vagy állítmányként.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "한정적 용법 (수식)",
+                "description": "명사 앞에와서 명사를 꾸며줄 때는 절대 변하지 않습니다. (성, 수, 격 변화 없음)",
+                "pattern": "형용사 + 명사",
+                "examples": [
+                    {
+                        "hu": "A jó ember.",
+                        "ko": "그 선한 사람."
+                    },
+                    {
+                        "hu": "A nagy templomban.",
+                        "ko": "그 큰 교회에서. (templom만 격변화)"
+                    }
+                ]
+            },
+            {
+                "title": "서술적 용법 (술어)",
+                "description": "'~은 ~하다'로 쓰일 때는 주어와 일치해야 합니다. (복수형일 때 형용사도 복수형)",
+                "pattern": "주어 + 형용사(복수)",
+                "examples": [
+                    {
+                        "hu": "Az emberek jók.",
+                        "ko": "그 사람들은 선하다."
+                    },
+                    {
+                        "hu": "A hegyek magasak.",
+                        "ko": "산들은 높다."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Nagy az Isten.",
+            "ko": "하나님은 위대하시다.",
+            "context": "찬양"
+        },
+        {
+            "hu": "Szent, szent, szent az Úr.",
+            "ko": "거룩, 거룩, 거룩하다 주님.",
+            "context": "예배"
+        },
+        {
+            "hu": "Boldog ember.",
+            "ko": "복 있는 사람.",
+            "context": "성경 (시편 1편)"
+        },
+        {
+            "hu": "Szép napot!",
+            "ko": "좋은 하루 되세요!",
+            "context": "인사"
+        },
+        {
+            "hu": "Hűséges az Isten.",
+            "ko": "하나님은 미쁘시다(신실하시다).",
+            "context": "성경 (고전 1:9)"
+        },
+        {
+            "hu": "Ez egy nehéz kérdés.",
+            "ko": "이것은 어려운 질문이다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Az új bor új tömlőbe.",
+            "ko": "새 포도주는 새 부대에.",
+            "context": "성경"
+        },
+        {
+            "hu": "Piros alma.",
+            "ko": "빨간 사과.",
+            "context": "일상"
+        },
+        {
+            "hu": "Magyar vagyok.",
+            "ko": "나는 헝가리 사람입니다.",
+            "context": "자기소개"
+        },
+        {
+            "hu": "Fáradt vagyok.",
+            "ko": "피곤해요.",
+            "context": "일상"
+        },
+        {
+            "hu": "Az aratás sok, de a munkás kevés.",
+            "ko": "추수할 것은 많되 일꾼이 적다.",
+            "context": "성경"
+        },
+        {
+            "hu": "Jó reggelt!",
+            "ko": "좋은 아침!",
+            "context": "인사"
+        },
+        {
+            "hu": "Tiszta szív.",
+            "ko": "정결한 마음.",
+            "context": "성경/기도"
+        },
+        {
+            "hu": "Az Úr jóságos.",
+            "ko": "주님은 선하시다.",
+            "context": "설교"
+        },
+        {
+            "hu": "Kicsi a világ.",
+            "ko": "세상은 좁다.",
+            "context": "일상"
+        }
+    ],
+    "koreanInterferenceNotes": "한국어에서는 '예쁜 꽃'이나 '꽃이 예쁘다'나 형태가 비슷하지만, 헝가리어에서는 명사를 꾸밀 때는 불변, 서술할 때는 주어에 일치하여 변화한다는 점이 중요합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "A magasak hegyek.",
+            "correct": "A magas hegyek.",
+            "explanation": "명사를 꾸며줄 때는 형용사가 복수형으로 변하지 않습니다."
+        },
+        {
+            "mistake": "A hegyek magas.",
+            "correct": "A hegyek magasak.",
+            "explanation": "주어가 복수이면 서술어인 형용사도 복수형이어야 합니다."
+        }
+    ],
+    "comparisonWithKorean": "영어의 'The high mountains' (불변) vs 'The mountains are high' (일치 필요 없음) 와 달리 헝가리어는 서술적 용법에서 일치시켜야 합니다.",
+    "estimatedDuration": 25,
+    "difficultyScore": 2,
+    "prerequisites": [
+        "A1-1"
+    ],
+    "tags": [
+        "형용사",
+        "수식",
+        "서술"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Szent (거룩한)",
+        "Hűséges (신실한)",
+        "Igaz (의로운/참된)"
+    ]
+}

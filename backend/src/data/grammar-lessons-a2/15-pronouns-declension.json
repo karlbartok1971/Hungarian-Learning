@@ -1,0 +1,141 @@
+{
+    "level": "A2",
+    "orderIndex": 15,
+    "titleKorean": "대명사의 격변화 - 나를, 나에게, 나로 인해",
+    "titleHungarian": "Személyes névmások ragozása",
+    "explanationKorean": "인칭대명사(나, 너)도 모든 격변화를 합니다. 헝가리어 특유의 방식(전치사에 인칭어미가 붙는 형태)을 배웁니다.",
+    "explanationHungarian": "A személyes névmások esetragozása.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "대격 (Accusative)",
+                "description": "나를(engem), 너를(téged), 그를(őt), 우리를(minket)...",
+                "pattern": "Szeret engem. (사랑한다 나를)",
+                "examples": [
+                    {
+                        "hu": "Kövess engem.",
+                        "ko": "나를 따르라."
+                    }
+                ]
+            },
+            {
+                "title": "격어미 결합형 (Inflected Prepositions)",
+                "description": "격 어미(전치사) 자체가 인칭변화를 합니다. 이게 헝가리어의 가장 큰 특징입니다.",
+                "pattern": "nekem (나에게 -nak+em), velem (나와 함께 -val+em), értem (나를 위해 -ért+em)",
+                "examples": [
+                    {
+                        "hu": "Bennem (내 안에 -ban+em).",
+                        "ko": "내 안에 거하라."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Kövess engem.",
+            "ko": "나를 따르라.",
+            "context": "제자도"
+        },
+        {
+            "hu": "Szeretlek téged.",
+            "ko": "너를 사랑한다.",
+            "context": "고백"
+        },
+        {
+            "hu": "Neked adom.",
+            "ko": "너에게 주겠다 (-nek: 수여).",
+            "context": "약속"
+        },
+        {
+            "hu": "Velem van az Isten.",
+            "ko": "하나님이 나와 함께 하신다 (-val: 동반).",
+            "context": "임마누엘"
+        },
+        {
+            "hu": "Benned bízom.",
+            "ko": "주님 안에서(당신 안에서) 신뢰합니다 (-ban: 장소).",
+            "context": "기도"
+        },
+        {
+            "hu": "Értünk halt meg.",
+            "ko": "우리를 위해 죽으셨다 (-ért: 원인/위해).",
+            "context": "설교"
+        },
+        {
+            "hu": "Rám nézz.",
+            "ko": "나를 봐 (내 위를 봐 -ra: 방향).",
+            "context": "일상"
+        },
+        {
+            "hu": "Hozzám jöjjetek.",
+            "ko": "내게로 오라 (-hoz: 방향).",
+            "context": "마 11:28"
+        },
+        {
+            "hu": "Tőle van.",
+            "ko": "그분으로부터 왔다 (-től: 출처).",
+            "context": "신앙고백"
+        },
+        {
+            "hu": "Róla szól.",
+            "ko": "그분에 대해 말한다(주제). (-ról: 주제).",
+            "context": "설교"
+        },
+        {
+            "hu": "Nálad.",
+            "ko": "네 곁에 / 네 집에 / 네가 가지고 있는 (-nál: 위치).",
+            "context": "일상"
+        },
+        {
+            "hu": "Velünk.",
+            "ko": "우리와 함께.",
+            "context": "찬양"
+        },
+        {
+            "hu": "Miatta.",
+            "ko": "그 때문에 (Miatt: 원인).",
+            "context": "일상"
+        },
+        {
+            "hu": "Benne.",
+            "ko": "그 안에 / 그것 안에.",
+            "context": "성경"
+        },
+        {
+            "hu": "Neki.",
+            "ko": "그에게 / 그를 위하여.",
+            "context": "일상"
+        }
+    ],
+    "koreanInterferenceNotes": "'전치사에 인칭이 붙는다'는 개념(I-with, You-for)은 한국어에 없습니다. '나와 함께'가 'Velem'(With-me) 한 단어로 된다는 것에 익숙해져야 합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Énnel",
+            "correct": "Velem",
+            "explanation": "Én(나) + vel(함께)은 Énnel이 아니라 Velem이라는 특수 형태를 가집니다."
+        },
+        {
+            "mistake": "Tenek",
+            "correct": "Neked",
+            "explanation": "Te(너) + nek(에게)은 Neked입니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '나-에게, 너-를' 처럼 대명사 뒤에 조사가 붙는 게 아니라, 조사 자체가 변해서 대명사를 삼켜버리는 꼴입니다.",
+    "estimatedDuration": 60,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "A2-1"
+    ],
+    "tags": [
+        "대명사",
+        "격변화",
+        "전치사"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Engem (나를)",
+        "Benned (주님 안에서)",
+        "Értünk (우리를 위해)"
+    ]
+}

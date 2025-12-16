@@ -1,0 +1,156 @@
+{
+    "level": "A1",
+    "orderIndex": 11,
+    "titleKorean": "숫자와 시간 표현",
+    "titleHungarian": "Számok és idő kifejezése",
+    "explanationKorean": "헝가리어 숫자는 규칙적입니다. 시간 표현은 독특한 '반' 개념(fél)을 사용하여 한국인에게 다소 어렵게 느껴질 수 있습니다.",
+    "explanationHungarian": "A magyar számrendszer logikus, de az időkifejezés sajátos.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "기수 (1, 2, 3...)",
+                "description": "egy, kettő, három... 십 단위 뒤에 일 단위를 붙입니다.",
+                "pattern": "tizenegy (11), huszonkettő (22)",
+                "examples": [
+                    {
+                        "hu": "Tizenkét tanítvány.",
+                        "ko": "12 제자."
+                    },
+                    {
+                        "hu": "Negyven nap.",
+                        "ko": "40일."
+                    }
+                ]
+            },
+            {
+                "title": "서수 (첫째, 둘째...)",
+                "description": "숫자 뒤에 -odik/-edik 등을 붙입니다.",
+                "pattern": "első, második, harmadik...",
+                "examples": [
+                    {
+                        "hu": "A harmadik napon.",
+                        "ko": "제 삼일에 (부활)."
+                    }
+                ]
+            },
+            {
+                "title": "시간 표현",
+                "description": "'몇 시'는 hány óra. 30분 표현이 독특합니다.",
+                "pattern": "Fél tíz (9시 30분 - 10시의 절반)",
+                "examples": [
+                    {
+                        "hu": "Mikor kezdődik?",
+                        "ko": "언제 시작해?"
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Egy Úr, egy hit, egy keresztség.",
+            "ko": "드님도 한 분이시요, 믿음도 하나요, 세례도 하나요.",
+            "context": "성경 (엡 4:5)"
+        },
+        {
+            "hu": "A harmadik napon feltámadt.",
+            "ko": "사흘 만에 부활하시고.",
+            "context": "사도신경"
+        },
+        {
+            "hu": "Ötezer embert megvendégelt.",
+            "ko": "오천 명을 먹이셨다.",
+            "context": "성경"
+        },
+        {
+            "hu": "Hány óra van?",
+            "ko": "몇 시입니까?",
+            "context": "일상"
+        },
+        {
+            "hu": "Fél kilenc.",
+            "ko": "8시 30분입니다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Háromnegyed tíz.",
+            "ko": "9시 45분 (10시의 3/4).",
+            "context": "일상"
+        },
+        {
+            "hu": "Hét nap a héten.",
+            "ko": "일주일의 7일.",
+            "context": "일상"
+        },
+        {
+            "hu": "Az első és az utolsó.",
+            "ko": "알파와 오메가 (처음과 나중).",
+            "context": "성경"
+        },
+        {
+            "hu": "Tízparancsolat.",
+            "ko": "십계명.",
+            "context": "교리"
+        },
+        {
+            "hu": "Ezer év.",
+            "ko": "천 년.",
+            "context": "성경/찬양"
+        },
+        {
+            "hu": "Két ember.",
+            "ko": "두 사람.",
+            "context": "일상"
+        },
+        {
+            "hu": "Második esély.",
+            "ko": "두 번째 기회.",
+            "context": "설교"
+        },
+        {
+            "hu": "Szentháromság.",
+            "ko": "성삼위일체.",
+            "context": "교리"
+        },
+        {
+            "hu": "Mennyibe kerül? Kétezer forint.",
+            "ko": "얼마예요? 2000포린트입니다.",
+            "context": "생활"
+        },
+        {
+            "hu": "Mikor találkozunk?",
+            "ko": "언제 만날까요?",
+            "context": "일상"
+        }
+    ],
+    "koreanInterferenceNotes": "가장 헷갈리는 것은 시간 표현입니다. '9시 반'을 헝가리어로는 'fél tíz' (10시의 절반)라고 하므로, 한국식 사고로는 1시간 빠르게 착각하기 쉽습니다.",
+    "commonMistakes": [
+        {
+            "mistake": "kettő almák",
+            "correct": "két alma",
+            "explanation": "숫자 뒤에 명사는 항상 단수형을 씁니다. 또한 수식할 때는 kettő가 két으로 변합니다."
+        },
+        {
+            "mistake": "Fél kilenc (뜻: 9:30)",
+            "correct": "Fél kilenc (뜻: 8:30)",
+            "explanation": "fél + 숫자 = 해당 시간의 30분 전입니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어는 '두 개'처럼 단위명사(개, 명, 마리)가 필수지만 헝가리어는 명사만 단수로 쓰면 됩니다.",
+    "estimatedDuration": 40,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "A1-1"
+    ],
+    "tags": [
+        "숫자",
+        "시간",
+        "기초"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Első (첫째 - 우선순위)",
+        "Egy (하나 - 유일신)",
+        "Negyven (40 - 고난/준비 기간)"
+    ]
+}

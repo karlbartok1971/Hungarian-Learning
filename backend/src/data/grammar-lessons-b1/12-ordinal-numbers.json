@@ -1,0 +1,131 @@
+{
+    "level": "B1",
+    "orderIndex": 12,
+    "titleKorean": "수사 심화 - 첫째, 둘째, 절반",
+    "titleHungarian": "Sorszámnevek és törtszámnevek",
+    "explanationKorean": "순서를 나타내는 서수(First, Second)와 분수(Half, Quarter)를 배웁니다.",
+    "explanationHungarian": "Az első, második... és a fél, negyed használata.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "서수 (Ordinal) -dik",
+                "description": "숫자 뒤에 -dik를 붙입니다. 1, 2는 불규칙입니다.",
+                "pattern": "első (1st), második (2nd), harmadik (3rd), negyedik...",
+                "examples": [
+                    {
+                        "hu": "Első helyen.",
+                        "ko": "첫 번째 자리에 (우선순위)."
+                    }
+                ]
+            },
+            {
+                "title": "분수 (Fraction)",
+                "description": "Fél (반). 그 외에는 서수 형태와 비슷합니다.",
+                "pattern": "Fél (1/2), Negyed (1/4)",
+                "examples": [
+                    {
+                        "hu": "Másfél (1.5 - one and half).",
+                        "ko": "한 개 반."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Az első és az utolsó.",
+            "ko": "처음과 나중.",
+            "context": "계시록"
+        },
+        {
+            "hu": "Máté evangéliuma első rész.",
+            "ko": "마태복음 1장 (첫 번째 부분).",
+            "context": "성경봉독"
+        },
+        {
+            "hu": "Második eljövetel.",
+            "ko": "재림 (Second Coming).",
+            "context": "종말론"
+        },
+        {
+            "hu": "Harmadnapon.",
+            "ko": "제 삼일에 (부활).",
+            "context": "사도신경"
+        },
+        {
+            "hu": "Tized.",
+            "ko": "십일조 (Tenth).",
+            "context": "헌금"
+        },
+        {
+            "hu": "Fél.",
+            "ko": "절반.",
+            "context": "분량"
+        },
+        {
+            "hu": "Százszor.",
+            "ko": "백 배 (수량 배수).",
+            "context": "축복"
+        },
+        {
+            "hu": "Kétszer.",
+            "ko": "두 번 (빈도).",
+            "context": "횟수"
+        },
+        {
+            "hu": "Hányadika van?",
+            "ko": "며칠입니까? (How manieth is it?)",
+            "context": "날짜"
+        },
+        {
+            "hu": "Elsején.",
+            "ko": "1일에 (On the 1st).",
+            "context": "날짜"
+        },
+        {
+            "hu": "Ötödik.",
+            "ko": "5번째.",
+            "context": "순서"
+        },
+        {
+            "hu": "Utolsó vacsora.",
+            "ko": "최후의 만찬.",
+            "context": "성경"
+        },
+        {
+            "hu": "Egyetlen.",
+            "ko": "유일한 (One and only).",
+            "context": "독생자"
+        }
+    ],
+    "koreanInterferenceNotes": "날짜를 말할 때 항상 서수(-dika)를 씁니다. '3월 1일'은 'Március elseje'입니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Egyedik",
+            "correct": "Első",
+            "explanation": "1번째는 Egyedik이 아니라 Első입니다."
+        },
+        {
+            "mistake": "Kettedik",
+            "correct": "Második",
+            "explanation": "2번째는 Kettedik이 아니라 Második입니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '첫째, 둘째'와 같습니다. 영어의 'First, Second'와도 대응됩니다.",
+    "estimatedDuration": 35,
+    "difficultyScore": 2,
+    "prerequisites": [
+        "A1-11"
+    ],
+    "tags": [
+        "숫자",
+        "서수",
+        "날짜"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Első (첫째 부활)",
+        "Utolsó (마지막 심판)",
+        "Tized (십일조)"
+    ]
+}

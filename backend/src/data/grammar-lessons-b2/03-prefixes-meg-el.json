@@ -1,0 +1,131 @@
+{
+    "level": "B2",
+    "orderIndex": 3,
+    "titleKorean": "접두사 심화 3 [Meg-, El-] - 완료와 분리",
+    "titleHungarian": "Igekötők: Meg és El",
+    "explanationKorean": "가장 많이 쓰이는 두 접두사. Meg은 '완벽한 완료/강조', El은 '이탈/멀어짐/시작'을 나타냅니다.",
+    "explanationHungarian": "A meg- és el- igekötők használata.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Meg- (Perfective)",
+                "description": "동작의 완성. 가장 흔합니다.",
+                "pattern": "Vált (바꾸다) -> Megvált (구속하다/값을 주고 다 바꾸다/사다), Tér (돌다) -> Megtér (회개하다/완전히 돌다)",
+                "examples": [
+                    {
+                        "hu": "Megmond.",
+                        "ko": "확실히 말하다/예언하다."
+                    }
+                ]
+            },
+            {
+                "title": "El- (Away / Start)",
+                "description": "멀어지는 것, 또는 동작의 시작, 또는 실수.",
+                "pattern": "Megy (가다) -> Elmegy (떠나다), Hisz (믿다) -> Elhisz (믿어주다/사실로 받아들이다)",
+                "examples": [
+                    {
+                        "hu": "Elveszít (잃어버리다).",
+                        "ko": "Elalszik (잠들다 - 잠으로 떠나다)."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Megváltó.",
+            "ko": "구세주 (Meg-완료).",
+            "context": "기독교"
+        },
+        {
+            "hu": "Elhívás.",
+            "ko": "소명/부르심 (El-hív: 불러내다).",
+            "context": "신학"
+        },
+        {
+            "hu": "Megbocsát.",
+            "ko": "용서하다 (Bocsát: 보내다 -> Meg: 완전히 놓아주다).",
+            "context": "기도"
+        },
+        {
+            "hu": "Elragadtatás.",
+            "ko": "휴거/황홀경 (El-ragad: 채어가다).",
+            "context": "종말론"
+        },
+        {
+            "hu": "Megáld.",
+            "ko": "축복하다 (Áld의 완료).",
+            "context": "축복"
+        },
+        {
+            "hu": "Elátkoz.",
+            "ko": "저주하다 (Átkoz의 완료/대상에게 보냄).",
+            "context": "저주"
+        },
+        {
+            "hu": "Meggyógyul.",
+            "ko": "치유되다 (Gyógyul: 낫다 -> Meg: 완치).",
+            "context": "치유"
+        },
+        {
+            "hu": "Eltéved.",
+            "ko": "길을 잃다 (Téved: 틀리다 -> El: 멀리).",
+            "context": "미아"
+        },
+        {
+            "hu": "Meghal.",
+            "ko": "죽다 (Hal -> 완전히 죽음).",
+            "context": "죽음"
+        },
+        {
+            "hu": "Eldől.",
+            "ko": "결정되다 / 쓰러지다 (넘어짐).",
+            "context": "상황"
+        },
+        {
+            "hu": "Megismer.",
+            "ko": "알게 되다 / 인식하다.",
+            "context": "관계"
+        },
+        {
+            "hu": "Elfelejt.",
+            "ko": "잊어버리다.",
+            "context": "기억"
+        },
+        {
+            "hu": "Megígér.",
+            "ko": "약속하다 (Ígér -> 확실히).",
+            "context": "약속"
+        },
+        {
+            "hu": "Elenged.",
+            "ko": "놓아주다 (Enged -> 멀리 보냄).",
+            "context": "자유"
+        }
+    ],
+    "koreanInterferenceNotes": "'Meg'은 한국어의 '해 버리다', '다 ~하다'와 같은 완료 뉘앙스입니다. 신학 용어의 대부분이 Meg(완성)과 El(거룩한 분리/소명)로 이루어져 있습니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Bocsát.",
+            "correct": "Megbocsát.",
+            "explanation": "용서는 '완전히' 놓아주는 것입니다. 그냥 bocsát은 '발사하다/내보내다' 정도의 뜻입니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 보조용언 '놓다', '버리다', '내다'와 기능이 같습니다.",
+    "estimatedDuration": 50,
+    "difficultyScore": 6,
+    "prerequisites": [
+        "B2-2"
+    ],
+    "tags": [
+        "접두사",
+        "완료",
+        "소명"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Megtér (회개하다)",
+        "Elhívás (소명)",
+        "Megváltás (구속)"
+    ]
+}

@@ -1,0 +1,109 @@
+{
+    "level": "B2",
+    "orderIndex": 8,
+    "titleKorean": "소유 관계대명사 - 누구의 것인지",
+    "titleHungarian": "Birtokos vonatkozó névmás (Akié, Amié)",
+    "explanationKorean": "### 1. 소유를 나타내는 관계대명사\n\n\"이것은 내가 사랑하는 **그 사람의 것**이다\"처럼 소유 관계를 문장으로 연결할 때 쓰입니다.\n- **Akié** (The one whose... / The one to whom it belongs)\n- **Amié** (That which belongs to...)\n\n### 2. 구조\n- *Ki* (누구) + *é* (소유) -> *Kié?* (누구의 것?)\n- *Aki* (관계대명사) + *é* (소유) -> *Akié* (~인 자의 것)",
+    "explanationHungarian": "A birtokviszonyt kifejező vonatkozó névmás: akié, amié.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Akié (Whose)",
+                "description": "사람을 가리킬 때.",
+                "table": {
+                    "headers": [
+                        "헝가리어",
+                        "의미",
+                        "예문"
+                    ],
+                    "rows": [
+                        [
+                            "**Akié**",
+                            "~인 사람의 것",
+                            "Azé, lakié a hatalom. (권세가 있는 자의 것이다)"
+                        ],
+                        [
+                            "**Amié**",
+                            "~인 사물의 것",
+                            "Ez a tok azé, amié a telefon. (이 케이스는 그 폰의 것이다)"
+                        ],
+                        [
+                            "**Kinek a...?**",
+                            "누구의 ...?",
+                            "Kinek a fia? (Whose son is he?)"
+                        ]
+                    ]
+                }
+            }
+        ]
+    },
+    "examples": [
+        {
+            "items": [
+                {
+                    "hu": "Mert tiétek a mennyek országa.",
+                    "ko": "천국이 너희들의 것임이요. (For yours is the kingdom of heaven.)",
+                    "grammar": "Ti-é-tek (너희-의-것복수) -> Tiétek (Yours)",
+                    "vocabulary": [
+                        "mennyek országa (천국)"
+                    ]
+                },
+                {
+                    "hu": "Adjátok meg a császárnak, ami a császáré, és Istennek, ami az Istené.",
+                    "ko": "가이사의 것은 가이사에게, 하나님의 것은 하나님께 바치라. (마 22:21)",
+                    "grammar": "Ami a császáré (What belongs to Caesar)... Ami az Istené (What belongs to God)",
+                    "vocabulary": [
+                        "császár (황제/가이사)",
+                        "megad (주다/바치다)"
+                    ]
+                }
+            ],
+            "category": "예수님의 가르침"
+        },
+        {
+            "items": [
+                {
+                    "hu": "Kié ez a toll?",
+                    "ko": "이 펜 누구 거야?",
+                    "grammar": "Ki-é (Who-poss)",
+                    "vocabulary": [
+                        "toll (펜)"
+                    ]
+                },
+                {
+                    "hu": "Az enyém.",
+                    "ko": "내 거야. (Mine)",
+                    "grammar": "En-yém (My-poss)",
+                    "vocabulary": []
+                }
+            ],
+            "category": "일상 회화"
+        }
+    ],
+    "koreanInterferenceNotes": "### 🧠 한국인 뇌 구조 바꾸기: '것'의 생략\n\n한국어는 \"하나님의 **것**\"이라고 명사를 쓰지만, 헝가리어는 **-é** 하나로 끝냅니다.\n- Isten dolga (X - 하나님의 일?)\n- **Istené** (O - 하나님의 것)",
+    "commonMistakes": [
+        {
+            "mistake": "Ez könyv Péteré.",
+            "correct": "Ez a könyv Péteré.",
+            "explanation": "지시대명사(Ez) 뒤에는 정관사(a)가 꼭 와야 합니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어의 '~의 것'과 정확히 일치합니다.",
+    "estimatedDuration": 35,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "B1-3"
+    ],
+    "tags": [
+        "소유",
+        "-é",
+        "누구의것",
+        "세금논쟁"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Az Úré a föld (땅은 주님의 것이다 - 시 24:1)",
+        "Ti Krisztuséi vagytok (너희는 그리스도의 것이요)"
+    ],
+    "isPublished": true
+}

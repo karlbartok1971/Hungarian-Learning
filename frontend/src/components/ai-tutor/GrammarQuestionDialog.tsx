@@ -22,17 +22,30 @@ interface GrammarQuestionDialogProps {
   grammarTopic: string;
   userLevel: string;
   context?: string;
+  triggerText?: string;
+  triggerVariant?: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link";
+  initialQuestion?: string;
 }
 
 export function GrammarQuestionDialog({
   grammarTopic,
   userLevel,
   context,
+  triggerText = "AI 튜터에게 질문하기",
+  triggerVariant = "outline",
+  initialQuestion = ""
 }: GrammarQuestionDialogProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const [question, setQuestion] = useState('');
+  const [question, setQuestion] = useState(initialQuestion);
   const [answer, setAnswer] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+
+  // Update question when initialQuestion prop changes or dialog opens
+  React.useEffect(() => {
+    if (initialQuestion && isOpen && !question) {
+      setQuestion(initialQuestion);
+    }
+  }, [initialQuestion, isOpen]);
 
   const handleSubmit = async () => {
     if (!question.trim()) return;
@@ -69,9 +82,9 @@ export function GrammarQuestionDialog({
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button variant="outline" className="gap-2">
+        <Button variant={triggerVariant} className="gap-2">
           <MessageCircle className="w-4 h-4" />
-          AI 튜터에게 질문하기
+          {triggerText}
         </Button>
       </DialogTrigger>
       <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">

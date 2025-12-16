@@ -1,0 +1,136 @@
+{
+    "level": "B1",
+    "orderIndex": 14,
+    "titleKorean": "부사 만들기 - 형용사를 부사로",
+    "titleHungarian": "Határozószók képzése (-ul/-ül, -an/-en)",
+    "explanationKorean": "형용사에 꼬리를 붙여 부사(~하게)로 만듭니다. -an/-en이 가장 흔하고, -ul/-ül은 언어나 태도를 나타낼 때 씁니다.",
+    "explanationHungarian": "Melléknévből határozószó képzése.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "-an/-en (Manner)",
+                "description": "대부분의 형용사를 부사로 만드는 접미사.",
+                "pattern": "szép (예쁜) -> szépen (예쁘게), boldog (행복한) -> boldogan (행복하게)",
+                "examples": [
+                    {
+                        "hu": "Gyorsan (빠르게).",
+                        "ko": "Bátran (담대하게)."
+                    }
+                ]
+            },
+            {
+                "title": "-ul/-ül (Way/Language)",
+                "description": "언어, ~식으로, ~로서. 끝이 모음이 없으면 연결모음 없이 바로 붙기도 합니다.",
+                "pattern": "Magyarul (헝가리어로), Rosszul (나쁘게/잘못)",
+                "examples": [
+                    {
+                        "hu": "Végül (마침내/끝으로).",
+                        "ko": "Jól (잘 - jó불규칙)."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Bátran.",
+            "ko": "담대하게 (은혜의 보좌 앞에).",
+            "context": "히브리서"
+        },
+        {
+            "hu": "Szépen.",
+            "ko": "아름답게.",
+            "context": "일상"
+        },
+        {
+            "hu": "Hirtelen.",
+            "ko": "갑자기.",
+            "context": "성경"
+        },
+        {
+            "hu": "Hangosan.",
+            "ko": "큰 소리로.",
+            "context": "통성기도"
+        },
+        {
+            "hu": "Csendesen.",
+            "ko": "조용히.",
+            "context": "묵상"
+        },
+        {
+            "hu": "Röviden.",
+            "ko": "짧게 (간단히).",
+            "context": "설교"
+        },
+        {
+            "hu": "Teljesen.",
+            "ko": "완전히.",
+            "context": "강조"
+        },
+        {
+            "hu": "Helyesen.",
+            "ko": "올바르게.",
+            "context": "평가"
+        },
+        {
+            "hu": "Könnyen.",
+            "ko": "쉽게.",
+            "context": "일상"
+        },
+        {
+            "hu": "Nehezen.",
+            "ko": "어렵게 (겨우).",
+            "context": "구원"
+        },
+        {
+            "hu": "Magyarul.",
+            "ko": "헝가리어로.",
+            "context": "언어"
+        },
+        {
+            "hu": "Angolul.",
+            "ko": "영어로.",
+            "context": "언어"
+        },
+        {
+            "hu": "Jól.",
+            "ko": "잘 (Well).",
+            "context": "긍정"
+        },
+        {
+            "hu": "Rosszul.",
+            "ko": "잘못 / 아프게.",
+            "context": "부정"
+        },
+        {
+            "hu": "Ingyen.",
+            "ko": "값없이 (무료로).",
+            "context": "은혜"
+        }
+    ],
+    "koreanInterferenceNotes": "형용사 '좋은(Jó)'과 부사 '잘(Jól)'을 구분해야 합니다. 'Jó vagyok(난 좋은 사람/상태다)' vs 'Jól vagyok(난 잘 지낸다)'.",
+    "commonMistakes": [
+        {
+            "mistake": "Élek boldog.",
+            "correct": "Boldogan élek.",
+            "explanation": "동사를 꾸밀 때는 반드시 부사형(-an/en)을 써야 합니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '-게', '-로', '-히' 접미사와 같습니다 (예쁘'게', 빠르'게', 조용'히').",
+    "estimatedDuration": 35,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "A1-8"
+    ],
+    "tags": [
+        "부사",
+        "형용사",
+        "표현"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Ingyen (값없이)",
+        "Bátran (담대히)",
+        "Örökkön (영원히)"
+    ]
+}

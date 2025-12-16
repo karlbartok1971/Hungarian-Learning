@@ -1,0 +1,131 @@
+{
+    "level": "B2",
+    "orderIndex": 2,
+    "titleKorean": "접두사 심화 2 [Fel-, Le-] - 위와 아래, 상승과 하강",
+    "titleHungarian": "Igekötők: Fel és Le",
+    "explanationKorean": "위(Fel)/아래(Le). 승천과 강림, 그리고 '완전한 분해(Fel)'와 '정착/진정(Le)'.",
+    "explanationHungarian": "A fel- és le- igekötők elvont jelentései.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Fel- (Up / Apart)",
+                "description": "위로, 또는 '잘게/완전히'.",
+                "pattern": "Áld (축복하다) -> Feláldoz (제물로 바치다/희생하다 - 위로 올림)",
+                "examples": [
+                    {
+                        "hu": "Feltámad (부활하다 - 위로 일어남).",
+                        "ko": "Feldarabol (토막내다 - 완전히 분해)."
+                    }
+                ]
+            },
+            {
+                "title": "Le- (Down / Off)",
+                "description": "아래로, 또는 '제거/정착'.",
+                "pattern": "Száll (날다/내리다) -> Leszáll (하강하다/내리다)",
+                "examples": [
+                    {
+                        "hu": "Lekvár (잼 - 끓여서 졸인 것).",
+                        "ko": "Lemond (포기하다 - 말하고 내려놓다)."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Feltámadás.",
+            "ko": "부활 (위로 일어남).",
+            "context": "부활절"
+        },
+        {
+            "hu": "Mennybemenetel (Felmegy).",
+            "ko": "승천 (하늘로 올라감).",
+            "context": "절기"
+        },
+        {
+            "hu": "Leszállt a poklokra.",
+            "ko": "지옥(음부)에 내려가셨으며.",
+            "context": "사도신경"
+        },
+        {
+            "hu": "Felszentel.",
+            "ko": "성별하다 / 목사 안수하다 (위로 거룩하게 함).",
+            "context": "교회"
+        },
+        {
+            "hu": "Letérdel.",
+            "ko": "무릎 꿇다 (아래로).",
+            "context": "기도"
+        },
+        {
+            "hu": "Felad.",
+            "ko": "포기하다 (손을 위로 들다 / 주다). or 부치다(우편).",
+            "context": "항복"
+        },
+        {
+            "hu": "Leves.",
+            "ko": "수프 (Levet = 즙을 냄? 어원 다름, 하지만 Le연상).",
+            "context": "음식"
+        },
+        {
+            "hu": "Leül.",
+            "ko": "앉다 (아래로 앉다).",
+            "context": "동작"
+        },
+        {
+            "hu": "Feláll.",
+            "ko": "일어서다 (위로 서다).",
+            "context": "동작"
+        },
+        {
+            "hu": "Felnő.",
+            "ko": "자라다/성장하다 (위로 큼).",
+            "context": "성장"
+        },
+        {
+            "hu": "Lefogy.",
+            "ko": "살이 빠지다 (아래로 줄다).",
+            "context": "건강"
+        },
+        {
+            "hu": "Felismer.",
+            "ko": "알아보다 (인식하다 - 위로 지식이 틈).",
+            "context": "인지"
+        },
+        {
+            "hu": "Leír.",
+            "ko": "적다 / 묘사하다 (종이 아래로 쓰다).",
+            "context": "기록"
+        },
+        {
+            "hu": "Felolvas.",
+            "ko": "낭독하다 (소리내어 읽다 / 위로 읽다).",
+            "context": "예배"
+        }
+    ],
+    "koreanInterferenceNotes": "'포기하다'가 'Felad' (Give up - 위로) 인지 'Lemond' (Resign - 아래로) 인지 헷갈립니다. Felad는 '항복/그만둠', Lemond는 '권리/직책을 내려놓음'입니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Felír.",
+            "correct": "Felír (처방하다/메모하다) vs Leír (서술하다).",
+            "explanation": "의사가 약을 처방하는 건 Felír, 작가가 글을 쓰는 건 Leír에 가깝습니다."
+        }
+    ],
+    "comparisonWithKorean": "영어의 Up/Down 구동사와 비슷합니다 (Give up, Write down).",
+    "estimatedDuration": 50,
+    "difficultyScore": 6,
+    "prerequisites": [
+        "B2-1"
+    ],
+    "tags": [
+        "접두사",
+        "상승",
+        "하강"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Feltámad (부활하다)",
+        "Leszáll (강림하다)",
+        "Felszentel (안수/봉헌하다)"
+    ]
+}

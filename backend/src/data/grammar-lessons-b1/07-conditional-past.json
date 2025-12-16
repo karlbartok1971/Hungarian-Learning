@@ -1,0 +1,111 @@
+{
+    "level": "B1",
+    "orderIndex": 7,
+    "titleKorean": "조건법 과거 - ~했었더라면",
+    "titleHungarian": "Feltételes mód múlt idő",
+    "explanationKorean": "과거의 후회나 가정. '내가 그때 알았더라면...', '주님이 계셨더라면...' -na/-ne/-ná/-né + volna.",
+    "explanationHungarian": "A múlt idejű feltétel kifejezése: volna.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "형태 만들기",
+                "description": "동사의 과거형(X) + volna가 아니라, **'동사의 현재 조건법(na/ne) + volna'가 아님!** 주의: **동사 과거형 어미 + volna**입니다.",
+                "pattern": "Mentem volna (갔었을 텐데), Tudtam volna (알았었을 텐데).",
+                "examples": [
+                    {
+                        "hu": "Ha itt lettél volna...",
+                        "ko": "당신이 여기 계셨더라면..."
+                    }
+                ]
+            },
+            {
+                "title": "Volna (Would have)",
+                "description": "Volna는 van의 조건법 불규칙 형태에서 왔습니다. 항상 변하지 않고 뒤에 붙습니다.",
+                "pattern": "ettem volna, ittam volna",
+                "examples": [
+                    {
+                        "hu": "Megmentette volna.",
+                        "ko": "구원했었을 것이다."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Uram, ha itt lettél volna, nem halt volna meg a testvérem.",
+            "ko": "주여, 여기 계셨더라면 내 오라비가 죽지 아니하였겠나이다.",
+            "context": "요한 11:21 (마르다)"
+        },
+        {
+            "hu": "Mit tettél volna?",
+            "ko": "너라면 어떻게 했겠니?",
+            "context": "질문"
+        },
+        {
+            "hu": "Szerettem volna menni.",
+            "ko": "가고 싶었습니다 (I would have liked to go - 과거의 소망).",
+            "context": "후회/아쉬움"
+        },
+        {
+            "hu": "Jó lett volna.",
+            "ko": "좋았을 텐데.",
+            "context": "아쉬움"
+        },
+        {
+            "hu": "Segítettem volna, ha tudok.",
+            "ko": "(내가 할 수만 있었다면) 도왔을 텐데.",
+            "context": "변명"
+        },
+        {
+            "hu": "Nem hittem volna.",
+            "ko": "나는 믿지 않았을 것이다 (생각도 못했다).",
+            "context": "놀람"
+        },
+        {
+            "hu": "Kellett volna.",
+            "ko": "했어야 했다 (Should have).",
+            "context": "후회"
+        },
+        {
+            "hu": "Másképp történt volna.",
+            "ko": "다르게 일어났을 것이다.",
+            "context": "가정"
+        },
+        {
+            "hu": "Elmondtam volna.",
+            "ko": "말했었을 거야.",
+            "context": "대화"
+        },
+        {
+            "hu": "Megbánta volna?",
+            "ko": "그가 후회했을까?",
+            "context": "질문"
+        }
+    ],
+    "koreanInterferenceNotes": "'~했겠다', '~할 뻔했다' 등 한국어의 다양한 과거 추측/가정 표현을 커버합니다. 문법적으로는 '과거형 동사 + volna' 구조만 기억하면 쉽습니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Mennék volna.",
+            "correct": "Mentem volna.",
+            "explanation": "현재 조건법(Mennék)에 volna를 붙이는 게 아니라, 과거형(Mentem)에 volna를 붙여서 과거 사실의 반대를 나타냅니다."
+        }
+    ],
+    "comparisonWithKorean": "영어의 'Would have p.p'와 정확히 일치합니다.",
+    "estimatedDuration": 50,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "A2-7",
+        "A2-4"
+    ],
+    "tags": [
+        "조건법",
+        "가정법과거",
+        "후회"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Ha itt lettél volna (주가 여기 계셨더라면)",
+        "Nem halt volna meg (죽지 않았을 텐데)"
+    ]
+}

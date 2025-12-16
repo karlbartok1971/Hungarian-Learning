@@ -1,0 +1,130 @@
+{
+    "level": "B1",
+    "orderIndex": 23,
+    "titleKorean": "날짜와 연도 - 1990년에",
+    "titleHungarian": "Dátumok és Évszámok",
+    "explanationKorean": "년, 월, 일 순서로 씁니다. 연도 뒤에는 점(.)을 찍고, '~년에'라고 할 때는 -ban/-ben을 붙입니다.",
+    "explanationHungarian": "Dátumok helyesírása és ragozása.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "연도 (Év)",
+                "description": "숫자 뒤에 점을 찍습니다. 2023. = 2023년.",
+                "pattern": "2023-ban (2023년에). 숫자의 마지막 발음에 따라 조화를 맞춥니다 (három-ban).",
+                "examples": [
+                    {
+                        "hu": "1990-ben (ezer-kilencszáz-kilencven-ben).",
+                        "ko": "1990년에."
+                    }
+                ]
+            },
+            {
+                "title": "월일 (Hónap, Nap)",
+                "description": "서수(-dika)를 사용하지 않고 그냥 숫자를 쓰기도 하지만, 날짜를 말할 땐 서수 어미(j-vel)를 씁니다.",
+                "pattern": "Január 1. (Elseje), Március 15. (Tizenötödike)",
+                "examples": [
+                    {
+                        "hu": "Mikor születtél?",
+                        "ko": "언제 태어났니?"
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Kr. e. (Krisztus előtt).",
+            "ko": "기원전 (BC).",
+            "context": "역사"
+        },
+        {
+            "hu": "Kr. u. (Krisztus után).",
+            "ko": "기원후 (AD).",
+            "context": "역사"
+        },
+        {
+            "hu": "2000 évvel ezelőtt.",
+            "ko": "2000년 전에.",
+            "context": "역사"
+        },
+        {
+            "hu": "Harmadnapon.",
+            "ko": "제 3일에.",
+            "context": "부활"
+        },
+        {
+            "hu": "Pünkösd napján.",
+            "ko": "오순절 날에.",
+            "context": "성경"
+        },
+        {
+            "hu": "A hetedik napon.",
+            "ko": "일곱째 날에 (안식하다).",
+            "context": "창세기"
+        },
+        {
+            "hu": "Negyven napig.",
+            "ko": "40일 동안.",
+            "context": "광야"
+        },
+        {
+            "hu": "Évente.",
+            "ko": "매년 (Yearly).",
+            "context": "빈도"
+        },
+        {
+            "hu": "Tavaly.",
+            "ko": "작년에.",
+            "context": "시간"
+        },
+        {
+            "hu": "Idén.",
+            "ko": "올해 (In this year).",
+            "context": "시간"
+        },
+        {
+            "hu": "Jövőre.",
+            "ko": "내년에.",
+            "context": "시간"
+        },
+        {
+            "hu": "Január elsején.",
+            "ko": "1월 1일에.",
+            "context": "날짜"
+        },
+        {
+            "hu": "Ma van a határidő.",
+            "ko": "오늘이 기한이다.",
+            "context": "업무"
+        },
+        {
+            "hu": "Boldog születésnapot!",
+            "ko": "생일 축하합니다!",
+            "context": "인사"
+        }
+    ],
+    "koreanInterferenceNotes": "연-월-일 순서가 한국어와 같아서 아주 편합니다 (헝가리어는 유럽 언어 중 유일하게 이 순서를 씁니다). 서양식(일-월-연)으로 거꾸로 말할 필요가 없습니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Január egy.",
+            "correct": "Január elseje.",
+            "explanation": "날짜를 '읽을 때'는 서수 형태로 읽어야 합니다. 쓸 때는 1. 이라고 써도 됩니다."
+        }
+    ],
+    "comparisonWithKorean": "어순이 한국어와 완벽하게 일치합니다 (년-월-일).",
+    "estimatedDuration": 40,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "B1-12"
+    ],
+    "tags": [
+        "날짜",
+        "숫자",
+        "연도"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Kr. u. (AD - 주후)",
+        "Harmadnapon (제 삼일에)"
+    ]
+}

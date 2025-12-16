@@ -1,0 +1,105 @@
+{
+    "level": "B1",
+    "orderIndex": 21,
+    "titleKorean": "상관접속사 - 이것도 저것도",
+    "titleHungarian": "Páros kötőszók (Is-is, Sem-sem)",
+    "explanationKorean": "### 1. 짝을 이루는 접속사들\n\n단순히 '그리고(és)'로 연결하는 것보다 훨씬 세련되고 논리적인 표현입니다.\n- **Is ... is**: A도 B도 (Both A and B)\n- **Sem ... sem**: A도 아니고 B도 아니다 (Neither A nor B)\n- **Vagy ... vagy**: A거나 B거나 (Either A or B)\n\n### 2. 부정의 강조 (Sem-sem)\n성경에서 아주 많이 나옵니다. \"사망이나 생명이나... 아무것도 끊을 수 없다.\"\n부정어 *Sem*은 반드시 동사와 가까이 있어야 하거나, 동사를 사이에 두고 반복됩니다.",
+    "explanationHungarian": "Is-is (mindkettő), sem-sem (egyik sem), vagy-vagy (választás).",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "주요 상관접속사",
+                "description": "반복해서 사용하며 리듬감을 줍니다.",
+                "table": {
+                    "headers": [
+                        "접속사",
+                        "의미",
+                        "예문"
+                    ],
+                    "rows": [
+                        [
+                            "Is ... is",
+                            "A도 B도",
+                            "**Én is, te is.** (나도 너도)"
+                        ],
+                        [
+                            "Sem ... sem",
+                            "A도 B도 아님",
+                            "**Sem pénzem, sem aranyam.** (은과 금 내게 없거니와)"
+                        ],
+                        [
+                            "Vagy ... vagy",
+                            "A거나 B거나",
+                            "**Vagy** ő, **vagy** én. (그 사람이거나 나거나)"
+                        ]
+                    ]
+                }
+            }
+        ]
+    },
+    "examples": [
+        {
+            "items": [
+                {
+                    "hu": "Sem halál, sem élet... nem választhat el minket Isten szeretetétől.",
+                    "ko": "사망이나 생명이나... (그 어떤 것도) 우리를 하나님의 사랑에서 끊을 수 없으리라. (롬 8:38-39)",
+                    "grammar": "Sem... sem... (Neither... nor...)",
+                    "vocabulary": [
+                        "halál (사망)",
+                        "élet (생명)",
+                        "elválaszt (나누다/끊다)"
+                    ]
+                },
+                {
+                    "hu": "Ezüstöm és aranyam nincsen nékem.",
+                    "ko": "은과 금(Ezüst és arany)은 내게 없거니와. (사도행전 3:6)",
+                    "grammar": "Sem ezüstöm, sem aranyam nincs. (강조할 때)",
+                    "vocabulary": [
+                        "ezüst (은)",
+                        "arany (금)"
+                    ]
+                }
+            ],
+            "category": "성경적 강조"
+        },
+        {
+            "items": [
+                {
+                    "hu": "Vagy eszel, vagy beszélsz.",
+                    "ko": "먹든지 말하든지 해라. (둘 다 하지 말고)",
+                    "grammar": "Vagy... vagy...",
+                    "vocabulary": [
+                        "eszik (먹다)"
+                    ]
+                }
+            ],
+            "category": "일상 회화"
+        }
+    ],
+    "koreanInterferenceNotes": "### 🧠 한국인 뇌 구조 바꾸기: 'Sem'의 위치\n\n'A도 B도 없다'고 할 때, 헝가리어는 **Sem**을 명사 *앞*에 둡니다. (영어의 Neither와 비슷)\n- (X) Én sem, te sem. (나도, 너도) -> 이건 '나도(Me neither)'라는 뜻.\n- (O) **Sem** én, **sem** te. (나도 아니고 너도 아니다)\n\n문장 전체를 부정하는 상관접속사로 쓸 때는 앞에 둡니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Is én, is te.",
+            "correct": "Én is, te is.",
+            "explanation": "'Is'는 항상 단어 **뒤**에 옵니다. ('~도') 반면에 'Sem...sem'이나 'Vagy...vagy'는 단어 **앞**에 옵니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어의 '~도 ~도', '~든지 ~든지'와 비슷하지만, 'Is(뒤)'와 'Vagy(앞)'의 위치 차이에 주의하세요.",
+    "estimatedDuration": 35,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "A2-9"
+    ],
+    "tags": [
+        "접속사",
+        "Sem-sem",
+        "Is-is",
+        "로마서"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Sem magasság, sem mélység (높음이나 깊음이나)",
+        "Vagy Isten, vagy Mammon (하나님이냐 재물이냐)"
+    ],
+    "isPublished": true
+}

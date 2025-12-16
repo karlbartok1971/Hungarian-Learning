@@ -1,0 +1,131 @@
+{
+    "level": "B1",
+    "orderIndex": 18,
+    "titleKorean": "감탄문 - 참 아름다워라!",
+    "titleHungarian": "Felkiáltó mondatok",
+    "explanationKorean": "감정, 찬양, 놀라움을 표현할 때 씁니다. 'De', 'Milyen', 'Mennyire' 등을 사용합니다.",
+    "explanationHungarian": "Az érzelmek, csodálkozás kifejezése.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "De + 형용사",
+                "description": "'De'는 '그러나'라는 뜻도 있지만, 문장 맨 앞에서는 '얼마나 ~한가!'라는 감탄사가 됩니다.",
+                "pattern": "De jó! (정말 좋다! / 참 좋구나!)",
+                "examples": [
+                    {
+                        "hu": "De szép nap!",
+                        "ko": "참 아름다운 날이구나!"
+                    }
+                ]
+            },
+            {
+                "title": "Milyen / Mennyire",
+                "description": "Milyen(What a), Mennyire(How much).",
+                "pattern": "Milyen nagy Isten! (얼마나 위대하신 하나님인가!)",
+                "examples": [
+                    {
+                        "hu": "Jaj!",
+                        "ko": "아이고! / 화 있을진저!"
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Ó, Uram!",
+            "ko": "오, 주여!",
+            "context": "기도"
+        },
+        {
+            "hu": "Milyen csodálatos!",
+            "ko": "얼마나 놀라운가!",
+            "context": "찬양"
+        },
+        {
+            "hu": "De jó az Isten.",
+            "ko": "하나님은 참으로 좋으시도다.",
+            "context": "시편 73:1"
+        },
+        {
+            "hu": "Mennyire szeretlek!",
+            "ko": "내가 주를 얼마나 사랑하는지요!",
+            "context": "고백"
+        },
+        {
+            "hu": "Jaj nekem!",
+            "ko": "화로다 나여 (망하게 되었도다).",
+            "context": "이사야 6:5"
+        },
+        {
+            "hu": "Jaj a világnak.",
+            "ko": "세상에 화가 있도다.",
+            "context": "성경"
+        },
+        {
+            "hu": "Bárcsak!",
+            "ko": "~라면 얼마나 좋을까! (소망)",
+            "context": "기원"
+        },
+        {
+            "hu": "Mekkora hit!",
+            "ko": "이만한(얼마나 큰) 믿음인가!",
+            "context": "칭찬"
+        },
+        {
+            "hu": "De kár!",
+            "ko": "아깝다! / 유감이다!",
+            "context": "일상"
+        },
+        {
+            "hu": "De furcsa!",
+            "ko": "참 이상하네!",
+            "context": "일상"
+        },
+        {
+            "hu": "Hála Istennek!",
+            "ko": "하나님께 감사! (다행이다)",
+            "context": "안도"
+        },
+        {
+            "hu": "Isten ments!",
+            "ko": "God forbid! (절대 안 돼 / 하나님이 막으시길).",
+            "context": "부정"
+        },
+        {
+            "hu": "Ugye?",
+            "ko": "그렇지? (동의 구함).",
+            "context": "확인"
+        },
+        {
+            "hu": "Nahát!",
+            "ko": "세상에! (놀람).",
+            "context": "반응"
+        }
+    ],
+    "koreanInterferenceNotes": "'De'가 문장 중간에 오면 '그러나', 맨 앞에 오고 느낌표가 있으면 '감탄사'입니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Hogy szép!",
+            "correct": "Milyen szép! / De szép!",
+            "explanation": "영어로 How beautiful이라고 해서 Hogy(How)를 쓰지 않습니다. Hogy는 접속사나 의문사입니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '참', '얼마나', '아이고' 등과 감정선이 비슷합니다.",
+    "estimatedDuration": 30,
+    "difficultyScore": 2,
+    "prerequisites": [
+        "A1-8"
+    ],
+    "tags": [
+        "감탄문",
+        "감정",
+        "찬양"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Jaj nekem (화로다 나여)",
+        "Milyen nagy (얼마나 크신지)",
+        "De jó (참 좋으신)"
+    ]
+}

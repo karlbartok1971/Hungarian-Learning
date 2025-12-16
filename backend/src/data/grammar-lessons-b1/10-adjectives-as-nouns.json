@@ -1,0 +1,126 @@
+{
+    "level": "B1",
+    "orderIndex": 10,
+    "titleKorean": "형용사의 명사화 - 선한 것, 악한 자",
+    "titleHungarian": "Melléknév főnevesítése",
+    "explanationKorean": "형용사 앞에 관사(a/az)를 붙이면 명사가 됩니다. 'The Good', 'The Bad'. 헝가리어에서는 이것을 자유자재로 사용하여 사람이나 추상명사를 만듭니다.",
+    "explanationHungarian": "A melléknév főnévként való használata.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "사람 만들기",
+                "description": "Gazdag (부유한) -> A gazdag (부자, 부유한 사람). 복수형도 가능 (A gazdagok - 부자들).",
+                "pattern": "A vak (맹인), A sánta (절름발이)",
+                "examples": [
+                    {
+                        "hu": "Boldogok a szegények.",
+                        "ko": "가난한 자들은 복이 있나니."
+                    }
+                ]
+            },
+            {
+                "title": "추상명사/사물 만들기",
+                "description": "Jó (좋은) -> A jó (선, 좋은 것).",
+                "pattern": "A rossz (악, 나쁜 것)",
+                "examples": [
+                    {
+                        "hu": "Győzd le a rosszat jóval.",
+                        "ko": "선으로(jóval) 악을(rosszat) 이겨라."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "A Gonosz.",
+            "ko": "악한 자 (사탄).",
+            "context": "주기도문"
+        },
+        {
+            "hu": "A Mindenható.",
+            "ko": "전능자 (전능하신 분).",
+            "context": "하나님 칭호"
+        },
+        {
+            "hu": "Az Örökkévaló.",
+            "ko": "영원하신 분 (여호와).",
+            "context": "하나님 칭호"
+        },
+        {
+            "hu": "Süketek hallanak, vakok látnak.",
+            "ko": "귀먹은 자가 듣고, 맹인이 본다.",
+            "context": "예수님의 기적"
+        },
+        {
+            "hu": "A bölcsek.",
+            "ko": "지혜로운 자들 (동방박사).",
+            "context": "성탄절"
+        },
+        {
+            "hu": "Válaszd a jót.",
+            "ko": "선을 택하라.",
+            "context": "설교"
+        },
+        {
+            "hu": "Az igazak.",
+            "ko": "의인들.",
+            "context": "시편"
+        },
+        {
+            "hu": "A bűnösök.",
+            "ko": "죄인들.",
+            "context": "복음"
+        },
+        {
+            "hu": "A kicsik.",
+            "ko": "소자들(작은 자들).",
+            "context": "성경"
+        },
+        {
+            "hu": "Az elveszett.",
+            "ko": "잃어버린 자.",
+            "context": "누가 19:10"
+        },
+        {
+            "hu": "Az első és az utolsó.",
+            "ko": "처음과 나중 (알파와 오메가).",
+            "context": "계시록"
+        },
+        {
+            "hu": "Az egyetlen.",
+            "ko": "유일한 분/것.",
+            "context": "강조"
+        },
+        {
+            "hu": "A szent.",
+            "ko": "거룩한 자.",
+            "context": "호칭"
+        }
+    ],
+    "koreanInterferenceNotes": "한국어는 '부자인 사람'이라고 '사람'을 붙여야 하지만, 헝가리어는 형용사 그 자체로 사람이 됩니다. 성경 번역에서 매우 빈번하게 나오는 구조입니다.",
+    "commonMistakes": [
+        {
+            "mistake": "A gazdag emberok.",
+            "correct": "A gazdagok.",
+            "explanation": "굳이 ember(사람)을 안 붙여도 문맥상 사람을 의미합니다."
+        }
+    ],
+    "comparisonWithKorean": "영어의 'The rich', 'The poor' 용법과 같습니다.",
+    "estimatedDuration": 35,
+    "difficultyScore": 2,
+    "prerequisites": [
+        "A1-8"
+    ],
+    "tags": [
+        "형용사",
+        "명사화",
+        "성경용어"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "A Mindenható (전능자)",
+        "Az Örökkévaló (영존하시는 자)",
+        "A Gonosz (악한 자)"
+    ]
+}

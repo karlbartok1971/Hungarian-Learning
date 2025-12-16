@@ -1,0 +1,136 @@
+{
+    "level": "A2",
+    "orderIndex": 10,
+    "titleKorean": "관계대명사 - 문장 속에 문장 넣기",
+    "titleHungarian": "Vonatkozó névmások",
+    "explanationKorean": "문장을 명사처럼 수식할 때 사용합니다. '내가 만난 사람', '하나님이 지으신 세계' 등을 표현합니다. 주로 a/az 지시사와 짝을 이룹니다.",
+    "explanationHungarian": "Az aki, ami, amely névmások használata.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Aki (사람 - Who)",
+                "description": "사람을 수식할 때 씁니다. 선행사에 az, 뒤에 aki가 옵니다.",
+                "pattern": "Az az ember, aki... (That man, who...)",
+                "examples": [
+                    {
+                        "hu": "Boldog az, aki...",
+                        "ko": "복 있는 사람은 ~하는 자이다."
+                    }
+                ]
+            },
+            {
+                "title": "Ami / Amely (사물 - Which/That)",
+                "description": "사물이나 추상적 개념을 수식합니다.",
+                "pattern": "Az a könyv, amely...",
+                "examples": [
+                    {
+                        "hu": "Minden, ami van.",
+                        "ko": "있는 모든 것."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Aki hisz bennem, örök élete van.",
+            "ko": "나를 믿는 자는(He who believes) 영생이 있다.",
+            "context": "요한복음"
+        },
+        {
+            "hu": "Az Isten, aki alkotott.",
+            "ko": "나를 지으신 하나님.",
+            "context": "찬양"
+        },
+        {
+            "hu": "A béke, amely minden értelmet meghalad.",
+            "ko": "모든 지각에 뛰어난 평강.",
+            "context": "빌 4:7"
+        },
+        {
+            "hu": "Aki kér, mind kap.",
+            "ko": "구하는 이마다 받을 것이요.",
+            "context": "성경"
+        },
+        {
+            "hu": "Ez az, amit mondtam.",
+            "ko": "이것이 내가 말했던 것이다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Az az ember, akit láttam.",
+            "ko": "내가 보았던 그 사람. (aki도 격변화함 akit)",
+            "context": "일상"
+        },
+        {
+            "hu": "A kő, amelyet az építők megvetettek.",
+            "ko": "건축자들이 버린 돌이.",
+            "context": "성경"
+        },
+        {
+            "hu": "Legyen meg az, amit akarsz.",
+            "ko": "네가 원하는 대로 되리라.",
+            "context": "성경"
+        },
+        {
+            "hu": "Akié a Fiú, azé az élet.",
+            "ko": "아들이 있는 자에게는(Whose is the Son) 생명이 있다.",
+            "context": "요일 5:12"
+        },
+        {
+            "hu": "Ahol ketten vagy hárman...",
+            "ko": "두세 사람이 모인 곳에는(Where).",
+            "context": "성경"
+        },
+        {
+            "hu": "Amikor imádkoztok...",
+            "ko": "너희가 기도할 때에(When).",
+            "context": "성경"
+        },
+        {
+            "hu": "Ahogy te akarod.",
+            "ko": "당신이 원하시는 대로(As).",
+            "context": "기도"
+        },
+        {
+            "hu": "Aki füle van, hallja meg.",
+            "ko": "귀 있는 자는 들을지어다.",
+            "context": "계시록"
+        },
+        {
+            "hu": "Nincs senki, aki...",
+            "ko": "~하는 자가 아무도 없다.",
+            "context": "설교"
+        },
+        {
+            "hu": "Minden, amit tesz.",
+            "ko": "그가 하는 모든 일이.",
+            "context": "시편 1편"
+        }
+    ],
+    "koreanInterferenceNotes": "한국어는 관형절이 명사 앞에 오지만('믿는' 자), 헝가리어는 명사 뒤에 관계절이 옵니다. '그 자, 누가(aki) 믿는다' 순서입니다. 어순이 정반대라 연습이 필요합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "A hisz ember.",
+            "correct": "Az ember, aki hisz.",
+            "explanation": "동사가 직접 명사를 꾸밀 수 없습니다. 반드시 관계대명사를 써서 절을 만들어야 합니다."
+        }
+    ],
+    "comparisonWithKorean": "영어의 관계대명사(Who, Which) 구조와 더 비슷합니다.",
+    "estimatedDuration": 55,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "A2-9"
+    ],
+    "tags": [
+        "관계대명사",
+        "복문",
+        "수식"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Aki (The one who - 성도/제자)",
+        "Amely (Which - 속성/물건)",
+        "Ahol (Where - 처소)"
+    ]
+}

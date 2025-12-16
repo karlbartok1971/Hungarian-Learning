@@ -1,0 +1,159 @@
+{
+    "level": "A1",
+    "orderIndex": 10,
+    "titleKorean": "부정문 만들기 - nem과 nincs",
+    "titleHungarian": "Tagadás",
+    "explanationKorean": "헝가리어 부정문은 주로 'nem'을 사용하며, '있다'의 부정인 경우는 'nincs'를 사용합니다.",
+    "explanationHungarian": "A tagadószó a 'nem', létige esetén a 'nincs/sincs'.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "일반 부정 (Nem)",
+                "description": "부정하고 싶은 단어 바로 앞에 nem을 둡니다.",
+                "pattern": "Nem + 동사/형용사",
+                "examples": [
+                    {
+                        "hu": "Nem tudom.",
+                        "ko": "몰라요."
+                    },
+                    {
+                        "hu": "Nem jó.",
+                        "ko": "안 좋아요."
+                    }
+                ]
+            },
+            {
+                "title": "존재 부정 (Nincs)",
+                "description": "van(있다)의 부정은 nem van이 아니라 nincs입니다. 복수형은 nincsenek입니다.",
+                "pattern": "Nincs + 주어",
+                "examples": [
+                    {
+                        "hu": "Nincs időm.",
+                        "ko": "시간이 없어요."
+                    },
+                    {
+                        "hu": "Nincsenek itt.",
+                        "ko": "그들은 여기 없어요."
+                    }
+                ]
+            },
+            {
+                "title": "이중 부정 (Sem)",
+                "description": "~도 아니다/없다 라고 할 때는 sem/sincs를 사용합니다.",
+                "pattern": "Én sem. (나도 아니야)",
+                "examples": [
+                    {
+                        "hu": "Se ezüstöm, se aranyam.",
+                        "ko": "은과 금은 내게 없거니와."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Nem szégyellem az evangéliumot.",
+            "ko": "나는 복음을 부끄러워하지 않는다.",
+            "context": "성경 (롬 1:16)"
+        },
+        {
+            "hu": "Nem csak kenyérrel él az ember.",
+            "ko": "사람이 떡으로만 살 것이 아니요.",
+            "context": "성경"
+        },
+        {
+            "hu": "Nincs itt, feltámadt.",
+            "ko": "여기 계시지 않고 살아나셨느니라.",
+            "context": "성경 (부활)"
+        },
+        {
+            "hu": "Nem értem.",
+            "ko": "이해하지 못했습니다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Nem beszélek magyarul jól.",
+            "ko": "헝가리어 잘 못해요.",
+            "context": "일상"
+        },
+        {
+            "hu": "Nincs probléma.",
+            "ko": "문제 없어요.",
+            "context": "일상"
+        },
+        {
+            "hu": "Nem tudom, mit tegyek.",
+            "ko": "무엇을 해야 할지 모르겠다.",
+            "context": "상담"
+        },
+        {
+            "hu": "Soha nem hagy el.",
+            "ko": "결코 떠나지 않으신다.",
+            "context": "설교"
+        },
+        {
+            "hu": "Nincs senki, aki...",
+            "ko": "~한 자가 아무도 없다.",
+            "context": "설교"
+        },
+        {
+            "hu": "Nem akarom.",
+            "ko": "원하지 않아요.",
+            "context": "일상"
+        },
+        {
+            "hu": "Ez nem igaz.",
+            "ko": "이건 사실이 아니다.",
+            "context": "논쟁"
+        },
+        {
+            "hu": "Nincs pénzem.",
+            "ko": "돈이 없어요.",
+            "context": "일상"
+        },
+        {
+            "hu": "Ne félj!",
+            "ko": "두려워 말라! (금지 명령)",
+            "context": "성경/설교"
+        },
+        {
+            "hu": "Semmi baj.",
+            "ko": "괜찮아요 (아무 문제 아님).",
+            "context": "일상"
+        },
+        {
+            "hu": "Nem hiszem.",
+            "ko": "믿지 않아요 / 그렇게 생각 안 해요.",
+            "context": "일상"
+        }
+    ],
+    "koreanInterferenceNotes": "한국어는 '안 하다'와 '하지 않다' 두 가지 방식이 있지만, 헝가리어는 단어 앞에 'nem'만 붙이면 되므로 더 단순합니다. 단, '있다/없다'의 구분을 주의해야 합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Nem van pénz.",
+            "correct": "Nincs pénz.",
+            "explanation": "존재의 부정은 항상 nincs를 씁니다."
+        },
+        {
+            "mistake": "Én nem.",
+            "correct": "Én sem.",
+            "explanation": "나'도' 아니다 라고 동의할 때는 nem 대신 sem을 씁니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어의 '없다'가 형용사처럼 쓰이는 것과 달리 헝가리어 nincs는 동사적 성격이 강합니다.",
+    "estimatedDuration": 25,
+    "difficultyScore": 2,
+    "prerequisites": [
+        "A1-5"
+    ],
+    "tags": [
+        "부정문",
+        "기초"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Ne félj (두려워 말라)",
+        "Nincs bűn (죄가 없다)",
+        "Nem hagy el (버리지 않으신다)"
+    ]
+}

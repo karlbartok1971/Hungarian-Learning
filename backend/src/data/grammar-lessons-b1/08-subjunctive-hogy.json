@@ -1,0 +1,112 @@
+{
+    "level": "B1",
+    "orderIndex": 8,
+    "titleKorean": "접속법/명령법 - ~하도록, ~하기를",
+    "titleHungarian": "Felszólító mód a mellékmondatban (Kötőmód)",
+    "explanationKorean": "Hogy 절 뒤에 명령형(접속법)을 써서 목적, 소망, 필요를 나타냅니다. '나는 네가 가기를 원한다'에서 '가다'는 사실 명령형 형태를 씁니다.",
+    "explanationHungarian": "A felszólító mód használata a 'hogy' kötőszó után.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "명령형 형태의 확장 사용",
+                "description": "명령형(-j)은 단순히 명령할 때만 쓰는 게 아니라, '~하도록(So that)', '~하기를(Wish)' 등의 뜻으로 종속절에서 매우 많이 쓰입니다.",
+                "pattern": "Akarom, hogy menj. (나는 원한다, 네가 가라고 -> 가기를)",
+                "examples": [
+                    {
+                        "hu": "Azért jött, hogy életünk legyen.",
+                        "ko": "생명을 얻게 하려(Legyen-명령형) 오셨다."
+                    }
+                ]
+            },
+            {
+                "title": "필요/가능성 표현",
+                "description": "Kell, hogy... (Must), Lehet, hogy... (Might)",
+                "pattern": "Kell, hogy menjen. (그가 가야만 한다)",
+                "examples": [
+                    {
+                        "hu": "Imádkozzatok, hogy meg ne kísértessetek.",
+                        "ko": "시험에 들지 않게(않도록) 기도하라."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Nem akarom, hogy eltévedj.",
+            "ko": "네가 길을 잃기를 원치 않는다.",
+            "context": "목자의 마음"
+        },
+        {
+            "hu": "Azért imádkozom, hogy hited el ne fogyatkozzék.",
+            "ko": "네 믿음이 떨어지지 않기를 기도하노니.",
+            "context": "눅 22:32"
+        },
+        {
+            "hu": "Add, hogy lássak!",
+            "ko": "보게 해 주소서! (내가 보기를 주소서).",
+            "context": "맹인의 기도"
+        },
+        {
+            "hu": "Hagyjatok, hadd menjen.",
+            "ko": "가게 내버려 둬라.",
+            "context": "성경"
+        },
+        {
+            "hu": "Fontos, hogy ott legyél.",
+            "ko": "네가 거기 있는 것이 중요하다.",
+            "context": "권면"
+        },
+        {
+            "hu": "Vigyázz, nehogy eless.",
+            "ko": "넘어지지 않도록 주의하라.",
+            "context": "경고"
+        },
+        {
+            "hu": "Kell, hogy növekedjen.",
+            "ko": "그는 흥하여야 하겠고 (He must increase).",
+            "context": "요한 3:30 (세례요한)"
+        },
+        {
+            "hu": "Kérte, hogy gyógyítsa meg.",
+            "ko": "고쳐 달라고 요청했다.",
+            "context": "치유"
+        },
+        {
+            "hu": "Mondd neki, hogy várjon.",
+            "ko": "기다리라고 전해라.",
+            "context": "지시"
+        },
+        {
+            "hu": "Jobb neked, hogy vesszen egy tagod.",
+            "ko": "지체 하나가 없어지는 것이 낫다.",
+            "context": "산상수훈"
+        }
+    ],
+    "koreanInterferenceNotes": "명령형 모양(Legyen, Menjen)이 평서문이나 가정문 중간에 튀어나와서 당황스럽지만, 'Hogy(That)' 뒤에서는 '접속법(Subjunctive)'으로서 쓰인 것입니다. 의미는 '~하도록' 입니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Akarom, hogy mész.",
+            "correct": "Akarom, hogy menj.",
+            "explanation": "원함, 명령, 목적을 나타내는 Hogy 절 뒤에는 직설법(mész)이 아니라 접속법/명령형(menj)을 써야 합니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어의 어미 '-도록', '-게', '-기를'에 해당합니다. (가도록, 가게, 가기를 -> 모두 menj 어간 사용).",
+    "estimatedDuration": 60,
+    "difficultyScore": 6,
+    "prerequisites": [
+        "A2-8",
+        "A2-9"
+    ],
+    "tags": [
+        "접속법",
+        "Hogy절",
+        "목적"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Hogy életünk legyen (생명을 얻게 하려)",
+        "Kell, hogy (마땅히 ~해야 한다)",
+        "Nehogy (Lest - ~하지 않도록)"
+    ]
+}

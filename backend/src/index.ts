@@ -96,4 +96,4 @@ process.on('SIGINT', () => {
   process.exit(0);
 });
 
-export default app;
+export default app;// Trigger restart

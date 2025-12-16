@@ -1,0 +1,136 @@
+{
+    "level": "A2",
+    "orderIndex": 14,
+    "titleKorean": "소유격 심화 - 나의 주, 나의 하나님",
+    "titleHungarian": "Birtokos személyjel gyakorlása",
+    "explanationKorean": "이미 배운 소유격(-m, -d)을 복수 소유물 형태와 불규칙 명사들에 적용해 봅니다. '우리 아버지', '너의 죄들' 같은 표현을 익힙니다.",
+    "explanationHungarian": "A birtokos személyjelek gyakorlása több birtok esetén.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "복수 소유물 (Many things owned)",
+                "description": "내 책들(könyv-e-i-m). 소유격 어미 앞에 복수 표지 -i-가 들어갑니다.",
+                "pattern": "könyveim (내 책들), könyveid (네 책들), könyvei (그의 책들)",
+                "examples": [
+                    {
+                        "hu": "Bűneink.",
+                        "ko": "우리의 죄들."
+                    }
+                ]
+            },
+            {
+                "title": "불규칙 소유격",
+                "description": "일부 단어는 어간이 변합니다.",
+                "pattern": "kéz -> kezem (내 손), szó -> szavam (내 말)",
+                "examples": [
+                    {
+                        "hu": "Nevem (이름).",
+                        "ko": "név -> nevem"
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "A mi Atyánk.",
+            "ko": "우리 아버지 (주기도문).",
+            "context": "주기도문"
+        },
+        {
+            "hu": "Bűneinkért.",
+            "ko": "우리 죄들을 위하여.",
+            "context": "설교"
+        },
+        {
+            "hu": "Én Uram, én Istenem!",
+            "ko": "나의 주시며 나의 하나님이시니이다 (도마).",
+            "context": "요한 20:28"
+        },
+        {
+            "hu": "Testvéreim.",
+            "ko": "나의 형제들아/형제 여러분.",
+            "context": "설교 호칭"
+        },
+        {
+            "hu": "Szavaim.",
+            "ko": "내 말들.",
+            "context": "성경"
+        },
+        {
+            "hu": "Gyermekeim.",
+            "ko": "나의 자녀들아.",
+            "context": "성경"
+        },
+        {
+            "hu": "Szemeim.",
+            "ko": "내 눈들(두 눈).",
+            "context": "시편"
+        },
+        {
+            "hu": "Kezeid munkája.",
+            "ko": "주의 손으로 하신 일(손들의 일).",
+            "context": "시편"
+        },
+        {
+            "hu": "Lábaim előtt.",
+            "ko": "내 발 앞에.",
+            "context": "성경"
+        },
+        {
+            "hu": "Házad népe.",
+            "ko": "너의 집안 사람들.",
+            "context": "성경"
+        },
+        {
+            "hu": "Barátaim.",
+            "ko": "(나의) 친구들.",
+            "context": "일상"
+        },
+        {
+            "hu": "Könyveid.",
+            "ko": "네 책들.",
+            "context": "일상"
+        },
+        {
+            "hu": "Dolgaink.",
+            "ko": "우리들의 일들(문제들).",
+            "context": "일상"
+        },
+        {
+            "hu": "Imáink.",
+            "ko": "우리의 기도들.",
+            "context": "교회"
+        },
+        {
+            "hu": "Neved.",
+            "ko": "당신의 이름.",
+            "context": "찬양"
+        }
+    ],
+    "koreanInterferenceNotes": "한국어는 '내 책'이라고만 하지만, 헝가리어는 '책이 여러 권일 때' 어미가 복잡해집니다 (-im, -id, -i). 특히 '우리들의 것들(-ink)' 등을 발음할 때 주의가 필요합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Könyvekemb",
+            "correct": "Könyveim",
+            "explanation": "복수 소유격은 '복수형(k) + 소유격'이 아니라 독자적인 어미(-i-)를 사용합니다."
+        }
+    ],
+    "comparisonWithKorean": "소유자가 누구냐, 소유물이 몇 개냐에 따라 어미가 12가지로 변하는 시스템은 한국어에 없습니다.",
+    "estimatedDuration": 50,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "A1-3"
+    ],
+    "tags": [
+        "소유격",
+        "명사",
+        "표현확장"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Atyánk (우리 아버지)",
+        "Bűneink (우리 죄들)",
+        "Testvéreim (형제들아)"
+    ]
+}

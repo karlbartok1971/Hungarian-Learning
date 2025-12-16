@@ -1,0 +1,105 @@
+{
+    "level": "B2",
+    "orderIndex": 14,
+    "titleKorean": "간접 의문문 - ~인지 아닌지, 궁금하다",
+    "titleHungarian": "Függő kérdés (Hogy... -e / Vajon)",
+    "explanationKorean": "'그가 올지 안 올지 모르겠다', '이게 죄인지 궁금하다'. Yes/No 질문을 문장 속에 넣을 때 씁니다.",
+    "explanationHungarian": "Az eldöntendő kérdés függő beszédben (-e).",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "접미사 -e (Whether)",
+                "description": "동사(또는 술어) 뒤에 -e를 붙여서 '~인지'를 만듭니다. 가장 중요한 규칙입니다.",
+                "pattern": "Nem tudom, hogy jön-e. (그가 오-는지 모르겠다).",
+                "examples": [
+                    {
+                        "hu": "Kérdezd meg, hogy kész-e. (준비됐-는지 물어봐라).",
+                        "ko": "Igaz-e? (사실-인지?)"
+                    }
+                ]
+            },
+            {
+                "title": "Vajon (Wonder)",
+                "description": "과연 ~일까? 의문을 강조합니다.",
+                "pattern": "Vajon igaz-e?",
+                "examples": [
+                    {
+                        "hu": "Vajon mi lesz?",
+                        "ko": "과연 어떻게 될까?"
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Kérdezd meg, hogy akarja-e.",
+            "ko": "그가 그것을 원하는지 물어보아라.",
+            "context": "질문"
+        },
+        {
+            "hu": "Nem tudjuk, hogy él-e vagy hal-e.",
+            "ko": "그가 살았는지 죽었는지 우리는 모른다.",
+            "context": "요셉 이야기"
+        },
+        {
+            "hu": "Vizsgáljátok meg, hogy a hitben vagytok-e.",
+            "ko": "너희가 믿음 안에 있는가(있는지) 시험하라.",
+            "context": "고후 13:5"
+        },
+        {
+            "hu": "Vajon Isten fia-e?",
+            "ko": "과연 하나님의 아들인가?",
+            "context": "의심"
+        },
+        {
+            "hu": "Meglátjuk, sikerül-e.",
+            "ko": "성공할지 두고 보자.",
+            "context": "확인"
+        },
+        {
+            "hu": "Nem biztos, hogy jó-e.",
+            "ko": "좋은 건지 확실치 않다.",
+            "context": "판단"
+        },
+        {
+            "hu": "Tudod-e?",
+            "ko": "너는 아느냐? (Do you know?) - -e를 붙여 강조.",
+            "context": "질문"
+        },
+        {
+            "hu": "Akarod-e?",
+            "ko": "원하느냐? (결혼 서약 등).",
+            "context": "질문"
+        },
+        {
+            "hu": "Vajon mit jelent ez?",
+            "ko": "도대체 이게 무슨 뜻일까?",
+            "context": "묵상"
+        }
+    ],
+    "koreanInterferenceNotes": "-e 접미사는 한국어의 어미 '-는지'와 위치와 기능이 소름돋게 똑같습니다. 동사 뒤에 찰싹 붙으면 됩니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Nem tudom, ha jön. (If he comes)",
+            "correct": "Nem tudom, hogy jön-e.",
+            "explanation": "영어의 if(whether) 때문에 'ha'를 쓰려고 하는데 틀립니다. 헝가리어는 반드시 -e 접미사를 씁니다."
+        }
+    ],
+    "comparisonWithKorean": "동사+는지 (Jön-e). 완벽한 1:1 대응입니다.",
+    "estimatedDuration": 40,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "A2-19"
+    ],
+    "tags": [
+        "간접의문문",
+        "접미사",
+        "질문"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Vagytok-e (너희가 ~에 있는지)",
+        "Vajon (과연)"
+    ]
+}

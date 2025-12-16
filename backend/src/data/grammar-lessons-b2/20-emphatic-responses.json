@@ -1,0 +1,111 @@
+{
+    "level": "B2",
+    "orderIndex": 20,
+    "titleKorean": "강조 구문 - 그렇고 말고, 물론이지",
+    "titleHungarian": "Kiemelés és megerősítés (Hogyne, Persze)",
+    "explanationKorean": "### 1. 강력한 동의와 확신\n\n단순한 'Igen(네)'을 넘어 상대방의 말에 맞장구치거나 강하게 긍정할 때 씁니다.\n- **Hogyne!**: 물론이지! (Why not?) - 가장 흔한 표현\n- **Persze**: 당연하지 (Of course)\n- **Bizony**: 참으로 / 정말로 (Surely / Indeed)\n- **Naná**: 당근이지 / 말해 뭐해 ( slang - 친한 사이)\n\n### 2. 신학적 강조 (Bizony)\n예수님의 \"진실로 진실로\"는 헝가리어로 **Bizony, bizony**입니다.",
+    "explanationHungarian": "A megerősítés és egyetértés nyomatékos kifejezőeszközei: hogyne, persze, bizony.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "강조 부사",
+                "description": "문장 전체를 꾸미며 확신을 더합니다.",
+                "table": {
+                    "headers": [
+                        "표현",
+                        "뉘앙스",
+                        "예문"
+                    ],
+                    "rows": [
+                        [
+                            "**Hogyne**",
+                            "Why not? (물론)",
+                            "Jössz? **Hogyne!** (갈 거지? 당근이지!)"
+                        ],
+                        [
+                            "**Persze**",
+                            "Of course (당연)",
+                            "**Persze** hogy tudom. (당연히 알지)"
+                        ],
+                        [
+                            "**Bizony**",
+                            "Indeed (참으로)",
+                            "**Bizony** mondom néktek. (진실로 너희에게 이르노니)"
+                        ],
+                        [
+                            "**Dehogynem**",
+                            "Why wouldn't I? (그렇고 말고/왜 아니겠어)",
+                            "Nem szereted? **Dehogynem!** (안 좋아해? 아니 좋아해!)"
+                        ]
+                    ]
+                }
+            }
+        ]
+    },
+    "examples": [
+        {
+            "items": [
+                {
+                    "hu": "Bizony, bizony mondom néktek...",
+                    "ko": "진실로 진실로(Truly, truly) 너희에게 이르노니...",
+                    "grammar": "Bizony (Surely/Indeed)",
+                    "vocabulary": [
+                        "bizony (참으로/진실로)"
+                    ]
+                },
+                {
+                    "hu": "Hát persze!",
+                    "ko": "아 물론이지! (강한 동의)",
+                    "grammar": "Hát (So/Well) + Persze",
+                    "vocabulary": [
+                        "persze (물론)"
+                    ]
+                }
+            ],
+            "category": "예수님의 화법"
+        },
+        {
+            "items": [
+                {
+                    "hu": "Tudsz segíteni?",
+                    "ko": "도와줄 수 있어?",
+                    "grammar": "Tudsz (Can you)",
+                    "vocabulary": []
+                },
+                {
+                    "hu": "Hogyne!",
+                    "ko": "물론이지! (기꺼이)",
+                    "grammar": "Hogy-ne (How not? -> 왜 안 되겠어?)",
+                    "vocabulary": []
+                }
+            ],
+            "category": "일상 회화"
+        }
+    ],
+    "koreanInterferenceNotes": "### 🧠 한국인 뇌 구조 바꾸기: 'Dehogynem' (부정 의문문에 대한 긍정)\n\n한국어: \"너 안가?\" -> \"어(응), 안 가.\"\n헝가리어: \"Nem mész?\" -> \"**Dehogynem!**\" (아니! 갈 거야!)\n\n부정 질문에 대해 '반대(긍정)'를 할 때 Dehogynem을 씁니다. 영어의 'Yes, I do'와 같습니다. 단순히 Igen이라고 하면 헷갈릴 수 있습니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Nem mész? - Igen. (Igen은 간다는 뜻? 안 간다는 뜻?)",
+            "correct": "Dehogynem! (간다는 뜻) / Nem. (안 간다는 뜻)",
+            "explanation": "헝가리어 Igen/Nem은 질문의 형태(부정문)와 상관없이 내용이 긍정이면 Igen, 부정이면 Nem입니다. 하지만 Dehogynem을 쓰면 훨씬 명확합니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어의 '물론', '당근', '참으로'와 매칭됩니다.",
+    "estimatedDuration": 30,
+    "difficultyScore": 2,
+    "prerequisites": [
+        "A1-9"
+    ],
+    "tags": [
+        "감탄사",
+        "강조",
+        "물론",
+        "진실로"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Bizonyára (확실히 - Surely)",
+        "Ámen (그렇게 될지어다 - Bizony úgy legyen)"
+    ],
+    "isPublished": true
+}

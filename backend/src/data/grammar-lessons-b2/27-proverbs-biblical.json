@@ -1,0 +1,110 @@
+{
+    "level": "B2",
+    "orderIndex": 27,
+    "titleKorean": "속담과 관용구 2 - 성경에서 온 표현들",
+    "titleHungarian": "Bibliai szólások és közmondások",
+    "explanationKorean": "헝가리는 기독교 전통 국가라 성경 표현이 일상어에 깊이 박혀있습니다. '욥의 인내', '유다의 키스' 등.",
+    "explanationHungarian": "A Bibliából származó szólások.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "성경 인물 비유",
+                "description": "Jób (욥 - 인내/고난), Salamon (솔로몬 - 지혜), Júdás (유다 - 배신).",
+                "pattern": "Jób türelme (욥의 인내).",
+                "examples": [
+                    {
+                        "hu": "Hitetlen Tamás (의심 많은 도마).",
+                        "ko": "살라몬의 판결 (명판결)."
+                    }
+                ]
+            },
+            {
+                "title": "관용구",
+                "description": "Mosom kezeimet (내 손을 씻는다 - 나는 책임 없다 / 빌라도).",
+                "pattern": "동사구 형태.",
+                "examples": [
+                    {
+                        "hu": "Pálfordulás (바울의 회심 -> 급격한 변화).",
+                        "ko": "Saulból Pál lett."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Mosom kezeimet.",
+            "ko": "나는 손을 씻는다 (난 모르는 일이다/책임 없다).",
+            "context": "빌라도"
+        },
+        {
+            "hu": "Salamoni döntés.",
+            "ko": "솔로몬의 판결 (지혜로운 해결책).",
+            "context": "지혜"
+        },
+        {
+            "hu": "Júdáscsók.",
+            "ko": "유다의 입맞춤 (배신 행위).",
+            "context": "배신"
+        },
+        {
+            "hu": "Bűnbak.",
+            "ko": "희생양 (Scapegoat).",
+            "context": "레위기"
+        },
+        {
+            "hu": "Hitetlen Tamás.",
+            "ko": "의심 많은 사람 (도마).",
+            "context": "의심"
+        },
+        {
+            "hu": "Hét szűk esztendő.",
+            "ko": "7년 흉년 (경제적 어려움).",
+            "context": "요셉"
+        },
+        {
+            "hu": "Matuzsálemi kor.",
+            "ko": "므두셀라의 나이 (아주 장수함).",
+            "context": "장수"
+        },
+        {
+            "hu": "Szemet szemért.",
+            "ko": "눈에는 눈 (이에는 이).",
+            "context": "복수"
+        },
+        {
+            "hu": "Ez az alfája és ómegája.",
+            "ko": "이것이 처음이자 끝이다 (가장 핵심이다).",
+            "context": "본질"
+        },
+        {
+            "hu": "Keresztül-kasul.",
+            "ko": "종횡무진 (십자가 모양으로 왔다갔다?).",
+            "context": "이동"
+        }
+    ],
+    "koreanInterferenceNotes": "성경 지식이 있으면 헝가리어 고급 표현을 거저 먹을 수 있습니다. 뜻이 거의 같습니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Pilátus a Credóba.",
+            "correct": "Belekerül, mint Pilátus a Credóba. (사도신경의 빌라도처럼 끼어들다 - 엉뚱하게 말려들다).",
+            "explanation": "헝가리 고유의 재미있는 관용구입니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어도 '가시면류관', '십자가를 지다' 등의 표현을 쓰듯 비슷합니다.",
+    "estimatedDuration": 30,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "A2-1"
+    ],
+    "tags": [
+        "관용구",
+        "성경",
+        "문화"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Mosom kezeimet (나는 무죄하다)",
+        "Bűnbak (희생양)"
+    ]
+}

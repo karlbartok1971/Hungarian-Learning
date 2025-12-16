@@ -1,0 +1,120 @@
+{
+    "level": "B2",
+    "orderIndex": 10,
+    "titleKorean": "시간 표현 고급 - ~하는 동안, ~한 후에",
+    "titleHungarian": "Időbeli mellékmondatok (Közben, Mialatt, Miután)",
+    "explanationKorean": "두 사건의 시간 관계를 표현합니다. 동시(While), 전후(After/Before).",
+    "explanationHungarian": "A közben, mialatt, mielőtt, miután használata.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "동시 동작 (While)",
+                "description": "Mialatt (그동안에), Miközben (하는 중에), Közben (부사: 그 사이에).",
+                "pattern": "Mialatt imádkozott, elaludt. (기도하는 동안 잠들었다).",
+                "examples": [
+                    {
+                        "hu": "Miközben mentek...",
+                        "ko": "가시는 길에(가시는 동안)..."
+                    }
+                ]
+            },
+            {
+                "title": "전후 관계 (Before/After)",
+                "description": "Mielőtt (전에), Miután (후에).",
+                "pattern": "Mielőtt kakas kukorékol. (닭이 울기 전에).",
+                "examples": [
+                    {
+                        "hu": "Miután feltámadt...",
+                        "ko": "부활하신 후에..."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Mielőtt a világ lett.",
+            "ko": "세상이 생기기 전에 (창세 전).",
+            "context": "요한 17:24"
+        },
+        {
+            "hu": "Miután ezeket mondta.",
+            "ko": "이 말씀을 하신 후에.",
+            "context": "성경"
+        },
+        {
+            "hu": "Miközben beszélt.",
+            "ko": "말씀하실 때에(도중에).",
+            "context": "성경"
+        },
+        {
+            "hu": "Útközben.",
+            "ko": "길에서 (가는 도중에).",
+            "context": "성경"
+        },
+        {
+            "hu": "Időközben.",
+            "ko": "그 사이에 (Meanwhile).",
+            "context": "경과"
+        },
+        {
+            "hu": "Eközben.",
+            "ko": "이 동안에.",
+            "context": "연결"
+        },
+        {
+            "hu": "Azelőtt.",
+            "ko": "그 전에 (Before that).",
+            "context": "과거"
+        },
+        {
+            "hu": "Azután.",
+            "ko": "그 후에 (After that / Then).",
+            "context": "순서"
+        },
+        {
+            "hu": "Mióta?",
+            "ko": "언제부터? (Since when?)",
+            "context": "질문"
+        },
+        {
+            "hu": "Amíg.",
+            "ko": "~할 때까지 (Until) / ~하는 동안 (While).",
+            "context": "기간"
+        },
+        {
+            "hu": "Addig.",
+            "ko": "그때까지.",
+            "context": "기간"
+        },
+        {
+            "hu": "Mindaddig.",
+            "ko": "~할 때까지 계속.",
+            "context": "지속"
+        }
+    ],
+    "koreanInterferenceNotes": "'Mielőtt'(Before) 뒤에는 부정어(nem)가 오지 않습니다. 한국어는 '해가 지기 전에'라고 하지만 헝가리어는 'Before sun sets'입니다. 묘하게 헷갈릴 수 있습니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Mielőtt nem mész.",
+            "correct": "Mielőtt mész.",
+            "explanation": "Before 절 안에는 논리적으로 이미 '아직 안 일어난 일'이라는 뜻이 있어서 부정어를 또 쓰지 않습니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 어미 '-기 전에', '-한 후에', '-는 동안'과 매칭됩니다.",
+    "estimatedDuration": 40,
+    "difficultyScore": 4,
+    "prerequisites": [
+        "B1-20"
+    ],
+    "tags": [
+        "시간",
+        "접속사",
+        "이야기"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Mielőtt (창세 전에)",
+        "Miután (부활하신 후에)"
+    ]
+}

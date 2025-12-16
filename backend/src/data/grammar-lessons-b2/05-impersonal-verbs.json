@@ -1,0 +1,127 @@
+{
+    "level": "B2",
+    "orderIndex": 5,
+    "titleKorean": "비인칭 동사 - 안 돼, 해야 해, 가능해",
+    "titleHungarian": "Személytelen igék (Kell, Lehet, Szabad, Illik)",
+    "explanationKorean": "주어가 '사람'이 아니라 '상황'인 동사들입니다. Kell(Need), Lehet(Possible), Szabad(Allowed), Illik(Proper), Tilos(Forbidden).",
+    "explanationHungarian": "A személytelen szerkezetek használata.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "기본 구조",
+                "description": "동사원형 + Kell/Lehet. '누가'를 표현하려면 'Dative(-nak/nek)'를 씁니다.",
+                "pattern": "Nekem menni kell. (나는 가야 한다 - 나에게는 가는 것이 필요하다)",
+                "examples": [
+                    {
+                        "hu": "Neked nem szabad. (너는 하면 안 돼).",
+                        "ko": "Illik a szentekhez. (성도들에게 어울린다)."
+                    }
+                ]
+            },
+            {
+                "title": "Kellene (Should have)",
+                "description": "Kell의 조건법. '~했어야 했는데' 또는 '~하는 게 좋겠다'.",
+                "pattern": "Menni kellene. (가는 게 좋겠다)",
+                "examples": [
+                    {
+                        "hu": "Nem kellett volna. (하지 말았어야 했다).",
+                        "ko": "과거 후회."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Újjá kell születnetek.",
+            "ko": "너희는 거듭나야 한다 (To you born-again is needed).",
+            "context": "요한 3:7"
+        },
+        {
+            "hu": "Nem szabad.",
+            "ko": "하면 안 된다 (Not allowed).",
+            "context": "금기"
+        },
+        {
+            "hu": "Mindent szabad nekem, de...",
+            "ko": "모든 것이 내게 가하나...",
+            "context": "고전 6:12"
+        },
+        {
+            "hu": "Illik.",
+            "ko": "마땅하다 / 어울린다 / 예의바르다.",
+            "context": "윤리"
+        },
+        {
+            "hu": "Így illik nékünk.",
+            "ko": "우리가 이와 같이 하여 (의를 이루는 것이) 합당하니라.",
+            "context": "예수님 세례"
+        },
+        {
+            "hu": "Lehet.",
+            "ko": "가능하다 / ~일지도 모른다.",
+            "context": "가능성"
+        },
+        {
+            "hu": "Lehetetlen.",
+            "ko": "불가능하다.",
+            "context": "믿음"
+        },
+        {
+            "hu": "Nem lehetséges.",
+            "ko": "불가하다 (Not possible).",
+            "context": "상황"
+        },
+        {
+            "hu": "Muszáj.",
+            "ko": "반드시 해야 한다 (Must - 강한 의무, 구어체).",
+            "context": "의무"
+        },
+        {
+            "hu": "Érdemes.",
+            "ko": "가치가 있다 (Worthwhile).",
+            "context": "가치"
+        },
+        {
+            "hu": "Fáj.",
+            "ko": "아프다 (It hurts).",
+            "context": "고통"
+        },
+        {
+            "hu": "Sikerül.",
+            "ko": "성공하다 / 잘 되다 (It succeeds).",
+            "context": "성공"
+        },
+        {
+            "hu": "Történik.",
+            "ko": "일어나다 (It happens).",
+            "context": "사건"
+        }
+    ],
+    "koreanInterferenceNotes": "'나는 가야 한다'를 직역하면 'Én kell menni'가 되는데 틀립니다. 'Nekem kell menni' (to-me is-needed to-go) 구조를 써야 합니다. 주어가 Dative(-nek)로 바뀝니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Én kellek menni.",
+            "correct": "Nekem kell mennem.",
+            "explanation": "Kell은 비인칭이므로 주어를 갖지 않습니다 (또는 문장 전체가 주어). 행위자는 -nak/-nek으로 표현합니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '나에게는 ~가 필요하다', '나에게는 ~가 가능하다'와 구조가 비슷해집니다.",
+    "estimatedDuration": 50,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "B1-6",
+        "A2-3"
+    ],
+    "tags": [
+        "비인칭",
+        "의무",
+        "허락"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Újjá kell születni (거듭나야 한다)",
+        "Illik (합당하다)",
+        "Szabad (가하다/자유하다)"
+    ]
+}

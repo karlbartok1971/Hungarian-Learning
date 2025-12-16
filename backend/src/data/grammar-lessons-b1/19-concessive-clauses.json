@@ -1,0 +1,111 @@
+{
+    "level": "B1",
+    "orderIndex": 19,
+    "titleKorean": "양보절 - 비록 ~일지라도",
+    "titleHungarian": "Megengedő mondatok (Bár, Noha)",
+    "explanationKorean": "신앙생활의 핵심 문법입니다. '그리 아니하실지라도', '비록 무화과나무가 무성치 못하며' 처럼 상황을 초월한 고백에 쓰입니다.",
+    "explanationHungarian": "A bár, noha, jóllehet kötőszók használata.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Bár / Noha / Jóllehet",
+                "description": "비록 ~일지라도 (Although, Even though).",
+                "pattern": "Bár szegény, mégis boldog. (비록 가난하지만, 여전히 행복하다)",
+                "examples": [
+                    {
+                        "hu": "Mégis (그럼에도/여전히/Yet)와 짝을 이룹니다.",
+                        "ko": "Bár..., mégis..."
+                    }
+                ]
+            },
+            {
+                "title": "Ha... is (Even if)",
+                "description": "만약 ~한다 해도.",
+                "pattern": "Ha megölsz is. (나를 죽이실지라도)",
+                "examples": [
+                    {
+                        "hu": "Ha késik is, megjön.",
+                        "ko": "비록 더딜지라도(늦더라도), 올 것이다."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Még ha a halál árnyékának völgyében járok is...",
+            "ko": "내가 사망의 음침한 골짜기로 다닐지라도 (Even if I walk...).",
+            "context": "시편 23편"
+        },
+        {
+            "hu": "Bár bűneitek skarlátpirosak.",
+            "ko": "너희 죄가 주홍 같을지라도.",
+            "context": "이사야 1:18"
+        },
+        {
+            "hu": "Mindazáltal (Mégis).",
+            "ko": "그렇지만 / 그럼에도 불구하고 (Nevertheless).",
+            "context": "접속사"
+        },
+        {
+            "hu": "Noha gazdag volt, szegénnyé lett.",
+            "ko": "그는 부요하신 자로서 가난하게 되셨음은.",
+            "context": "고후 8:9"
+        },
+        {
+            "hu": "Szeretlek, bár nem értem.",
+            "ko": "이해할 순 없지만(비록), 사랑합니다.",
+            "context": "고백"
+        },
+        {
+            "hu": "Ha mindenki elhagy is, én nem.",
+            "ko": "다 주를 버릴지라도 나는 따르겠나이다.",
+            "context": "베드로"
+        },
+        {
+            "hu": "Akár esztek, akár ittok.",
+            "ko": "먹든지 마시든지 (Whether... or).",
+            "context": "고전 10:31"
+        },
+        {
+            "hu": "Bármi történjék.",
+            "ko": "무슨 일이 일어나더라도.",
+            "context": "다짐"
+        },
+        {
+            "hu": "De ha nem is (szabadít meg).",
+            "ko": "그렇게 하지 아니하실지라도.",
+            "context": "다니엘 3:18"
+        },
+        {
+            "hu": "Mégsem.",
+            "ko": "그럼에도 아니다 / 아직 아니다.",
+            "context": "부정"
+        }
+    ],
+    "koreanInterferenceNotes": "'Ha... is' 구문은 'If... also' 처럼 보이지만 'Even if'의 뜻입니다. 사이에 단어가 들어갑니다 (Ha [동사] is).",
+    "commonMistakes": [
+        {
+            "mistake": "Ha is járok.",
+            "correct": "Ha járok is.",
+            "explanation": "Is(도)는 강조하는 단어 뒤에 옵니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '-ㄹ지라도', '-더라도', '-나' 연결어미와 같습니다.",
+    "estimatedDuration": 45,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "A2-9"
+    ],
+    "tags": [
+        "양보절",
+        "접속사",
+        "신앙고백"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "De ha nem is (그리 아니하실지라도)",
+        "Ha járok is (다닐지라도)",
+        "Bár (비록)"
+    ]
+}

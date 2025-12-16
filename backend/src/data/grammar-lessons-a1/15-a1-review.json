@@ -1,0 +1,147 @@
+{
+    "level": "A1",
+    "orderIndex": 15,
+    "titleKorean": "A1 종합 복습 및 실전 연습",
+    "titleHungarian": "A1 Összefoglalás",
+    "explanationKorean": "지금까지 배운 A1 레벨 문법(명사, 동사, 형용사, 기본 문장)을 종합적으로 정리하고 실전 문장을 만들어봅니다.",
+    "explanationHungarian": "Az A1 szintű nyelvtan áttekintése és gyakorlása.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "명사 시스템 복습",
+                "description": "격변화(주격, 대격, 위치격)와 관사 사용 재확인.",
+                "pattern": "a ház, a házat, a házban",
+                "examples": [
+                    {
+                        "hu": "Látom a templomot.",
+                        "ko": "나는 교회를 본다."
+                    }
+                ]
+            },
+            {
+                "title": "동사 시스템 복습",
+                "description": "규칙/불규칙 활용, be동사, 부정문.",
+                "pattern": "vagyok, megyek, szeretek, nem tudom",
+                "examples": [
+                    {
+                        "hu": "Isten szeret minket.",
+                        "ko": "하나님은 우리를 사랑하신다."
+                    }
+                ]
+            },
+            {
+                "title": "문장 구성 복습",
+                "description": "의문문, 어순, 기본 회화.",
+                "pattern": "주어 + 동사 + 목적어 + 장소",
+                "examples": [
+                    {
+                        "hu": "Holnap templomba megyünk.",
+                        "ko": "내일 우리는 교회에 간다."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Kezdetben teremtette Isten az eget és a földet.",
+            "ko": "태초에 하나님이 천지를 창조하시니라. (창 1:1)",
+            "context": "암송 성구"
+        },
+        {
+            "hu": "Az Úr az én pásztorom, nem szűkölködöm.",
+            "ko": "여호와는 나의 목자시니 내게 부족함이 없으리로다. (시 23:1)",
+            "context": "암송 성구"
+        },
+        {
+            "hu": "Miatyánk, ki vagy a mennyekben.",
+            "ko": "하늘에 계신 우리 아버지.",
+            "context": "주기도문"
+        },
+        {
+            "hu": "Szeretlek téged, Jézus.",
+            "ko": "예수님 사랑합니다.",
+            "context": "고백"
+        },
+        {
+            "hu": "Magyarul tanulok, mert misszionárius vagyok.",
+            "ko": "선교사이기 때문에 헝가리어를 배웁니다.",
+            "context": "자기소개"
+        },
+        {
+            "hu": "Hol van a mosdó?",
+            "ko": "화장실이 어디예요?",
+            "context": "생존회화"
+        },
+        {
+            "hu": "Kérek egy kávét.",
+            "ko": "커피 한 잔 주세요.",
+            "context": "주문"
+        },
+        {
+            "hu": "Mennyibe kerül ez a Biblia?",
+            "ko": "이 성경책 얼마예요?",
+            "context": "쇼핑"
+        },
+        {
+            "hu": "Imádkozom a családomért.",
+            "ko": "가족을 위해 기도합니다.",
+            "context": "기도"
+        },
+        {
+            "hu": "Nem értem, kérem lassabban.",
+            "ko": "이해가 안 돼요, 천천히 부탁해요.",
+            "context": "의사소통"
+        },
+        {
+            "hu": "Ma vasárnap van.",
+            "ko": "오늘은 일요일이다.",
+            "context": "날짜"
+        },
+        {
+            "hu": "Jézus él.",
+            "ko": "예수님은 살아계신다.",
+            "context": "복음"
+        },
+        {
+            "hu": "A kereszt a mi reménységünk.",
+            "ko": "십자가는 우리의 소망입니다.",
+            "context": "설교"
+        },
+        {
+            "hu": "Isten jó, mindig jó.",
+            "ko": "God is good, all the time.",
+            "context": "찬양"
+        },
+        {
+            "hu": "Köszönöm a segítséget.",
+            "ko": "도와주셔서 감사합니다.",
+            "context": "인사"
+        }
+    ],
+    "koreanInterferenceNotes": "이제 A1을 마쳤습니다. 한국어 조사를 헝가리어 접미사로 바꾸는 훈련이 얼마나 되었는지 점검해보세요.",
+    "commonMistakes": [
+        {
+            "mistake": "Én szeretet Isten.",
+            "correct": "Én szeretem Istent.",
+            "explanation": "동사 활용(1인칭 한정)과 목적격(-t)을 모두 맞춰야 합니다."
+        }
+    ],
+    "comparisonWithKorean": "헝가리어는 '꼬리말 언어(교착어)'라는 점에서 한국어와 구조적 유사성이 큽니다. 이 점을 활용하세요.",
+    "estimatedDuration": 60,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "A1-1",
+        "A1-14"
+    ],
+    "tags": [
+        "복습",
+        "종합"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Teremtett (창조했다)",
+        "Pásztor (목자)",
+        "Reménység (소망)"
+    ]
+}

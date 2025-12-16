@@ -1,0 +1,109 @@
+{
+    "level": "B2",
+    "orderIndex": 30,
+    "titleKorean": "B2 종합 리뷰 및 C1 예고",
+    "titleHungarian": "B2 Összefoglalás",
+    "explanationKorean": "B2 과정을 마칩니다. 접두사 활용, 분사, 추상명사, 성경적 표현을 총정리하고 C1(고급/원어민) 레벨을 준비합니다.",
+    "explanationHungarian": "A B2 szint áttekintése és a C1 szint előkészítése.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "접두사 마스터 (Prefix Master)",
+                "description": "Meg- (완료), El- (분리), Fel/Le (상하), Be/Ki (내외) 자유자재 활용.",
+                "pattern": "Megtér, Elhív, Felszentel, Kijelent.",
+                "examples": [
+                    {
+                        "hu": "모든 신학 용어의 기초.",
+                        "ko": "-"
+                    }
+                ]
+            },
+            {
+                "title": "복문의 완성 (Complex Sentences)",
+                "description": "Mivel..., ezért... (인과), Ha..., akkor... (조건), Aki..., az... (관계).",
+                "pattern": "논리적인 설교 구성.",
+                "examples": [
+                    {
+                        "hu": "Bár..., mégis... (양보).",
+                        "ko": "-"
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Köszönjük, hogy velünk tartottál.",
+            "ko": "우리와 함께해 주셔서 감사합니다.",
+            "context": "마무리"
+        },
+        {
+            "hu": "Isten dicsőségére.",
+            "ko": "하나님의 영광을 위하여 (Soli Deo Gloria).",
+            "context": "목적"
+        },
+        {
+            "hu": "Nemcsak kenyérrel él az ember.",
+            "ko": "사람이 떡으로만 사는 것이 아니요.",
+            "context": "말씀"
+        },
+        {
+            "hu": "Hanem minden igével.",
+            "ko": "모든 말씀으로 사느니라.",
+            "context": "말씀"
+        },
+        {
+            "hu": "A hit hallásból van.",
+            "ko": "믿음은 들음에서 나며.",
+            "context": "로마서"
+        },
+        {
+            "hu": "A hallás pedig Isten igéje által.",
+            "ko": "들음은 하나님의 말씀으로 말미암았느니라.",
+            "context": "로마서"
+        },
+        {
+            "hu": "Szorgalom.",
+            "ko": "부지런함 / 열심.",
+            "context": "태도"
+        },
+        {
+            "hu": "Kitartás.",
+            "ko": "인내 / 끈기.",
+            "context": "태도"
+        },
+        {
+            "hu": "Gratulálok!",
+            "ko": "축하합니다! (B2 수료).",
+            "context": "축하"
+        },
+        {
+            "hu": "Hajrá!",
+            "ko": "화이팅! (C1을 향해).",
+            "context": "응원"
+        }
+    ],
+    "koreanInterferenceNotes": "여기까지 오셨다면 헝가리어의 큰 산은 다 넘었습니다. 이제는 단어량과 유창성(Fluency) 싸움입니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Befejeztem a tanulást.",
+            "correct": "Most kezdődik az igazi tanulás. (진짜 공부는 이제 시작이다).",
+            "explanation": "언어는 끝이 없습니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어의 고급 어휘와 한자어 표현들을 헝가리어 접두사와 명사화 접미사로 대치하는 훈련을 계속하세요.",
+    "estimatedDuration": 60,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "B2-1"
+    ],
+    "tags": [
+        "총정리",
+        "B2완성",
+        "비전"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Isten dicsőségére (하나님의 영광을 위하여)"
+    ]
+}

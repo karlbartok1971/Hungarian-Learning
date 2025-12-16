@@ -1,0 +1,132 @@
+{
+    "level": "B1",
+    "orderIndex": 20,
+    "titleKorean": "관계부사 - 그 곳, 그 때",
+    "titleHungarian": "Vonatkozó határozószók (Ahol, Amikor)",
+    "explanationKorean": "장소와 시간을 설명하는 문장을 만듭니다. '내가 태어난 곳', '우리가 처음 만난 때'. Ahol(Where), Amikor(When), Ahogy(How).",
+    "explanationHungarian": "Az ahol, amikor, ahogy használata.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Ahol (Where)",
+                "description": "장소를 수식합니다. Ott... ahol... (거기... 어디냐면...).",
+                "pattern": "Ott lakom, ahol te. (네가 사는 곳에 나도 산다)",
+                "examples": [
+                    {
+                        "hu": "Ahol szeretet van, ott van Isten.",
+                        "ko": "사랑이 있는 곳에 하나님이 계신다."
+                    }
+                ]
+            },
+            {
+                "title": "Amikor (When)",
+                "description": "시간을 수식합니다. Akkor... amikor... (그떄... 언제냐면...).",
+                "pattern": "Akkor gyere, amikor akarsz. (네가 원할 때 와라)",
+                "examples": [
+                    {
+                        "hu": "Amikor imádkoztok.",
+                        "ko": "너희가 기도할 때에."
+                    }
+                ]
+            },
+            {
+                "title": "Ahogy (How/As)",
+                "description": "방법/방식을 수식합니다. Úgy... ahogy... (그렇게... 어떻게냐면...).",
+                "pattern": "Úgy szerette..., ahogy... (그렇게 사랑했다, 어떻게냐면 ~만큼)",
+                "examples": [
+                    {
+                        "hu": "Ahogy akarod.",
+                        "ko": "당신이 원하시는 대로."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Ahol a te kincsed van, ott van a te szíved is.",
+            "ko": "네 보물 있는 그곳(Ahol)에 네 마음도 있느니라.",
+            "context": "마 6:21"
+        },
+        {
+            "hu": "Ahogy én szerettelek titeket.",
+            "ko": "내가 너희를 사랑한 것 같이(Ahogy).",
+            "context": "새 계명"
+        },
+        {
+            "hu": "Amikor eljön.",
+            "ko": "그가 오실 때에.",
+            "context": "재림"
+        },
+        {
+            "hu": "Ahonnan.",
+            "ko": "어디로부터 (From where - 관계사).",
+            "context": "출처"
+        },
+        {
+            "hu": "Ahová (Ahova).",
+            "ko": "어디로 (To where - 관계사).",
+            "context": "방향"
+        },
+        {
+            "hu": "Ahová mész, oda megyek.",
+            "ko": "룻기: 어머니께서 가시는 곳에 나도 가고.",
+            "context": "룻 1:16"
+        },
+        {
+            "hu": "Olyan..., amilyen...",
+            "ko": "그러한... 어떠한... (Such... as).",
+            "context": "비교"
+        },
+        {
+            "hu": "Annyi..., amennyi...",
+            "ko": "그만큼... 얼만큼... (As much... as).",
+            "context": "수량"
+        },
+        {
+            "hu": "Úgy..., mint...",
+            "ko": "그렇게... 처럼... (So... as).",
+            "context": "비교"
+        },
+        {
+            "hu": "Amíg.",
+            "ko": "~하는 동안 / ~할 때까지 (While/Until).",
+            "context": "시간"
+        },
+        {
+            "hu": "Mialatt.",
+            "ko": "~하는 동안 (Under the time).",
+            "context": "동시동작"
+        },
+        {
+            "hu": "Miután.",
+            "ko": "~한 후에 (After).",
+            "context": "시간"
+        }
+    ],
+    "koreanInterferenceNotes": "선행사(Ott, Akkor, Úgy)와 관계사(Ahol, Amikor, Ahogy)가 쌍(Pair)을 이루는 구조를 잘 파악해야 합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Ott, ott a szív.",
+            "correct": "Ott, ahol a szív.",
+            "explanation": "문장을 연결하려면 관계사(a-로 시작하는 말)가 필요합니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '곳', '때', '대로'와 정확히 매칭됩니다.",
+    "estimatedDuration": 50,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "A2-10"
+    ],
+    "tags": [
+        "관계부사",
+        "복문",
+        "문장연결"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Ahol (있는 곳에)",
+        "Ahogy (사랑한 것 같이)",
+        "Amikor (하실 때에)"
+    ]
+}

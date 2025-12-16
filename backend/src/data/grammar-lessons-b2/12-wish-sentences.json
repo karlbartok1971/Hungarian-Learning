@@ -1,0 +1,110 @@
+{
+    "level": "B2",
+    "orderIndex": 12,
+    "titleKorean": "조건법 심화 [Bárcsak] - 간절한 소망",
+    "titleHungarian": "Óhajtó mondatok (Bárcsak)",
+    "explanationKorean": "### 1. 이루지 못한 소망 (If only)\n\n단순한 희망(Hope)이 아니라, 현실과 다름을 아쉬워하거나 간절히 바라는 마음을 표현합니다.\n**Bárcsak** (바라건대 / If only) 뒤에 **조건법(Conditional)**을 씁니다.\n- 현재에 대한 소망: *Bárcsak itt lennél!* (네가 여기 있다면 좋을 텐데 -> 여기 없어서 아쉽다)\n- 과거에 대한 후회: *Bárcsak ne tettem volna!* (내가 그걸 안 했더라면 좋았을 텐데)\n\n### 2. 문법 공식\n- **Bárcsak + 조건법 현재** (Volna 없이): 현재의 불가능한 소망\n- **Bárcsak + 조건법 과거** (Volna 포함): 과거의 후회",
+    "explanationHungarian": "A bárcsak szóval bevezetett óhajtó mondatok. Feltételes móddal használjuk.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Bárcsak + 조건법",
+                "description": "'~라면 얼마나 좋을까!'라는 감탄적 소망.",
+                "table": {
+                    "headers": [
+                        "시제",
+                        "헝가리어",
+                        "의미"
+                    ],
+                    "rows": [
+                        [
+                            "현재",
+                            "**Bárcsak** tudnám!",
+                            "내가 알면 좋을 텐데! (If only I knew)"
+                        ],
+                        [
+                            "과거",
+                            "**Bárcsak** tudtam **volna**!",
+                            "내가 알았더라면 좋았을 텐데! (If only I had known)"
+                        ],
+                        [
+                            "미래/현재",
+                            "**Bárcsak** jönne!",
+                            "그가 오면 좋겠다! (I wish he would come)"
+                        ]
+                    ]
+                }
+            }
+        ]
+    },
+    "examples": [
+        {
+            "items": [
+                {
+                    "hu": "Vajha hideg volnál, vagy hév.",
+                    "ko": "네가 차든지 뜨겁든지 하기를 원하노라 (I wish you were cold or hot). (계 3:15, Károli)",
+                    "grammar": "Vajha (Bárcsak의 고어) + volnál (You were - 조건법)",
+                    "vocabulary": [
+                        "vajha (바라건대)",
+                        "hév (뜨거운/열정)"
+                    ]
+                },
+                {
+                    "hu": "Bárcsak hallgatnátok ma szavára!",
+                    "ko": "너희가 오늘 그의 음성을 듣거든(듣기를 바란다)! (시 95:7)",
+                    "grammar": "Bárcsak + Hallgatnátok (조건법)",
+                    "vocabulary": [
+                        "szó (단어/말씀/소리)"
+                    ]
+                }
+            ],
+            "category": "성경적 권면"
+        },
+        {
+            "items": [
+                {
+                    "hu": "Bárcsak gazdag lennék!",
+                    "ko": "내가 부자라면 얼마나 좋을까!",
+                    "grammar": "Bárcsak + lennék (I would be)",
+                    "vocabulary": [
+                        "gazdag (부자)"
+                    ]
+                },
+                {
+                    "hu": "De jó volna!",
+                    "ko": "참 좋겠다! (It would be so good)",
+                    "grammar": "De (감탄) + jó + volna (would be)",
+                    "vocabulary": []
+                }
+            ],
+            "category": "일상 회화"
+        }
+    ],
+    "koreanInterferenceNotes": "### 🧠 한국인 뇌 구조 바꾸기: 'Remélem' vs 'Bárcsak'\n\n- **Remélem** (I hope): 실현 가능한 기대. (직설법 사용)\n    - *Remélem, jön.* (그가 오길 바래 - 올 수도 있음)\n- **Bárcsak** (I wish/If only): 실현 불가능하거나 간절한 소망. (조건법 사용)\n    - *Bárcsak jönne.* (그가 오면 얼마나 좋을까 - 못 올 것 같음)",
+    "commonMistakes": [
+        {
+            "mistake": "Bárcsak gazdag vagyok.",
+            "correct": "Bárcsak gazdag lennék.",
+            "explanation": "Bárcsak 뒤에는 무조건 **조건법(-na/-ne/volna)**을 써야 합니다. 직설법(vagyok)은 못 씁니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어의 '~라면 좋을 텐데' (가정법 과거)와 정확히 일치합니다.",
+    "estimatedDuration": 35,
+    "difficultyScore": 4,
+    "prerequisites": [
+        "A2-7",
+        "B1-7"
+    ],
+    "tags": [
+        "소망",
+        "후회",
+        "가정법",
+        "계시록"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Vajha (오, ~라면! - 탄식/소망)",
+        "Bárcsak népemből valók lennének (그들이 내 백성이었더라면)"
+    ],
+    "isPublished": true
+}

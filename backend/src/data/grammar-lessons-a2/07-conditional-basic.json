@@ -1,0 +1,136 @@
+{
+    "level": "A2",
+    "orderIndex": 7,
+    "titleKorean": "조건법 기초 - ~하면, ~할 것이다",
+    "titleHungarian": "Feltételes mód",
+    "explanationKorean": "가정하거나 공손하게 요청할 때 사용합니다. 동사 뒤에 -na/-ne/-ná/-né가 붙습니다.",
+    "explanationHungarian": "A feltételes mód jele a -na/-ne/-ná/-né.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "현재 조건법 (Present Conditional)",
+                "description": "~할 텐데, ~할 것이다 (Would).",
+                "pattern": "várna (기다릴 텐데 / 기다리겠다)",
+                "examples": [
+                    {
+                        "hu": "Szeretnék egy kávét.",
+                        "ko": "커피 한 잔 원해요(would like)."
+                    }
+                ]
+            },
+            {
+                "title": "Ha (만약)와 함께 사용",
+                "description": "조건절과 귀결절에 모두 조건법을 씁니다.",
+                "pattern": "Ha lenne pénzem, vennék házat.",
+                "examples": [
+                    {
+                        "hu": "Ha Isten velünk, kicsoda ellenünk?",
+                        "ko": "하나님이 우리를 위하시면(함께 하시면), 누가 우리를 대적하리요?"
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Mit tenne Jézus?",
+            "ko": "예수님이라면 어떻게 하셨을까? (WWJD)",
+            "context": "설교/적용"
+        },
+        {
+            "hu": "Szeretnék imádkozni.",
+            "ko": "기도하고 싶습니다 (공손).",
+            "context": "교회"
+        },
+        {
+            "hu": "Jönnél velem?",
+            "ko": "나랑 같이 갈래? (Would you come?)",
+            "context": "권유"
+        },
+        {
+            "hu": "Ha hiszel, meglátod Isten dicsőségét.",
+            "ko": "네가 믿으면 하나님의 영광을 보리라.",
+            "context": "성경"
+        },
+        {
+            "hu": "Én nem tenném.",
+            "ko": "나라면 안 그럴 거야.",
+            "context": "일상"
+        },
+        {
+            "hu": "Örülnék.",
+            "ko": "기쁘겠어요.",
+            "context": "일상"
+        },
+        {
+            "hu": "Tudnál segíteni?",
+            "ko": "도와줄 수 있니? (Can -> Could)",
+            "context": "부탁"
+        },
+        {
+            "hu": "Ha a földre esik és elhal...",
+            "ko": "땅에 떨어져 죽으면...",
+            "context": "성경 (한 알의 밀알)"
+        },
+        {
+            "hu": "Mintha...",
+            "ko": "마치 ~처럼 (As if)",
+            "context": "비유"
+        },
+        {
+            "hu": "Bárcsak...",
+            "ko": "아, ~라면 좋겠다 (If only)",
+            "context": "소망"
+        },
+        {
+            "hu": "Ehetnék.",
+            "ko": "먹을 수 있겠다 / 먹고 싶다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Innék egy vizet.",
+            "ko": "물 한 잔 마시고 싶어요.",
+            "context": "일상"
+        },
+        {
+            "hu": "Hálás lennék.",
+            "ko": "감사하겠습니다.",
+            "context": "격식"
+        },
+        {
+            "hu": "Mit mondana Pál apostol?",
+            "ko": "바울 사도라면 뭐라고 했을까?",
+            "context": "설교"
+        },
+        {
+            "hu": "Ha nem lennének.",
+            "ko": "만약 그들이 없었다면.",
+            "context": "가정"
+        }
+    ],
+    "koreanInterferenceNotes": "한국어는 '가면(If go)'과 '갈 텐데(would go)' 형태가 다르지만, 헝가리어 조건문에서는 양쪽 절에 모두 조건법 어미가 들어가는 경우가 많아 처음에 헷갈립니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Szeretek egy kávét. (I love a coffee)",
+            "correct": "Szeretnék egy kávét. (I would like a coffee)",
+            "explanation": "주문할 때나 원함을 표현할 때는 공손한 조건법(szeretnék)을 써야 자연스럽습니다."
+        }
+    ],
+    "comparisonWithKorean": "영어의 'I would like'와 정확히 대응됩니다.",
+    "estimatedDuration": 50,
+    "difficultyScore": 4,
+    "prerequisites": [
+        "A2-4"
+    ],
+    "tags": [
+        "조건법",
+        "공손함",
+        "가정"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Szeretnék (원합니다/소원합니다)",
+        "Ha Isten velünk (하나님이 함께하시면)",
+        "Mit tenne (무엇을 하실까)"
+    ]
+}

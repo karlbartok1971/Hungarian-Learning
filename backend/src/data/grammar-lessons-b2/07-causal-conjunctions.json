@@ -1,0 +1,131 @@
+{
+    "level": "B2",
+    "orderIndex": 7,
+    "titleKorean": "논리적 연결 - 왜냐하면, 그러므로",
+    "titleHungarian": "Ok-okozati kötőszók",
+    "explanationKorean": "설교나 논리적인 글을 쓸 때 필수적입니다. Mert(Because)보다 더 격식 있는 Mivel(Since), Ezért(Therefore) 등을 배웁니다.",
+    "explanationHungarian": "A logikai kapcsolatok kifejezése: mivel, ezért, így, tehát.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "원인 (Cause)",
+                "description": "Mivel (Since/Because - 문장 앞에 옴), Minthogy (As).",
+                "pattern": "Mivel szerettél, ezért megváltottál. (사랑했으므로 구원했다).",
+                "examples": [
+                    {
+                        "hu": "Azért, mert... (왜냐하면 ...이기 때문이다).",
+                        "ko": "강조 구문."
+                    }
+                ]
+            },
+            {
+                "title": "결과 (Result)",
+                "description": "Ezért (그러므로 - This for), Tehát (따라서), Így (그래서/이렇게).",
+                "pattern": "Hiszek, tehát vagyok. (나는 믿는다, 고로 존재한다).",
+                "examples": [
+                    {
+                        "hu": "Ennélfogva (그러므로/Consequently).",
+                        "ko": "매우 격식체."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Mivel Isten szeretet...",
+            "ko": "하나님은 사랑이시므로...",
+            "context": "신학"
+        },
+        {
+            "hu": "Ezért mondom nektek.",
+            "ko": "그러므로 내가 너희에게 이르노니.",
+            "context": "성경"
+        },
+        {
+            "hu": "Tehát.",
+            "ko": "따라서 / 즉. (결론 도출).",
+            "context": "설교 결론"
+        },
+        {
+            "hu": "Így.",
+            "ko": "이와 같이 / 그래서.",
+            "context": "설명"
+        },
+        {
+            "hu": "Ennélfogva.",
+            "ko": "그러므로 (이러함으로 말미암아).",
+            "context": "로마서"
+        },
+        {
+            "hu": "Ugyanis.",
+            "ko": "왜냐하면 (사실은~). 문장 중간에 위치.",
+            "context": "부연 설명"
+        },
+        {
+            "hu": "Tudniillik.",
+            "ko": "즉 / 말하자면 (Namely).",
+            "context": "설명"
+        },
+        {
+            "hu": "Viszont.",
+            "ko": "반면에 / 그러나 (However).",
+            "context": "대조"
+        },
+        {
+            "hu": "Ellenben.",
+            "ko": "그에 반해 / 도리어.",
+            "context": "대조"
+        },
+        {
+            "hu": "Mégpedig.",
+            "ko": "그것도 / 게다가 (Namely/Specifically).",
+            "context": "상술"
+        },
+        {
+            "hu": "Csakhogy.",
+            "ko": "다만 / 그러나.",
+            "context": "제한"
+        },
+        {
+            "hu": "Mégis.",
+            "ko": "그럼에도 불구하고 (Yet).",
+            "context": "반전"
+        },
+        {
+            "hu": "Márpedig.",
+            "ko": "그러나 (강한 주장).",
+            "context": "논쟁"
+        },
+        {
+            "hu": "Következésképpen.",
+            "ko": "결과적으로.",
+            "context": "논리"
+        }
+    ],
+    "koreanInterferenceNotes": "'Mert'는 문장 뒤에 이유를 붙일 때(I go, because...), 'Mivel'은 문장 앞에서 배경을 깔 때(Since I go...) 주로 씁니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Mert beteg vagyok, nem megyek. (X)",
+            "correct": "Mivel beteg vagyok, nem megyek. (O) / Nem megyek, mert beteg vagyok. (O)",
+            "explanation": "문두에서 원인을 말할 때는 Mivel이 훨씬 자연스럽습니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어의 접속부사(고로, 따라서, 왜냐하면)와 같습니다. 설교 준비의 필수품입니다.",
+    "estimatedDuration": 40,
+    "difficultyScore": 4,
+    "prerequisites": [
+        "A2-9"
+    ],
+    "tags": [
+        "접속사",
+        "논리",
+        "설교"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Mivel (하나님이 ~하시므로)",
+        "Tehát (그런즉/따라서)",
+        "Ennélfogva (그러므로)"
+    ]
+}

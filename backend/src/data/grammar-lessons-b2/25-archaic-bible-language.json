@@ -1,0 +1,107 @@
+{
+    "level": "B2",
+    "orderIndex": 25,
+    "titleKorean": "종교적 어휘 3 - 성경체 (Károli)",
+    "titleHungarian": "Archaikus nyelvezet (Károli Gáspár)",
+    "explanationKorean": "한국의 '개역한글'처럼 헝가리에는 'Károli' 번역본이 있습니다. 'Vala(있었더라)', 'Lőn(되니라)', 'Mondá(가라사대)' 같은 고어를 알아야 성경이 읽힙니다.",
+    "explanationHungarian": "A Károli Biblia archaikus igealakjai.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "과거 완료/진행 고어 (Vala)",
+                "description": "동사 뒤에 vala가 붙으면 '계속 ~했다' 또는 옛날 이야기조. 영어의 was ...ing 나 used to 느낌.",
+                "pattern": "Mondja vala (말씀하시니라 / 말씀하시곤 했다).",
+                "examples": [
+                    {
+                        "hu": "És lőn (그리고 되니라 / And it came to pass).",
+                        "ko": "Lett 고어."
+                    }
+                ]
+            },
+            {
+                "title": "단순 과거 고어 (-á/-é)",
+                "description": "오늘날의 -t 과거형 대신 쓰이던 짧은 형태.",
+                "pattern": "Mondá (말했다 - Ma: Mondta), Felelé (대답했다 - Ma: Felelte).",
+                "examples": [
+                    {
+                        "hu": "Látá (보았다).",
+                        "ko": "Kérdé (물었다)."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Kezdetben teremté Isten.",
+            "ko": "태초에 하나님이 창조하시니라 (Teremté -> Teremtette).",
+            "context": "창세기 1:1"
+        },
+        {
+            "hu": "És lőn este és lőn reggel.",
+            "ko": "저녁이 되고 아침이 되니 (Lőn -> Lett).",
+            "context": "창세기 1:5"
+        },
+        {
+            "hu": "Vala pedig a kígyó ravaszabb.",
+            "ko": "뱀은 간교하더라 (Volt/Is -> Vala).",
+            "context": "창세기 3:1"
+        },
+        {
+            "hu": "És monda Isten.",
+            "ko": "하나님이 이르시되 (Mondta -> Monda).",
+            "context": "창세기"
+        },
+        {
+            "hu": "Felelé Jézus.",
+            "ko": "예수께서 대답하여 가라사대 (Felelte -> Felelé).",
+            "context": "복음서"
+        },
+        {
+            "hu": "Mene.",
+            "ko": "가니라 (Ment -> Mene).",
+            "context": "이동"
+        },
+        {
+            "hu": "Jöve.",
+            "ko": "오니라 (Jött -> Jöve).",
+            "context": "이동"
+        },
+        {
+            "hu": "Látá Isten, hogy jó.",
+            "ko": "하나님이 보시기에 좋았더라 (Látta -> Látá).",
+            "context": "창세기"
+        },
+        {
+            "hu": "Neví.",
+            "ko": "이름을 ~라 하니라 (Nevezte -> Neví).",
+            "context": "지명"
+        }
+    ],
+    "koreanInterferenceNotes": "현대 헝가리어 회화에서는 절대 쓰지 않지만, 성경을 읽거나 나이 드신 분들의 기도를 들을 때 꼭 필요합니다. 한국의 '가라사대', '하오니' 같은 느낌입니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Mondá.",
+            "correct": "Mondta (현대어).",
+            "explanation": "일상 생활에서 'Mondá'라고 하면 500년 전 사람 취급 받습니다. 이해만 하세요."
+        }
+    ],
+    "comparisonWithKorean": "성경의 문어체(하느니라, 되니라)와 완벽한 매칭입니다.",
+    "estimatedDuration": 40,
+    "difficultyScore": 6,
+    "prerequisites": [
+        "A2-4",
+        "A2-5"
+    ],
+    "tags": [
+        "고어",
+        "성경",
+        "Károli"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "És lőn (되고/되니)",
+        "Teremté (창조하시니라)",
+        "Mondá (가라사대)"
+    ]
+}

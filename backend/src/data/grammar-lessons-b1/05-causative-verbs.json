@@ -1,0 +1,126 @@
+{
+    "level": "B1",
+    "orderIndex": 5,
+    "titleKorean": "사동사 - 시키고, 하게 하고",
+    "titleHungarian": "Műveltető igék (-tat/-tet)",
+    "explanationKorean": "내가 직접 하는 게 아니라 남에게 '시키거나', '~하게 만드는' 동사입니다. 어간에 -tat/-tet을 붙입니다.",
+    "explanationHungarian": "A cselekvést mással végeztető igealak.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "형태 만들기 (-tat/-tet)",
+                "description": "szív (빨다) -> szíva-tat (괴롭히다/빨리게 하다), mos (씻다) -> mos-at (씻기다).",
+                "pattern": "csinál-tat (오더를 내려서 하게 하다)",
+                "examples": [
+                    {
+                        "hu": "Keresztelkedik (세례받다 - 재귀)",
+                        "ko": "Megkeresztel-tet (세례 주게 하다? -> 보통은 수동의미로 확장)"
+                    }
+                ]
+            },
+            {
+                "title": "활용",
+                "description": "만들어진 사동사는 일반 동사처럼 모든 시제와 격변화를 합니다.",
+                "pattern": "Csináltattam egy öltönyt. (양복 한 벌을 맞췄다 - 만들게 시켰다).",
+                "examples": [
+                    {
+                        "hu": "Levágatom a hajam.",
+                        "ko": "머리카락을 자르게 시키다 (=이발하다)."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Dolgoztat.",
+            "ko": "일을 시키다.",
+            "context": "노동"
+        },
+        {
+            "hu": "Megjavíttatom.",
+            "ko": "수리를 맡기다(고치게 시키다).",
+            "context": "일상"
+        },
+        {
+            "hu": "Elaltat.",
+            "ko": "재우다 (자게 하다).",
+            "context": "양육"
+        },
+        {
+            "hu": "Jézus megkeresztelkedett.",
+            "ko": "예수는 세례를 받으셨다(스스로 물에 잠기셨다 - 재귀).",
+            "context": "성경"
+        },
+        {
+            "hu": "Kivégeztetett.",
+            "ko": "처형되었다(처형당하게 시켜졌다 - 수동적 의미).",
+            "context": "역사"
+        },
+        {
+            "hu": "Építtetett egy templomot.",
+            "ko": "교회를 건축했다(건축하게 시켰다 - 솔로몬).",
+            "context": "성경"
+        },
+        {
+            "hu": "Megíratta.",
+            "ko": "쓰게 했다(대필).",
+            "context": "역사"
+        },
+        {
+            "hu": "Ittat.",
+            "ko": "마시게 하다 (물 먹이다).",
+            "context": "목축"
+        },
+        {
+            "hu": "Etet.",
+            "ko": "먹이다 (먹게 하다).",
+            "context": "목양/양육"
+        },
+        {
+            "hu": "Emlékeztet.",
+            "ko": "생각나게 하다 (기억하게 하다 - 상기시키다).",
+            "context": "설교"
+        },
+        {
+            "hu": "Felidegesít.",
+            "ko": "화나게 하다.",
+            "context": "감정"
+        },
+        {
+            "hu": "Megnevettet.",
+            "ko": "웃기다 (웃게 하다).",
+            "context": "감정"
+        },
+        {
+            "hu": "Sirat.",
+            "ko": "을 위해 울다 (눈물 흘리게 하다? -> 슬퍼하다).",
+            "context": "장례"
+        }
+    ],
+    "koreanInterferenceNotes": "한국어 '먹이다', '입히다', '재우다' (이/히/리/기/우/구/추 사동 접미사)와 정확히 대응됩니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Vágom a hajam.",
+            "correct": "Levágatom a hajam.",
+            "explanation": "'내 머리를 자른다'고 하면 내가 가위 들고 자르는 겁니다. 미용실 가는 건 '자르게 시키는(vágat)' 겁니다."
+        }
+    ],
+    "comparisonWithKorean": "동사 파생법이 한국어와 매우 흡사합니다.",
+    "estimatedDuration": 45,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "A2-12"
+    ],
+    "tags": [
+        "사동사",
+        "동사파생",
+        "어휘확장"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Emlékeztet (생각나게 하시다 - 성령)",
+        "Etet (먹이시다 - 목자)",
+        "Megtart (보존하다/지키게 하다)"
+    ]
+}

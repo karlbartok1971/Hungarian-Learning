@@ -1,0 +1,136 @@
+{
+    "level": "B1",
+    "orderIndex": 4,
+    "titleKorean": "후치사 심화 - 공간을 입체적으로",
+    "titleHungarian": "Névutók gyakorlása",
+    "explanationKorean": "단순 격어미(-ban, -on)로는 표현하기 힘든 구체적인 위치(앞, 뒤, 밑, 사이 등)를 나타냅니다.",
+    "explanationHungarian": "Az alatt, fölött, mögött, előtt, között névutók használata.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "3방향성 (어디로, 어디에, 어디서)",
+                "description": "후치사들도 3가지 방향 변화를 가집니다. (예: alá, alatt, alól)",
+                "pattern": "Alá (밑으로), Alatt (밑에), Alól (밑에서)",
+                "examples": [
+                    {
+                        "hu": "Az asztal alatt.",
+                        "ko": "책상 밑에."
+                    }
+                ]
+            },
+            {
+                "title": "주요 후치사",
+                "description": "Előtt (앞), Mögött (뒤), Felett (위 - 떠있는), Között (사이).",
+                "pattern": "Isten előtt (하나님 앞에서 - Coram Deo)",
+                "examples": [
+                    {
+                        "hu": "Felhők felett.",
+                        "ko": "구름 위에."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Isten színe előtt.",
+            "ko": "하나님의 면전에서(얼굴 앞에서).",
+            "context": "예배"
+        },
+        {
+            "hu": "Mindenek felett.",
+            "ko": "만물 위에 (뛰어난).",
+            "context": "찬양"
+        },
+        {
+            "hu": "Közöttünk van.",
+            "ko": "우리 사이에(가운데) 계신다.",
+            "context": "임재"
+        },
+        {
+            "hu": "Hátam mögött.",
+            "ko": "내 등 뒤에 (사탄아 물러가라).",
+            "context": "성경"
+        },
+        {
+            "hu": "A törvény alatt.",
+            "ko": "율법 아래에.",
+            "context": "바울신학"
+        },
+        {
+            "hu": "A kegyelem alatt.",
+            "ko": "은혜 아래에.",
+            "context": "바울신학"
+        },
+        {
+            "hu": "Az asztal alá bújt.",
+            "ko": "책상 밑으로 숨었다 (방향).",
+            "context": "일상"
+        },
+        {
+            "hu": "Jézus elé borult.",
+            "ko": "예수님 앞에 엎드렸다 (방향).",
+            "context": "성경"
+        },
+        {
+            "hu": "Közületek.",
+            "ko": "너희들 중에서(가운데로부터).",
+            "context": "선택"
+        },
+        {
+            "hu": "Mellettünk áll.",
+            "ko": "우리 곁에 서 계신다 (지지/도움).",
+            "context": "위로"
+        },
+        {
+            "hu": "Maga helyett.",
+            "ko": "자기 대신에(자신을 대신하여).",
+            "context": "대속"
+        },
+        {
+            "hu": "Bűn nélkül.",
+            "ko": "죄 없이.",
+            "context": "그리스도의 성품"
+        },
+        {
+            "hu": "Szemben az ellenséggel.",
+            "ko": "적과 마주하여.",
+            "context": "영적전쟁"
+        },
+        {
+            "hu": "Körülöttünk.",
+            "ko": "우리 둘레에(주변에).",
+            "context": "보호"
+        },
+        {
+            "hu": "Utánam.",
+            "ko": "내 뒤에 (나를 따라와라).",
+            "context": "제자도"
+        }
+    ],
+    "koreanInterferenceNotes": "'책상 위에'에서 책상과 붙어있으면 '-on', 책상보다 높이 떠 있으면 'felett'을 씁니다. 한국어는 둘 다 '위에'라서 헷갈립니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Az égben.",
+            "correct": "Az égen (하늘 표면에) / Az ég felett (하늘보다 높이).",
+            "explanation": "문맥에 따라 적절한 위치사를 써야 합니다."
+        }
+    ],
+    "comparisonWithKorean": "영어의 Preposition(전치사)이 헝가리어에선 Postposition(후치사)으로 명사 뒤에 옵니다. 한국어 '앞-에', '뒤-에'와 어순이 같습니다.",
+    "estimatedDuration": 50,
+    "difficultyScore": 4,
+    "prerequisites": [
+        "A2-2"
+    ],
+    "tags": [
+        "후치사",
+        "위치",
+        "방향"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Isten előtt (Coram Deo)",
+        "Törvény alatt (율법 아래)",
+        "Bűn nélkül (죄 없이)"
+    ]
+}

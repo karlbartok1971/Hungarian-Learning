@@ -1,0 +1,136 @@
+{
+    "level": "A2",
+    "orderIndex": 9,
+    "titleKorean": "접속사 마스터 - 문장 연결하기",
+    "titleHungarian": "Kötőszavak",
+    "explanationKorean": "단문을 넘어 복문으로 가기 위한 필수 요소입니다. és, de, mert, hogy 4가지만 알아도 문장이 풍성해집니다.",
+    "explanationHungarian": "A legfontosabb kötőszavak a mondatok összekapcsolásához.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "기본 접속사",
+                "description": "és (그리고), de (그러나), mert (왜냐하면), ha (만약)",
+                "pattern": "문장, 접속사 문장",
+                "examples": [
+                    {
+                        "hu": "Szeretem, mert jó.",
+                        "ko": "좋기 때문에 좋아한다."
+                    }
+                ]
+            },
+            {
+                "title": "Hogy (That/So that)",
+                "description": "영어의 that절과 같습니다. 말하는 내용, 목적, 결과 등을 이 끕니다. 콤마(,)가 필수입니다.",
+                "pattern": "Tudom, hogy... (나는 ~라는 것을 안다)",
+                "examples": [
+                    {
+                        "hu": "Mondta, hogy jön.",
+                        "ko": "그가 온다고 말했다."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Mert úgy szerette Isten a világot...",
+            "ko": "하나님이 세상을 (이처럼) 사랑하사 (왜냐하면 사랑했기 때문에).",
+            "context": "요한 3:16"
+        },
+        {
+            "hu": "Kérlek, hogy jöjj el.",
+            "ko": "오시기를(that) 간구합니다.",
+            "context": "기도"
+        },
+        {
+            "hu": "Nem én élek, hanem Krisztus.",
+            "ko": "내가 사는 것이 아니요(de), 그리스도께서 사신다.",
+            "context": "갈라디아서 2:20"
+        },
+        {
+            "hu": "És látta Isten, hogy jó.",
+            "ko": "하나님이 보시기에(보셨다 that) 좋았더라.",
+            "context": "창세기"
+        },
+        {
+            "hu": "Azért jöttem, hogy...",
+            "ko": "나는 ~하기 위해(so that) 왔다.",
+            "context": "설교"
+        },
+        {
+            "hu": "Bárány és oroszlán.",
+            "ko": "어린 양과 사자.",
+            "context": "성경"
+        },
+        {
+            "hu": "De Isten gazdag irgalomban.",
+            "ko": "그러나 하나님은 긍휼이 풍성하시다.",
+            "context": "설교"
+        },
+        {
+            "hu": "Hiszem, hogy...",
+            "ko": "나는 ~라는 것을 믿는다.",
+            "context": "신앙고백"
+        },
+        {
+            "hu": "Ha akarod.",
+            "ko": "주님이 원하시면.",
+            "context": "성경"
+        },
+        {
+            "hu": "Vagy... vagy...",
+            "ko": "이것 아니면 저것 (Either... or)",
+            "context": "선택"
+        },
+        {
+            "hu": "Sem... sem...",
+            "ko": "이것도 아니고 저것도 아니고 (Neither... nor)",
+            "context": "부정"
+        },
+        {
+            "hu": "Mivel...",
+            "ko": "~이므로 (Since/Because)",
+            "context": "논증"
+        },
+        {
+            "hu": "Így...",
+            "ko": "그러므로/이렇게 (Thus)",
+            "context": "결론"
+        },
+        {
+            "hu": "Tehát...",
+            "ko": "따라서 (Therefore)",
+            "context": "설교 결론"
+        },
+        {
+            "hu": "Vigyázzatok, hogy el ne tévelyedjetek.",
+            "ko": "미혹을 받지 않도록(so that) 주의하라.",
+            "context": "성경"
+        }
+    ],
+    "koreanInterferenceNotes": "헝가리어에서 접속사 앞에는 거의 항상 콤마(,)를 찍습니다. 특히 'hogy' 앞에는 무조건입니. 한국어는 콤마를 잘 안 쓰지만 헝가리어는 문장 부호가 엄격합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Tudom hogy jó. (콤마 없음)",
+            "correct": "Tudom, hogy jó.",
+            "explanation": "hogy 앞에는 반드시 쉼표가 옵니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어는 어미(-어서, -니까, -고)로 연결하지만, 헝가리어는 독립된 접속사 단어를 사용합니다.",
+    "estimatedDuration": 35,
+    "difficultyScore": 2,
+    "prerequisites": [
+        "A1-15"
+    ],
+    "tags": [
+        "접속사",
+        "문장연결",
+        "논리"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Mert (왜냐하면 - 사랑의 이유)",
+        "Hogy (목적/내용)",
+        "Hanem (But rather - 반전)"
+    ]
+}

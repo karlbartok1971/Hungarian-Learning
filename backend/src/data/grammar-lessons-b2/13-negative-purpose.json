@@ -1,0 +1,95 @@
+{
+    "level": "B2",
+    "orderIndex": 13,
+    "titleKorean": "부정 목적 - ~하지 않도록 (Nehogy)",
+    "titleHungarian": "Tiltó célhatározó (Nehogy)",
+    "explanationKorean": "'시험에 들지 않게', '잊어버리지 않도록'. Hogy ne 또는 Nehogy를 사용합니다.",
+    "explanationHungarian": "A 'nehogy' és 'hogy ne' használata.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Hogy ne...",
+                "description": "일반적인 부정 목적. Hogy(So that) + ne(not).",
+                "pattern": "Imádkozom, hogy ne ess kétségbe. (절망하지 않도록 기도한다).",
+                "examples": [
+                    {
+                        "hu": "Azért, hogy ne...",
+                        "ko": "~하지 않기 위해서."
+                    }
+                ]
+            },
+            {
+                "title": "Nehogy...",
+                "description": "Lest (혹시라도 ~할까봐). 경고나 두려움의 뉘앙스가 강합니다.",
+                "pattern": "Vigyázz, nehogy eless. (넘어지지 않도록 조심해 - 넘어질까 두렵다).",
+                "examples": [
+                    {
+                        "hu": "Nehogy azt hidd. (그렇게 생각하지 마라/생각할까봐 걱정됨).",
+                        "ko": "강한 부정."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Imádkozzatok, hogy kísértésbe ne essetek.",
+            "ko": "시험에 들지 않게 기도하라.",
+            "context": "눅 22:40"
+        },
+        {
+            "hu": "Vigyázzatok, nehogy valaki eltéavesszen titeket.",
+            "ko": "너희를 미혹하지 못하도록 주의하라.",
+            "context": "마 24:4"
+        },
+        {
+            "hu": "Nehogy elfelejtsd az Urat.",
+            "ko": "여호와를 잊어버리지 않도록 (삼가라).",
+            "context": "신명기"
+        },
+        {
+            "hu": "Hogy el ne vesszen.",
+            "ko": "멸망하지 않도록.",
+            "context": "요한 3:16"
+        },
+        {
+            "hu": "Fél, nehogy megtudják.",
+            "ko": "사람들이 알게 될까봐 두려워한다.",
+            "context": "비밀"
+        },
+        {
+            "hu": "Siess, nehogy elkés.",
+            "ko": "늦지 않도록 서둘러.",
+            "context": "일상"
+        },
+        {
+            "hu": "Nehogy már!",
+            "ko": "설마! / 말도 안 돼! (Don't tell me!).",
+            "context": "구어체 반박"
+        }
+    ],
+    "koreanInterferenceNotes": "'~하지 않도록'은 'Hogy ne'가 기본이지만, '조심해라', '두렵다' 등의 동사와는 'Nehogy'가 짝꿍입니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Hogy nem.",
+            "correct": "Hogy ne.",
+            "explanation": "목적절(Subjunctive)에서는 부정어로 'nem'이 아니라 'ne'를 씁니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '-지 않게', '-지 않도록'과 같습니다.",
+    "estimatedDuration": 35,
+    "difficultyScore": 4,
+    "prerequisites": [
+        "B1-8"
+    ],
+    "tags": [
+        "부정",
+        "목적",
+        "경고"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Hogy ne (않도록)",
+        "Nehogy (혹시라도 ~할까봐)"
+    ]
+}

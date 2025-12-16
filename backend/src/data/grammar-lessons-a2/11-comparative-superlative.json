@@ -1,0 +1,148 @@
+{
+    "level": "A2",
+    "orderIndex": 11,
+    "titleKorean": "비교급과 최상급 - 더 위대하신 주님",
+    "titleHungarian": "Fokozás (Jobb, Legjobb)",
+    "explanationKorean": "### 1. 남과 비교할 때: 비교급 (-bb)\n\n형용사 뒤에 **-bb**를 붙이면 '더 ~한'이 됩니다.\n- *Olcsó* (싼) -> *Olcsóbb* (더 싼)\n- *Drága* (비싼) -> *Drágább* (더 비싼 - a가 á로 길어짐)\n\n### 2. 최고를 말할 때: 최상급 (Leg- ... -bb)\n\n비교급 앞에 모자처럼 **Leg-**를 씌우면 '가장 ~한'이 됩니다.\n- *Olcsóbb* -> **Leg**olcsóbb (가장 싼)\n- *Nagyobb* -> **Leg**nagyobb (가장 큰)\n\n### 3. 불규칙 3총사\n\n너무 많이 써서 모양이 변해버린 친구들입니다.\n- **Jó** (좋은) -> **Jobb** (더 좋은) -> **Legjobb** (최고로 좋은)\n- **Szép** (예쁜) -> **Szebb** (더 예쁜)\n- **Sok** (많은) -> **Több** (더 많은) -> **Legtöbb** (가장 많은)",
+    "explanationHungarian": "A melléknevek fokozása: középfok (-bb) és felsőfok (leg- ... -bb).",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "비교급/최상급 만들기",
+                "description": "기본 규칙표 (모음으로 끝나면 모음이 길어지고, 자음으로 끝나면 연결모음 a/e가 들어감)",
+                "table": {
+                    "headers": [
+                        "원급",
+                        "비교급 (더 ~한)",
+                        "최상급 (가장 ~한)",
+                        "뜻"
+                    ],
+                    "rows": [
+                        [
+                            "Nagy",
+                            "Nagy**obb**",
+                            "**Leg**nagy**obb**",
+                            "큰 / 더 큰 / 가장 큰"
+                        ],
+                        [
+                            "Kicsi",
+                            "Kisebb (cs->s)",
+                            "Legkisebb",
+                            "작은"
+                        ],
+                        [
+                            "Hosszú",
+                            "Hosszabb (ú->a)",
+                            "Leghosszabb",
+                            "긴"
+                        ],
+                        [
+                            "Könnyű",
+                            "Könnyebb (ű->e)",
+                            "Legkönnyebb",
+                            "쉬운"
+                        ]
+                    ]
+                }
+            },
+            {
+                "title": "~보다 (Than) 표현법",
+                "description": "비교 대상 뒤에 **-nál/-nél**을 붙입니다. (장소격 '옆에'와 같은 접미사!)",
+                "table": {
+                    "headers": [
+                        "문장",
+                        "직역",
+                        "의역"
+                    ],
+                    "rows": [
+                        [
+                            "Ez jobb, mint az.",
+                            "이것은 저것보다(mint) 좋다.",
+                            "이게 저것보다 낫다. (Mint 사용)"
+                        ],
+                        [
+                            "Ez jobb an**nál**.",
+                            "이것은 저것**옆에서** 좋다.",
+                            "이게 저것보다 낫다. (-nál 사용/더 많이 씀)"
+                        ]
+                    ]
+                }
+            }
+        ]
+    },
+    "examples": [
+        {
+            "items": [
+                {
+                    "hu": "Nagyobb az Isten a mi szívünknél.",
+                    "ko": "하나님은 우리 마음보다 크시다.",
+                    "grammar": "Nagyobb (더 크신) ... -nál (보다)",
+                    "vocabulary": [
+                        "szívünknél (우리 마음보다)"
+                    ]
+                },
+                {
+                    "hu": "Ez a legszentebb hely.",
+                    "ko": "여기는 지성소(가장 거룩한 곳)입니다.",
+                    "grammar": "Leg-szent-ebb (Most holy)",
+                    "vocabulary": [
+                        "szent (거룩한)"
+                    ]
+                }
+            ],
+            "category": "신학적 예문"
+        },
+        {
+            "items": [
+                {
+                    "hu": "Melyik a jobb?",
+                    "ko": "어느 게 더 좋아요?",
+                    "grammar": "Jobb (Jó의 비교급)",
+                    "vocabulary": [
+                        "melyik (어느 것)"
+                    ]
+                },
+                {
+                    "hu": "Szeretnék egy nagyobbat.",
+                    "ko": "더 큰 것으로 원해요.",
+                    "grammar": "Nagyobbat (더 큰 것을 - 대격)",
+                    "vocabulary": [
+                        "nagyobbat (더 큰 것을)"
+                    ]
+                }
+            ],
+            "category": "쇼핑/일상"
+        }
+    ],
+    "koreanInterferenceNotes": "### 🧠 한국인 뇌 구조 바꾸기: '~보다'는 위치다?\n\n헝가리 사람들은 비교할 때 대상을 옆에(-nál/-nél) 두고 잽니다. \"너는 나**보다** 키가 커\"를 \"너는 나 **옆에서** 키가 커\"라고 표현하는 셈이죠.\n\n- *Péternél* = 피터 옆에서 / 피터보다",
+    "commonMistakes": [
+        {
+            "mistake": "Jóbb",
+            "correct": "Jobb",
+            "explanation": "Jó(좋은)의 비교급은 Jobb(욥)입니다. ó가 짧아집니다."
+        },
+        {
+            "mistake": "Legjobb",
+            "correct": "A legjobb",
+            "explanation": "최상급은 '유일한' 것이므로 보통 정관사(A/Az)와 함께 씁니다."
+        }
+    ],
+    "comparisonWithKorean": "영어의 `More`, `Most`에 해당합니다. 한국어 '더', '가장'은 부사지만 헝가리어는 형용사 어미 변화입니다.",
+    "estimatedDuration": 35,
+    "difficultyScore": 2,
+    "prerequisites": [
+        "A1-8"
+    ],
+    "tags": [
+        "비교급",
+        "최상급",
+        "형용사"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Legszentebb (지극히 거룩한 / 지성소)",
+        "Nagyobb (더 위대하신)",
+        "Mindennél jobb (무엇보다 더 좋은 - 주의 인자가 생명보다 낫다)"
+    ],
+    "isPublished": true
+}

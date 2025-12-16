@@ -1,0 +1,157 @@
+{
+    "level": "B1",
+    "orderIndex": 16,
+    "titleKorean": "지시대명사 격변화 - 이것으로, 저것 때문에",
+    "titleHungarian": "Mutató névmás ragozása (Ezzel, Azzal, Azért)",
+    "explanationKorean": "### 1. 이것(Ez)과 저것(Az)의 변신\n\n'이것'과 '저것' 뒤에 조사가 붙으면 모양이 변하는 경우가 많습니다.\n특히 자음으로 시작하는 조사(-ban, -nak, -val 등)가 오면 **'z'가 동화(Assimilation)**되어 사라집니다.\n- Ez + ben -> **Ebben** (이것 안에)\n- Az + ból -> **Abból** (저것에서)\n- Ez + vel -> **Ezzel** (이것으로 / 이것과 함께)\n\n### 2. 예외: 모음 시작 조사\n모음으로 시작하는 조사(-ért, -ig 등) 앞에서는 z가 그대로 남습니다.\n- Az + ért -> **Azért** (그것 때문에 / 그러므로)\n- Ez + ig -> **Ezig** (이때까지)",
+    "explanationHungarian": "Az ez/az mutató névmások ragozása. Mássalhangzóval kezdődő ragoknál a 'z' hasonul (ebben,azzal).",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Z의 동화 법칙 (Assimilation)",
+                "description": "Ez/Az의 'z'는 뒤에 오는 자음과 똑같이 변합니다. (발음하기 편하려고)",
+                "table": {
+                    "headers": [
+                        "대명사",
+                        "조사",
+                        "결과",
+                        "의미"
+                    ],
+                    "rows": [
+                        [
+                            "Ez",
+                            "-ben (In)",
+                            "**Ebben**",
+                            "이 안에"
+                        ],
+                        [
+                            "Az",
+                            "-nak (To)",
+                            "**Annak**",
+                            "저것에게/그에게"
+                        ],
+                        [
+                            "Ez",
+                            "-hez (To)",
+                            "**Ehhez**",
+                            "이것 쪽으로"
+                        ],
+                        [
+                            "Az",
+                            "-val (With)",
+                            "**Azzal**",
+                            "저것으로"
+                        ],
+                        [
+                            "Ez",
+                            "-re (On)",
+                            "**Erre**",
+                            "이 위에 / 이쪽으로"
+                        ]
+                    ]
+                }
+            },
+            {
+                "title": "Azért (그러므로/위하여)",
+                "description": "성경과 설교에서 가장 많이 나오는 접속사 중 하나입니다.",
+                "table": {
+                    "headers": [
+                        "단어",
+                        "구성",
+                        "의미"
+                    ],
+                    "rows": [
+                        [
+                            "Azért",
+                            "Az + ért (For that)",
+                            "그것 때문에 / 그러므로 (Therefore)"
+                        ],
+                        [
+                            "Ezért",
+                            "Ez + ért (For this)",
+                            "이것 때문에 / 그래서"
+                        ]
+                    ]
+                }
+            }
+        ]
+    },
+    "examples": [
+        {
+            "items": [
+                {
+                    "hu": "Ebben a világban.",
+                    "ko": "이 세상에서 (In this world).",
+                    "grammar": "Ez -> Ebben ('Világban'과 격 일치)",
+                    "vocabulary": [
+                        "világ (세상)"
+                    ]
+                },
+                {
+                    "hu": "Mert úgy szerette Isten a világot, hogy...",
+                    "ko": "하나님이 세상을 이처럼(이렇게) 사랑하사...",
+                    "grammar": "Úgy (Az + így? -> 아니요, ez/az의 부사형)",
+                    "vocabulary": [
+                        "úgy (그렇게/이처럼)"
+                    ]
+                },
+                {
+                    "hu": "Azért jött, hogy...",
+                    "ko": "그는 ~하기 위하여(그러므로) 왔다.",
+                    "grammar": "Azért (phr.)",
+                    "vocabulary": [
+                        "azért (그러므로/위하여)"
+                    ]
+                }
+            ],
+            "category": "성경적 용법"
+        },
+        {
+            "items": [
+                {
+                    "hu": "Ezzel mit csináljak?",
+                    "ko": "이거 가지고 뭐 해?",
+                    "grammar": "Ez + vel -> Ezzel (With this)",
+                    "vocabulary": [
+                        "csinál (하다)"
+                    ]
+                },
+                {
+                    "hu": "Arról beszélünk.",
+                    "ko": "우리는 그것에 대해 이야기하고 있어.",
+                    "grammar": "Az + ról -> Arról (About that)",
+                    "vocabulary": [
+                        "beszél (말하다)"
+                    ]
+                }
+            ],
+            "category": "일상 회화"
+        }
+    ],
+    "koreanInterferenceNotes": "### 🧠 한국인 뇌 구조 바꾸기: 꾸며줄 때도 격변화\n\n한국어는 \"**이** 세상에서\"라고 할 때 '이'는 안 변합니다.\n하지만 헝가리어는 \"**이(에서)** 세상에서\"라고 둘 다 맞춰줘야 합니다.\n- (X) **Ez** a világban.\n- (O) **Ebben** a világban.\n\n명사가 옷을 입으면(격조사), 꾸며주는 대명사도 똑같은 옷을 입어야 합니다. (깔맞춤 법칙)",
+    "commonMistakes": [
+        {
+            "mistake": "Ezvel / Azban",
+            "correct": "Ezzel / Abban",
+            "explanation": "Ez/Az 뒤에 자음 시작 조사가 오면 무조건 동화됩니다. Ezval, Azban 같은 말은 없습니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어의 '이/그/저' + 조사 결합(이것이, 저것을...)과 개념은 같으나, 헝가리어는 소리가 변하는 규칙이 더 까다롭습니다.",
+    "estimatedDuration": 40,
+    "difficultyScore": 4,
+    "prerequisites": [
+        "A2-1"
+    ],
+    "tags": [
+        "지시대명사",
+        "격변화",
+        "Ezzel",
+        "Azért"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Ebben van a szeretet (사랑은 여기 있으니 - In this is love)",
+        "Annak okáért (그러한 이유로/그러므로)"
+    ],
+    "isPublished": true
+}

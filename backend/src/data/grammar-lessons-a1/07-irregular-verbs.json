@@ -1,0 +1,160 @@
+{
+    "level": "A1",
+    "orderIndex": 7,
+    "titleKorean": "불규칙 동사 기초 - jön, megy 등",
+    "titleHungarian": "Rendhagyó igék",
+    "explanationKorean": "가장 자주 쓰이는 동사들 중 일부는 규칙을 따르지 않습니다. 이들은 무조건 암기해야 합니다.",
+    "explanationHungarian": "Néhány gyakran használt ige ragozása eltér a szabályostól.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Megy (가다) 활용",
+                "description": "어간이 me- 와 mé- 로 변합니다.",
+                "pattern": "megyek, mész, megy, megyünk, mentek, mennek",
+                "examples": [
+                    {
+                        "hu": "Hova mész?",
+                        "ko": "어디 가니?"
+                    },
+                    {
+                        "hu": "Megyek a templomba.",
+                        "ko": "나는 교회에 간다."
+                    }
+                ]
+            },
+            {
+                "title": "Jön (오다) 활용",
+                "description": "어미가 약간 불규칙합니다.",
+                "pattern": "jövök, jössz, jön, jövünk, jöttök, jönnek",
+                "examples": [
+                    {
+                        "hu": "Jön az Úr.",
+                        "ko": "주님이 오신다."
+                    },
+                    {
+                        "hu": "Jössz velem?",
+                        "ko": "나랑 같이 올래(갈래)?"
+                    }
+                ]
+            },
+            {
+                "title": "Eszik/Iszik (먹다/마시다)",
+                "description": "sz가 v로 변하는 경우가 있습니다.",
+                "pattern": "eszem, eszel, eszik... (불규칙 패턴 주)",
+                "examples": [
+                    {
+                        "hu": "Ezt cselekedjétek.",
+                        "ko": "이것을 행하라(먹으라). - 성찬식"
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Jöjjön el a te országod.",
+            "ko": "당신의 나라가 임하시옵으며.",
+            "context": "주기도문"
+        },
+        {
+            "hu": "Menjetek el szerte a világba.",
+            "ko": "너희는 온 천하에 다니며.",
+            "context": "성경 (마가복음 16:15)"
+        },
+        {
+            "hu": "Eszem kenyeret.",
+            "ko": "나는 빵을 먹는다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Iszom vizet.",
+            "ko": "나는 물을 마신다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Vedd és egyél.",
+            "ko": "받아 먹으라.",
+            "context": "성찬식"
+        },
+        {
+            "hu": "Hova mész ma?",
+            "ko": "오늘 어디 가니?",
+            "context": "일상"
+        },
+        {
+            "hu": "Jövök hamar.",
+            "ko": "내가 속히 오리라.",
+            "context": "성경"
+        },
+        {
+            "hu": "Teszem a dolgom.",
+            "ko": "나는 내 일을 한다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Veszem a keresztet.",
+            "ko": "나는 십자가를 진다(취한다).",
+            "context": "설교"
+        },
+        {
+            "hu": "Megyünk haza.",
+            "ko": "우리는 집에 간다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Elviszlek.",
+            "ko": "데려다 줄게.",
+            "context": "일상"
+        },
+        {
+            "hu": "Idejössz?",
+            "ko": "이리 올래?",
+            "context": "일상"
+        },
+        {
+            "hu": "Mit eszel?",
+            "ko": "뭐 먹니?",
+            "context": "일상"
+        },
+        {
+            "hu": "Aki hisz, az üdvözül.",
+            "ko": "믿는 자는 구원을 받으리라.",
+            "context": "성경"
+        },
+        {
+            "hu": "Leszek, aki leszek.",
+            "ko": "나는 스스로 있는 자니라 (I will be who I will be).",
+            "context": "성경"
+        }
+    ],
+    "koreanInterferenceNotes": "자주 쓰이는 동사일수록 불규칙한 경우가 많습니다. '가다/오다'는 일상 회화와 성경 모두에서 매우 빈번하게 사용되므로 입에 붙도록 연습해야 합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "megyok",
+            "correct": "megyek",
+            "explanation": "megy의 1인칭 단수는 megyek입니다."
+        },
+        {
+            "mistake": "jönök",
+            "correct": "jövök",
+            "explanation": "jön의 1인칭 단수는 jövök입니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어의 '듣다(들어)', '걷다(걸어)' 같은 불규칙 활용과 비슷합니다.",
+    "estimatedDuration": 35,
+    "difficultyScore": 4,
+    "prerequisites": [
+        "A1-6"
+    ],
+    "tags": [
+        "동사",
+        "불규칙",
+        "필수어휘"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Jöjjön el (임하소서)",
+        "Menjetek (가라 - 파송)",
+        "Vedd (받으라 - 성찬)"
+    ]
+}

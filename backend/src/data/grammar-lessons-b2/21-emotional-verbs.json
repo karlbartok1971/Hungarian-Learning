@@ -1,0 +1,127 @@
+{
+    "level": "B2",
+    "orderIndex": 21,
+    "titleKorean": "감정 동사 - 기쁨, 두려움, 후회",
+    "titleHungarian": "Érzelmeket kifejező igék (Örül, Fél, Bán)",
+    "explanationKorean": "감정 동사는 특정한 '격(Case)'을 요구합니다. '나는 너를 기뻐한다'가 아니라 '너에게(-nek) 기뻐한다'입니다.",
+    "explanationHungarian": "Az érzelmeket kifejező igék vonzatai.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Örül (Rejoice)",
+                "description": "~를 기뻐하다. 대상에게 -nak/-nek을 씁니다.",
+                "pattern": "Örülök neked. (널 만나서 반갑다 / 너를 기뻐한다).",
+                "examples": [
+                    {
+                        "hu": "Örüljetek az Úrban. (주 안에서 기뻐하라).",
+                        "ko": "Örülök a hírnek. (그 소식에 기쁘다)."
+                    }
+                ]
+            },
+            {
+                "title": "Fél (Fear)",
+                "description": "~를 두려워하다. 대상으로부터(-től/-tól) 두려워합니다.",
+                "pattern": "Félek tőled. (네가 무섭다).",
+                "examples": [
+                    {
+                        "hu": "Ne félj tőlük. (그들을 두려워 말라).",
+                        "ko": "Istenfélő (하나님을 경외하는)."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Bán.",
+            "ko": "후회하다 / 슬퍼하다. (Megbán: 회개하다). Bánom a bűneimet (내 죄를 슬퍼함 - 대격).",
+            "context": "회개"
+        },
+        {
+            "hu": "Szégyell.",
+            "ko": "부끄러워하다. Nem szégyellem az evangéliumot.",
+            "context": "롬 1:16"
+        },
+        {
+            "hu": "Aggódik.",
+            "ko": "염려하다. ~위해(-ért) 또는 ~때문에(-miatt).",
+            "context": "염려"
+        },
+        {
+            "hu": "Csodálkozik.",
+            "ko": "놀라다. ~에(-on/-en/-ön). Csodálkozom rajtad (네가 놀랍다).",
+            "context": "반응"
+        },
+        {
+            "hu": "Haragszik.",
+            "ko": "화내다. ~에게(-ra/-re). Ne haragudj rám (나한테 화내지 마).",
+            "context": "관계"
+        },
+        {
+            "hu": "Megbocsát.",
+            "ko": "용서하다. ~에게(-nak/-nek).",
+            "context": "용서"
+        },
+        {
+            "hu": "Szeret.",
+            "ko": "사랑하다. (대격 -t).",
+            "context": "사랑"
+        },
+        {
+            "hu": "Gyűlöl.",
+            "ko": "미워하다. (대격 -t).",
+            "context": "미움"
+        },
+        {
+            "hu": "Vágyik.",
+            "ko": "갈망하다. ~에(-ra/-re). Istenre vágyom.",
+            "context": "갈망"
+        },
+        {
+            "hu": "Megelégszik.",
+            "ko": "만족하다. ~로(-val/-vel).",
+            "context": "자족"
+        },
+        {
+            "hu": "Bízik.",
+            "ko": "신뢰하다. ~안에(-ban/-ben). Bízzál az Úrban.",
+            "context": "신뢰"
+        },
+        {
+            "hu": "Csalódik.",
+            "ko": "실망하다. ~안에(-ban/-ben). Csalódtam benned.",
+            "context": "실망"
+        }
+    ],
+    "koreanInterferenceNotes": "감정 동사마다 요구하는 조사가 다릅니다. '화나다'는 '위에(-ra)', '두렵다'는 '로부터(-től)', '기쁘다'는 '에게(-nek)'입니다. 외워야 합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Örülök téged.",
+            "correct": "Örülök neked.",
+            "explanation": "Örül은 타동사가 아닙니다. ~에게 기뻐하는 것입니다."
+        },
+        {
+            "mistake": "Félek téged.",
+            "correct": "Félek tőled.",
+            "explanation": "두려움은 대상으로부터 나오는 것이라 -től을 씁니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '에 기뻐하다', '를 두려워하다'와 조사가 다릅니다.",
+    "estimatedDuration": 45,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "A2-1",
+        "B2-21"
+    ],
+    "tags": [
+        "감정",
+        "동사",
+        "격지배"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Félni Istentől (하나님을 두려워함/경외)",
+        "Bízni Istenben (하나님을 신뢰함)",
+        "Örüljetek (기뻐하라)"
+    ]
+}

@@ -1,0 +1,110 @@
+{
+    "level": "B2",
+    "orderIndex": 18,
+    "titleKorean": "비교급 심화 - ~할수록 더 ~하다",
+    "titleHungarian": "Fokozatos összehasonlítás (Minél... annál...)",
+    "explanationKorean": "'말씀을 *들을수록* 더 *은혜가 된다*'. 비례 관계를 나타내는 Minél ~ annál ~ 구문입니다.",
+    "explanationHungarian": "A minél..., annál... szerkezet használata.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Minél + 비교급, Annál + 비교급",
+                "description": "The more... the more... 구조입니다.",
+                "pattern": "Minél többet adsz, annál többet kapsz. (더 많이 줄수록, 더 많이 받는다).",
+                "examples": [
+                    {
+                        "hu": "Minél hamarabb, annál jobb. (빠르면 빠를수록 좋다).",
+                        "ko": "속담."
+                    }
+                ]
+            },
+            {
+                "title": "Inkább (Rather)",
+                "description": "~라기보다는 차라리.",
+                "pattern": "Inkább meghalok, mintsem hazudjak. (거짓말하느니 차라리 죽겠다).",
+                "examples": [
+                    {
+                        "hu": "Sőt (심지어 / 오히려).",
+                        "ko": "강조."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Minél nagyobb a sötétség, annál erősebb a fény.",
+            "ko": "어둠이 깊을수록 빛은 더 강하다.",
+            "context": "설교"
+        },
+        {
+            "hu": "Minél közelebb, annál jobb.",
+            "ko": "가까울수록 좋다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Inkább Istennek kell engedelmeskedni.",
+            "ko": "사람보다 하나님께 순종하는 것이 마땅하다.",
+            "context": "사도행전 5:29"
+        },
+        {
+            "hu": "Annál inkább.",
+            "ko": "더욱 더 (Much more).",
+            "context": "강조"
+        },
+        {
+            "hu": "Sokkal jobban.",
+            "ko": "훨씬 더 잘.",
+            "context": "비교 강조"
+        },
+        {
+            "hu": "Egyre jobban.",
+            "ko": "점점 더 잘 (Increasingly).",
+            "context": "진행"
+        },
+        {
+            "hu": "Minél többen vagyunk, annál jobb.",
+            "ko": "많으면 많을수록 좋다 (다가다선).",
+            "context": "모임"
+        },
+        {
+            "hu": "Annál is inkább, mivel...",
+            "ko": "더욱이 ~하기 때문에.",
+            "context": "논리"
+        },
+        {
+            "hu": "Nem annyira szép, mint okos.",
+            "ko": "예쁘다기보다는 똑똑하다.",
+            "context": "비교"
+        },
+        {
+            "hu": "Legeslegjobb.",
+            "ko": "진짜 제일 좋은 (최상급 강조 - Leges- 접두사).",
+            "context": "강조"
+        }
+    ],
+    "koreanInterferenceNotes": "'Minél(무엇보다)', 'Annál(그것보다)' - 직역하면 '무엇보다 ~하면 그것보다 ~하다' 입니다. 어원적으로 접근하면 쉽습니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Minél gyors, annál jó.",
+            "correct": "Minél gyorsabb, annál jobb.",
+            "explanation": "반드시 '비교급(-bb)'을 써야 합니다. 원급(gyors)을 쓰면 틀립니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '-면 -을수록'과 같습니다.",
+    "estimatedDuration": 40,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "A2-11"
+    ],
+    "tags": [
+        "비교급",
+        "관용구",
+        "설교"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Minél (할수록)",
+        "Annál inkább (더욱 더)"
+    ]
+}

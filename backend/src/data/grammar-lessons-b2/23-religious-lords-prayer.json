@@ -1,0 +1,111 @@
+{
+    "level": "B2",
+    "orderIndex": 23,
+    "titleKorean": "종교적 어휘 1 - 기도문 분석 (주기도문)",
+    "titleHungarian": "Vallási nyelvhasználat I. (Miatyánk)",
+    "explanationKorean": "주기도문(Miatyánk)은 헝가리어 문법의 보고입니다. 소유격, 명령형, 접속법이 모두 들어있습니다. 한 줄씩 뜯어봅니다.",
+    "explanationHungarian": "A Miatyánk nyelvtani elemzése.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Mi Atyánk, ki vagy a mennyekben",
+                "description": "Mi Atyá-nk (우리 아버지-1인칭복수소유), Ki (관계대명사), Vagy (2인칭 단수 - 하나님을 '너'로 지칭).",
+                "pattern": "Atyánk (명사), Vagy (동사)",
+                "examples": [
+                    {
+                        "hu": "Mennyek-ben (하늘들-안에 / 복수형 사용).",
+                        "ko": "Szentel-tessék meg (거룩히 여김을 받으시오며 - 수동 명령형)."
+                    }
+                ]
+            },
+            {
+                "title": "Jöjjön el / Legyen meg",
+                "description": "Jöjjön (오소서 - 3인칭 명령), Legyen (되소서 - 3인칭 명령).",
+                "pattern": "A Te országod (너의 나라가 -> 당신의 나라가).",
+                "examples": [
+                    {
+                        "hu": "Amint..., úgy... is (하늘에서와 같이 땅에서도).",
+                        "ko": "상관접속사."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Mindennapi kenyerünket add meg nekünk ma.",
+            "ko": "일용할 양식을 오늘 우리에게 주시옵고.",
+            "context": "주기도문"
+        },
+        {
+            "hu": "Bocsásd meg vétkeinket.",
+            "ko": "우리의 죄를 사하여 주옵시고.",
+            "context": "주기도문"
+        },
+        {
+            "hu": "Miképpen mi is megbocsátunk.",
+            "ko": "우리가 용서한 것 같이.",
+            "context": "주기도문"
+        },
+        {
+            "hu": "Ne vígy minket kísértésbe.",
+            "ko": "우리를 시험에 들게 하지 마옵시고 (Visz: 데려가다 -> Vígy: 데려가소서의 부정).",
+            "context": "주기도문"
+        },
+        {
+            "hu": "Szabadíts meg a gonosztól.",
+            "ko": "악에서 구하소서.",
+            "context": "주기도문"
+        },
+        {
+            "hu": "Mert tiéd az ország.",
+            "ko": "나라가 당신의 것입니다.",
+            "context": "송영"
+        },
+        {
+            "hu": "A hatalom és a dicsőség.",
+            "ko": "권세와 영광이.",
+            "context": "송영"
+        },
+        {
+            "hu": "Mindörökké. Ámen.",
+            "ko": "영원히. 아멘.",
+            "context": "송영"
+        },
+        {
+            "hu": "Hiszek egy Istenben.",
+            "ko": "나는 한 분 하나님을 믿습니다 (사도신경 시작).",
+            "context": "사도신경"
+        },
+        {
+            "hu": "Mindenható Atyában.",
+            "ko": "전능하신 아버지를.",
+            "context": "사도신경"
+        }
+    ],
+    "koreanInterferenceNotes": "하나님을 'Te(너)'라고 부르는 것에 충격받지 마세요. 친밀함의 극치입니다. 한국어로는 '당신'으로 번역하지만 문법적으로는 반말(Tegeződés) 형태입니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Maga (존칭 당신).",
+            "correct": "Te (너).",
+            "explanation": "기도할 때는 절대 'Maga/Ön(존칭)'을 쓰지 않습니다. 항상 'Te'를 씁니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 주기도문은 극존칭이지만, 헝가리어는 문법적으로 '친근한 2인칭'을 씁니다.",
+    "estimatedDuration": 60,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "A2-8",
+        "B1-3"
+    ],
+    "tags": [
+        "주기도문",
+        "기도",
+        "암송"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Szenteltessék meg (거룩히 여김을 받으소서)",
+        "Legyen meg (이루어지이다)"
+    ]
+}

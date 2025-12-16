@@ -1,0 +1,110 @@
+{
+    "level": "B1",
+    "orderIndex": 22,
+    "titleKorean": "그룹 접미사 [-ék] - 가족과 일행",
+    "titleHungarian": "-ék utótag (Család, Csoport)",
+    "explanationKorean": "이름 뒤에 붙여서 '~네 가족', '~와 그 일행'을 나타냅니다. 성경에서 '예수님과 제자들', '베드로의 일행' 등을 표현할 때 유용합니다.",
+    "explanationHungarian": "A család vagy csoport kifejezése az -ék toldalékkal.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "-ék 의미",
+                "description": "그 사람과 관련된 집단. 항상 복수 취급합니다.",
+                "pattern": "Péterék (베드로네 / 베드로와 친구들)",
+                "examples": [
+                    {
+                        "hu": "Anyuék (엄마 아빠 / 부모님).",
+                        "ko": "Jézusék (예수님 일행)."
+                    }
+                ]
+            },
+            {
+                "title": "활용",
+                "description": "복수형이므로 복수 격어미를 씁니다.",
+                "pattern": "Péteréknél (베드로네 집에서), Jézusékkal (예수님 일행과 함께)",
+                "examples": [
+                    {
+                        "hu": "Szomszédék.",
+                        "ko": "이웃집 사람들."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Jézusék.",
+            "ko": "예수님과 그 제자들.",
+            "context": "성경"
+        },
+        {
+            "hu": "Péterék.",
+            "ko": "베드로와 그 동료들.",
+            "context": "성경"
+        },
+        {
+            "hu": "Kornéliuszék.",
+            "ko": "고넬료와 그 집안 사람들.",
+            "context": "사도행전"
+        },
+        {
+            "hu": "Szüleimék.",
+            "ko": "우리 부모님네 (보통은 그냥 Szüleim).",
+            "context": "일상"
+        },
+        {
+            "hu": "Lelkészék.",
+            "ko": "목사님 가정 / 사택.",
+            "context": "교회"
+        },
+        {
+            "hu": "Pálék.",
+            "ko": "바울 일행 (선교팀).",
+            "context": "사도행전"
+        },
+        {
+            "hu": "Gáborék.",
+            "ko": "가보르네 가족.",
+            "context": "일상"
+        },
+        {
+            "hu": "Barátomék.",
+            "ko": "내 친구네.",
+            "context": "일상"
+        },
+        {
+            "hu": "Testvéréknél.",
+            "ko": "형제님 댁에서.",
+            "context": "심방"
+        },
+        {
+            "hu": "Máriáék.",
+            "ko": "마리아와 마르다 자매들.",
+            "context": "성경"
+        }
+    ],
+    "koreanInterferenceNotes": "한국어 '철수네', '영희네'와 100% 일치합니다. 아주 편리한 표현입니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Péterek.",
+            "correct": "Péterék.",
+            "explanation": "Péterek은 '여러 명의 베드로들(이름이 베드로인 사람들)'이고, Péterék은 '베드로네 가족/일행'입니다. 모음 길이(é)가 중요합니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 관용구 '~네'와 같습니다.",
+    "estimatedDuration": 25,
+    "difficultyScore": 2,
+    "prerequisites": [
+        "A1-1"
+    ],
+    "tags": [
+        "접미사",
+        "가족",
+        "그룹"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Jézusék (예수님 일행)",
+        "Pálék (바울 선교팀)"
+    ]
+}

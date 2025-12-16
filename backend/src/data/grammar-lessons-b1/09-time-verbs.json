@@ -1,0 +1,111 @@
+{
+    "level": "B1",
+    "orderIndex": 9,
+    "titleKorean": "시간의 경과 - Telik vs Múlik",
+    "titleHungarian": "Az idő múlása",
+    "explanationKorean": "시간이 '흐른다'는 표현은 두 가지가 있습니다. Telik(채워지다/지나다)과 Múlik(사라지다/경과하다).",
+    "explanationHungarian": "A telik és múlik igék használata.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Telik (Pass/Fill)",
+                "description": "시간이 채워지며 흐르는 뉘앙스. 기간, 과정.",
+                "pattern": "Telik az idő. (시간이 간다)",
+                "examples": [
+                    {
+                        "hu": "Eltelt egy év.",
+                        "ko": "일 년이 지났다 (꽉 찼다)."
+                    }
+                ]
+            },
+            {
+                "title": "Múlik (Pass away/Depend)",
+                "description": "시간이 흘러가 버리거나, ~에 달려있다(무엇을 지나쳐오다).",
+                "pattern": "Elmúlt a nyár. (여름이 지나갔다 - 끝났다)",
+                "examples": [
+                    {
+                        "hu": "Rajtam múlik.",
+                        "ko": "나에게 달려있다 (Depend on me)."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Így telnek a napok.",
+            "ko": "그렇게 날들이 지나간다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Elmúlt a régi.",
+            "ko": "이전 것은 지나갔으니.",
+            "context": "고후 5:17"
+        },
+        {
+            "hu": "Múlik az idő.",
+            "ko": "세월이 유수와 같다 (사라져 간다).",
+            "context": "인생"
+        },
+        {
+            "hu": "Nem múlik el.",
+            "ko": "없어지지(지나가버리지) 아니하리라.",
+            "context": "말씀의 영원성"
+        },
+        {
+            "hu": "Sok időbe telt.",
+            "ko": "많은 시간이 걸렸다.",
+            "context": "과정"
+        },
+        {
+            "hu": "Hogy telik a napod?",
+            "ko": "하루 어때? (어떻게 하루가 채워지고 있니?)",
+            "context": "인사"
+        },
+        {
+            "hu": "Jól telt.",
+            "ko": "좋았어 (잘 채워졌어/지났어).",
+            "context": "답변"
+        },
+        {
+            "hu": "Rajtad áll vagy bukik (múlik).",
+            "ko": "너에게 달려있다.",
+            "context": "책임"
+        },
+        {
+            "hu": "Betelt az idő.",
+            "ko": "때가 찼고 (Mark 1:15 - 완료).",
+            "context": "성경"
+        },
+        {
+            "hu": "Egy fillérembe sem került.",
+            "ko": "한 푼도 안 들었다. (Kerül은 비용이 들다, Telik은 시간이 들다)",
+            "context": "비용"
+        }
+    ],
+    "koreanInterferenceNotes": "'지났다'를 헝가리어로는 '찼다(telik)'와 '없어졌다(múlik)'로 구분합니다. 긍정적/중립적 흐름은 Telik, 소멸/완료는 Múlik을 씁니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Elmúlt egy év.",
+            "correct": "Eltelt egy év.",
+            "explanation": "기간이 경과했을 때는 주로 'eltelt'를 씁니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '세월이 간다'를 두 가지 뉘앙스로 쪼갠 것입니다.",
+    "estimatedDuration": 35,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "A2-16"
+    ],
+    "tags": [
+        "시간",
+        "동사",
+        "어휘"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Elmúlt a régi (이전 것은 지나갔다)",
+        "Betelt az idő (때가 찼다)",
+        "Nem múlik el (없어지지 않는다)"
+    ]
+}

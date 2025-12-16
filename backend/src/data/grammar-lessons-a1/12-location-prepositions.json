@@ -1,0 +1,148 @@
+{
+    "level": "A1",
+    "orderIndex": 12,
+    "titleKorean": "위치 전치사 (후치사) - 안, 밖, 위, 아래",
+    "titleHungarian": "Helyhatározók",
+    "explanationKorean": "헝가리어는 영어의 전치사(in, on, at) 대신 명사 뒤에 붙는 접미사나 후치사를 사용합니다. '어디에', '어디서', '어디로' 3가지 방향성이 중요합니다.",
+    "explanationHungarian": "A magyar nyelv ragokat és névutókat használ a hely kifejezésére, háromirányúság elve szerint.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "3방향 시스템 (Tri-directionality)",
+                "description": "헝가리어 장소 표현은 '어디로(To)', '어디에(At)', '어디로부터(From)' 세 가지로 반드시 구별해야 합니다.",
+                "pattern": "Hova? (어디로), Hol? (어디에), Honnan? (어디서)",
+                "examples": [
+                    {
+                        "hu": "Bemegeyek a házba.",
+                        "ko": "집으로 들어간다."
+                    },
+                    {
+                        "hu": "A házban vagyok.",
+                        "ko": "집에 있다."
+                    },
+                    {
+                        "hu": "Kijövök a házból.",
+                        "ko": "집에서 나온다."
+                    }
+                ]
+            },
+            {
+                "title": "기본 후치사 (alatt, fölött...)",
+                "description": "접미사가 아닌 독립된 단어로 쓰이는 위치 표현들입니다.",
+                "pattern": "명사 + 후치사",
+                "examples": [
+                    {
+                        "hu": "Az asztal alatt.",
+                        "ko": "책상 아래에."
+                    },
+                    {
+                        "hu": "A város fölött.",
+                        "ko": "도시 위에."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "A mennyben.",
+            "ko": "하늘에 (계신).",
+            "context": "주기도문"
+        },
+        {
+            "hu": "Jézus a szívemben él.",
+            "ko": "예수님이 내 마음에 사신다.",
+            "context": "신앙고백"
+        },
+        {
+            "hu": "A kereszten.",
+            "ko": "십자가 위에서.",
+            "context": "설교"
+        },
+        {
+            "hu": "Isten országa köztetek van.",
+            "ko": "하나님 나라는 너희 안에(사이에) 있다.",
+            "context": "성경"
+        },
+        {
+            "hu": "Kijött Egyiptomból.",
+            "ko": "이집트에서 나왔다.",
+            "context": "성경 (출애굽)"
+        },
+        {
+            "hu": "Felmegy a hegyre.",
+            "ko": "산으로 올라가다.",
+            "context": "성경"
+        },
+        {
+            "hu": "A templom mellett.",
+            "ko": "교회 옆에.",
+            "context": "위치"
+        },
+        {
+            "hu": "Isten előtt.",
+            "ko": "하나님 앞에서 (Coram Deo).",
+            "context": "신학"
+        },
+        {
+            "hu": "A víz alatt.",
+            "ko": "물 아래.",
+            "context": "세례"
+        },
+        {
+            "hu": "Megyek Budapestre.",
+            "ko": "부다페스트로 간다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Koreából jöttem.",
+            "ko": "한국에서 왔어요.",
+            "context": "자기소개"
+        },
+        {
+            "hu": "Hova teszed?",
+            "ko": "어디에 두니?",
+            "context": "일상"
+        },
+        {
+            "hu": "Itt vagyok.",
+            "ko": "여기 있습니다.",
+            "context": "일상/응답"
+        },
+        {
+            "hu": "Mögöttem.",
+            "ko": "내 뒤에.",
+            "context": "사탄아 물러가라"
+        },
+        {
+            "hu": "A földön.",
+            "ko": "땅에서.",
+            "context": "주기도문"
+        }
+    ],
+    "koreanInterferenceNotes": "한국어 조사 '에'와 '에서'는 상황에 따라 헝가리어의 여러 격(-ban, -on, -nál)으로 나뉩니다. 특히 '도착점(어디로)'과 '위치(어디에)'의 구분이 한국어보다 훨씬 엄격합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Megyek a iskolában.",
+            "correct": "Megyek az iskolába.",
+            "explanation": "가는 동작은 '안으로(into)' 들어가는 것이므로 -ban(in)이 아니라 -ba(into)를 써야 합니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '집에 간다(방향)'와 '집에 있다(위치)'가 형태가 같지만, 헝가리어는 házba(방향) vs házban(위치)으로 엄격히 다릅니다.",
+    "estimatedDuration": 45,
+    "difficultyScore": 4,
+    "prerequisites": [
+        "A1-1"
+    ],
+    "tags": [
+        "장소",
+        "후치사",
+        "격변화"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Mennyben (하늘에)",
+        "Kereszten (십자가에)",
+        "Isten előtt (하나님 앞에서)"
+    ]
+}

@@ -1,0 +1,137 @@
+{
+    "level": "B1",
+    "orderIndex": 25,
+    "titleKorean": "B1 종합 리뷰 - 중급 완성",
+    "titleHungarian": "B1 Összefoglalás",
+    "explanationKorean": "B1의 핵심인 객관적 활용(Látom), 가능형(-hat), 조건법 과거(Volna), 그리고 다양한 부사/명사 파생법을 총정리합니다.",
+    "explanationHungarian": "A B1 szintű nyelvtan (tárgyas ragozás, módjelek, igenevek) ismétlése.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "객관적 활용 (Definite Conjugation)",
+                "description": "Látom az Urat. (나는 주님을 본다 - 특정).",
+                "pattern": "-om, -od, -ja...",
+                "examples": [
+                    {
+                        "hu": "Szeretlek. (너를 사랑한다 - 특별형).",
+                        "ko": "Ismerem őt."
+                    }
+                ]
+            },
+            {
+                "title": "양상 (Modality)",
+                "description": "Mehetek (갈 수 있다), Mentem volna (갔었을 텐데), Menj (가라/가도록).",
+                "pattern": "-hat/het, volna, -j.",
+                "examples": [
+                    {
+                        "hu": "Bár megtehetném.",
+                        "ko": "할 수만 있다면 좋을 텐데(비록 할 수 있을지라도)."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Mert úgy szerette Isten a világot (Indefinite: Szeret-ett).",
+            "ko": "하나님이 세상을 이처럼 사랑하사 (부사 'úgy'가 와서 주관적?). 아니요, 'úgy'는 정도부사.",
+            "context": "요한 3:16"
+        },
+        {
+            "hu": "Hogy adta egyszülött Fiát (Definite: Ad-ta).",
+            "ko": "독생자를 주셨으니(그 아들을 - 특정).",
+            "context": "요한 3:16"
+        },
+        {
+            "hu": "Aki hisz őbenne (Indefinite: Hisz).",
+            "ko": "저를 믿는 자마다.",
+            "context": "요한 3:16"
+        },
+        {
+            "hu": "El ne vesszen (Subjunctive: Vesszen).",
+            "ko": "멸망치 않고 (목적/부정).",
+            "context": "요한 3:16"
+        },
+        {
+            "hu": "Hanem örök élete legyen (Subjunctive: Legyen).",
+            "ko": "영생을 얻게 하려 하심이라.",
+            "context": "요한 3:16"
+        },
+        {
+            "hu": "Láttam az Urat.",
+            "ko": "나는 주를 보았다.",
+            "context": "부활"
+        },
+        {
+            "hu": "Ebben a városban élek.",
+            "ko": "나는 이 도시에 산다.",
+            "context": "소개"
+        },
+        {
+            "hu": "Azt mondta, hogy jön.",
+            "ko": "그는 온다고 말했다.",
+            "context": "간접화법"
+        },
+        {
+            "hu": "Gyorsan fut.",
+            "ko": "빨리 달린다.",
+            "context": "부사"
+        },
+        {
+            "hu": "Nem tudtam volna megcsinálni.",
+            "ko": "나는 못 했을거야.",
+            "context": "가정과거"
+        },
+        {
+            "hu": "Segíthetek?",
+            "ko": "도와드릴까요?",
+            "context": "가능"
+        },
+        {
+            "hu": "Szükségem van rád.",
+            "ko": "네가 필요해.",
+            "context": "필요"
+        },
+        {
+            "hu": "Az elveszett bárány.",
+            "ko": "잃어버린 양.",
+            "context": "분사"
+        },
+        {
+            "hu": "Milyen szép!",
+            "ko": "얼마나 아름다운가!",
+            "context": "감탄"
+        },
+        {
+            "hu": "Egymásért.",
+            "ko": "서로를 위하여.",
+            "context": "대명사"
+        }
+    ],
+    "koreanInterferenceNotes": "B1까지 마쳤으면 이제 헝가리어 성경의 80%는 문법적으로 '해석'이 가능합니다. 단어 싸움만 남았습니다. 요한복음 3:16절을 문법적으로 완전히 분석해 보세요.",
+    "commonMistakes": [
+        {
+            "mistake": "Szeretek téged.",
+            "correct": "Szeretlek.",
+            "explanation": "B1의 마지막 관문, -lak/-lek을 절대 잊지 마세요."
+        }
+    ],
+    "comparisonWithKorean": "이제 고급 표현(가정, 양보, 사동)으로 넘어갈 기초 체력이 완성되었습니다.",
+    "estimatedDuration": 60,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "B1-1",
+        "B1-24"
+    ],
+    "tags": [
+        "총정리",
+        "복습",
+        "B1완성"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Szerette (사랑하셨다)",
+        "Adta (주셨다)",
+        "Legyen (있게 하려/하소서)"
+    ]
+}

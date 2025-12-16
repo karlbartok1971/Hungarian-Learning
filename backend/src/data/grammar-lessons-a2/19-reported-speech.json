@@ -1,0 +1,136 @@
+{
+    "level": "A2",
+    "orderIndex": 19,
+    "titleKorean": "간접화법 - 그가 말하길...",
+    "titleHungarian": "Függő beszéd",
+    "explanationKorean": "남의 말을 전할 때 씁니다. 헝가리어는 시제 일치를 시키지 않고, 원래 말했던 시제 그대로 씁니다('hogy' 사용).",
+    "explanationHungarian": "Más szavainak idézése.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Hogy 접속사 사용",
+                "description": "주절(말했다) + hogy + 종속절(원래 문장). 영어와 달리 시제를 과거로 돌리지 않습니다.",
+                "pattern": "Azt mondta, hogy jön. (그는 온다고 말했다 - 오는 중이라고)",
+                "examples": [
+                    {
+                        "hu": "Jézus mondta, hogy ő az út.",
+                        "ko": "예수님은 자신이 길이라고 말씀하셨다."
+                    }
+                ]
+            },
+            {
+                "title": "대명사 변경",
+                "description": "인칭대명사는 상황에 맞게 바꿔야 합니다 (나는 -> 자기는).",
+                "pattern": "Mondta, hogy éhes (Éhes vagyok -> Ő éhes).",
+                "examples": [
+                    {
+                        "hu": "Azt hitte, hogy...",
+                        "ko": "~라고 생각했다."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Azt mondta Isten, hogy legyen világosság.",
+            "ko": "하나님이 빛이 있으라고 말씀하셨다.",
+            "context": "창세기"
+        },
+        {
+            "hu": "Ki mondta, hogy nem tudod?",
+            "ko": "누가 네가 못한다고 그랬어?",
+            "context": "격려"
+        },
+        {
+            "hu": "Jézus megígérte, hogy velünk lesz.",
+            "ko": "예수님은 우리와 함께 있겠다고 약속하셨다.",
+            "context": "설교"
+        },
+        {
+            "hu": "Azt kérdezte, hogy ki vagyok.",
+            "ko": "그는 내가 누구냐고 물었다.",
+            "context": "간증"
+        },
+        {
+            "hu": "Úgy tudtam, hogy...",
+            "ko": "나는 ~라고 알고 있었다.",
+            "context": "오해"
+        },
+        {
+            "hu": "Azt írja a Biblia, hogy...",
+            "ko": "성경에 ~라고 쓰여 있다.",
+            "context": "인용"
+        },
+        {
+            "hu": "Azt parancsolta, hogy szeressük egymást.",
+            "ko": "서로 사랑하라고명령하셨다.",
+            "context": "계명"
+        },
+        {
+            "hu": "Azt hittem, hogy igaz.",
+            "ko": "나는 그게 사실인 줄 알았다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Mondd meg neki, hogy jöjjön.",
+            "ko": "그에게 오라고 말해라.",
+            "context": "전달"
+        },
+        {
+            "hu": "Azt hallottam, hogy beteg.",
+            "ko": "그가 아프다고 들었다.",
+            "context": "소식"
+        },
+        {
+            "hu": "Nem tudtam, hogy itt vagy.",
+            "ko": "네가 여기 있는지 몰랐어.",
+            "context": "일상"
+        },
+        {
+            "hu": "Azt gondolom, hogy fontos.",
+            "ko": "나는 그것이 중요하다고 생각한다.",
+            "context": "의견"
+        },
+        {
+            "hu": "Jelentette, hogy kész.",
+            "ko": "준비됐다고 보고했다.",
+            "context": "업무"
+        },
+        {
+            "hu": "Azt felelte, hogy nem.",
+            "ko": "아니라고 대답했다.",
+            "context": "대화"
+        },
+        {
+            "hu": "Hirdetjük, hogy Jézus él.",
+            "ko": "우리는 예수가 살아계심을 전파한다.",
+            "context": "전도"
+        }
+    ],
+    "koreanInterferenceNotes": "영어(he said that he was...)에 익숙하면 시제를 과거로 바꾸려 하는데, 헝가리어는 '그가 말했다, 그가 아프다고(현재)'처럼 원래 시제를 유지합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Azt mondta, hogy jött. (그가 온다고 말했다)",
+            "correct": "Azt mondta, hogy jön.",
+            "explanation": "말하는 시점(과거)에서 볼 때 '온다'는 현재 진행이므로 jön을 씁니다. jött를 쓰면 '이미 왔었다'고 말했다는 뜻이 됩니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 간접화법(-다고 말했다)과 논리가 같습니다.",
+    "estimatedDuration": 50,
+    "difficultyScore": 4,
+    "prerequisites": [
+        "A2-9"
+    ],
+    "tags": [
+        "간접화법",
+        "화법",
+        "인용"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Azt mondta (말씀하시기를)",
+        "Megígérte, hogy (약속하시기를)",
+        "Írva van, hogy (~라고 기록됨)"
+    ]
+}

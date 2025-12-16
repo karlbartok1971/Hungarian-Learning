@@ -1,0 +1,105 @@
+{
+    "level": "B2",
+    "orderIndex": 28,
+    "titleKorean": "고급 작문 - 묵상글(QT) 쓰기",
+    "titleHungarian": "Írásgyakorlat (Áhítat írás)",
+    "explanationKorean": "읽은 말씀을 묵상하고 적용하는 짧은 글을 헝가리어로 써봅니다. 서론-본론-적용-기도의 구조.",
+    "explanationHungarian": "Rövid áhítat vagy elmélkedés írása.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "구조 잡기",
+                "description": "1. Ige (말씀 - 본문 요약), 2. Üzenet (메시지 - 하나님은 누구신가), 3. Alkalmazás (적용 - 나는 어떻게 살까).",
+                "pattern": "A mai ige azt mondja... (오늘 말씀은 ~라 합니다).",
+                "examples": [
+                    {
+                        "hu": "Arra tanít minket, hogy... (우리에게 ~를 가르칩니다).",
+                        "ko": "Segíts, Uram, hogy... (주여 ~하게 하소서)."
+                    }
+                ]
+            },
+            {
+                "title": "연결어 활용",
+                "description": "Ebben a szakaszban (이 구절에서), Ezért (그러므로), Végül (마지막으로).",
+                "pattern": "Tehát... (따라서).",
+                "examples": [
+                    {
+                        "hu": "Összefoglalva (요약하면).",
+                        "ko": "논리적 글쓰기."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "A mai napon Isten arról szólt hozzám, hogy...",
+            "ko": "오늘 하나님은 제게 ~에 대해 말씀하셨습니다.",
+            "context": "묵상 시작"
+        },
+        {
+            "hu": "Megérintett az a vers.",
+            "ko": "그 구절이 제 마음에 와 닿았습니다.",
+            "context": "감동"
+        },
+        {
+            "hu": "Úgy éreztem, hogy...",
+            "ko": "~라고 느꼈습니다.",
+            "context": "감정"
+        },
+        {
+            "hu": "Elhatároztam, hogy...",
+            "ko": "~하기로 결심했습니다.",
+            "context": "결단"
+        },
+        {
+            "hu": "Szeretnék változtatni ezen.",
+            "ko": "이것을 바꾸고 싶습니다.",
+            "context": "회개"
+        },
+        {
+            "hu": "Hálás vagyok azért, hogy...",
+            "ko": "~때문에 감사합니다.",
+            "context": "감사"
+        },
+        {
+            "hu": "Isten hűséges.",
+            "ko": "하나님은 신실하십니다.",
+            "context": "고백"
+        },
+        {
+            "hu": "Kérlek, adj erőt.",
+            "ko": "힘을 주시옵소서.",
+            "context": "간구"
+        },
+        {
+            "hu": "Jézus nevében. Ámen.",
+            "ko": "예수님의 이름으로. 아멘.",
+            "context": "마침"
+        }
+    ],
+    "koreanInterferenceNotes": "너무 멋지게 쓰려고 하지 말고, '주어+동사'의 단문 위주로 명확하게 쓰는 것이 좋습니다. 한 문장에 너무 많은 Hogy를 넣지 마세요.",
+    "commonMistakes": [
+        {
+            "mistake": "Gondoltam, hogy Isten jó és hogy szeret és hogy...",
+            "correct": "Isten jó. Szeret minket.",
+            "explanation": "접속사를 남발하기보다 문장을 끊어 쓰는 게 더 힘이 있습니다."
+        }
+    ],
+    "comparisonWithKorean": "QT 나눔방에서 하던 말을 그대로 헝가리어로 옮기는 연습입니다.",
+    "estimatedDuration": 60,
+    "difficultyScore": 7,
+    "prerequisites": [
+        "B2-24"
+    ],
+    "tags": [
+        "작문",
+        "묵상",
+        "적용"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Megérintett (감동되었다)",
+        "Elhatároz (결심하다)"
+    ]
+}

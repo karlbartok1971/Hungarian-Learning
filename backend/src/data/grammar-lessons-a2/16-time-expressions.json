@@ -1,0 +1,139 @@
+{
+    "level": "A2",
+    "orderIndex": 16,
+    "titleKorean": "시간 표현 - 언제, 얼마나 오랫동안",
+    "titleHungarian": "Időhatározók (Mikor, Hánykor, Mióta)",
+    "explanationKorean": "### 1. 시간의 점: Mikor? (When?)\n\n가장 기본적인 질문입니다. 대답은 여러 가지가 있습니다.\n- **-kor**: 시각 뒤에 붙습니다. (Hat**kor** - 6시에)\n- **-ban/-ben**: 월/년도 뒤에 붙습니다. (Január**ban** - 1월에)\n- **-on/-en**: 요일 뒤에 붙습니다. (Vasárnap - 일요일에 *예외: 접미사 없음 / Hétfőn - 월요일에*)\n\n### 2. 시간의 선: Mióta? (Since when?)\n\n과거부터 지금까지 이어져 오는 시간입니다.\n- **Óta**: ~이래로 / ~부터 (Since)\n- *Tegnap óta* (어제부터)\n- *Kezdet óta* (처음부터)\n\n### 3. 시간의 길이: Mennyi ideig? (For how long?)\n\n- **-ig**: ~까지 (Until)\n- *Reggelig* (아침까지)",
+    "explanationHungarian": "Az idő kifejezése: Mikor? (-kor, -ban, -on), Mióta? (óta), Meddig? (-ig).",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "시각 표현 (-kor)",
+                "description": "모음조화와 상관없이 무조건 -kor만 붙이면 됩니다. (세상 편함)",
+                "table": {
+                    "headers": [
+                        "시간",
+                        "헝가리어",
+                        "의미"
+                    ],
+                    "rows": [
+                        [
+                            "3:00",
+                            "Három**kor**",
+                            "3시에"
+                        ],
+                        [
+                            "10:00",
+                            "Tíz**kor**",
+                            "10시에"
+                        ],
+                        [
+                            "몇 시에?",
+                            "Hány óra**kor**?",
+                            "몇 시에 만날까?"
+                        ]
+                    ]
+                }
+            },
+            {
+                "title": "기간과 경계 (From - To)",
+                "description": "-tól/-től (부터) ... -ig (까지)",
+                "table": {
+                    "headers": [
+                        "구조",
+                        "예시",
+                        "의미"
+                    ],
+                    "rows": [
+                        [
+                            "...-tól ...-ig",
+                            "Reggel**től** esté**ig**",
+                            "아침부터 저녁까지"
+                        ],
+                        [
+                            "...-tól ...-ig",
+                            "Hétfő**től** péntek**ig**",
+                            "월요일부터 금요일까지"
+                        ]
+                    ]
+                }
+            }
+        ]
+    },
+    "examples": [
+        {
+            "items": [
+                {
+                    "hu": "Kezdet óta",
+                    "ko": "태초부터 / 처음부터 (Since the beginning)",
+                    "grammar": "Kezdet (시작) + óta (이래로)",
+                    "vocabulary": [
+                        "kezdet (시작)"
+                    ]
+                },
+                {
+                    "hu": "Mindörökké",
+                    "ko": "영원토록 (Forever and ever)",
+                    "grammar": "Mind + örökk + é (매우 오래된 굳어진 표현)",
+                    "vocabulary": [
+                        "örökké (영원히)"
+                    ]
+                }
+            ],
+            "category": "신학적 예문"
+        },
+        {
+            "items": [
+                {
+                    "hu": "Hánykor kezdődik az Istentisztelet?",
+                    "ko": "예배가 몇 시에 시작합니까?",
+                    "grammar": "Hánykor (At what time)",
+                    "vocabulary": [
+                        "istentisztelet (예배)",
+                        "kezdődik (시작된다)"
+                    ]
+                },
+                {
+                    "hu": "Tízkor találkozunk.",
+                    "ko": "10시에 만나요.",
+                    "grammar": "Tíz + kor",
+                    "vocabulary": [
+                        "találkozunk (만난다)"
+                    ]
+                }
+            ],
+            "category": "교회 생활"
+        }
+    ],
+    "koreanInterferenceNotes": "### 🧠 한국인 뇌 구조 바꾸기: '에'의 다양성\n\n한국어는 시간도 장소도 다 '에' 하나로 퉁칩니다. (3시**에**, 서울**에**)\n하지만 헝가리어는 엄격히 구분합니다.\n- 장소: -ban/-ben, -on/-en\n- 시각: **-kor** (절대 -ban을 쓰지 마세요!)",
+    "commonMistakes": [
+        {
+            "mistake": "Háromban",
+            "correct": "Háromkor",
+            "explanation": "시각 뒤에는 무조건 -kor입니다."
+        },
+        {
+            "mistake": "Vasárnapon",
+            "correct": "Vasárnap",
+            "explanation": "요일 중 '일요일(Vasárnap)'만 예외적으로 접미사 없이 부사로 쓰입니다. (나머지는 Hétfőn, Kedden 등)"
+        }
+    ],
+    "comparisonWithKorean": "한국어 '부터(~tól)'와 '까지(~ig)'가 명사 뒤에 붙는 점이 비슷합니다.",
+    "estimatedDuration": 35,
+    "difficultyScore": 2,
+    "prerequisites": [
+        "A1-11"
+    ],
+    "tags": [
+        "시간표현",
+        "전치사",
+        "필수"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Kezdet óta (처음부터)",
+        "Örökkön-örökké (영원무궁토록)",
+        "Harmadnapra (사흘 만에 - On the third day)"
+    ],
+    "isPublished": true
+}

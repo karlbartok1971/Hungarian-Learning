@@ -1,0 +1,152 @@
+{
+    "level": "A2",
+    "orderIndex": 17,
+    "titleKorean": "부정대명사 - 누군가, 아무도",
+    "titleHungarian": "Határozatlan és általános névmások",
+    "explanationKorean": "특정하지 않은 사람이나 사물을 가리키는 말입니다. Valaki(누군가), Senki(아무도), Mindenki(모두) 3형제가 핵심입니다.",
+    "explanationHungarian": "A valaki, senki, mindenki, és a valami, semmi, minden használata.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Vala- (Some-)",
+                "description": "불확실한 대상. Valaki(Somebody), Valami(Something), Valahol(Somewhere).",
+                "pattern": "Valaki kopog. (누군가 노크한다)",
+                "examples": [
+                    {
+                        "hu": "Mondj valamit.",
+                        "ko": "뭐라고 말 좀 해봐."
+                    }
+                ]
+            },
+            {
+                "title": "Se- (No-/Any-)",
+                "description": "부정. Senki(Nobody), Semmi(Nothing), Sehol(Nowhere).",
+                "pattern": "Nincs itt senki. (여기 아무도 없다)",
+                "examples": [
+                    {
+                        "hu": "Semmi baj.",
+                        "ko": "문제 없다 / 괜찮다."
+                    }
+                ]
+            },
+            {
+                "title": "Minden- (Every-)",
+                "description": "전체. Mindenki(Everybody), Minden(Everything), Mindenhol(Everywhere).",
+                "pattern": "Minden lehetséges. (모든 것이 가능하다)",
+                "examples": [
+                    {
+                        "hu": "Mindenki jöjjön.",
+                        "ko": "모두 오세요."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Senki sem mehet az Atyához, csak énáltalam.",
+            "ko": "나로 말미암지 않고는 아버지께로 올 자가 없느니라.",
+            "context": "요한 14:6"
+        },
+        {
+            "hu": "Minden lehetséges annak, aki hisz.",
+            "ko": "믿는 자에게는 모든 것이 가능하다.",
+            "context": "막 9:23"
+        },
+        {
+            "hu": "Mindenki.",
+            "ko": "모든 사람 (Everyone).",
+            "context": "대상"
+        },
+        {
+            "hu": "Valaki hívott.",
+            "ko": "누군가 불렀어.",
+            "context": "일상"
+        },
+        {
+            "hu": "Nincs semmim.",
+            "ko": "나는 아무것도 가진 게 없다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Mindenhol ott vagy.",
+            "ko": "당신은 어디에나 계십니다 (편재성).",
+            "context": "기도"
+        },
+        {
+            "hu": "Sehol sem találom.",
+            "ko": "어디서도 못 찾겠어.",
+            "context": "일상"
+        },
+        {
+            "hu": "Valahogy.",
+            "ko": "어떻게든 (Somehow).",
+            "context": "방법"
+        },
+        {
+            "hu": "Akárki.",
+            "ko": "누구든지 (Anyone who - 선택).",
+            "context": "개방"
+        },
+        {
+            "hu": "Bárki.",
+            "ko": "누구라도 (Any person).",
+            "context": "초청"
+        },
+        {
+            "hu": "Semmik vagyunk.",
+            "ko": "우리는 아무것도 아닙니다.",
+            "context": "겸손"
+        },
+        {
+            "hu": "Mindenben.",
+            "ko": "모든 일에 / 범사에.",
+            "context": "감사"
+        },
+        {
+            "hu": "Valami történik.",
+            "ko": "무슨 일이 일어나고 있다.",
+            "context": "상황"
+        },
+        {
+            "hu": "Semmiért ne aggódjatok.",
+            "ko": "아무것도 염려하지 말라.",
+            "context": "빌 4:6"
+        },
+        {
+            "hu": "Mindenkor.",
+            "ko": "항상(Every time).",
+            "context": "성경"
+        }
+    ],
+    "koreanInterferenceNotes": "헝가리어 부정문에서는 이중 부정(Double Negative)이 필수입니다. 'Nincs senki' (There isn't nobody) 처럼 '없다'와 '아무도'를 같이 써야 합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Van senki.",
+            "correct": "Nincs senki.",
+            "explanation": "Senki는 부정어(Nem/Nincs)와 짝을 이뤄야 합니다."
+        },
+        {
+            "mistake": "Látok senkit.",
+            "correct": "Nem látok senkit.",
+            "explanation": "나는 아무도 안 본다 -> Nem(안) + senkit(아무도)."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '아무도 없다'와 논리가 같습니다. 영어(There is nobody / Isn't anybody)와 헷갈리지 마세요.",
+    "estimatedDuration": 45,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "A2-1"
+    ],
+    "tags": [
+        "대명사",
+        "부정어",
+        "이중부정"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Minden (만물/모든 것)",
+        "Senki (아무도 - 구원의 유일성)",
+        "Semmi (무 - 허무)"
+    ]
+}

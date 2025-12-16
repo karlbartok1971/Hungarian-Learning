@@ -1,0 +1,152 @@
+{
+    "level": "A2",
+    "orderIndex": 5,
+    "titleKorean": "과거시제 불규칙 - volt, lett 등",
+    "titleHungarian": "Rendhagyó múlt idő",
+    "explanationKorean": "자주 쓰이는 동사들 중 과거형이 불규칙하게 변하는 것들이 있습니다. 특히 '있다(van)'의 과거형은 필수입니다.",
+    "explanationHungarian": "A létige és néhány más ige rendhagyó múlt ideje.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Van (있다) -> Volt (있었다)",
+                "description": "van의 과거형은 volt입니다. 아주 불규칙합니다.",
+                "pattern": "voltam, voltál, volt, voltunk, voltatok, voltak",
+                "examples": [
+                    {
+                        "hu": "Hol voltál?",
+                        "ko": "어디 있었니?"
+                    }
+                ]
+            },
+            {
+                "title": "Lesz (되다) -> Lett (되었다)",
+                "description": "미래형 lesz의 과거형이 lett입니다.",
+                "pattern": "lettem, lettél, lett...",
+                "examples": [
+                    {
+                        "hu": "Beteg lettem.",
+                        "ko": "병이 났다(아프게 되었다)."
+                    }
+                ]
+            },
+            {
+                "title": "Eszik/Iszik/Hisz (먹다/마시다/믿다)",
+                "description": "어간이 바뀝니다. e- -> evett, i- -> ivott, hi- -> hitt",
+                "pattern": "evett (먹었다), ivott (마셨다), hitt (믿었다)",
+                "examples": [
+                    {
+                        "hu": "Ábrahám hitt Istennek.",
+                        "ko": "아브라함이 하나님을 믿었다."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Sötétség volt.",
+            "ko": "어둠이 있었다.",
+            "context": "창세기 1:2"
+        },
+        {
+            "hu": "Világosság lett.",
+            "ko": "빛이 있었다(생겼다).",
+            "context": "창세기 1:3"
+        },
+        {
+            "hu": "Aki hitt, megkeresztelkedett.",
+            "ko": "믿은 사람은 세례를 받았다.",
+            "context": "성경"
+        },
+        {
+            "hu": "Ettek és ittak.",
+            "ko": "그들은 먹고 마셨다.",
+            "context": "성경"
+        },
+        {
+            "hu": "Jézus ott volt.",
+            "ko": "예수님이 거기 계셨다.",
+            "context": "성경"
+        },
+        {
+            "hu": "Beteg voltam, és meglátogattatok.",
+            "ko": "내가 병들었을 때 너희가 돌보았다.",
+            "context": "마태 25장"
+        },
+        {
+            "hu": "Hogy lettél keresztény?",
+            "ko": "어떻게 그리스도인이 되었나요?",
+            "context": "간증"
+        },
+        {
+            "hu": "Vettem a kenyeret.",
+            "ko": "떡을 가지셨다(취하셨다).",
+            "context": "성찬"
+        },
+        {
+            "hu": "Vittem a keresztet.",
+            "ko": "십자가를 졌다(운반했다).",
+            "context": "설교"
+        },
+        {
+            "hu": "Jöttem, hogy életük legyen.",
+            "ko": "내가 온 것은 양으로 생명을 얻게 하려 함이라.",
+            "context": "요한 10:10"
+        },
+        {
+            "hu": "Mentem haza.",
+            "ko": "집에 갔다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Volt egyszer egy ember.",
+            "ko": "옛날에 한 사람이 있었다. (동화/예화 시작)",
+            "context": "설교 예화"
+        },
+        {
+            "hu": "Nem volt hely.",
+            "ko": "빈 방(자리)이 없었다.",
+            "context": "성탄절"
+        },
+        {
+            "hu": "Boldog voltam.",
+            "ko": "행복했습니다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Fáradt lettem.",
+            "ko": "피곤해졌어.",
+            "context": "일상"
+        }
+    ],
+    "koreanInterferenceNotes": "'되다(become)'의 과거형 lett와 '있다(be)'의 과거형 volt를 혼동하지 않도록 주의하세요. 성경 창세기의 '빛이 있으라 하매 빛이 있었고(lett)'는 변화/생성을 의미합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "vanott",
+            "correct": "volt",
+            "explanation": "van의 과거는 규칙형이 아니라 volt입니다."
+        },
+        {
+            "mistake": "hiszett",
+            "correct": "hitt",
+            "explanation": "hisz(믿다)의 과거형은 hitt (짧은 모음)입니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '있었다'와 '되었다'의 차이와 정확히 일치합니다.",
+    "estimatedDuration": 40,
+    "difficultyScore": 4,
+    "prerequisites": [
+        "A2-4"
+    ],
+    "tags": [
+        "불규칙",
+        "과거시제",
+        "필수동사"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Volt (계셨다/있었다)",
+        "Lett (되었다 - 창조/변화)",
+        "Hitt (믿었다)"
+    ]
+}

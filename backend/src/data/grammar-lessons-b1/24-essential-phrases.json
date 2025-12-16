@@ -1,0 +1,136 @@
+{
+    "level": "B1",
+    "orderIndex": 24,
+    "titleKorean": "B1 필수 관용구 - 필요하다, 유감이다",
+    "titleHungarian": "Hasznos kifejezések (Szükség, Kár, Érdemes)",
+    "explanationKorean": "동사 하나로 표현되지 않는 중요 개념들입니다. 'Szükség van' (Need), 'Kár' (Pity), 'Érdemes' (Worth). 설교와 상담에 필수입니다.",
+    "explanationHungarian": "Gyakori kifejezések: szükség van, kár, érdemes, tilos, szabad.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Szükség van valamire",
+                "description": "~가 필요하다 (There is need for...). 필요한 대상에 -ra/-re가 붙습니다.",
+                "pattern": "Szükségem van rád. (나는 네가 필요해 - 직역: 너에 대한 필요가 내게 있다).",
+                "examples": [
+                    {
+                        "hu": "Mire van szükséged?",
+                        "ko": "뭐가 필요하니?"
+                    }
+                ]
+            },
+            {
+                "title": "Érdemes / Kár",
+                "description": "~할 가치가 있다 / ~라니 유감이다(아깝다).",
+                "pattern": "Érdemes elolvasni. (읽어볼 만하다)",
+                "examples": [
+                    {
+                        "hu": "Kár érte.",
+                        "ko": "그거 참 아깝다 (안됐다)."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Nagy hitre van szükség.",
+            "ko": "큰 믿음이 필요하다.",
+            "context": "설교"
+        },
+        {
+            "hu": "Szükségem van Istenre.",
+            "ko": "나는 하나님이 필요합니다.",
+            "context": "고백"
+        },
+        {
+            "hu": "Nem érdemes aggódni.",
+            "ko": "걱정할 가치가 없다 (소용없다).",
+            "context": "위로"
+        },
+        {
+            "hu": "Méltó.",
+            "ko": "합당하다 / 자격이 있다 (Worthy).",
+            "context": "찬양"
+        },
+        {
+            "hu": "Méltó a Bárány.",
+            "ko": "죽임 당하신 어린 양은 합당하시도다.",
+            "context": "계시록"
+        },
+        {
+            "hu": "Szabad.",
+            "ko": "자유롭다 / 해도 된다 (Allowed).",
+            "context": "허락"
+        },
+        {
+            "hu": "Szabad a hely?",
+            "ko": "여기 자리 있나요? (앉아도 되나요?)",
+            "context": "질문"
+        },
+        {
+            "hu": "Tilos.",
+            "ko": "금지다 (Forbidden).",
+            "context": "경고"
+        },
+        {
+            "hu": "Kár, hogy nem jöttél.",
+            "ko": "네가 안 오다니 참 아쉽다(유감이다).",
+            "context": "일상"
+        },
+        {
+            "hu": "Igazad van.",
+            "ko": "네 말이 맞다 (Right).",
+            "context": "동의"
+        },
+        {
+            "hu": "Nincs igaza.",
+            "ko": "그는 틀렸다 (Wrong).",
+            "context": "비동의"
+        },
+        {
+            "hu": "Jól esik.",
+            "ko": "기분 좋다 / 느낌이 좋다 (음식, 칭찬 등).",
+            "context": "감정"
+        },
+        {
+            "hu": "Sajnálom.",
+            "ko": "유감입니다 / 미안합니다.",
+            "context": "사과"
+        },
+        {
+            "hu": "Fáj a fejem.",
+            "ko": "머리가 아프다 (My head hurts).",
+            "context": "통증"
+        },
+        {
+            "hu": "Tetszik.",
+            "ko": "마음에 든다 (Like it).",
+            "context": "선호"
+        }
+    ],
+    "koreanInterferenceNotes": "'나는 필요하다'를 'Szükségek'이라고 하지 않습니다. '나에게는 필요가 있다(Nekem szükségem van)' 소유 구문으로 씁니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Akarok pénz. (나는 돈을 원해 -> 유아적)",
+            "correct": "Szükségem van pénzre. (돈이 필요해 -> 상황적)",
+            "explanation": "단순 욕구(Akar)와 필요(Szükség)를 구분해야 합니다."
+        }
+    ],
+    "comparisonWithKorean": "영어의 'I need'와 달리 'There is need' 구조를 가집니다.",
+    "estimatedDuration": 45,
+    "difficultyScore": 4,
+    "prerequisites": [
+        "A2-14"
+    ],
+    "tags": [
+        "숙어",
+        "필수표현",
+        "필요"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Méltó (합당하신)",
+        "Szükségem van (나는 ~가 필요하다)",
+        "Szabad (자유하다)"
+    ]
+}

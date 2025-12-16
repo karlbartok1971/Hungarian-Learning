@@ -1,0 +1,120 @@
+{
+    "level": "B1",
+    "orderIndex": 15,
+    "titleKorean": "상호대명사 - 서로 사랑하라",
+    "titleHungarian": "Kölcsönös névmás (Egymás)",
+    "explanationKorean": "공동체에서 가장 많이 쓰는 단어 '서로(Egymás)'입니다. 격변화를 아주 다양하게 합니다.",
+    "explanationHungarian": "Az 'egymás' névmás használata.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "기본형 Egymás",
+                "description": "서로서로. 문법적으로는 단수 취급합니다.",
+                "pattern": "Szeretitek egymást? (서로 사랑하니?)",
+                "examples": [
+                    {
+                        "hu": "Egymás terhét hordozzátok.",
+                        "ko": "서로의 짐을 지라."
+                    }
+                ]
+            },
+            {
+                "title": "격변화",
+                "description": "모든 격어미가 붙습니다.",
+                "pattern": "Egymással (서로와 함께), Egymásért (서로를 위해)",
+                "examples": [
+                    {
+                        "hu": "Egymásnak.",
+                        "ko": "서로에게."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Szeressétek egymást.",
+            "ko": "서로 사랑하라.",
+            "context": "새 계명"
+        },
+        {
+            "hu": "Imádkozzatok egymásért.",
+            "ko": "서로를 위해 기도하라.",
+            "context": "야고보서"
+        },
+        {
+            "hu": "Bocsássatok meg egymásnak.",
+            "ko": "서로에게 용서하라.",
+            "context": "골 3:13"
+        },
+        {
+            "hu": "Egymás tagjai vagyunk.",
+            "ko": "우리는 서로의 지체다.",
+            "context": "로마서"
+        },
+        {
+            "hu": "Ne hazudjatok egymásnak.",
+            "ko": "서로 거짓말하지 말라.",
+            "context": "골 3:9"
+        },
+        {
+            "hu": "Beszéltek egymással.",
+            "ko": "서로 대화했다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Segítünk egymásnak.",
+            "ko": "우리는 서로 돕는다.",
+            "context": "공동체"
+        },
+        {
+            "hu": "Egymás mellett.",
+            "ko": "서로 옆에.",
+            "context": "위치"
+        },
+        {
+            "hu": "Elválasztották őket egymástól.",
+            "ko": "그들은 서로(로부터) 헤어졌다.",
+            "context": "이별"
+        },
+        {
+            "hu": "Hasonlítanak egymásra.",
+            "ko": "그들은 서로 닮았다.",
+            "context": "비교"
+        },
+        {
+            "hu": "Egymás után.",
+            "ko": "차례대로 (서로의 뒤에 -> 잇달아).",
+            "context": "순서"
+        },
+        {
+            "hu": "Nézzetek egymás szemébe.",
+            "ko": "서로의 눈을 바라보라.",
+            "context": "결혼식"
+        }
+    ],
+    "koreanInterferenceNotes": "'서로'는 부사가 아니라 헝가리어에서는 대명사(명사적 성격)입니다. 그래서 격변화를 한다는 점이 한국어와 다릅니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Imádkozunk egymás.",
+            "correct": "Imádkozunk egymásért.",
+            "explanation": "'~를 위해'라는 전치사(-ért)가 붙어야 합니다."
+        }
+    ],
+    "comparisonWithKorean": "영어의 'Each other'가 전치사와 결합하는 것(to each other, for each other)과 같습니다.",
+    "estimatedDuration": 30,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "A2-15"
+    ],
+    "tags": [
+        "대명사",
+        "공동체",
+        "상호"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Szeressétek egymást (서로 사랑하라)",
+        "Egymás terhét (서로의 짐)"
+    ]
+}

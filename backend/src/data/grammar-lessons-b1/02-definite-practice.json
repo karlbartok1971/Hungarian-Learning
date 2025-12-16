@@ -1,0 +1,136 @@
+{
+    "level": "B1",
+    "orderIndex": 2,
+    "titleKorean": "객관적 활용 연습 - -lak/-lek은 누구?",
+    "titleHungarian": "Tárgyas ragozás gyakorlása",
+    "explanationKorean": "객관적 활용의 다양한 어미(-om, -od, -ja...)를 익히고, 특별한 형태인 -lak/-lek(내가 너를)을 배웁니다.",
+    "explanationHungarian": "A tárgyas ragozás gyakorlása és a -lak/-lek rag.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "객관적 활용 어미 (단수)",
+                "description": "1인칭 -om/-em/-öm, 2인칭 -od/-ed/-öd, 3인칭 -ja/-i.",
+                "pattern": "Tudom (안다), Tudod (너는 안다), Tudja (그는 안다)",
+                "examples": [
+                    {
+                        "hu": "Látom, Látod, Látja.",
+                        "ko": "본다, 네가 본다, 그가 본다."
+                    }
+                ]
+            },
+            {
+                "title": "특별 형태 -lak/-lek",
+                "description": "'주어: 나' + '목적어: 너'일 때만 쓰는 전용 어미입니다. 'Szeretlek' (I love you)가 대표적입니다.",
+                "pattern": "Szeretlek (너를 사랑해), Várlak (너를 기다려)",
+                "examples": [
+                    {
+                        "hu": "Megáldalak.",
+                        "ko": "내가 너를 축복한다."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Szeretlek, Uram.",
+            "ko": "주님, 사랑합니다 (당신을 사랑합니다).",
+            "context": "고백"
+        },
+        {
+            "hu": "Áldjon meg téged az Úr! (=Megáldalak)",
+            "ko": "주님이 너를 축복하시기를! (내가 축복한다)",
+            "context": "축복송"
+        },
+        {
+            "hu": "Kérlek.",
+            "ko": "부탁합니다 (내가 당신에게). / Please.",
+            "context": "요청"
+        },
+        {
+            "hu": "Hívlak.",
+            "ko": "전화할게 / 부를게.",
+            "context": "일상"
+        },
+        {
+            "hu": "Várlak.",
+            "ko": "너를 기다린다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Nem hagylak el.",
+            "ko": "나는 너를 떠나지(버리지) 않겠다.",
+            "context": "성경 약속"
+        },
+        {
+            "hu": "Ismerlek.",
+            "ko": "나는 너를 안다.",
+            "context": "목자/양"
+        },
+        {
+            "hu": "Követlek.",
+            "ko": "당신을 따르겠습니다.",
+            "context": "제자도"
+        },
+        {
+            "hu": "Dicsérlek.",
+            "ko": "주님을 찬송합니다.",
+            "context": "찬양"
+        },
+        {
+            "hu": "Látod?",
+            "ko": "그거 보여? / 알겠어?",
+            "context": "확인"
+        },
+        {
+            "hu": "Tudod?",
+            "ko": "그거 알아?",
+            "context": "질문"
+        },
+        {
+            "hu": "Értem és tudom.",
+            "ko": "이해하고 압니다 (확신).",
+            "context": "대답"
+        },
+        {
+            "hu": "Megteszem, amit kérsz.",
+            "ko": "네가 구하는 것을 내가 시행하리라.",
+            "context": "기도응답"
+        },
+        {
+            "hu": "Vedd.",
+            "ko": "(그것을) 받아라.",
+            "context": "명령"
+        },
+        {
+            "hu": "Vigyed.",
+            "ko": "(그것을) 가져가라.",
+            "context": "명령"
+        }
+    ],
+    "koreanInterferenceNotes": "'Szeretlek'은 주어(나)와 목적어(너)가 한 단어에 다 들어있습니다. 굳이 'Én szeretlek téged'라고 길게 말할 필요가 없습니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Szeretem téged.",
+            "correct": "Szeretlek.",
+            "explanation": "2인칭 목적어일 때는 -om(객관적)이나 -ok(주관적)이 아니라 -lak/-lek을 써야 합니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어는 '사랑해'라고 하면 주어/목적어가 문맥에 따르지만, 헝가리어는 어미만 봐도 '누가 누구를'인지 정확히 알 수 있습니다.",
+    "estimatedDuration": 55,
+    "difficultyScore": 6,
+    "prerequisites": [
+        "B1-1"
+    ],
+    "tags": [
+        "동사활용",
+        "I-You",
+        "Szeretlek"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Megáldalak (너를 축복한다)",
+        "Nem hagylak el (너를 버리지 않으리라)",
+        "Szeretlek (사랑한다)"
+    ]
+}

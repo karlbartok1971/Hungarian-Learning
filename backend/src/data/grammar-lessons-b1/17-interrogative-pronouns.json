@@ -1,0 +1,136 @@
+{
+    "level": "B1",
+    "orderIndex": 17,
+    "titleKorean": "의문사 격변화 - 누구랑? 왜?",
+    "titleHungarian": "Kérdőszók ragozása",
+    "explanationKorean": "'누구(Ki)', '무엇(Mi)'도 모든 격변화를 합니다. 의문사가 문장의 핵심 정보를 묻기 때문입니다.",
+    "explanationHungarian": "A ki és mi kérdőszók ragozása.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Ki (Who) 변화",
+                "description": "Kit (누구를), Kinek (누구에게), Kivel (누구와), Kiért (누구를 위해).",
+                "pattern": "Kinek a fia? (Whose son?)",
+                "examples": [
+                    {
+                        "hu": "Kiben hiszel?",
+                        "ko": "누구를(누구 안에) 믿느냐?"
+                    }
+                ]
+            },
+            {
+                "title": "Mi (What) 변화",
+                "description": "Mit (무엇을), Miért (왜/무엇을 위해), Miben (무엇 안에).",
+                "pattern": "Miről beszélsz? (무엇에 대해 말하니?)",
+                "examples": [
+                    {
+                        "hu": "Mivé lett? (무엇이 되었나?)",
+                        "ko": "Mihez (무엇에/어디에 - 방향)."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Kiért halt meg Jézus?",
+            "ko": "예수는 누구를 위해 죽으셨나?",
+            "context": "교리문답"
+        },
+        {
+            "hu": "Kivel mész?",
+            "ko": "누구랑 가니?",
+            "context": "일상"
+        },
+        {
+            "hu": "Kiben van a reménységed?",
+            "ko": "너의 소망은 누구에게 있느냐?",
+            "context": "전도"
+        },
+        {
+            "hu": "Kinek adta?",
+            "ko": "누구에게 주었나?",
+            "context": "질문"
+        },
+        {
+            "hu": "Kit küldjek el?",
+            "ko": "내가 누구를 보낼꼬?",
+            "context": "이사야 6:8"
+        },
+        {
+            "hu": "Miért sírsz?",
+            "ko": "왜(무엇 때문에) 우느냐?",
+            "context": "부활절"
+        },
+        {
+            "hu": "Miről szól a prédikáció?",
+            "ko": "설교 주제가 무엇인가?",
+            "context": "대화"
+        },
+        {
+            "hu": "Mit csinálsz?",
+            "ko": "무엇을 하느냐?",
+            "context": "일상"
+        },
+        {
+            "hu": "Minek?",
+            "ko": "뭐 하러? (For what? - 약간 부정적 뉘앙스 가능).",
+            "context": "질문"
+        },
+        {
+            "hu": "Mivel?",
+            "ko": "무엇으로/무엇을 타고?",
+            "context": "수단"
+        },
+        {
+            "hu": "Honnan?",
+            "ko": "어디서부터?",
+            "context": "출처"
+        },
+        {
+            "hu": "Hová/Hova?",
+            "ko": "어디로?",
+            "context": "방향"
+        },
+        {
+            "hu": "Hol?",
+            "ko": "어디에?",
+            "context": "위치"
+        },
+        {
+            "hu": "Mikorra?",
+            "ko": "언제까지(기한)?",
+            "context": "약속"
+        },
+        {
+            "hu": "Meddig?",
+            "ko": "언제까지(지속)? / 얼마나 멀리?",
+            "context": "기간/거리"
+        }
+    ],
+    "koreanInterferenceNotes": "'왜'는 'Miért'(For what)입니다. 헝가리어에선 원인이 곧 목적이기 때문입니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Miben ez?",
+            "correct": "Mi ez?",
+            "explanation": "주어 '이것은 무엇인가?'를 물을 때는 격조사가 필요 없습니다."
+        }
+    ],
+    "comparisonWithKorean": "육하원칙(의문사)이 조사와 결합하는 방식이 한국어와 매우 유사합니다.",
+    "estimatedDuration": 45,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "A2-1"
+    ],
+    "tags": [
+        "의문사",
+        "질문",
+        "격변화"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Kit küldjek el (누구를 보낼꼬)",
+        "Kiben hiszel (누구를 믿느냐)",
+        "Miért (어찌하여/왜)"
+    ]
+}

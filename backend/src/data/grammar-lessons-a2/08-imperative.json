@@ -1,0 +1,141 @@
+{
+    "level": "A2",
+    "orderIndex": 8,
+    "titleKorean": "명령형과 청유형 - 기도와 권면",
+    "titleHungarian": "Felszólító mód",
+    "explanationKorean": "명령(~해라), 청유(~하자), 기원(~하소서)을 나타냅니다. 특히 기도문에서 '주여 ~하소서'라고 할 때 필수적입니다.",
+    "explanationHungarian": "A felszólító mód jele a -j.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "기본 명령형 (-j)",
+                "description": "동사 어간에 -j + 인칭어미를 붙입니다. 자음 동화가 심하게 일어납니다.",
+                "pattern": "várjon (기다리세요/기다리게 하소서)",
+                "examples": [
+                    {
+                        "hu": "Jöjjön el.",
+                        "ko": "오시옵소서."
+                    }
+                ]
+            },
+            {
+                "title": "자음 동화 (s, sz, z, dz + j)",
+                "description": "어간이 s, sz 등으로 끝나면 j가 그 자음으로 흡수됩니다.",
+                "pattern": "keress (keres+j), hozz (hoz+j)",
+                "examples": [
+                    {
+                        "hu": "Hallgass meg!",
+                        "ko": "들어주소서!"
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Uram, irgalmazz!",
+            "ko": "주여, 불쌍히 여기소서! (Kyrie Eleison)",
+            "context": "예배/기도"
+        },
+        {
+            "hu": "Jöjjön el a te országod.",
+            "ko": "나라가 임하시오며.",
+            "context": "주기도문"
+        },
+        {
+            "hu": "Legyen meg a te akaratod.",
+            "ko": "뜻이 이루어지이다. (Legyen: 되게 하소서)",
+            "context": "주기도문"
+        },
+        {
+            "hu": "Kérjetek és adatik.",
+            "ko": "구하라 그리하면 주실 것이요.",
+            "context": "성경"
+        },
+        {
+            "hu": "Keressetek és találtok.",
+            "ko": "찾으라 그리하면 찾을 것이요.",
+            "context": "성경"
+        },
+        {
+            "hu": "Zörgessetek.",
+            "ko": "문을 두드리라.",
+            "context": "성경"
+        },
+        {
+            "hu": "Ne félj!",
+            "ko": "두려워 말라! (부정 명령)",
+            "context": "성경"
+        },
+        {
+            "hu": "Szeressétek egymást.",
+            "ko": "서로 사랑하라.",
+            "context": "계명"
+        },
+        {
+            "hu": "Menjünk!",
+            "ko": "가자! (청유)",
+            "context": "일상"
+        },
+        {
+            "hu": "Imádkozzunk!",
+            "ko": "기도합시다!",
+            "context": "예배"
+        },
+        {
+            "hu": "Álljunk fel.",
+            "ko": "일어섭시다(기립합시다).",
+            "context": "예배"
+        },
+        {
+            "hu": "Hallgassuk meg az Igét.",
+            "ko": "말씀을 들읍시다.",
+            "context": "예배"
+        },
+        {
+            "hu": "Vigyázz!",
+            "ko": "조심해!",
+            "context": "일상"
+        },
+        {
+            "hu": "Gyere ide.",
+            "ko": "이리 와.",
+            "context": "일상"
+        },
+        {
+            "hu": "Bocsáss meg nekünk.",
+            "ko": "우리를 용서하소서.",
+            "context": "주기도문"
+        }
+    ],
+    "koreanInterferenceNotes": "기도할 때 '주여 ~해주십시오'는 공손한 표현이지만, 문법적으로는 명령형(Imperative)을 씁니다. 하나님께 '명령'하는 것이 아니라 '간구'의 의미입니다.",
+    "commonMistakes": [
+        {
+            "mistake": "keresj",
+            "correct": "keress",
+            "explanation": "s 뒤에서 j는 s로 동화됩니다."
+        },
+        {
+            "mistake": "Imádkozj",
+            "correct": "Imádkozz",
+            "explanation": "z 뒤에서 j는 z로 동화됩니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어의 '하세요', '합시다', '해라'가 헝가리어에서는 하나의 문법 카테고리(Felszólító)입니다.",
+    "estimatedDuration": 50,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "A2-1"
+    ],
+    "tags": [
+        "명령형",
+        "기도문",
+        "동화"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Irgalmazz (자비를 베푸소서)",
+        "Jöjjön (오시옵소서)",
+        "Legyen (되게 하소서)"
+    ]
+}

@@ -1,0 +1,136 @@
+{
+    "level": "B2",
+    "orderIndex": 6,
+    "titleKorean": "수동태 대용 표현 - 저절로 해결되다",
+    "titleHungarian": "Passzív jelentésű igék (-ódik/-ődik)",
+    "explanationKorean": "헝가리어에는 영어식 수동태(Be + PP)가 거의 없습니다. 대신 '-ódik/-ődik' 접미사를 써서 '저절로 ~되다'는 의미를 만듭니다.",
+    "explanationHungarian": "A cselekvés önmagától való végbemenetele.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "형태 만들기 (-ódik/-ődik)",
+                "description": "타동사를 자동사(수동의미)로 바꿉니다.",
+                "pattern": "Old (풀다) -> Oldódik (풀리다), Kezd (시작하다) -> Kezdődik (시작되다)",
+                "examples": [
+                    {
+                        "hu": "Befejez (끝내다) -> Befejeződik (끝나다).",
+                        "ko": "Végez -> Végződik."
+                    }
+                ]
+            },
+            {
+                "title": "3인칭 주어",
+                "description": "보통 사물이 주어입니다. '문제가 해결되었다', '예배가 시작되었다'.",
+                "pattern": "Az istentisztelet kezdődik. (예배가 시작됩니다)",
+                "examples": [
+                    {
+                        "hu": "Minden megoldódik.",
+                        "ko": "모든 게 해결될 거야."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Megoldódik.",
+            "ko": "해결되다 (Megold: 해결하다).",
+            "context": "문제"
+        },
+        {
+            "hu": "Kezdődik.",
+            "ko": "시작되다 (Kezd: 시작하다).",
+            "context": "예배"
+        },
+        {
+            "hu": "Befejeződik.",
+            "ko": "끝나다/종료되다 (Befejez: 끝내다).",
+            "context": "행사"
+        },
+        {
+            "hu": "Folytatódik.",
+            "ko": "계속되다 (Folytat: 계속하다).",
+            "context": "시리즈"
+        },
+        {
+            "hu": "Ismétlődik.",
+            "ko": "반복되다 (Ismétel: 반복하다).",
+            "context": "역사"
+        },
+        {
+            "hu": "Csukódik.",
+            "ko": "닫히다 (Csuk: 닫다).",
+            "context": "문"
+        },
+        {
+            "hu": "Húzódik.",
+            "ko": "길어지다/지연되다 (Húz: 당기다/끌다).",
+            "context": "시간"
+        },
+        {
+            "hu": "Intéződik.",
+            "ko": "처리되다 (Intéz: 처리하다).",
+            "context": "업무"
+        },
+        {
+            "hu": "Meggyőződik.",
+            "ko": "확신하다(스스로 설득되다).",
+            "context": "믿음"
+        },
+        {
+            "hu": "Tudódik.",
+            "ko": "알려지다 (Kitudódik: 발각되다).",
+            "context": "비밀"
+        },
+        {
+            "hu": "Épül.",
+            "ko": "지어지다/건축되다 (Épít-이 아님, 불규칙).",
+            "context": "교회"
+        },
+        {
+            "hu": "Szépül.",
+            "ko": "예뻐지다 (Szép).",
+            "context": "외모"
+        },
+        {
+            "hu": "Javul.",
+            "ko": "나아지다/개선되다 (Jó/Jav).",
+            "context": "건강"
+        },
+        {
+            "hu": "Romlik.",
+            "ko": "상하다/나빠지다 (Rossz? 아님).",
+            "context": "상태"
+        }
+    ],
+    "koreanInterferenceNotes": "'나는 시작한다(Kezdek)'와 '예배는 시작된다(Kezdődik)'를 구분해야 합니다. 한국어는 '시작한다'를 둘 다 쓰기도 해서 헷갈립니다 (예배 시작한다 - O).",
+    "commonMistakes": [
+        {
+            "mistake": "Az istentisztelet kezd.",
+            "correct": "Az istentisztelet kezdődik.",
+            "explanation": "예배는 스스로 'start 버튼'을 누르는 주체가 아니라, 시작'되는' 대상입니다."
+        },
+        {
+            "mistake": "A probléma megold.",
+            "correct": "A probléma megoldódik.",
+            "explanation": "문제는 저절로 풀거나 남을 풀지 않습니다. 풀립니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어의 피동 접미사 '-이/히/리/기' 또는 '-지다(풀어지다)'와 정확히 일치합니다.",
+    "estimatedDuration": 45,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "A2-12"
+    ],
+    "tags": [
+        "수동태",
+        "재귀동사",
+        "자동사"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Befejeződik (마쳐지다)",
+        "Megoldódik (해결되다)",
+        "Épül (세워지다)"
+    ]
+}

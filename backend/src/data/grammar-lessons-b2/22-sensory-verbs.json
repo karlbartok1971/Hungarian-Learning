@@ -1,0 +1,130 @@
+{
+    "level": "B2",
+    "orderIndex": 22,
+    "titleKorean": "감각 동사 - 보고 듣고 느끼고",
+    "titleHungarian": "Érzékelést kifejező igék (Lát, Hall, Érez)",
+    "explanationKorean": "지각 동사의 활용과 목적보어 구문('나는 네가 기도하는 것을 보았다')을 배웁니다.",
+    "explanationHungarian": "A lát, hall, érez igék használata és a tárgyas szerkezetek.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "지각동사 + Hogy 절",
+                "description": "가장 일반적인 형태. '보았다, ~라는 것을'.",
+                "pattern": "Láttam, hogy imádkozol. (네가 기도하는 걸 봤어).",
+                "examples": [
+                    {
+                        "hu": "Hallottam, hogy jössz.",
+                        "ko": "네가 온다는 걸 들었어."
+                    }
+                ]
+            },
+            {
+                "title": "Látszik / Hallatszik (Passivo-reflexive)",
+                "description": "보이다 / 들리다 (수동적).",
+                "pattern": "Látszik rajta, hogy boldog. (그에게서 행복해 보이는 게 보인다).",
+                "examples": [
+                    {
+                        "hu": "Nem hallatszik.",
+                        "ko": "안 들려요 (소리가)."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Lát.",
+            "ko": "보다.",
+            "context": "시각"
+        },
+        {
+            "hu": "Néz.",
+            "ko": "지켜보다/쳐다보다 (Look/Watch).",
+            "context": "시각"
+        },
+        {
+            "hu": "Hall.",
+            "ko": "듣다 (Hear).",
+            "context": "청각"
+        },
+        {
+            "hu": "Hallgat.",
+            "ko": "경청하다 / 듣다 (Listen). 또는 침묵하다.",
+            "context": "청각"
+        },
+        {
+            "hu": "Érez.",
+            "ko": "느끼다 (Feel).",
+            "context": "촉각/감정"
+        },
+        {
+            "hu": "Ízlel.",
+            "ko": "맛보다 (Taste). Érezzétek és lássátok (맛보아 알지어다 - 시 34:8).",
+            "context": "미각"
+        },
+        {
+            "hu": "Szagol.",
+            "ko": "냄새 맡다 (Smell).",
+            "context": "후각"
+        },
+        {
+            "hu": "Érin.",
+            "ko": "만지다 (Touch).",
+            "context": "촉각"
+        },
+        {
+            "hu": "Megérint.",
+            "ko": "터치하다/감동시키다.",
+            "context": "치유"
+        },
+        {
+            "hu": "Megpillant.",
+            "ko": "언뜻 보다/발견하다.",
+            "context": "시각"
+        },
+        {
+            "hu": "Bámul.",
+            "ko": "멍하니 보다/응시하다.",
+            "context": "시각"
+        },
+        {
+            "hu": "Figyel.",
+            "ko": "주의하다/주목하다.",
+            "context": "주의"
+        },
+        {
+            "hu": "Vakon lát.",
+            "ko": "맹인이 보다.",
+            "context": "기적"
+        },
+        {
+            "hu": "Füle van a hallásra.",
+            "ko": "들을 귀가 있다.",
+            "context": "성경"
+        }
+    ],
+    "koreanInterferenceNotes": "'듣다'는 Hall(능력)과 Hallgat(의지/행위)으로 나뉩니다. 음악을 듣는 건 Zenehallgatás, 소리가 들리는 건 Hallás입니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Hallom a zenét. (물론 가능하지만)",
+            "correct": "Zenét hallgatok. (음악 감상 중이다).",
+            "explanation": "의도적으로 듣는 행위는 Hallgat입니다."
+        }
+    ],
+    "comparisonWithKorean": "영어의 See/Watch, Hear/Listen 구분과 같습니다.",
+    "estimatedDuration": 40,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "A1-6"
+    ],
+    "tags": [
+        "감각",
+        "동사",
+        "지각"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Ízleljétek és lássátok (맛보아 알지어다)",
+        "Aki füle van, hallja meg (들을 귀 있는 자는 들어라)"
+    ]
+}

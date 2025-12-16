@@ -1,0 +1,152 @@
+{
+    "level": "A2",
+    "orderIndex": 4,
+    "titleKorean": "과거시제 기본 - 단순했던 과거",
+    "titleHungarian": "Múlt idő",
+    "explanationKorean": "헝가리어 과거시제는 의외로 단순합니다. 동사 뒤에 -t 또는 -tt를 붙이고 인칭 어미를 더하면 됩니다.",
+    "explanationHungarian": "A magyar múlt idő jele a -t vagy -tt.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "단일 과거시제",
+                "description": "헝가리어는 영어(did, has done, had done)와 달리 과거시제가 딱 하나뿐입니다. 문맥으로 완료/진행을 구분합니다.",
+                "pattern": "동사 + t/tt + 인칭어미",
+                "examples": [
+                    {
+                        "hu": "Vártam.",
+                        "ko": "기다렸다 / 기다려왔다."
+                    }
+                ]
+            },
+            {
+                "title": "규칙 활용 (-t)",
+                "description": "대부분의 경우 모음이나 유성자음 뒤에서 -t 하나만 붙습니다.",
+                "pattern": "kér (부탁하다) -> kért (부탁했다)",
+                "examples": [
+                    {
+                        "hu": "Kértem.",
+                        "ko": "내가 부탁했다."
+                    }
+                ]
+            },
+            {
+                "title": "모음 삽입 활용 (-ott/-ett/-ött)",
+                "description": "발음이 어려울 경우(t로 끝나는 동사 등) 연결 모음을 넣고 tt를 씁니다.",
+                "pattern": "hall (듣다) -> hallott (들었다)",
+                "examples": [
+                    {
+                        "hu": "Hallottam.",
+                        "ko": "내가 들었다."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Jézus sírt.",
+            "ko": "예수께서 눈물을 흘리셨다.",
+            "context": "성경 (가장 짧은 절)"
+        },
+        {
+            "hu": "Kezdetben teremtette Isten...",
+            "ko": "태초에 하나님이 창조하셨다.",
+            "context": "창세기 1:1"
+        },
+        {
+            "hu": "Meghalt értünk.",
+            "ko": "우리를 위해 죽으셨다.",
+            "context": "설교"
+        },
+        {
+            "hu": "Feltámadt!",
+            "ko": "부활하셨다!",
+            "context": "부활절 인사"
+        },
+        {
+            "hu": "Elvégeztetett.",
+            "ko": "다 이루었다.",
+            "context": "십자가상"
+        },
+        {
+            "hu": "Mit csináltál tegnap?",
+            "ko": "어제 뭐 했니?",
+            "context": "일상"
+        },
+        {
+            "hu": "Tanultam magyarul.",
+            "ko": "헝가리어를 공부했다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Isten szólt.",
+            "ko": "하나님이 말씀하셨다.",
+            "context": "설교"
+        },
+        {
+            "hu": "Láttam az Urat.",
+            "ko": "내가 주를 보았다.",
+            "context": "간증"
+        },
+        {
+            "hu": "Vettem egy könyvet.",
+            "ko": "책 한 권을 샀다.",
+            "context": "일상"
+        },
+        {
+            "hu": "Imádkoztam érted.",
+            "ko": "너를 위해 기도했어.",
+            "context": "교회"
+        },
+        {
+            "hu": "Megértetted?",
+            "ko": "이해했니?",
+            "context": "학습"
+        },
+        {
+            "hu": "Itt volt.",
+            "ko": "여기 있었다. (van의 과거)",
+            "context": "일상"
+        },
+        {
+            "hu": "Hova ment?",
+            "ko": "어디로 갔니?",
+            "context": "일상"
+        },
+        {
+            "hu": "Nem tudtam.",
+            "ko": "몰랐어요.",
+            "context": "일상"
+        }
+    ],
+    "koreanInterferenceNotes": "과거시제가 하나뿐이라 한국어 '했었다(대과거)', '해왔다(현재완료)' 등을 모두 같은 형태로 표현한다는 점에 적응해야 합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "várttam",
+            "correct": "vártam",
+            "explanation": "vár 뒤에는 t가 하나만 붙습니다."
+        },
+        {
+            "mistake": "tanult",
+            "correct": "tanultál (너), tanult (그)",
+            "explanation": "3인칭 단수에는 어미가 없지만, 2인칭 단수는 -ál/-él이 붙습니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '-았/었-' 선어말어미와 기능이 아주 유사합니다.",
+    "estimatedDuration": 45,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "A1-6"
+    ],
+    "tags": [
+        "동사",
+        "과거시제",
+        "시제"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Teremtette (창조하셨다)",
+        "Feltámadt (부활하셨다)",
+        "Meghalt (죽으셨다)"
+    ]
+}

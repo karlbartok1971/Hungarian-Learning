@@ -1,0 +1,115 @@
+{
+    "level": "B2",
+    "orderIndex": 9,
+    "titleKorean": "부정대명사 심화 - 누구든지, 아무나",
+    "titleHungarian": "Általános névmások (Bárki, Akárki, Mindenki)",
+    "explanationKorean": "Bárki(Anyone - 긍정적/초청), Akárki(Whoever - 무작위/상관없음)의 뉘앙스 차이를 배웁니다. '누구든지 목마르거든'은 Bárki일까요 Akárki일까요?",
+    "explanationHungarian": "A bárki, akárki, mindenki közötti különbségek.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Bárki (Anyone)",
+                "description": "제한 없이 모든 사람. 초청, 허용의 뉘앙스.",
+                "pattern": "Bárki jöhet. (누구든 와도 좋아).",
+                "examples": [
+                    {
+                        "hu": "Bárki, aki hisz.",
+                        "ko": "믿는 자는 누구든지."
+                    }
+                ]
+            },
+            {
+                "title": "Akárki (Whoever/Just anyone)",
+                "description": "누가 되든 상관없음. 때로는 '아무나(Just anybody)'라는 하찮은 의미로도 쓰임.",
+                "pattern": "Nem vagyok akárki. (난 아무나가 아니야).",
+                "examples": [
+                    {
+                        "hu": "Akárki mondta, hazudott.",
+                        "ko": "누가 말했던 간에 거짓말이다."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Ha bárki szomjazik.",
+            "ko": "누구든지 목마르거든 (초청).",
+            "context": "요한 7:37"
+        },
+        {
+            "hu": "Valaki.",
+            "ko": "어떤 사람 (Specific someone - 누군가).",
+            "context": "특정"
+        },
+        {
+            "hu": "Mindenki.",
+            "ko": "모든 사람 (Everyone).",
+            "context": "전체"
+        },
+        {
+            "hu": "Senki.",
+            "ko": "아무도 (Nobody).",
+            "context": "부정"
+        },
+        {
+            "hu": "Nem akárki.",
+            "ko": "보통분이 아니다 (대단한 분이다).",
+            "context": "칭찬"
+        },
+        {
+            "hu": "Bármi.",
+            "ko": "무엇이든지 (Anything).",
+            "context": "개방"
+        },
+        {
+            "hu": "Akármi.",
+            "ko": "뭐가 됐든 (Whatever).",
+            "context": "무관심"
+        },
+        {
+            "hu": "Bárhol.",
+            "ko": "어디서든 (Anywhere).",
+            "context": "장소"
+        },
+        {
+            "hu": "Akárhol.",
+            "ko": "어디든 상관없이 (Wherever).",
+            "context": "장소"
+        },
+        {
+            "hu": "Bármikor.",
+            "ko": "언제든지 (Anytime).",
+            "context": "시간"
+        },
+        {
+            "hu": "Mindegy.",
+            "ko": "상관없다 / 똑같다 (It's all the same).",
+            "context": "태도"
+        }
+    ],
+    "koreanInterferenceNotes": "한국어 '아무나'는 문맥에 따라 '환영(Anyone)'일 수도 있고 '막 대해도 되는 사람(Just anyone)'일 수도 있습니다. 헝가리어는 Bárki(환영)와 Akárki(상관없음)로 구분합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Akárki jöhet. (와도 되는데 별로 신경 안 씀)",
+            "correct": "Bárki jöhet. (누구나 환영!)",
+            "explanation": "교회 환영 문구에는 Bárki를 써야 따뜻합니다."
+        }
+    ],
+    "comparisonWithKorean": "아무나(Akárki) vs 누구든지(Bárki)의 뉘앙스.",
+    "estimatedDuration": 35,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "A2-17"
+    ],
+    "tags": [
+        "대명사",
+        "뉘앙스",
+        "전도"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Bárki (누구든지 - 구원의 보편성)",
+        "Nem akárki (비범한 분)"
+    ]
+}

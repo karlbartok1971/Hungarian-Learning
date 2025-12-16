@@ -1,0 +1,102 @@
+{
+    "level": "B2",
+    "orderIndex": 26,
+    "titleKorean": "속담과 관용구 1 - 헝가리인의 지혜",
+    "titleHungarian": "Közmondások és Szólások I.",
+    "explanationKorean": "언어의 맛을 살리는 속담들. '싼 게 비지떡', '오 리를 가려거든 십 리를 가라' 같은 표현들입니다.",
+    "explanationHungarian": "Gyakori magyar közmondások.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Olcsó húsnak híg a leve.",
+                "description": "싼 고기는 국물이 묽다. (싼 게 비지떡).",
+                "pattern": "Dative(-nak) + Possessive 구조.",
+                "examples": [
+                    {
+                        "hu": "Lassan járj, tovább érsz.",
+                        "ko": "천천히 걸어라, 더 멀리 간다 (급할수록 돌아가라)."
+                    }
+                ]
+            },
+            {
+                "title": "Aki korán kel, aranyat lel.",
+                "description": "일찍 일어나는 자가 금을 찾는다. (일찍 일어나는 새가 벌레를 잡는다).",
+                "pattern": "Aki..., az... 구조.",
+                "examples": [
+                    {
+                        "hu": "Többet ésszel, mint erővel.",
+                        "ko": "힘보다는 머리로 (지혜가 힘보다 낫다)."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Nem mind arany, ami fénylik.",
+            "ko": "반짝인다고 다 금은 아니다.",
+            "context": "지혜"
+        },
+        {
+            "hu": "Ajándék lónak ne nézd a fogát.",
+            "ko": "선물 받은 말의 이빨을 보지 마라 (공짜에 불평 마라).",
+            "context": "예의"
+        },
+        {
+            "hu": "Addig nyújtózkodj, ameddig a takaród ér.",
+            "ko": "이불 길이만큼만 다리를 뻗어라 (분수에 맞게 살아라).",
+            "context": "절제"
+        },
+        {
+            "hu": "Jobb adni, mint kapni.",
+            "ko": "주는 것이 받는 것보다 복되다 (예수님 말씀이지만 속담화됨).",
+            "context": "나눔"
+        },
+        {
+            "hu": "Eső után köpönyeg.",
+            "ko": "비 온 뒤에 우비 (소 잃고 외양간 고치기).",
+            "context": "후회"
+        },
+        {
+            "hu": "Egy fecske nem csinál nyarat.",
+            "ko": "제비 한 마리가 왔다고 여름이 온 건 아니다 (성급한 일반화 금지).",
+            "context": "판단"
+        },
+        {
+            "hu": "Kicsi a bors, de erős.",
+            "ko": "후추는 작아도 맵다 (작은 고추가 맵다).",
+            "context": "강조"
+        },
+        {
+            "hu": "Bajban ismerszik meg a barát.",
+            "ko": "친구는 곤경 속에서 알게 된다.",
+            "context": "우정"
+        },
+        {
+            "hu": "Jobb félni, mint megijedni.",
+            "ko": "깜짝 놀라는 것보다 미리 두려워하는(조심하는) 게 낫다 (유비무환).",
+            "context": "조심"
+        }
+    ],
+    "koreanInterferenceNotes": "한국 속담과 비슷한 게 많지만(작은 고추, 쇠뿔), 표현 방식이 다릅니다. 직역하려 하지 말고 통째로 익히세요.",
+    "commonMistakes": [
+        {
+            "mistake": "Kis paprika erős.",
+            "correct": "Kicsi a bors, de erős.",
+            "explanation": "헝가리에도 고추(Paprika)가 유명하지만 속담에서는 후추(Bors)를 씁니다."
+        }
+    ],
+    "comparisonWithKorean": "문화적 배경은 다르지만 인간사는 비슷합니다.",
+    "estimatedDuration": 30,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "B1-20"
+    ],
+    "tags": [
+        "속담",
+        "문화",
+        "지혜"
+    ],
+    "theologicalRelevance": false,
+    "theologicalExamples": []
+}

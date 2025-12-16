@@ -1,0 +1,105 @@
+{
+    "level": "B2",
+    "orderIndex": 19,
+    "titleKorean": "양보 구문 심화 - 설령 ~할지라도",
+    "titleHungarian": "Még akkor is, ha...",
+    "explanationKorean": "극단적인 상황을 가정한 믿음의 고백. '설령 내일 지구가 멸망할지라도'.",
+    "explanationHungarian": "A megengedő mondatok nyomatékosítása.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Még akkor is, ha...",
+                "description": "Even then, if... (그때조차도, 만약 ~라면). 가장 강력한 양보 구문.",
+                "pattern": "Szeretlek, még akkor is, ha hibázol. (네가 실수한다 해도 여전히/그때도 널 사랑해).",
+                "examples": [
+                    {
+                        "hu": "Még ha nem is (Even if not).",
+                        "ko": "설령 그렇지 않다 해도."
+                    }
+                ]
+            },
+            {
+                "title": "Akármi történjék is",
+                "description": "무슨 일이 일어나더라도 (No matter what happens). 조건법/명령법 사용.",
+                "pattern": "Maradok, akármi történjék is.",
+                "examples": [
+                    {
+                        "hu": "Kerül, amibe kerül. (비용이 얼마가 들든지 간에).",
+                        "ko": "기필코."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Még akkor is hiszek, ha nem látok.",
+            "ko": "보이지 않아도(볼 수 없을 때 조차도) 나는 믿는다.",
+            "context": "믿음"
+        },
+        {
+            "hu": "Még ha a hegyek mozdulnak is el...",
+            "ko": "산들이 떠나며 (이사야 54:10).",
+            "context": "약속"
+        },
+        {
+            "hu": "Ha meg kell is halnom veled.",
+            "ko": "내가 주와 함께 죽을지언정 (베드로의 고백).",
+            "context": "마 26:35"
+        },
+        {
+            "hu": "Szeresd, akkor is, ha nehéz.",
+            "ko": "힘들지라도 사랑하라.",
+            "context": "권면"
+        },
+        {
+            "hu": "Nem tagadom meg, még ha...",
+            "ko": "부인하지 않겠습니다, 설령...",
+            "context": "다짐"
+        },
+        {
+            "hu": "Bármibe kerül is.",
+            "ko": "무슨 대가를 치르더라도.",
+            "context": "헌신"
+        },
+        {
+            "hu": "Nem érdekel, még ha király is.",
+            "ko": "왕이라 해도 상관없다.",
+            "context": "담대함"
+        },
+        {
+            "hu": "Akárki mondja is.",
+            "ko": "누가 뭐라 해도.",
+            "context": "확신"
+        },
+        {
+            "hu": "Mindennek ellenére.",
+            "ko": "모든 것에도 불구하고 (In spite of everything).",
+            "context": "상황"
+        }
+    ],
+    "koreanInterferenceNotes": "'Még'은 '아직/더'라는 뜻인데, 여기서는 '심지어(Even)'의 뜻을 더해줍니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Is ha.",
+            "correct": "Még akkor is, ha...",
+            "explanation": "관용적으로 굳어진 표현을 통째로 익히는 게 좋습니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '-ㄹ지라도', '-다 해도'의 강조형입니다.",
+    "estimatedDuration": 40,
+    "difficultyScore": 5,
+    "prerequisites": [
+        "B1-19"
+    ],
+    "tags": [
+        "양보절",
+        "강조",
+        "헌신"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Még akkor is (그럴지라도)",
+        "Ha meg kell is halnom (죽을지언정)"
+    ]
+}

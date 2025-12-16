@@ -1,0 +1,110 @@
+{
+    "level": "B1",
+    "orderIndex": 13,
+    "titleKorean": "어순과 강조 - 중요한 걸 앞에 둬라!",
+    "titleHungarian": "Szórend és fókusz",
+    "explanationKorean": "헝가리어 어순은 자유롭지만, '강조하는 단어(Focus)'가 동사 바로 앞에 온다는 절대 규칙이 있습니다. 이 규칙 하나로 뉘앙스가 완전히 바뀝니다.",
+    "explanationHungarian": "A magyar szórend és a fókusz szerepe.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Focus Position",
+                "description": "동사 바로 앞자리가 가장 핫한 자리(Focus)입니다. 여기에 오는 단어가 '바로 그것'임을 강조합니다.",
+                "pattern": "Én megyek (내가 간다 - 다른 사람 말고 내가).",
+                "examples": [
+                    {
+                        "hu": "Péter ment el. (베드로가 갔다 - 안 간게 아니라 갔다 or 다른이 말고 베드로가).",
+                        "ko": "Elment Péter. (베드로가 갔다 - 평서문)."
+                    }
+                ]
+            },
+            {
+                "title": "동사 접두사의 이동",
+                "description": "강조하는 말이 오면 동사 접두사가 동사 뒤로 쫓겨납니다.",
+                "pattern": "Megjött Jézus (평서) vs Jézus jött meg (예수님이 오셨다! - 강조).",
+                "examples": [
+                    {
+                        "hu": "Isten teremtette. (하나님이 창조하셨다 - 진화가 아니라).",
+                        "ko": "(Megteremtette Isten -> 평범)"
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Isten szereti a világot.",
+            "ko": "하나님은 세상을 사랑하신다 (하나님 강조).",
+            "context": "설교"
+        },
+        {
+            "hu": "A világot szereti Isten.",
+            "ko": "세상을 사랑하신다 (세상 강조 - 천사가 아니라).",
+            "context": "설교"
+        },
+        {
+            "hu": "Szereti Isten a világot.",
+            "ko": "사랑하신다 (동사 강조, 중립).",
+            "context": "설교"
+        },
+        {
+            "hu": "Jézus az Úr.",
+            "ko": "예수님이 주님이시다.",
+            "context": "고백"
+        },
+        {
+            "hu": "Ma megyek.",
+            "ko": "오늘 간다 (내일이 아니라).",
+            "context": "강조"
+        },
+        {
+            "hu": "Templomba megyek.",
+            "ko": "교회에 간다 (술집이 아니라).",
+            "context": "목적지 강조"
+        },
+        {
+            "hu": "Megyek a templomba.",
+            "ko": "간다, 교회에 (가긴 가는데...).",
+            "context": "중립"
+        },
+        {
+            "hu": "Nem én élek.",
+            "ko": "내가 사는 것이 아니다 (부정 강조).",
+            "context": "갈 2:20"
+        },
+        {
+            "hu": "Neked adom.",
+            "ko": "너에게 주겠다 (다른 사람 말고).",
+            "context": "약속"
+        },
+        {
+            "hu": "Itt vagyok.",
+            "ko": "여기 있습니다 (장소 강조).",
+            "context": "대답"
+        }
+    ],
+    "koreanInterferenceNotes": "한국어는 조사를 써서 '은/는(주제)', '이/가(주어)'를 구분하지만, 헝가리어는 '위치'로 승부합니다. 동사 앞자리를 누가 차지하느냐 싸움입니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Elment Péter tegnap? (X) -> Péter ment el tegnap? (O)",
+            "correct": "누가 갔는지 묻고 싶으면 Péter를 동사 앞으로 가져와야 합니다.",
+            "explanation": "의문사가 있는 의문문에서는 의문사가 항상 Focus 자리를 차지합니다."
+        }
+    ],
+    "comparisonWithKorean": "말의 뉘앙스를 결정하는 고급 기술입니다.",
+    "estimatedDuration": 60,
+    "difficultyScore": 7,
+    "prerequisites": [
+        "A2-13"
+    ],
+    "tags": [
+        "어순",
+        "강조",
+        "접두사분리"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Isten teremtette (하나님이 창조하셨다)",
+        "Krisztus halt meg (그리스도가 죽으셨다)"
+    ]
+}

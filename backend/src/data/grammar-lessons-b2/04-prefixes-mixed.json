@@ -1,0 +1,168 @@
+{
+    "level": "B2",
+    "orderIndex": 4,
+    "titleKorean": "접두사 심화 4 [Át-, Vissza-, Össze-, Szét-]",
+    "titleHungarian": "Igekötők (Át-, Vissza-, Össze-, Szét-)",
+    "explanationKorean": "### 1. 동사의 4방향 확장\n\n이동과 상태 변화를 나타내는 중요한 접두사 4인방입니다.\n- **Át- (Through/Across)**: 건너가다, 통과하다, 변화하다 (Trans-). \n- **Vissza- (Back)**: 되돌아가다, 반환하다 (Re-).\n- **Össze- (Together)**: 함께 모이다, 합치다, 붕괴되다 (Con-).\n- **Szét- (Apart/Asunder)**: 흩어지다, 나누다, 분해하다 (Dis-).",
+    "explanationHungarian": "Az át- (keresztül), vissza- (hátra), össze- (egybe) és szét- (külön) igekötők használata.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "Át- (Trans-)",
+                "description": "건너편으로 이동하거나, 성질이 바뀔 때 씁니다.",
+                "table": {
+                    "headers": [
+                        "동사",
+                        "파생어",
+                        "의미"
+                    ],
+                    "rows": [
+                        [
+                            "Megy (가다)",
+                            "**Át**megy",
+                            "건너가다 / 통과하다 (Pass over)"
+                        ],
+                        [
+                            "Ad (주다)",
+                            "**Át**ad",
+                            "전달하다 / 양도하다 (Hand over)"
+                        ],
+                        [
+                            "Változik (변하다)",
+                            "**Át**változik",
+                            "변형되다 (Transformed)"
+                        ]
+                    ]
+                }
+            },
+            {
+                "title": "Vissza- (Re-)",
+                "description": "원래 자리로 돌아오거나 되돌려주는 것.",
+                "table": {
+                    "headers": [
+                        "동사",
+                        "파생어",
+                        "의미"
+                    ],
+                    "rows": [
+                        [
+                            "Jön (오다)",
+                            "**Vissza**jön",
+                            "돌아오다 (Come back)"
+                        ],
+                        [
+                            "Ad (주다)",
+                            "**Vissza**ad",
+                            "돌려주다 (Give back)"
+                        ],
+                        [
+                            "Tér (돌다)",
+                            "**Vissza**tér",
+                            "복귀하다 (Return)"
+                        ]
+                    ]
+                }
+            },
+            {
+                "title": "Össze- vs Szét-",
+                "description": "모으는 것(Con)과 흩는 것(Dis)의 대립.",
+                "table": {
+                    "headers": [
+                        "동사",
+                        "Össze- (Together)",
+                        "Szét- (Apart)"
+                    ],
+                    "rows": [
+                        [
+                            "Gyűjt (모으다)",
+                            "**Össze**gyűjt (수집하다)",
+                            "**Szét**szór (흩뿌리다/분산시키다)"
+                        ],
+                        [
+                            "Tör (깨다)",
+                            "**Össze**tör (박살내다/Crush)",
+                            "**Szét**tör (조각내다/Break up)"
+                        ],
+                        [
+                            "Eszik (먹다)",
+                            "**Össze**eszik (이것저것 마구 먹다)",
+                            "X"
+                        ]
+                    ]
+                }
+            }
+        ]
+    },
+    "examples": [
+        {
+            "items": [
+                {
+                    "hu": "Átment a halálból az életbe.",
+                    "ko": "사망에서 생명으로 옮겨졌느니라 (Passed over). (요 5:24)",
+                    "grammar": "Át (Across) + ment (Went)",
+                    "vocabulary": [
+                        "halál (사망)",
+                        "élet (생명)"
+                    ]
+                },
+                {
+                    "hu": "Mikor jön vissza az Úr?",
+                    "ko": "주님이 언제 다시 오십니까? (재림)",
+                    "grammar": "Vissza (Back) + jön (Comes)",
+                    "vocabulary": [
+                        "visszajövetel (재림/귀환)"
+                    ]
+                }
+            ],
+            "category": "종말론 / 구원론"
+        },
+        {
+            "items": [
+                {
+                    "hu": "Hagyjuk ezt össze!",
+                    "ko": "이거 그만하자. (싸움 등을)",
+                    "grammar": "Abba-hagy (Abba: Az+ba - 그 안에 남겨두다 -> 중단하다)",
+                    "vocabulary": [
+                        "abbahagy (그만두다)"
+                    ]
+                },
+                {
+                    "hu": "Összeházasodtak.",
+                    "ko": "그들은 결혼했다. (함께 집을 만들다)",
+                    "grammar": "Össze (Together) + ház (House) + as (Adj) + od (Refl) + tak",
+                    "vocabulary": [
+                        "házasodik (결혼하다)"
+                    ]
+                }
+            ],
+            "category": "일상 회화"
+        }
+    ],
+    "koreanInterferenceNotes": "### 🧠 한국인 뇌 구조 바꾸기: '박살나다' vs '조각나다'\n\n- **Összetör**: 안으로 쭈그러들어 뭉개지는 것 (차 사고 처럼). 'Together'라고 해서 좋은 게 아님.\n- **Széttör**: 밖으로 파편이 튀며 깨지는 것 (유리잔 처럼).\n방향성을 이미지로 상상해야 합니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Visszamenni a pénzt.",
+            "correct": "Visszaadni a pénzt / Visszakérni a pénzt.",
+            "explanation": "돈이 스스로 걸어서(Menni) 돌아갈 순 없습니다. 돌려주거나(Adni), 돌려달라(Kérni)고 해야 합니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어의 '건너-(Át)', '되-(Vissza)', '다-(Össze)', '흩-(Szét)' 접두사와 유사합니다.",
+    "estimatedDuration": 45,
+    "difficultyScore": 3,
+    "prerequisites": [
+        "B2-3"
+    ],
+    "tags": [
+        "접두사",
+        "이동",
+        "재림",
+        "결혼"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Átváltozás (변화산 사건/성변화)",
+        "Visszajövetel (재림)",
+        "Összegyűjt (모으시다)"
+    ],
+    "isPublished": true
+}

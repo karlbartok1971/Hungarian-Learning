@@ -1,0 +1,136 @@
+{
+    "level": "A2",
+    "orderIndex": 12,
+    "titleKorean": "재귀동사 - 스스로를, 서로를",
+    "titleHungarian": "Visszaható igék",
+    "explanationKorean": "주어가 자기 자신에게 행하는 동작(-kod/-ked)이나, 서로 행하는 동작을 나타냅니다. '회개하다', '기도하다', '만나다' 등 교회 용어에 많습니다.",
+    "explanationHungarian": "A cselekvés az alanyra irányul, vagy kölcsönös.",
+    "grammarRules": {
+        "rules": [
+            {
+                "title": "재귀 접미사 -kod/-ked/-köd",
+                "description": "일반 동사나 명사에 붙어 '스스로 ~하다', '~한 태도를 취하다'가 됩니다.",
+                "pattern": "mos (씻다) -> mosakodik (씻다/목욕하다)",
+                "examples": [
+                    {
+                        "hu": "Imádkozik (기도하다)",
+                        "ko": "원래 '예배하는 태도를 취하다'에서 유래"
+                    }
+                ]
+            },
+            {
+                "title": "상호 -zik",
+                "description": "서로 ~하다 (만나다, 싸우다 등)",
+                "pattern": "talál (발견하다) -> találkozik (만나다 - 서로 발견하다)",
+                "examples": [
+                    {
+                        "hu": "Találkozunk.",
+                        "ko": "우리는 만난다."
+                    }
+                ]
+            }
+        ]
+    },
+    "examples": [
+        {
+            "hu": "Imádkozzatok.",
+            "ko": "기도하라. (재귀동사)",
+            "context": "성경"
+        },
+        {
+            "hu": "Térjetek meg (Megtér).",
+            "ko": "회개하라 (돌이키다).",
+            "context": "설교"
+        },
+        {
+            "hu": "Mosakodj meg.",
+            "ko": "(스스로) 씻으라.",
+            "context": "실로암 연못"
+        },
+        {
+            "hu": "Találkozunk a mennyben.",
+            "ko": "천국에서 만납시다.",
+            "context": "인사"
+        },
+        {
+            "hu": "Gondoskodik rólunk.",
+            "ko": "우리를 돌보신다(Gond: 근심 -> Gondoskodik: 근심하며 돌보다).",
+            "context": "설교"
+        },
+        {
+            "hu": "Készüljetek!",
+            "ko": "준비하라! (스스로를 준비시키다)",
+            "context": "대림절"
+        },
+        {
+            "hu": "Alázkodjatok meg.",
+            "ko": "겸비하라 / 자기를 낮추라.",
+            "context": "성경"
+        },
+        {
+            "hu": "Csodálkoztak.",
+            "ko": "그들이 놀랐다(기이히 여겼다).",
+            "context": "성경"
+        },
+        {
+            "hu": "Viselkedj rendesen.",
+            "ko": "바르게 행동해라.",
+            "context": "교육"
+        },
+        {
+            "hu": "Öltözzétek fel Krisztust.",
+            "ko": "그리스도로 옷 입으라. (Öltözködik)",
+            "context": "롬 13:14"
+        },
+        {
+            "hu": "Dicsekszik.",
+            "ko": "자랑하다.",
+            "context": "설교(경고)"
+        },
+        {
+            "hu": "Panaszkodik.",
+            "ko": "불평하다.",
+            "context": "설교(경고)"
+        },
+        {
+            "hu": "Mire várakozol?",
+            "ko": "무엇을 기다리고 있니?",
+            "context": "일상"
+        },
+        {
+            "hu": "Gyülekezik.",
+            "ko": "모이다 (회중이).",
+            "context": "교회"
+        },
+        {
+            "hu": "Emlékezz meg.",
+            "ko": "기억하라.",
+            "context": "성찬/십계명"
+        }
+    ],
+    "koreanInterferenceNotes": "한국어는 '씻다'라고만 하지만 헝가리어는 '자신을 씻다(mosakodik)'와 '남/사물을 씻다(mos)'를 구분합니다. 이 구분이 신학적 뉘앙스 차이를 만듭니다.",
+    "commonMistakes": [
+        {
+            "mistake": "Imád.",
+            "correct": "Imádkozik.",
+            "explanation": "imád는 '숭배하다'이고 imádkozik는 '기도하다'입니다. 비슷하지만 쓰임새가 다릅니다."
+        }
+    ],
+    "comparisonWithKorean": "한국어 '피동/사동' 접미사와 비슷하게 동사의 성격을 바꿉니다.",
+    "estimatedDuration": 40,
+    "difficultyScore": 4,
+    "prerequisites": [
+        "A2-1"
+    ],
+    "tags": [
+        "재귀동사",
+        "동사파생",
+        "-ik동사"
+    ],
+    "theologicalRelevance": true,
+    "theologicalExamples": [
+        "Megtér (회개하다)",
+        "Imádkozik (기도하다)",
+        "Alázkodik (겸손하다)"
+    ]
+}
