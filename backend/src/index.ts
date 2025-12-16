@@ -60,10 +60,6 @@ app.get('/health', (_, res) => {
 // app.use('/api/vocabulary', vocabularyRoutes); 가 이미 설정되어 있습니다.
 
 // API 라우트 설정
-app.use((req, res, next) => {
-  console.log(`[Middleware] Incoming Request: ${req.method} ${req.originalUrl}`);
-  next();
-});
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/lessons', lessonRoutes);

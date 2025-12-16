@@ -120,66 +120,90 @@ interface Achievements {
   };
 }
 
+import useSWR, { mutate } from 'swr';
+import { DashboardSkeleton } from '@/components/skeletons/DashboardSkeleton';
+
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
+
 const DashboardPage = () => {
-  const [stats, setStats] = useState<DashboardStats | null>(null);
-  const [activities, setActivities] = useState<RecentActivity[]>([]);
-  const [recommendations, setRecommendations] = useState<Recommendations | null>(null);
-  const [achievements, setAchievements] = useState<Achievements | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [greeting, setGreeting] = useState('');
+  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3901/api';
 
   useEffect(() => {
-    fetchDashboardData();
+    setGreeting(getTimeBasedGreeting());
   }, []);
 
-  const fetchDashboardData = async () => {
-    try {
-      setLoading(true);
-
-      const [statsRes, activitiesRes, recommendationsRes, achievementsRes] = await Promise.all([
-        fetch('http://localhost:3901/api/dashboard/stats'),
-        fetch('http://localhost:3901/api/dashboard/recent-activities'),
-        fetch('http://localhost:3901/api/dashboard/recommendations'),
-        fetch('http://localhost:3901/api/dashboard/achievements'),
-      ]);
-
-      const [statsData, activitiesData, recommendationsData, achievementsData] = await Promise.all([
-        statsRes.json(),
-        activitiesRes.json(),
-        recommendationsRes.json(),
-        achievementsRes.json(),
-      ]);
-
-      if (statsData.success) setStats(statsData.data);
-      if (activitiesData.success) setActivities(activitiesData.data);
-      if (recommendationsData.success) setRecommendations(recommendationsData.data);
-      if (achievementsData.success) setAchievements(achievementsData.data);
-
-    } catch (err: any) {
-      console.error('대시보드 데이터 로드 오류:', err);
-      setError(err.message);
-    } finally {
-      setLoading(false);
-    }
+  const getTimeBasedGreeting = () => {
+    const hour = new Date().getHours();
+    if (hour < 12) return '좋은 아침입니다';
+    if (hour < 18) return '좋은 오후입니다';
+    return '좋은 저녁입니다';
   };
 
+  // SWR Hooks for Real-time Data Fetching (Polling every 5 seconds)
+  const { data: statsData, error: statsError, isLoading: statsLoading } = useSWR(
+    `${API_BASE_URL}/dashboard/stats`,
+    fetcher,
+    { refreshInterval: 5000 }
+  );
+
+  const { data: activitiesData, error: activitiesError, isLoading: activitiesLoading } = useSWR(
+    `${API_BASE_URL}/dashboard/recent-activities`,
+    fetcher,
+    { refreshInterval: 5000 }
+  );
+
+  const { data: recommendationsData, error: recommendationsError, isLoading: recommendationsLoading } = useSWR(
+    `${API_BASE_URL}/dashboard/recommendations`,
+    fetcher,
+    { refreshInterval: 10000 } // Recommendations can update less frequently
+  );
+
+  const { data: achievementsData, error: achievementsError, isLoading: achievementsLoading } = useSWR(
+    `${API_BASE_URL}/dashboard/achievements`,
+    fetcher,
+    { refreshInterval: 10000 }
+  );
+
+  // Consolidated Loading & Error States
+  const isLoading = statsLoading || activitiesLoading || recommendationsLoading || achievementsLoading;
+  const isError = statsError || activitiesError || recommendationsError || achievementsError;
+
+  // Use isValidating from any of the hooks to show refresh state
+  const { isValidating: isStatsValidating } = useSWR(`${API_BASE_URL}/dashboard/stats`, fetcher);
+  const isValidating = isStatsValidating; // Simplify for UI
+
+  // Extract Data safely
+  const stats: DashboardStats | null = statsData?.success ? statsData.data : null;
+  const activities: RecentActivity[] = activitiesData?.success ? activitiesData.data : [];
+  const recommendations: Recommendations | null = recommendationsData?.success ? recommendationsData.data : null;
+  const achievements: Achievements | null = achievementsData?.success ? achievementsData.data : null;
+
+  const handleRefresh = () => {
+    mutate(`${API_BASE_URL}/dashboard/stats`);
+    mutate(`${API_BASE_URL}/dashboard/recent-activities`);
+    mutate(`${API_BASE_URL}/dashboard/recommendations`);
+    mutate(`${API_BASE_URL}/dashboard/achievements`);
+  };
+
+  // ... (getActivityIcon, getActivityColor, formatTimeAgo functions remain same) ...
   const getActivityIcon = (type: string) => {
     switch (type) {
-      case 'grammar': return <BookOpen className="w-4 h-4" />;
-      case 'vocabulary': return <GraduationCap className="w-4 h-4" />;
-      case 'writing': return <PenTool className="w-4 h-4" />;
-      case 'assessment': return <Award className="w-4 h-4" />;
-      default: return <CheckCircle2 className="w-4 h-4" />;
+      case 'grammar': return <BookOpen className="w-5 h-5" />;
+      case 'vocabulary': return <GraduationCap className="w-5 h-5" />;
+      case 'writing': return <PenTool className="w-5 h-5" />;
+      case 'assessment': return <Award className="w-5 h-5" />;
+      default: return <CheckCircle2 className="w-5 h-5" />;
     }
   };
 
   const getActivityColor = (type: string) => {
     switch (type) {
-      case 'grammar': return 'bg-blue-100 text-blue-700';
-      case 'vocabulary': return 'bg-green-100 text-green-700';
-      case 'writing': return 'bg-purple-100 text-purple-700';
-      case 'assessment': return 'bg-orange-100 text-orange-700';
-      default: return 'bg-gray-100 text-gray-700';
+      case 'grammar': return 'bg-blue-100 text-blue-600';
+      case 'vocabulary': return 'bg-green-100 text-green-600';
+      case 'writing': return 'bg-purple-100 text-purple-600';
+      case 'assessment': return 'bg-orange-100 text-orange-600';
+      default: return 'bg-gray-100 text-gray-600';
     }
   };
 
@@ -194,541 +218,351 @@ const DashboardPage = () => {
     return `${diffInDays}일 전`;
   };
 
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">대시보드를 불러오는 중...</p>
-        </div>
-      </div>
-    );
+  // Show Skeleton while loading initial data
+  if (isLoading && !stats) {
+    return <DashboardSkeleton />;
   }
 
-  if (error || !stats) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <Card className="max-w-md">
-          <CardHeader>
-            <CardTitle className="text-red-600">오류 발생</CardTitle>
-            <CardDescription>{error || '데이터를 불러올 수 없습니다'}</CardDescription>
-          </CardHeader>
-        </Card>
-      </div>
-    );
-  }
+  if (!stats) return null;
 
   return (
     <>
       <Head>
-        <title>대시보드 - 헝가리어 학습</title>
+        <title>대시보드 - 헝가리어 마스터</title>
       </Head>
 
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-        <div className="max-w-7xl mx-auto px-4 py-8">
-          {/* 헤더 */}
-          <div className="mb-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-2">
-              안녕하세요! 👋
-            </h1>
-            <p className="text-gray-600 text-lg">
-              오늘도 헝가리어 학습을 시작해볼까요?
-            </p>
+      <div className="min-h-screen bg-gray-50/50 p-6 lg:p-8 space-y-8">
+
+        {/* 1. Hero Section: 위에서 아래로 쿵! */}
+        <section className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-indigo-600 to-purple-700 text-white shadow-xl p-8 lg:p-12 group transition-all duration-300 hover:shadow-2xl hover:scale-[1.01] animate-in slide-in-from-top-10 fade-in duration-700 ease-out">
+          <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity duration-500">
+            <Brain className="w-64 h-64 transform rotate-12" />
           </div>
 
-          {/* AI 조언 카드 */}
-          {recommendations && (
-            <Card className="mb-8 bg-gradient-to-r from-purple-50 to-blue-50 border-purple-200">
-              <CardContent className="pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Brain className="h-6 w-6 text-purple-600" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-bold text-gray-900 mb-2 flex items-center gap-2">
-                      <Sparkles className="h-5 w-5 text-purple-600" />
-                      AI 튜터의 조언
-                    </h3>
-                    <p className="text-gray-700">{recommendations.aiAdvice}</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+          {/* Error Banner */}
+          {isError && (
+            <div className="relative z-20 mb-4 bg-red-500/20 border border-red-300/30 rounded-lg p-3 backdrop-blur-sm animate-in slide-in-from-top-4 fade-in duration-300">
+              <div className="flex items-center gap-2 text-red-100">
+                <span className="text-lg">⚠️</span>
+                <p className="text-sm font-medium">
+                  데이터를 불러오는데 실패했습니다. (자동 재시도 중...)
+                </p>
+              </div>
+            </div>
           )}
 
-          {/* 주요 통계 그리드 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            {/* 현재 레벨 */}
-            <Card className="border-l-4 border-l-blue-500">
-              <CardHeader className="pb-3">
-                <CardDescription>현재 레벨</CardDescription>
-                <CardTitle className="text-3xl">{stats.currentLevel.level}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-gray-600">{stats.currentLevel.nextLevel} 레벨까지</span>
-                    <span className="font-bold text-blue-600">{stats.currentLevel.progress}%</span>
-                  </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div
-                      className="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full transition-all"
-                      style={{ width: `${stats.currentLevel.progress}%` }}
-                    ></div>
-                  </div>
+          <div className="relative z-10 space-y-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2 text-indigo-200 font-medium">
+                <span className="animate-bounce">👋</span>
+                <span>{greeting}, 김목사님</span>
+              </div>
+
+              {/* Refresh Button */}
+              <Button
+                onClick={handleRefresh}
+                disabled={isValidating}
+                variant="outline"
+                size="sm"
+                className="bg-white/10 border-white/20 text-white hover:bg-white/20 transition-all"
+              >
+                {isValidating ? (
+                  <>
+                    <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin mr-2" />
+                    업데이트 중...
+                  </>
+                ) : (
+                  <>
+                    <ArrowRight className="w-4 h-4 mr-2 rotate-[-90deg]" />
+                    새로고침
+                  </>
+                )}
+              </Button>
+            </div>
+
+            <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+              오늘도 <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-400">헝가리어 정복</span>을<br />
+              시작해볼까요?
+            </h1>
+
+            {recommendations && (
+              <div className="mt-6 flex items-start gap-4 bg-white/10 backdrop-blur-md rounded-xl p-4 max-w-2xl border border-white/20 hover:bg-white/20 transition-colors cursor-default">
+                <Sparkles className="w-6 h-6 text-yellow-300 flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-white mb-1">AI 튜터의 현실 자각 조언</p>
+                  <p className="text-indigo-100">{recommendations.aiAdvice}</p>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            )}
+          </div>
+        </section>
 
-            {/* 연속 학습일 */}
-            <Card className="border-l-4 border-l-orange-500">
-              <CardHeader className="pb-3">
-                <CardDescription className="flex items-center gap-2">
-                  <Flame className="w-4 h-4 text-orange-600" />
-                  연속 학습일
-                </CardDescription>
-                <CardTitle className="text-3xl flex items-center gap-2">
-                  {stats.streak}
-                  <span className="text-base font-normal text-gray-600">일</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-gray-600">
-                  훌륭해요! 계속 이어가세요 🔥
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* 총 학습 시간 */}
-            <Card className="border-l-4 border-l-green-500">
-              <CardHeader className="pb-3">
-                <CardDescription className="flex items-center gap-2">
-                  <Clock className="w-4 h-4 text-green-600" />
-                  총 학습 시간
-                </CardDescription>
-                <CardTitle className="text-3xl flex items-center gap-2">
-                  {Math.floor(stats.totalStudyTime / 60)}
-                  <span className="text-base font-normal text-gray-600">시간</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-gray-600">
-                  {stats.totalStudyTime % 60}분 추가
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* 완료한 레슨 */}
-            <Card className="border-l-4 border-l-purple-500">
-              <CardHeader className="pb-3">
-                <CardDescription className="flex items-center gap-2">
-                  <Trophy className="w-4 h-4 text-purple-600" />
-                  완료한 레슨
-                </CardDescription>
-                <CardTitle className="text-3xl flex items-center gap-2">
-                  {stats.completedGrammarLessons}
-                  <span className="text-base font-normal text-gray-600">개</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-gray-600">
-                  전체 {stats.totalGrammarLessons}개 중
-                </p>
-              </CardContent>
-            </Card>
+        {/* 2. Stats Grid: 왼쪽에서 순차적으로 착! 착! 착! */}
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* 현재 레벨 */}
+          <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group cursor-pointer animate-in slide-in-from-left-5 fade-in duration-500 delay-100 fill-mode-backwards">
+            <div className="flex justify-between items-start mb-4">
+              <div className="p-3 bg-blue-50 rounded-xl group-hover:bg-blue-100 transition-colors">
+                <Target className="w-6 h-6 text-blue-600" />
+              </div>
+              <Badge variant="outline" className="border-blue-200 text-blue-700 bg-blue-50">Level Up</Badge>
+            </div>
+            <h3 className="text-gray-500 text-sm font-medium mb-1">현재 레벨</h3>
+            <div className="flex items-end gap-2 mb-4">
+              <span className="text-3xl font-bold text-gray-900">{stats.currentLevel.level}</span>
+              <span className="text-sm text-gray-400 mb-1.5">/ C2</span>
+            </div>
+            <div className="space-y-2">
+              <div className="flex justify-between text-xs text-gray-500">
+                <span>다음 레벨 {stats.currentLevel.nextLevel}</span>
+                <span className="font-bold text-blue-600">{stats.currentLevel.progress}%</span>
+              </div>
+              <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-blue-500 rounded-full transition-all duration-1000 ease-out group-hover:bg-blue-600"
+                  style={{ width: `${stats.currentLevel.progress}%` }}
+                />
+              </div>
+            </div>
           </div>
 
-          {/* 오늘의 목표 */}
-          <Card className="mb-8">
-            <CardHeader>
-              <div className="flex items-center justify-between">
-                <div>
-                  <CardTitle className="flex items-center gap-2">
-                    <Target className="h-5 w-5 text-blue-600" />
-                    오늘의 목표
-                  </CardTitle>
-                  <CardDescription>하루 학습 목표를 달성하세요</CardDescription>
-                </div>
-                <Badge className="bg-blue-100 text-blue-700">
-                  {Math.round(
-                    ((stats.dailyGoals.lessonsCompleted / stats.dailyGoals.lessonsTarget) * 100 +
-                      (stats.dailyGoals.studyMinutes / stats.dailyGoals.studyMinutesTarget) * 100 +
-                      (stats.dailyGoals.vocabularyReviewed / stats.dailyGoals.vocabularyReviewTarget) * 100) / 3
-                  )}% 완료
-                </Badge>
+          {/* 연속 학습일 (Streak) */}
+          <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group cursor-pointer relative overflow-hidden animate-in slide-in-from-left-5 fade-in duration-500 delay-200 fill-mode-backwards">
+            <div className="absolute -right-6 -top-6 w-24 h-24 bg-orange-50 rounded-full opacity-50 group-hover:scale-150 transition-transform duration-500" />
+            <div className="flex justify-between items-start mb-4 relative z-10">
+              <div className="p-3 bg-orange-50 rounded-xl group-hover:bg-orange-100 transition-colors">
+                <Flame className="w-6 h-6 text-orange-500 group-hover:animate-pulse" />
               </div>
-            </CardHeader>
-            <CardContent>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {/* 레슨 목표 */}
-                <div>
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm font-medium text-gray-700">레슨 완료</span>
-                    <span className="text-sm font-bold text-blue-600">
+            </div>
+            <h3 className="text-gray-500 text-sm font-medium mb-1 relative z-10">연속 학습일</h3>
+            <div className="flex items-end gap-2 relative z-10">
+              <span className="text-3xl font-bold text-gray-900">{stats.streak}</span>
+              <span className="text-sm text-gray-400 mb-1.5">일째 불태우는 중! 🔥</span>
+            </div>
+          </div>
+
+          {/* 총 학습 시간 */}
+          <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group cursor-pointer animate-in slide-in-from-left-5 fade-in duration-500 delay-300 fill-mode-backwards">
+            <div className="flex justify-between items-start mb-4">
+              <div className="p-3 bg-green-50 rounded-xl group-hover:bg-green-100 transition-colors">
+                <Clock className="w-6 h-6 text-green-600" />
+              </div>
+            </div>
+            <h3 className="text-gray-500 text-sm font-medium mb-1">총 학습 시간</h3>
+            <div className="flex items-end gap-2">
+              <span className="text-3xl font-bold text-gray-900">{Math.floor(stats.totalStudyTime / 60)}</span>
+              <span className="text-sm text-gray-400 mb-1.5">시간 {stats.totalStudyTime % 60}분</span>
+            </div>
+          </div>
+
+          {/* 보유 포인트 */}
+          <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group cursor-pointer animate-in slide-in-from-left-5 fade-in duration-500 delay-500 fill-mode-backwards">
+            <div className="flex justify-between items-start mb-4">
+              <div className="p-3 bg-purple-50 rounded-xl group-hover:bg-purple-100 transition-colors">
+                <Trophy className="w-6 h-6 text-purple-600 group-hover:rotate-12 transition-transform" />
+              </div>
+            </div>
+            <h3 className="text-gray-500 text-sm font-medium mb-1">보유 포인트</h3>
+            <div className="flex items-end gap-2">
+              <span className="text-3xl font-bold text-gray-900">2,850</span>
+              <span className="text-sm text-gray-400 mb-1.5">P</span>
+            </div>
+          </div>
+        </section>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* 3. Main Content (Left): 아래에서 위로 쑥! */}
+          <div className="lg:col-span-2 space-y-8 animate-in slide-in-from-bottom-10 fade-in duration-700 delay-500 fill-mode-backwards">
+            {/* 오늘의 목표 (Progress & Motivation) */}
+            <Card className="border-none shadow-md hover:shadow-lg transition-shadow duration-300">
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                  <CardTitle className="flex items-center gap-2 text-xl">
+                    <Target className="w-5 h-5 text-red-500" />
+                    오늘의 전투 목표
+                  </CardTitle>
+                  <span className="text-sm text-gray-500">목표 달성까지 70%</span>
+                </div>
+              </CardHeader>
+              <CardContent className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Goal Items with Hover Effects */}
+                <div className="p-4 rounded-xl bg-gray-50 hover:bg-white hover:ring-2 hover:ring-blue-100 transition-all duration-200 cursor-pointer group">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="font-semibold text-gray-700">레슨</span>
+                    <span className="text-xs font-bold bg-white px-2 py-1 rounded border group-hover:text-blue-600">
                       {stats.dailyGoals.lessonsCompleted}/{stats.dailyGoals.lessonsTarget}
                     </span>
                   </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
-                    <div
-                      className="bg-blue-500 h-2 rounded-full transition-all"
-                      style={{ width: `${Math.min((stats.dailyGoals.lessonsCompleted / stats.dailyGoals.lessonsTarget) * 100, 100)}%` }}
-                    ></div>
+                  <div className="h-1.5 bg-gray-200 rounded-full overflow-hidden">
+                    <div className="h-full bg-blue-500 w-1/3 group-hover:bg-blue-600 transition-colors" />
                   </div>
                 </div>
-
-                {/* 학습 시간 목표 */}
-                <div>
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm font-medium text-gray-700">학습 시간</span>
-                    <span className="text-sm font-bold text-green-600">
+                <div className="p-4 rounded-xl bg-gray-50 hover:bg-white hover:ring-2 hover:ring-green-100 transition-all duration-200 cursor-pointer group">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="font-semibold text-gray-700">시간</span>
+                    <span className="text-xs font-bold bg-white px-2 py-1 rounded border group-hover:text-green-600">
                       {stats.dailyGoals.studyMinutes}/{stats.dailyGoals.studyMinutesTarget}분
                     </span>
                   </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
-                    <div
-                      className="bg-green-500 h-2 rounded-full transition-all"
-                      style={{ width: `${Math.min((stats.dailyGoals.studyMinutes / stats.dailyGoals.studyMinutesTarget) * 100, 100)}%` }}
-                    ></div>
+                  <div className="h-1.5 bg-gray-200 rounded-full overflow-hidden">
+                    <div className="h-full bg-green-500 w-3/4 group-hover:bg-green-600 transition-colors" />
                   </div>
                 </div>
-
-                {/* 어휘 복습 목표 */}
-                <div>
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm font-medium text-gray-700">어휘 복습</span>
-                    <span className="text-sm font-bold text-purple-600">
+                <div className="p-4 rounded-xl bg-gray-50 hover:bg-white hover:ring-2 hover:ring-purple-100 transition-all duration-200 cursor-pointer group">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="font-semibold text-gray-700">단어</span>
+                    <span className="text-xs font-bold bg-white px-2 py-1 rounded border group-hover:text-purple-600">
                       {stats.dailyGoals.vocabularyReviewed}/{stats.dailyGoals.vocabularyReviewTarget}개
                     </span>
                   </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
-                    <div
-                      className="bg-purple-500 h-2 rounded-full transition-all"
-                      style={{ width: `${Math.min((stats.dailyGoals.vocabularyReviewed / stats.dailyGoals.vocabularyReviewTarget) * 100, 100)}%` }}
-                    ></div>
+                  <div className="h-1.5 bg-gray-200 rounded-full overflow-hidden">
+                    <div className="h-full bg-purple-500 w-1/2 group-hover:bg-purple-600 transition-colors" />
                   </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
-            {/* 왼쪽: 추천 학습 & 최근 활동 */}
-            <div className="lg:col-span-2 space-y-8">
-              {/* 추천 학습 */}
-              {recommendations && (
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Zap className="h-5 w-5 text-yellow-600" />
-                      추천 학습
-                    </CardTitle>
-                    <CardDescription>지금 학습하기 좋은 콘텐츠</CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    {/* 다음 레슨 */}
-                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100">
-                      <div className="flex items-start justify-between mb-2">
-                        <div>
-                          <Badge className="mb-2 bg-blue-100 text-blue-700">{recommendations.nextLesson.level}</Badge>
-                          <h4 className="font-bold text-gray-900">{recommendations.nextLesson.title}</h4>
-                          <p className="text-sm text-gray-600 mt-1">{recommendations.nextLesson.reason}</p>
-                        </div>
-                        <div className="text-right">
-                          <div className="flex items-center gap-1 text-sm text-gray-600">
-                            <Clock className="w-4 h-4" />
-                            {recommendations.nextLesson.estimatedDuration}분
-                          </div>
-                        </div>
-                      </div>
-                      <Link href={`/grammar/${recommendations.nextLesson.level.toLowerCase()}/${recommendations.nextLesson.id}`}>
-                        <Button className="w-full mt-3">
-                          학습 시작하기
-                          <ArrowRight className="w-4 h-4 ml-2" />
-                        </Button>
-                      </Link>
-                    </div>
-
-                    {/* 어휘 복습 */}
-                    <div className="p-4 bg-green-50 rounded-lg border border-green-100">
-                      <div className="flex items-start justify-between mb-2">
-                        <div>
-                          <h4 className="font-bold text-gray-900 mb-1">어휘 복습</h4>
-                          <p className="text-sm text-gray-600">{recommendations.reviewVocabulary.reason}</p>
-                        </div>
-                        <Badge className="bg-green-100 text-green-700">
-                          {recommendations.reviewVocabulary.count}개
-                        </Badge>
-                      </div>
-                      <Link href="/vocabulary">
-                        <Button variant="outline" className="w-full mt-3">
-                          복습하기
-                          <ArrowRight className="w-4 h-4 ml-2" />
-                        </Button>
-                      </Link>
-                    </div>
-
-                    {/* 작문 연습 */}
-                    <div className="p-4 bg-purple-50 rounded-lg border border-purple-100">
-                      <div className="flex items-start justify-between mb-2">
-                        <div>
-                          <h4 className="font-bold text-gray-900 mb-1">{recommendations.practiceWriting.topic}</h4>
-                          <p className="text-sm text-gray-600">{recommendations.practiceWriting.reason}</p>
-                        </div>
-                        <Badge className="bg-purple-100 text-purple-700">
-                          {recommendations.practiceWriting.difficulty}
-                        </Badge>
-                      </div>
-                      <Link href="/writing">
-                        <Button variant="outline" className="w-full mt-3">
-                          작문 연습하기
-                          <ArrowRight className="w-4 h-4 ml-2" />
-                        </Button>
-                      </Link>
-                    </div>
-                  </CardContent>
-                </Card>
-              )}
-
-              {/* 최근 활동 */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Calendar className="h-5 w-5 text-gray-700" />
-                    최근 활동
-                  </CardTitle>
-                  <CardDescription>최근 학습 기록</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    {activities.map((activity) => (
-                      <div key={activity.id} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                        <div className="flex items-center gap-3">
-                          <div className={`w-10 h-10 rounded-full flex items-center justify-center ${getActivityColor(activity.type)}`}>
-                            {getActivityIcon(activity.type)}
-                          </div>
-                          <div>
-                            <p className="font-medium text-gray-900">{activity.title}</p>
-                            <p className="text-sm text-gray-600">{formatTimeAgo(activity.timestamp)}</p>
-                          </div>
-                        </div>
-                        {activity.score !== null && (
-                          <Badge className="bg-blue-100 text-blue-700">
-                            {activity.score}점
-                          </Badge>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* 오른쪽: 영역별 진도 & 업적 */}
-            <div className="space-y-8">
-              {/* 영역별 진도 */}
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <BarChart3 className="h-5 w-5 text-gray-700" />
-                    영역별 진도
-                  </CardTitle>
-                  <CardDescription>각 영역의 학습 진행 상황</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  {/* 문법 */}
-                  <div>
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-medium text-gray-700">문법</span>
-                      <span className="text-sm font-bold text-blue-600">
-                        {Math.min(stats.progressByArea.grammar.percentage, 100)}%
-                      </span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
-                      <div
-                        className="bg-blue-500 h-2 rounded-full transition-all"
-                        style={{ width: `${Math.min(stats.progressByArea.grammar.percentage, 100)}%` }}
-                      ></div>
-                    </div>
-                    <p className="text-xs text-gray-600 mt-1">
-                      {stats.progressByArea.grammar.completed}/{stats.progressByArea.grammar.total} 레슨 완료
-                    </p>
-                  </div>
-
-                  {/* 어휘 */}
-                  <div>
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-medium text-gray-700">어휘</span>
-                      <span className="text-sm font-bold text-green-600">
-                        {Math.min(stats.progressByArea.vocabulary.percentage, 100)}%
-                      </span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
-                      <div
-                        className="bg-green-500 h-2 rounded-full transition-all"
-                        style={{ width: `${Math.min(stats.progressByArea.vocabulary.percentage, 100)}%` }}
-                      ></div>
-                    </div>
-                    <p className="text-xs text-gray-600 mt-1">
-                      {stats.progressByArea.vocabulary.completed}/{stats.progressByArea.vocabulary.total} 단어 학습
-                    </p>
-                  </div>
-
-                  {/* 작문 */}
-                  <div>
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-medium text-gray-700">작문</span>
-                      <span className="text-sm font-bold text-purple-600">
-                        {Math.min(stats.progressByArea.writing.percentage, 100)}%
-                      </span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
-                      <div
-                        className="bg-purple-500 h-2 rounded-full transition-all"
-                        style={{ width: `${Math.min(stats.progressByArea.writing.percentage, 100)}%` }}
-                      ></div>
-                    </div>
-                    <p className="text-xs text-gray-600 mt-1">
-                      {stats.progressByArea.writing.completed}/{stats.progressByArea.writing.total} 과제 완료
-                    </p>
-                  </div>
-
-                  {/* 연습 */}
-                  <div>
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-medium text-gray-700">종합 연습</span>
-                      <span className="text-sm font-bold text-orange-600">
-                        {Math.min(stats.progressByArea.exercises.percentage, 100)}%
-                      </span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
-                      <div
-                        className="bg-orange-500 h-2 rounded-full transition-all"
-                        style={{ width: `${Math.min(stats.progressByArea.exercises.percentage, 100)}%` }}
-                      ></div>
-                    </div>
-                    <p className="text-xs text-gray-600 mt-1">
-                      {stats.progressByArea.exercises.completed}/{stats.progressByArea.exercises.total} 연습 완료
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* 업적 & 배지 */}
-              {achievements && (
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Trophy className="h-5 w-5 text-yellow-600" />
-                      업적 & 배지
-                    </CardTitle>
-                    <CardDescription>획득한 배지와 마일스톤</CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    {/* 최근 배지 */}
-                    <div className="grid grid-cols-2 gap-3">
-                      {achievements.badges.slice(0, 4).map((badge) => (
-                        <div
-                          key={badge.id}
-                          className="p-3 bg-gradient-to-br from-yellow-50 to-orange-50 rounded-lg border border-yellow-200 text-center"
-                        >
-                          <div className="text-3xl mb-1">{badge.icon}</div>
-                          <p className="text-xs font-bold text-gray-900">{badge.name}</p>
-                          <p className="text-xs text-gray-600">{badge.description}</p>
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* 마일스톤 */}
-                    <div className="space-y-3">
-                      {achievements.milestones.map((milestone, idx) => (
-                        <div key={idx}>
-                          <div className="flex items-center justify-between mb-1">
-                            <span className="text-sm font-medium text-gray-700 flex items-center gap-2">
-                              <span>{milestone.icon}</span>
-                              {milestone.name}
-                            </span>
-                            <span className="text-sm font-bold text-blue-600">
-                              {milestone.progress}%
-                            </span>
-                          </div>
-                          <div className="w-full bg-gray-200 rounded-full h-2">
-                            <div
-                              className="bg-gradient-to-r from-yellow-500 to-orange-500 h-2 rounded-full"
-                              style={{ width: `${milestone.progress}%` }}
-                            ></div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* 헝가리 명소 컬렉션 */}
-                    <div className="p-4 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg border border-blue-200">
-                      <h4 className="font-bold text-gray-900 mb-3 flex items-center gap-2">
-                        <Star className="h-4 w-4 text-purple-600" />
-                        헝가리 명소 컬렉션
-                      </h4>
-                      <div className="grid grid-cols-3 gap-2 mb-3">
-                        {achievements.hungarianPlaces.unlocked.map((place, idx) => (
-                          <div
-                            key={idx}
-                            className="aspect-square bg-white rounded-lg flex items-center justify-center text-center p-2 border-2 border-green-300"
-                          >
-                            <p className="text-xs font-medium text-gray-700">{place}</p>
-                          </div>
-                        ))}
-                        {achievements.hungarianPlaces.locked.slice(0, 3 - achievements.hungarianPlaces.unlocked.length).map((_, idx) => (
-                          <div
-                            key={`locked-${idx}`}
-                            className="aspect-square bg-gray-100 rounded-lg flex items-center justify-center border-2 border-gray-300"
-                          >
-                            <span className="text-2xl opacity-50">🔒</span>
-                          </div>
-                        ))}
-                      </div>
-                      <p className="text-xs text-center text-gray-600">
-                        {achievements.hungarianPlaces.unlocked.length}/{achievements.hungarianPlaces.unlocked.length + achievements.hungarianPlaces.locked.length} 명소 해금
-                      </p>
-                    </div>
-
-                    <Link href="/analytics">
-                      <Button variant="outline" className="w-full">
-                        모든 업적 보기
-                        <ArrowRight className="w-4 h-4 ml-2" />
-                      </Button>
-                    </Link>
-                  </CardContent>
-                </Card>
-              )}
-            </div>
-          </div>
-
-          {/* 취약점 분석 (선택적) */}
-          {recommendations && recommendations.weakAreas.length > 0 && (
-            <Card className="border-orange-200">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Heart className="h-5 w-5 text-orange-600" />
-                  개선이 필요한 영역
-                </CardTitle>
-                <CardDescription>AI가 분석한 취약점과 개선 방법</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {recommendations.weakAreas.map((area, idx) => (
-                    <div key={idx} className="p-4 bg-orange-50 rounded-lg border border-orange-100">
-                      <div className="flex items-center justify-between mb-2">
-                        <h4 className="font-bold text-gray-900">{area.area}</h4>
-                        <Badge className="bg-orange-100 text-orange-700">
-                          {area.score}점
-                        </Badge>
-                      </div>
-                      <p className="text-sm text-gray-600">{area.suggestion}</p>
-                    </div>
-                  ))}
                 </div>
               </CardContent>
             </Card>
-          )}
+
+            {/* 추천 학습 (Big CTA) */}
+            {recommendations && (
+              <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white shadow-xl relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500 rounded-full blur-[100px] opacity-20 group-hover:opacity-30 transition-opacity" />
+
+                <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                  <div>
+                    <Badge className="mb-3 bg-indigo-500/20 text-indigo-200 border-indigo-500/30 hover:bg-indigo-500/30">
+                      RECOMMENDED FOR YOU
+                    </Badge>
+                    <h3 className="text-2xl font-bold mb-2">{recommendations.nextLesson.title}</h3>
+                    <p className="text-gray-400 max-w-md">{recommendations.nextLesson.reason}</p>
+
+                    <div className="flex items-center gap-4 mt-4 text-sm text-gray-400">
+                      <span className="flex items-center gap-1">
+                        <Clock className="w-4 h-4" /> {recommendations.nextLesson.estimatedDuration}분
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <Target className="w-4 h-4" /> {recommendations.nextLesson.level}
+                      </span>
+                    </div>
+                  </div>
+
+                  <Link href={`/grammar/${recommendations.nextLesson.level.toLowerCase()}/${recommendations.nextLesson.id}`}>
+                    <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100 font-bold px-8 h-14 rounded-xl shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] transition-all duration-300 transform group-hover:scale-105">
+                      지금 학습 시작 <ArrowRight className="ml-2 w-5 h-5" />
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            )}
+
+            {/* 최근 활동 목록 */}
+            <div className="space-y-4">
+              <div className="flex items-center justify-between px-2">
+                <h3 className="font-bold text-lg text-gray-800">최근 활동 기록</h3>
+                <Button variant="ghost" size="sm" className="text-gray-500 hover:text-gray-900">전체 보기</Button>
+              </div>
+              {activities.map((activity, idx) => (
+                <div
+                  key={activity.id}
+                  className="bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex items-center justify-between hover:shadow-md hover:scale-[1.005] transition-all duration-200 cursor-pointer"
+                  style={{ animationDelay: `${idx * 100}ms` }}
+                >
+                  <div className="flex items-center gap-4">
+                    <div className={`w-12 h-12 rounded-full flex items-center justify-center ${getActivityColor(activity.type)}`}>
+                      {getActivityIcon(activity.type)}
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900">{activity.title}</h4>
+                      <p className="text-xs text-gray-500">{formatTimeAgo(activity.timestamp)}</p>
+                    </div>
+                  </div>
+                  {activity.score && (
+                    <Badge variant="secondary" className="bg-gray-100 text-gray-700 font-mono">
+                      {activity.score} 점
+                    </Badge>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* 4. Sidebar Content (Right): 오른쪽에서 왼쪽으로 샥! */}
+          <div className="space-y-8 animate-in slide-in-from-right-10 fade-in duration-700 delay-700 fill-mode-backwards">
+            {/* 영역별 분석 (Radar Chart style visual) */}
+            <Card className="border-none shadow-md overflow-hidden">
+              <CardHeader className="bg-gray-50 border-b border-gray-100">
+                <CardTitle className="text-base text-gray-800">나의 전투력 분석</CardTitle>
+              </CardHeader>
+              <CardContent className="p-6 space-y-6">
+                {['grammar', 'vocabulary', 'writing', 'exercises'].map((area) => {
+                  const data = stats.progressByArea[area as keyof typeof stats.progressByArea];
+                  const labels = { grammar: '문법', vocabulary: '어휘', writing: '작문', exercises: '실전' };
+                  const colors = { grammar: 'bg-blue-500', vocabulary: 'bg-green-500', writing: 'bg-purple-500', exercises: 'bg-orange-500' };
+
+                  return (
+                    <div key={area} className="group">
+                      <div className="flex justify-between text-sm mb-1.5">
+                        <span className="font-medium text-gray-600 group-hover:text-gray-900">
+                          {labels[area as keyof typeof labels]}
+                        </span>
+                        <span className="font-bold text-gray-900">{data.percentage}%</span>
+                      </div>
+                      <div className="h-2.5 bg-gray-100 rounded-full overflow-hidden">
+                        <div
+                          className={`h-full rounded-full transition-all duration-1000 ${colors[area as keyof typeof colors]} group-hover:brightness-110`}
+                          style={{ width: `${data.percentage}%` }}
+                        />
+                      </div>
+                    </div>
+                  );
+                })}
+              </CardContent>
+            </Card>
+
+            {/* 헝가리 명소 컬렉션 (Gamification) */}
+            {achievements && (
+              <Card className="border-none shadow-md overflow-hidden relative group cursor-pointer hover:shadow-xl transition-shadow duration-300">
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 z-10 pointer-events-none" />
+                <div className="h-48 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1596323630656-78b776269299?q=80&w=600&auto=format&fit=crop')" }}></div>
+
+                <div className="absolute bottom-0 left-0 right-0 p-6 z-20 text-white">
+                  <div className="flex justify-between items-end mb-2">
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-wider text-yellow-400 mb-1">CURRENT LOCATION</p>
+                      <h3 className="text-xl font-bold">Budapest Parliament</h3>
+                    </div>
+                    <div className="text-right">
+                      <span className="text-2xl font-bold text-yellow-400">3<span className="text-sm text-white/80">/6</span></span>
+                    </div>
+                  </div>
+                  <div className="w-full bg-white/30 h-1.5 rounded-full backdrop-blur-sm overflow-hidden">
+                    <div className="h-full bg-yellow-400 w-1/2" />
+                  </div>
+                  <p className="text-xs text-white/80 mt-2">다음 명소 '어부의 요새'까지 1,200P 남음</p>
+                </div>
+              </Card>
+            )}
+
+            {/* 약점 보완 (Weak Areas) */}
+            {recommendations && recommendations.weakAreas.length > 0 && (
+              <div className="bg-red-50 rounded-2xl p-6 border border-red-100 shimmer">
+                <div className="flex items-center gap-2 mb-4 text-red-800">
+                  <Heart className="w-5 h-5 animate-pulse" />
+                  <h3 className="font-bold">약점 집중 공략</h3>
+                </div>
+                <div className="space-y-3">
+                  {recommendations.weakAreas.map((area, idx) => (
+                    <div key={idx} className="bg-white p-3 rounded-lg border border-red-100 shadow-sm">
+                      <div className="flex justify-between items-center mb-1">
+                        <span className="font-semibold text-gray-800">{area.area}</span>
+                        <span className="text-xs font-bold text-red-600">{area.score}점 (위험)</span>
+                      </div>
+                      <p className="text-xs text-gray-600">{area.suggestion}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </>

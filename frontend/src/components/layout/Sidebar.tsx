@@ -121,18 +121,50 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
     // 4. 성경 일일 학습 (NEW!)
     {
       id: 'bible-study',
-      label: '📖 성경 일일 학습',
+      label: '성경 공부',
       icon: <BibleIcon className="w-5 h-5" />,
       href: '/bible-study',
-      badge: 'NEW',
+      badge: 'Daily',
     },
 
-    // 5. 어휘 학습
+    // 5. 어휘 학습 (Expanded!)
     {
       id: 'vocabulary',
       label: '어휘 학습',
       icon: <GraduationCapIcon className="w-5 h-5" />,
       href: '/vocabulary',
+      submenu: [
+        {
+          id: 'vocab-a1',
+          label: 'A1 기초 어휘',
+          icon: <div className="w-2 h-2 rounded-full bg-blue-400" />,
+          href: '/vocabulary/a1',
+        },
+        {
+          id: 'vocab-a2',
+          label: 'A2 초급 어휘',
+          icon: <div className="w-2 h-2 rounded-full bg-green-400" />,
+          href: '/vocabulary/a2',
+        },
+        {
+          id: 'vocab-b1',
+          label: 'B1 중급 어휘',
+          icon: <div className="w-2 h-2 rounded-full bg-yellow-400" />,
+          href: '/vocabulary/b1',
+        },
+        {
+          id: 'vocab-b2',
+          label: 'B2 고급 어휘',
+          icon: <div className="w-2 h-2 rounded-full bg-red-400" />,
+          href: '/vocabulary/b2',
+        },
+        {
+          id: 'vocab-my',
+          label: '나만의 단어장',
+          icon: <StarIcon className="w-4 h-4 text-yellow-400 fill-yellow-400" />,
+          href: '/vocabulary/my',
+        },
+      ],
     },
 
     // 6. 작문 연습
@@ -241,53 +273,49 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
     const isExpanded = expandedMenus.includes(item.id);
 
     return (
-      <div key={item.id}>
+      <div key={item.id} className="mb-0.5">
         <button
           onClick={() => handleItemClick(item.href, hasSubmenu, item.id)}
           className={`
-            w-full flex items-center justify-between px-4 py-3 text-sm font-medium rounded-lg transition-all duration-200
-            ${level > 0 ? 'ml-4 pl-8' : ''}
+            w-full flex items-center justify-between px-3 py-2.5 text-sm rounded-lg transition-all duration-200 group
+            ${level > 0 ? 'pl-9' : ''}
             ${isActive
-              ? 'bg-blue-100 text-blue-700 border-r-2 border-blue-700'
-              : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
+              ? 'bg-blue-50 text-blue-700 font-semibold'
+              : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
             }
           `}
         >
-          <div className="flex items-center space-x-3">
-            <span className={`${isActive ? 'text-blue-700' : 'text-gray-500'}`}>
+          <div className="flex items-center gap-3">
+            <span className={`transition-colors ${isActive ? 'text-blue-600' : 'text-gray-400 group-hover:text-gray-600'}`}>
               {item.icon}
             </span>
             <span>{item.label}</span>
           </div>
 
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center gap-2">
             {item.badge && (
               <span className={`
-                px-2 py-1 text-xs font-medium rounded-full
-                ${typeof item.badge === 'string'
-                  ? 'bg-green-100 text-green-700'
-                  : 'bg-blue-100 text-blue-700'
-                }
+                px-2 py-0.5 text-[10px] font-bold rounded-full uppercase tracking-wider
+                ${String(item.badge) === 'Daily' ? 'bg-indigo-100 text-indigo-700' :
+                  String(item.badge) === 'NEW' ? 'bg-red-100 text-red-600' :
+                    'bg-gray-100 text-gray-600'}
               `}>
                 {item.badge}
               </span>
             )}
 
             {hasSubmenu && (
-              <svg
-                className={`w-4 h-4 transition-transform duration-200 ${isExpanded ? 'rotate-90' : ''}`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+              <div className={`transition-transform duration-200 text-gray-400 ${isExpanded ? 'rotate-90' : ''}`}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </div>
             )}
           </div>
         </button>
 
         {hasSubmenu && isExpanded && (
-          <div className="mt-2 space-y-1">
+          <div className="mt-1 space-y-0.5 animate-in slide-in-from-top-1 duration-200">
             {item.submenu!.map((subItem) => renderMenuItem(subItem, level + 1))}
           </div>
         )}

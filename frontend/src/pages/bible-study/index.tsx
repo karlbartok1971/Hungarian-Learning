@@ -134,238 +134,252 @@ const BibleStudyPage = () => {
         <meta name="description" content="매일 성경을 읽으며 헝가리어 문법을 학습하세요" />
       </Head>
 
-      <div className="max-w-5xl mx-auto px-4 py-8">
-        {/* 헤더 */}
-        <div className="mb-8">
-          <div className="flex items-center justify-between mb-4">
-            <div>
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">
-                📖 오늘의 성경
-              </h1>
-              <p className="text-gray-600">
-                성경을 읽으며 헝가리어 문법을 자연스럽게 학습하세요
-              </p>
-            </div>
-            <Badge className={getDifficultyColor(verse.difficulty)}>
-              {verse.difficulty} 레벨
-            </Badge>
-          </div>
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-indigo-50/30">
+        <div className="max-w-5xl mx-auto px-4 py-10">
 
-          {/* 성경 정보 */}
-          <div className="flex items-center gap-4 text-sm text-gray-600">
-            <span className="flex items-center gap-1">
-              <BookOpen className="w-4 h-4" />
-              {verse.book} {verse.chapter}:{verse.verse}
-            </span>
-            <span>|</span>
-            <span>{verse.bookHungarian} {verse.chapter}:{verse.verse}</span>
-            {verse.theologicalTheme && (
-              <>
-                <span>|</span>
-                <span className="text-purple-600">🙏 {verse.theologicalTheme}</span>
-              </>
-            )}
-          </div>
-        </div>
-
-        {/* 성경 본문 카드 */}
-        <Card className="mb-6 border-l-4 border-l-blue-500">
-          <CardHeader>
-            <div className="flex items-start justify-between">
-              <div className="flex-1">
-                <CardTitle className="text-2xl mb-3">
-                  {verse.textHungarian}
-                </CardTitle>
-                <CardDescription className="text-lg">
-                  {verse.textKorean}
-                </CardDescription>
+          {/* Hero Section */}
+          <div className="mb-12 animate-in slide-in-from-top-8 fade-in duration-700">
+            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 text-white p-10 lg:p-14 shadow-2xl group">
+              <div className="absolute inset-0 opacity-10">
+                <div className="absolute top-10 right-10 w-40 h-40 bg-white rounded-full blur-3xl group-hover:scale-150 transition-transform duration-1000"></div>
+                <div className="absolute bottom-10 left-10 w-48 h-48 bg-white rounded-full blur-3xl group-hover:scale-150 transition-transform duration-1000"></div>
               </div>
-              <Button
-                variant="outline"
-                size="icon"
-                onClick={() => playAudio(verse.textHungarian)}
-                className="ml-4"
-              >
-                <Volume2 className="w-5 h-5" />
-              </Button>
-            </div>
-          </CardHeader>
 
-          <CardContent>
-            <div className="flex flex-wrap gap-2 mb-4">
-              {verse.grammarTopics.map((topic) => (
-                <Badge key={topic} variant="secondary">
-                  {topic}
-                </Badge>
-              ))}
-            </div>
+              <div className="relative z-10">
+                <div className="flex items-center justify-between mb-4">
+                  <Badge className="bg-white/20 text-white border-white/30 px-4 py-1.5 text-sm font-bold backdrop-blur-sm">
+                    DAILY BIBLE STUDY
+                  </Badge>
+                  <Badge className={`${getDifficultyColor(verse.difficulty)} px-4 py-1.5 text-sm font-bold`}>
+                    {verse.difficulty} 레벨
+                  </Badge>
+                </div>
 
-            {/* 전체보기 버튼 */}
-            <div className="flex items-center justify-center">
-              <Button
-                onClick={() => setShowFullAnalysis(!showFullAnalysis)}
-                className="w-full max-w-md"
-              >
-                {showFullAnalysis ? (
-                  <>
-                    <ChevronUp className="w-4 h-4 mr-2" />
-                    문법 분석 접기
-                  </>
-                ) : (
-                  <>
-                    <ChevronDown className="w-4 h-4 mr-2" />
-                    전체 문법 분석 보기
-                  </>
-                )}
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+                <h1 className="text-3xl lg:text-4xl font-bold mb-3 leading-tight">
+                  📖 오늘의 성경
+                </h1>
+                <p className="text-lg text-indigo-100 mb-4">
+                  성경을 읽으며 헝가리어 문법을 자연스럽게 학습하세요
+                </p>
 
-        {/* 전체 문법 분석 (펼침 상태) */}
-        {showFullAnalysis && (
-          <Card className="mb-6 bg-gradient-to-br from-blue-50 to-purple-50">
+                {/* 성경 정보 */}
+                <div className="flex flex-wrap items-center gap-3 text-sm text-white/90 bg-white/10 rounded-lg p-3 backdrop-blur-sm">
+                  <span className="flex items-center gap-1">
+                    <BookOpen className="w-4 h-4" />
+                    {verse.book} {verse.chapter}:{verse.verse}
+                  </span>
+                  <span>|</span>
+                  <span>{verse.bookHungarian} {verse.chapter}:{verse.verse}</span>
+                  {verse.theologicalTheme && (
+                    <>
+                      <span>|</span>
+                      <span className="text-yellow-300">🙏 {verse.theologicalTheme}</span>
+                    </>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 성경 본문 카드 */}
+          <Card className="mb-6 border-l-4 border-l-blue-500">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <BookOpen className="w-5 h-5 text-blue-600" />
-                📖 {verse.book} {verse.chapter}:{verse.verse} 문법 완전 분석
-              </CardTitle>
-              <CardDescription>
-                총 {verse.grammarAnalysis.length}개 단어 • {verse.grammarTopics.length}개 문법 포인트
-              </CardDescription>
+              <div className="flex items-start justify-between">
+                <div className="flex-1">
+                  <CardTitle className="text-2xl mb-3">
+                    {verse.textHungarian}
+                  </CardTitle>
+                  <CardDescription className="text-lg">
+                    {verse.textKorean}
+                  </CardDescription>
+                </div>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  onClick={() => playAudio(verse.textHungarian)}
+                  className="ml-4"
+                >
+                  <Volume2 className="w-5 h-5" />
+                </Button>
+              </div>
             </CardHeader>
 
-            <CardContent className="space-y-4">
-              {/* 단어별 분석 */}
-              {verse.grammarAnalysis.map((wordData, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-500"
+            <CardContent>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {verse.grammarTopics.map((topic) => (
+                  <Badge key={topic} variant="secondary">
+                    {topic}
+                  </Badge>
+                ))}
+              </div>
+
+              {/* 전체보기 버튼 */}
+              <div className="flex items-center justify-center">
+                <Button
+                  onClick={() => setShowFullAnalysis(!showFullAnalysis)}
+                  className="w-full max-w-md"
                 >
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-3">
-                        <h4 className="text-xl font-bold text-blue-600">
-                          {wordData.word}
-                        </h4>
-                        <Badge variant="outline">{wordData.pos}</Badge>
-                        <Badge className={getDifficultyColor(wordData.level)}>
-                          {wordData.level}
-                        </Badge>
-                      </div>
-
-                      <p className="text-gray-700 mb-3">{wordData.meaning}</p>
-
-                      <div className="grid grid-cols-2 gap-4">
-                        <div>
-                          <span className="text-xs text-gray-500">원형</span>
-                          <p className="font-medium">{wordData.lemma}</p>
-                        </div>
-                        <div>
-                          <span className="text-xs text-gray-500">문법 특징</span>
-                          <p className="font-medium">{wordData.grammarFeature}</p>
-                        </div>
-                      </div>
-
-                      {/* 관련 강의 링크 */}
-                      {wordData.relatedLesson && (
-                        <div className="mt-3">
-                          <Button variant="outline" size="sm">
-                            <BookOpen className="w-4 h-4 mr-2" />
-                            관련 강의: {wordData.relatedLessonTitle || '문법 강의'}
-                          </Button>
-                        </div>
-                      )}
-                    </div>
-
-                    {/* 음성 재생 */}
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      onClick={() => playAudio(wordData.word)}
-                      className="ml-4"
-                    >
-                      <Volume2 className="w-5 h-5" />
-                    </Button>
-                  </div>
-                </div>
-              ))}
-
-              {/* 문법 요약 */}
-              <Card className="bg-gradient-to-r from-green-50 to-blue-50 border-none">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-lg">
-                    💡 이 구절에서 배운 문법
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {verse.grammarTopics.map((topic) => (
-                      <Badge key={topic} variant="secondary" className="text-sm">
-                        {topic}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* 설교 아이디어 */}
-              <Card className="bg-gradient-to-r from-purple-50 to-pink-50 border-none">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 text-lg">
-                    <Lightbulb className="w-5 h-5 text-purple-600" />
-                    🎤 이 구절로 설교하기
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-700">
-                    이 구절은 {verse.theologicalTheme || '중요한 신학적 주제'}를 다루고 있습니다.
-                    헝가리어로 설교할 때 이 표현들을 활용할 수 있습니다.
-                  </p>
-                  <div className="mt-4 space-y-2">
-                    <Button variant="outline" className="w-full justify-start">
-                      <MessageSquare className="w-4 h-4 mr-2" />
-                      설교 아이디어 메모하기
-                    </Button>
-                    <Button variant="outline" className="w-full justify-start">
-                      <Bookmark className="w-4 h-4 mr-2" />
-                      북마크에 추가
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+                  {showFullAnalysis ? (
+                    <>
+                      <ChevronUp className="w-4 h-4 mr-2" />
+                      문법 분석 접기
+                    </>
+                  ) : (
+                    <>
+                      <ChevronDown className="w-4 h-4 mr-2" />
+                      전체 문법 분석 보기
+                    </>
+                  )}
+                </Button>
+              </div>
             </CardContent>
           </Card>
-        )}
 
-        {/* 학습 도구 */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-          <Button variant="outline" className="justify-start">
-            <Download className="w-4 h-4 mr-2" />
-            PDF 다운로드
-          </Button>
-          <Button variant="outline" className="justify-start">
-            <Bookmark className="w-4 h-4 mr-2" />
-            북마크
-          </Button>
-          <Button variant="outline" className="justify-start">
-            <MessageSquare className="w-4 h-4 mr-2" />
-            메모 작성
-          </Button>
+          {/* 전체 문법 분석 (펼침 상태) */}
+          {showFullAnalysis && (
+            <Card className="mb-6 bg-gradient-to-br from-blue-50 to-purple-50">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <BookOpen className="w-5 h-5 text-blue-600" />
+                  📖 {verse.book} {verse.chapter}:{verse.verse} 문법 완전 분석
+                </CardTitle>
+                <CardDescription>
+                  총 {verse.grammarAnalysis.length}개 단어 • {verse.grammarTopics.length}개 문법 포인트
+                </CardDescription>
+              </CardHeader>
+
+              <CardContent className="space-y-4">
+                {/* 단어별 분석 */}
+                {verse.grammarAnalysis.map((wordData, index) => (
+                  <div
+                    key={index}
+                    className="bg-white p-4 rounded-lg shadow-sm border-l-4 border-blue-500"
+                  >
+                    <div className="flex items-start justify-between">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-3">
+                          <h4 className="text-xl font-bold text-blue-600">
+                            {wordData.word}
+                          </h4>
+                          <Badge variant="outline">{wordData.pos}</Badge>
+                          <Badge className={getDifficultyColor(wordData.level)}>
+                            {wordData.level}
+                          </Badge>
+                        </div>
+
+                        <p className="text-gray-700 mb-3">{wordData.meaning}</p>
+
+                        <div className="grid grid-cols-2 gap-4">
+                          <div>
+                            <span className="text-xs text-gray-500">원형</span>
+                            <p className="font-medium">{wordData.lemma}</p>
+                          </div>
+                          <div>
+                            <span className="text-xs text-gray-500">문법 특징</span>
+                            <p className="font-medium">{wordData.grammarFeature}</p>
+                          </div>
+                        </div>
+
+                        {/* 관련 강의 링크 */}
+                        {wordData.relatedLesson && (
+                          <div className="mt-3">
+                            <Button variant="outline" size="sm">
+                              <BookOpen className="w-4 h-4 mr-2" />
+                              관련 강의: {wordData.relatedLessonTitle || '문법 강의'}
+                            </Button>
+                          </div>
+                        )}
+                      </div>
+
+                      {/* 음성 재생 */}
+                      <Button
+                        variant="ghost"
+                        size="icon"
+                        onClick={() => playAudio(wordData.word)}
+                        className="ml-4"
+                      >
+                        <Volume2 className="w-5 h-5" />
+                      </Button>
+                    </div>
+                  </div>
+                ))}
+
+                {/* 문법 요약 */}
+                <Card className="bg-gradient-to-r from-green-50 to-blue-50 border-none">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-lg">
+                      💡 이 구절에서 배운 문법
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex flex-wrap gap-2">
+                      {verse.grammarTopics.map((topic) => (
+                        <Badge key={topic} variant="secondary" className="text-sm">
+                          {topic}
+                        </Badge>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* 설교 아이디어 */}
+                <Card className="bg-gradient-to-r from-purple-50 to-pink-50 border-none">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-lg">
+                      <Lightbulb className="w-5 h-5 text-purple-600" />
+                      🎤 이 구절로 설교하기
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700">
+                      이 구절은 {verse.theologicalTheme || '중요한 신학적 주제'}를 다루고 있습니다.
+                      헝가리어로 설교할 때 이 표현들을 활용할 수 있습니다.
+                    </p>
+                    <div className="mt-4 space-y-2">
+                      <Button variant="outline" className="w-full justify-start">
+                        <MessageSquare className="w-4 h-4 mr-2" />
+                        설교 아이디어 메모하기
+                      </Button>
+                      <Button variant="outline" className="w-full justify-start">
+                        <Bookmark className="w-4 h-4 mr-2" />
+                        북마크에 추가
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* 학습 도구 */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <Button variant="outline" className="justify-start">
+              <Download className="w-4 h-4 mr-2" />
+              PDF 다운로드
+            </Button>
+            <Button variant="outline" className="justify-start">
+              <Bookmark className="w-4 h-4 mr-2" />
+              북마크
+            </Button>
+            <Button variant="outline" className="justify-start">
+              <MessageSquare className="w-4 h-4 mr-2" />
+              메모 작성
+            </Button>
+          </div>
+
+          {/* 학습 팁 */}
+          <Card className="bg-gradient-to-r from-yellow-50 to-orange-50">
+            <CardHeader>
+              <CardTitle className="text-lg">📚 학습 팁</CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-2 text-sm text-gray-700">
+              <p>💡 단어를 클릭하면 문법 설명을 볼 수 있습니다</p>
+              <p>💡 스피커 아이콘을 클릭하면 음성을 들을 수 있습니다</p>
+              <p>💡 관련 강의를 통해 더 깊이 학습할 수 있습니다</p>
+              <p>💡 설교 아이디어를 메모해두고 나중에 활용하세요</p>
+            </CardContent>
+          </Card>
         </div>
-
-        {/* 학습 팁 */}
-        <Card className="bg-gradient-to-r from-yellow-50 to-orange-50">
-          <CardHeader>
-            <CardTitle className="text-lg">📚 학습 팁</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-2 text-sm text-gray-700">
-            <p>💡 단어를 클릭하면 문법 설명을 볼 수 있습니다</p>
-            <p>💡 스피커 아이콘을 클릭하면 음성을 들을 수 있습니다</p>
-            <p>💡 관련 강의를 통해 더 깊이 학습할 수 있습니다</p>
-            <p>💡 설교 아이디어를 메모해두고 나중에 활용하세요</p>
-          </CardContent>
-        </Card>
       </div>
     </>
   );
