@@ -1,0 +1,305 @@
+{
+    "level": "b1",
+    "title": "B1 중급 어휘",
+    "description": "헝가리어 실력의 도약! 복잡한 의사표현과 깊이 있는 신앙 대화를 준비하세요.",
+    "topics": [
+        {
+            "id": "faith_concepts",
+            "title": "신앙의 핵심",
+            "emoji": "✝️",
+            "words": [
+                {
+                    "hu": "Kegyelem",
+                    "ko": "은혜",
+                    "pron": "[케-졔-렘]",
+                    "pos": "명사",
+                    "exHu": "Kegyelemből tartattatok meg.",
+                    "exKo": "너희가 은혜로 구원을 받았다."
+                },
+                {
+                    "hu": "Megváltás",
+                    "ko": "구원 / 속량",
+                    "pron": "[메-그-발-타-슈]",
+                    "pos": "명사",
+                    "exHu": "Jézus a megváltásunk.",
+                    "exKo": "예수님은 우리의 구원이십니다."
+                },
+                {
+                    "hu": "Evangélium",
+                    "ko": "복음",
+                    "pron": "[에-번-게-리-움]",
+                    "pos": "명사",
+                    "exHu": "Hirdessétek az evangéliumot.",
+                    "exKo": "복음을 전파하십시오."
+                },
+                {
+                    "hu": "Feltámadás",
+                    "ko": "부활",
+                    "pron": "[펠-타-머-다-슈]",
+                    "pos": "명사",
+                    "exHu": "Hiszek a feltámadásban.",
+                    "exKo": "나는 부활을 믿습니다."
+                },
+                {
+                    "hu": "Örök élet",
+                    "ko": "영생",
+                    "pron": "[외-뢰-크-에-레-트]",
+                    "pos": "명사",
+                    "exHu": "Aki hisz, annak örök élete van.",
+                    "exKo": "믿는 자에게는 영생이 있다."
+                },
+                {
+                    "hu": "Mennyország",
+                    "ko": "천국",
+                    "pron": "[멘-니-오-르-사-그]",
+                    "pos": "명사",
+                    "exHu": "A mennyország közel van.",
+                    "exKo": "천국이 가까이 왔다."
+                }
+            ]
+        },
+        {
+            "id": "communication",
+            "title": "의사 소통",
+            "emoji": "💬",
+            "words": [
+                {
+                    "hu": "Beszélgetés",
+                    "ko": "대화",
+                    "pron": "[베-쎌-게-테-슈]",
+                    "pos": "명사",
+                    "exHu": "Jó beszélgetés volt.",
+                    "exKo": "좋은 대화였습니다."
+                },
+                {
+                    "hu": "Kérdés",
+                    "ko": "질문",
+                    "pron": "[케-르-데-슈]",
+                    "pos": "명사",
+                    "exHu": "Van egy kérdésem.",
+                    "exKo": "질문이 하나 있습니다."
+                },
+                {
+                    "hu": "Válasz",
+                    "ko": "대답",
+                    "pron": "[바-러-스]",
+                    "pos": "명사",
+                    "exHu": "Várom a válaszát.",
+                    "exKo": "당신의 대답을 기다립니다."
+                },
+                {
+                    "hu": "Vélemény",
+                    "ko": "의견",
+                    "pron": "[베-레-메-니]",
+                    "pos": "명사",
+                    "exHu": "Mi a véleményed erről?",
+                    "exKo": "이에 대한 당신의 의견은 무엇입니까?"
+                },
+                {
+                    "hu": "Egyetért",
+                    "ko": "동의하다",
+                    "pron": "[에-졔-테-르-트]",
+                    "pos": "동사",
+                    "exHu": "Egyetértek veled.",
+                    "exKo": "당신에게 동의합니다."
+                },
+                {
+                    "hu": "Magyaráz",
+                    "ko": "설명하다",
+                    "pron": "[머-뎌-라-즈]",
+                    "pos": "동사",
+                    "exHu": "Kérlek, magyarázd el.",
+                    "exKo": "설명해 주세요."
+                }
+            ]
+        },
+        {
+            "id": "church_activity",
+            "title": "교회 사역",
+            "emoji": "🤝",
+            "words": [
+                {
+                    "hu": "Szolgálat",
+                    "ko": "사역 / 봉사",
+                    "pron": "[쏠-가-러-트]",
+                    "pos": "명사",
+                    "exHu": "Isten szolgálata öröm.",
+                    "exKo": "하나님을 섬기는 것은 기쁨입니다."
+                },
+                {
+                    "hu": "Közösség",
+                    "ko": "공동체 / 교제",
+                    "pron": "[쾨-죄-슈-셰-그]",
+                    "pos": "명사",
+                    "exHu": "Fontos a keresztény közösség.",
+                    "exKo": "그리스도인 공동체는 중요합니다."
+                },
+                {
+                    "hu": "Tanítvány",
+                    "ko": "제자",
+                    "pron": "[터-니-트-바-니]",
+                    "pos": "명사",
+                    "exHu": "Jézus tanítványai vagyunk.",
+                    "exKo": "우리는 예수님의 제자들입니다."
+                },
+                {
+                    "hu": "Bizonyságtétel",
+                    "ko": "간증",
+                    "pron": "[비-조-니-샤-그-테-텔]",
+                    "pos": "명사",
+                    "exHu": "Meghallgattuk a bizonyságtételt.",
+                    "exKo": "우리는 간증을 들었습니다."
+                },
+                {
+                    "hu": "Misszió",
+                    "ko": "선교",
+                    "pron": "[미-씨-오]",
+                    "pos": "명사",
+                    "exHu": "Imádkozunk a misszióért.",
+                    "exKo": "선교를 위해 기도합니다."
+                }
+            ]
+        },
+        {
+            "id": "work_profession",
+            "title": "직장과 직업",
+            "emoji": "💼",
+            "words": [
+                {
+                    "hu": "Főnök",
+                    "ko": "상사 / 사장",
+                    "pron": "[푀-뇌-크]",
+                    "pos": "명사",
+                    "exHu": "A főnököm kedves.",
+                    "exKo": "내 상사는 친절하다."
+                },
+                {
+                    "hu": "Kolléga",
+                    "ko": "동료",
+                    "pron": "[콜-레-거]",
+                    "pos": "명사",
+                    "exHu": "Segítőkész kolléga.",
+                    "exKo": "도움이 되는 동료."
+                },
+                {
+                    "hu": "Értekezlet",
+                    "ko": "회의",
+                    "pron": "[에-르-테-케-즐-레-트]",
+                    "pos": "명사",
+                    "exHu": "Holnap értekezlet lesz.",
+                    "exKo": "내일 회의가 있다."
+                },
+                {
+                    "hu": "Fizetés",
+                    "ko": "월급 / 지불",
+                    "pron": "[피-제-테-슈]",
+                    "pos": "명사",
+                    "exHu": "Megkaptam a fizetést.",
+                    "exKo": "월급을 받았다."
+                },
+                {
+                    "hu": "Szerződés",
+                    "ko": "계약",
+                    "pron": "[쎄-르-죄-데-슈]",
+                    "pos": "명사",
+                    "exHu": "Aláírtuk a szerződést.",
+                    "exKo": "우리는 계약서에 서명했다."
+                }
+            ]
+        },
+        {
+            "id": "technology",
+            "title": "기술과 미디어",
+            "emoji": "💻",
+            "words": [
+                {
+                    "hu": "Számítógép",
+                    "ko": "컴퓨터",
+                    "pron": "[싸-미-토-게-프]",
+                    "pos": "명사",
+                    "exHu": "Kell egy új számítógép.",
+                    "exKo": "새 컴퓨터가 필요하다."
+                },
+                {
+                    "hu": "Internet",
+                    "ko": "인터넷",
+                    "pron": "[인-테-르-네-트]",
+                    "pos": "명사",
+                    "exHu": "Nincs internet.",
+                    "exKo": "인터넷이 안 된다."
+                },
+                {
+                    "hu": "Telefon",
+                    "ko": "전화기",
+                    "pron": "[텔-레-폰]",
+                    "pos": "명사",
+                    "exHu": "Csörög a telefon.",
+                    "exKo": "전화벨이 울린다."
+                },
+                {
+                    "hu": "Üzenet",
+                    "ko": "메시지",
+                    "pron": "[위-제-네-트]",
+                    "pos": "명사",
+                    "exHu": "Kaptál üzenetet?",
+                    "exKo": "메시지 받았어?"
+                },
+                {
+                    "hu": "Hír",
+                    "ko": "뉴스 / 소식",
+                    "pron": "[히-르]",
+                    "pos": "명사",
+                    "exHu": "Jó híreket hallottam.",
+                    "exKo": "좋은 소식을 들었다."
+                }
+            ]
+        },
+        {
+            "id": "relationships",
+            "title": "인간관계",
+            "emoji": "❤️",
+            "words": [
+                {
+                    "hu": "Barátság",
+                    "ko": "우정",
+                    "pron": "[버-라-트-샤-그]",
+                    "pos": "명사",
+                    "exHu": "A barátság értékes.",
+                    "exKo": "우정은 소중하다."
+                },
+                {
+                    "hu": "Szerelem",
+                    "ko": "사랑 (연인)",
+                    "pron": "[쎄-렐-렘]",
+                    "pos": "명사",
+                    "exHu": "A szerelem vak.",
+                    "exKo": "사랑은 눈이 먼다."
+                },
+                {
+                    "hu": "Házasság",
+                    "ko": "결혼",
+                    "pron": "[하-저-슈-샤-그]",
+                    "pos": "명사",
+                    "exHu": "Boldog házasság.",
+                    "exKo": "행복한 결혼."
+                },
+                {
+                    "hu": "Ismerős",
+                    "ko": "지인 / 아는 사람",
+                    "pron": "[이-슈-메-뢰-슈]",
+                    "pos": "명사",
+                    "exHu": "Régi ismerős.",
+                    "exKo": "오래된 지인."
+                },
+                {
+                    "hu": "Ellenség",
+                    "ko": "적",
+                    "pron": "[엘-렌-셰-그]",
+                    "pos": "명사",
+                    "exHu": "Szeressétek ellenségeiteket.",
+                    "exKo": "너희 원수를 사랑하라."
+                }
+            ]
+        }
+    ]
+}

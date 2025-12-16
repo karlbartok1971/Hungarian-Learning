@@ -3,6 +3,8 @@ import cors from 'cors';
 import helmet from 'helmet';
 import morgan from 'morgan';
 import dotenv from 'dotenv';
+import fs from 'fs/promises';
+import path from 'path';
 
 import { errorHandler } from './lib/errorHandler';
 import { connectRedis } from './lib/redis';
@@ -31,7 +33,11 @@ app.use(morgan('combined')); // 로깅
 
 // CORS 설정
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3700',
+  origin: [
+    process.env.FRONTEND_URL || 'http://localhost:3700',
+    'http://localhost:3900', // 프론트엔드 포트 명시적 허용
+    'http://127.0.0.1:3900'
+  ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
@@ -50,6 +56,9 @@ app.get('/health', (_, res) => {
   });
 });
 
+// [Moved & Refactored] 어휘 API는 이제 api/vocabulary.ts 에서 처리됩니다.
+// app.use('/api/vocabulary', vocabularyRoutes); 가 이미 설정되어 있습니다.
+
 // API 라우트 설정
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
@@ -59,21 +68,24 @@ app.use('/api/upload', uploadRoutes);
 app.use('/api/assessment', assessmentRoutes);
 app.use('/api/curriculum', curriculumRoutes);
 app.use('/api/learning-path', learningPathRoutes);
-app.use('/api/ai-tutor', aiTutorRoutes); // AI 튜터 API
-app.use('/api/grammar-lessons', grammarLessonsRoutes); // 문법 강의 API
-app.use('/api/dashboard', dashboardRoutes); // 대시보드 API
-app.use('/api/bible', bibleRoutes); // 성경 일일 학습 API
+app.use('/api/ai-tutor', aiTutorRoutes);
+app.use('/api/grammar-lessons', grammarLessonsRoutes);
+app.use('/api/dashboard', dashboardRoutes);
+app.use('/api/bible', bibleRoutes);
 
-// 404 핸들러
+// ---------------------------------------------
+// 서버 시작
+// ---------------------------------------------
+// 에러 핸들러
+app.use(errorHandler);
+
+// 404 핸들러 (반드시 가장 마지막에 위치해야 함)
 app.use('*', (_, res) => {
   res.status(404).json({
     success: false,
     error: '요청한 API 엔드포인트를 찾을 수 없습니다.',
   });
 });
-
-// 에러 핸들러
-app.use(errorHandler);
 
 // 서버 시작
 app.listen(PORT, async () => {

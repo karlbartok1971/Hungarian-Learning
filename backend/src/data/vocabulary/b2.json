@@ -1,0 +1,219 @@
+{
+    "level": "b2",
+    "title": "B2 고급 어휘",
+    "description": "헝가리어 마스터를 향하여! 정교한 표현과 깊이 있는 신학 용어로 무장하세요.",
+    "topics": [
+        {
+            "id": "theology",
+            "title": "깊은 신학 용어",
+            "emoji": "📜",
+            "words": [
+                {
+                    "hu": "Szentháromság",
+                    "ko": "삼위일체",
+                    "pron": "[쎈-트-하-롬-샤-그]",
+                    "pos": "명사",
+                    "exHu": "Az Atya, a Fiú és a Szentlélek egy Isten.",
+                    "exKo": "성부, 성자, 성령은 한 하나님이십니다."
+                },
+                {
+                    "hu": "Megtestesülés",
+                    "ko": "성육신",
+                    "pron": "[메-그-테-슈-테-쉴-레-슈]",
+                    "pos": "명사",
+                    "exHu": "Az Ige testté lett.",
+                    "exKo": "말씀이 육신이 되셨습니다."
+                },
+                {
+                    "hu": "Kijelentés",
+                    "ko": "계시",
+                    "pron": "[키-옐-렌-테-슈]",
+                    "pos": "명사",
+                    "exHu": "Ez isteni kijelentés.",
+                    "exKo": "이것은 하나님의 계시입니다."
+                },
+                {
+                    "hu": "Üdvösség",
+                    "ko": "구원 / 영원한 복락",
+                    "pron": "[위-드-뵈-슈-셰-그]",
+                    "pos": "명사",
+                    "exHu": "Munkáljátok üdvösségeteket.",
+                    "exKo": "너희 구원을 이루라."
+                },
+                {
+                    "hu": "Gondviselés",
+                    "ko": "섭리",
+                    "pron": "[곤-드-비-셸-레-슈]",
+                    "pos": "명사",
+                    "exHu": "Hiszünk Isten gondviselésében.",
+                    "exKo": "우리는 하나님의 섭리를 믿습니다."
+                },
+                {
+                    "hu": "Végítélet",
+                    "ko": "최후의 심판",
+                    "pron": "[베-기-테-레-트]",
+                    "pos": "명사",
+                    "exHu": "A végítélet napja.",
+                    "exKo": "최후 심판의 날."
+                },
+                {
+                    "hu": "Megszentelődés",
+                    "ko": "성화",
+                    "pron": "[메-그-쎈-텔-뢰-데-슈]",
+                    "pos": "명사",
+                    "exHu": "A megszentelődés folyamata.",
+                    "exKo": "성화의 과정."
+                }
+            ]
+        },
+        {
+            "id": "abstract",
+            "title": "추상적 개념",
+            "emoji": "🤔",
+            "words": [
+                {
+                    "hu": "Felelősség",
+                    "ko": "책임",
+                    "pron": "[펠-렐-뢰-슈-셰-그]",
+                    "pos": "명사",
+                    "exHu": "Nagy a felelősségünk.",
+                    "exKo": "우리의 책임이 큽니다."
+                },
+                {
+                    "hu": "Lehetőség",
+                    "ko": "기회 / 가능성",
+                    "pron": "[레-헤-퇴-셰-그]",
+                    "pos": "명사",
+                    "exHu": "Használd ki a lehetőséget.",
+                    "exKo": "기회를 선용하십시오."
+                },
+                {
+                    "hu": "Tapasztalat",
+                    "ko": "경험",
+                    "pron": "[터-퍼-스-터-러-트]",
+                    "pos": "명사",
+                    "exHu": "Sok tapasztalatom van.",
+                    "exKo": "나는 많은 경험이 있습니다."
+                },
+                {
+                    "hu": "Kihívás",
+                    "ko": "도전",
+                    "pron": "[키-히-바-슈]",
+                    "pos": "명사",
+                    "exHu": "Ez egy nagy kihívás.",
+                    "exKo": "이것은 큰 도전입니다."
+                },
+                {
+                    "hu": "Meggyőződés",
+                    "ko": "확신 / 신념",
+                    "pron": "[메-그-죄-죄-데-슈]",
+                    "pos": "명사",
+                    "exHu": "Ez a szilárd meggyőződésem.",
+                    "exKo": "이것이 나의 확고한 신념입니다."
+                }
+            ]
+        },
+        {
+            "id": "society_politics",
+            "title": "사회와 정치",
+            "emoji": "🌍",
+            "words": [
+                {
+                    "hu": "Társadalom",
+                    "ko": "사회",
+                    "pron": "[타-르-셔-더-롬]",
+                    "pos": "명사",
+                    "exHu": "A társadalom problémái.",
+                    "exKo": "사회의 문제들."
+                },
+                {
+                    "hu": "Kultúra",
+                    "ko": "문화",
+                    "pron": "[쿨-투-러]",
+                    "pos": "명사",
+                    "exHu": "A magyar kultúra gazdag.",
+                    "exKo": "헝가리 문화는 풍성합니다."
+                },
+                {
+                    "hu": "Hagyomány",
+                    "ko": "전통",
+                    "pron": "[허-조-마-니]",
+                    "pos": "명사",
+                    "exHu": "Tiszteljük a hagyományokat.",
+                    "exKo": "우리는 전통을 존중합니다."
+                },
+                {
+                    "hu": "Történelem",
+                    "ko": "역사",
+                    "pron": "[퇴-르-테-넬-렘]",
+                    "pos": "명사",
+                    "exHu": "Isten az uralkodó a történelem felett.",
+                    "exKo": "하나님은 역사의 주관자이십니다."
+                },
+                {
+                    "hu": "Kormány",
+                    "ko": "정부",
+                    "pron": "[코-르-마-니]",
+                    "pos": "명사",
+                    "exHu": "Imádkozunk a kormányért.",
+                    "exKo": "우리는 정부를 위해 기도합니다."
+                },
+                {
+                    "hu": "Szabadság",
+                    "ko": "자유",
+                    "pron": "[써-버-드-샤-그]",
+                    "pos": "명사",
+                    "exHu": "Krisztusban szabadságunk van.",
+                    "exKo": "그리스도 안에서 우리는 자유가 있습니다."
+                }
+            ]
+        },
+        {
+            "id": "science_arts",
+            "title": "과학과 예술",
+            "emoji": "🔬",
+            "words": [
+                {
+                    "hu": "Tudomány",
+                    "ko": "과학",
+                    "pron": "[투-도-마-니]",
+                    "pos": "명사",
+                    "exHu": "A tudomány fejlődik.",
+                    "exKo": "과학은 발전합니다."
+                },
+                {
+                    "hu": "Művészet",
+                    "ko": "예술",
+                    "pron": "[뮈-베-세-트]",
+                    "pos": "명사",
+                    "exHu": "Isten teremtése művészet.",
+                    "exKo": "하나님의 창조는 예술입니다."
+                },
+                {
+                    "hu": "Irodalom",
+                    "ko": "문학",
+                    "pron": "[이-로-더-롬]",
+                    "pos": "명사",
+                    "exHu": "Szeretem a magyar irodalmat.",
+                    "exKo": "나는 헝가리 문학을 좋아합니다."
+                },
+                {
+                    "hu": "Kutatás",
+                    "ko": "연구",
+                    "pron": "[쿠-터-타-슈]",
+                    "pos": "명사",
+                    "exHu": "Fontos a kutatás.",
+                    "exKo": "연구는 중요합니다."
+                },
+                {
+                    "hu": "Fejlődés",
+                    "ko": "발전 / 성장",
+                    "pron": "[페-일-뢰-데-슈]",
+                    "pos": "명사",
+                    "exHu": "Lelki fejlődés.",
+                    "exKo": "영적 성장."
+                }
+            ]
+        }
+    ]
+}

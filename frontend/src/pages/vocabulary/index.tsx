@@ -26,17 +26,17 @@ import {
 import { WordOfTheDayCard } from '@/components/vocabulary/WordOfTheDayCard';
 import { StatsCards } from '@/components/vocabulary/StatsCards';
 
-// Mock 진도 데이터
+// Mock 진도 데이터 (Unlocked for Demo)
 const mockProgress = {
-  A1: { learned: 48, total: 150, percentage: 32 },
-  A2: { learned: 12, total: 200, percentage: 6 },
-  B1: { learned: 0, total: 250, percentage: 0 },
-  B2: { learned: 0, total: 300, percentage: 0 },
+  A1: { learned: 48, total: 500, percentage: 10 },
+  A2: { learned: 12, total: 800, percentage: 2 },
+  B1: { learned: 0, total: 1200, percentage: 0 },
+  B2: { learned: 0, total: 1500, percentage: 0 },
 };
 
 const mockStats = {
   totalLearned: 60,
-  totalWords: 900,
+  totalWords: 4000,
   streak: 5, // 연속 학습 일수
   accuracy: 85,
 };
@@ -135,7 +135,8 @@ const VocabularyPage = () => {
         <div className="space-y-6">
           {levels.map((levelData) => {
             const Icon = levelData.icon;
-            const isLocked = levelData.progress.learned === 0 && levelData.level !== 'A1';
+            // [Unlocked] 모든 레벨 잠금 해제
+            const isLocked = false;
 
             return (
               <Card

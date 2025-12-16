@@ -5,8 +5,9 @@
 
 import axios, { AxiosError, AxiosInstance, InternalAxiosRequestConfig } from 'axios';
 
-// API Base URL
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+// 백엔드 API 포트에 맞춰 수정 (3901 포트 사용 중)
+// [level].tsx 등에서 import { API_BASE_URL } used
+export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3901/api';
 
 // Axios 인스턴스 생성
 export const apiClient: AxiosInstance = axios.create({

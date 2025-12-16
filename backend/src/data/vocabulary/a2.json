@@ -1,0 +1,392 @@
+{
+    "level": "a2",
+    "title": "A2 초급 어휘",
+    "description": "헝가리어 기본기를 다지는 단계! 일상적인 표현과 더 깊은 신앙 용어를 배워봅시다.",
+    "topics": [
+        {
+            "id": "daily_life",
+            "title": "일상 생활",
+            "emoji": "🏠",
+            "words": [
+                {
+                    "hu": "Reggeli",
+                    "ko": "아침 식사",
+                    "pron": "[레-겔-리]",
+                    "pos": "명사",
+                    "exHu": "Finom a reggeli.",
+                    "exKo": "아침 식사가 맛있습니다."
+                },
+                {
+                    "hu": "Ebéd",
+                    "ko": "점심 식사",
+                    "pron": "[에-베-드]",
+                    "pos": "명사",
+                    "exHu": "Mikor lesz ebéd?",
+                    "exKo": "점심은 언제입니까?"
+                },
+                {
+                    "hu": "Vacsora",
+                    "ko": "저녁 식사",
+                    "pron": "[버-초-러]",
+                    "pos": "명사",
+                    "exHu": "Vacsorára húst eszünk.",
+                    "exKo": "저녁으로 고기를 먹습니다."
+                },
+                {
+                    "hu": "Munka",
+                    "ko": "일 / 직장",
+                    "pron": "[문-커]",
+                    "pos": "명사",
+                    "exHu": "Szeretem a munkámat.",
+                    "exKo": "나는 내 일을 좋아합니다."
+                },
+                {
+                    "hu": "Iskola",
+                    "ko": "학교",
+                    "pron": "[이-슈-콜-러]",
+                    "pos": "명사",
+                    "exHu": "A gyerekek iskolába mennek.",
+                    "exKo": "아이들이 학교에 갑니다."
+                },
+                {
+                    "hu": "Bolt",
+                    "ko": "가게 / 상점",
+                    "pron": "[볼-트]",
+                    "pos": "명사",
+                    "exHu": "A bolt nyitva van.",
+                    "exKo": "가게가 열려 있습니다."
+                },
+                {
+                    "hu": "Piac",
+                    "ko": "시장",
+                    "pron": "[피-어-츠]",
+                    "pos": "명사",
+                    "exHu": "Friss gyümölcs a piacon.",
+                    "exKo": "시장의 신선한 과일."
+                }
+            ]
+        },
+        {
+            "id": "church_life",
+            "title": "교회 생활",
+            "emoji": "🙏",
+            "words": [
+                {
+                    "hu": "Istentisztelet",
+                    "ko": "예배",
+                    "pron": "[이-슈-텐-티-스-텔-레-트]",
+                    "pos": "명사",
+                    "exHu": "Vasárnap istentiszteletre megyünk.",
+                    "exKo": "일요일에 예배드리러 갑니다."
+                },
+                {
+                    "hu": "Dicséret",
+                    "ko": "찬양 / 칭찬",
+                    "pron": "[디-체-레-트]",
+                    "pos": "명사",
+                    "exHu": "Dicséretet énekelünk az Úrnak.",
+                    "exKo": "주님께 찬양을 부릅니다."
+                },
+                {
+                    "hu": "Prédikáció",
+                    "ko": "설교",
+                    "pron": "[프-레-디-카-치-오]",
+                    "pos": "명사",
+                    "exHu": "A lelkész prédikációja.",
+                    "exKo": "목사님의 설교."
+                },
+                {
+                    "hu": "Lelkész",
+                    "ko": "목사",
+                    "pron": "[렐-케-스]",
+                    "pos": "명사",
+                    "exHu": "A lelkész imádkozik értünk.",
+                    "exKo": "목사님이 우리를 위해 기도하십니다."
+                },
+                {
+                    "hu": "Kereszt",
+                    "ko": "십자가",
+                    "pron": "[케-레-스-트]",
+                    "pos": "명사",
+                    "exHu": "Jézus a kereszten halt meg.",
+                    "exKo": "예수님은 십자가에서 돌아가셨습니다."
+                },
+                {
+                    "hu": "Bűn",
+                    "ko": "죄",
+                    "pron": "[뷘]",
+                    "pos": "명사",
+                    "exHu": "Isten megbocsátja a bűnöket.",
+                    "exKo": "하나님은 죄를 용서하십니다."
+                },
+                {
+                    "hu": "Megbocsátás",
+                    "ko": "용서",
+                    "pron": "[메-그-보-차-타-슈]",
+                    "pos": "명사",
+                    "exHu": "Kérj megbocsátást.",
+                    "exKo": "용서를 구하세요."
+                }
+            ]
+        },
+        {
+            "id": "feelings",
+            "title": "감정과 상태",
+            "emoji": "😊",
+            "words": [
+                {
+                    "hu": "Boldog",
+                    "ko": "행복한",
+                    "pron": "[볼-도-그]",
+                    "pos": "형용사",
+                    "exHu": "Boldog vagyok.",
+                    "exKo": "나는 행복합니다."
+                },
+                {
+                    "hu": "Szomorú",
+                    "ko": "슬픈",
+                    "pron": "[쏘-모-루]",
+                    "pos": "형용사",
+                    "exHu": "Ne légy szomorú.",
+                    "exKo": "슬퍼하지 마세요."
+                },
+                {
+                    "hu": "Fáradt",
+                    "ko": "피곤한",
+                    "pron": "[파-러-트]",
+                    "pos": "형용사",
+                    "exHu": "Fáradt vagyok a munka után.",
+                    "exKo": "일한 후에 피곤합니다."
+                },
+                {
+                    "hu": "Beteg",
+                    "ko": "아픈 / 환자",
+                    "pron": "[베-테-그]",
+                    "pos": "형용사/명사",
+                    "exHu": "Imádkozunk a betegekért.",
+                    "exKo": "아픈 사람들을 위해 기도합니다."
+                },
+                {
+                    "hu": "Erős",
+                    "ko": "강한",
+                    "pron": "[에-뢰-슈]",
+                    "pos": "형용사",
+                    "exHu": "Az Úr erős vár.",
+                    "exKo": "주님은 강한 성이십니다."
+                }
+            ]
+        },
+        {
+            "id": "shopping",
+            "title": "쇼핑과 돈",
+            "emoji": "🛍️",
+            "words": [
+                {
+                    "hu": "Pénz",
+                    "ko": "돈",
+                    "pron": "[펜-즈]",
+                    "pos": "명사",
+                    "exHu": "Nincs nálam pénz.",
+                    "exKo": "나는 돈이 없습니다."
+                },
+                {
+                    "hu": "Ár",
+                    "ko": "가격",
+                    "pron": "[아-르]",
+                    "pos": "명사",
+                    "exHu": "Mi az ára?",
+                    "exKo": "가격이 얼마입니까?"
+                },
+                {
+                    "hu": "Drága",
+                    "ko": "비싼",
+                    "pron": "[드-라-거]",
+                    "pos": "형용사",
+                    "exHu": "Ez túl drága.",
+                    "exKo": "이것은 너무 비쌉니다."
+                },
+                {
+                    "hu": "Olcsó",
+                    "ko": "싼 / 저렴한",
+                    "pron": "[올-초]",
+                    "pos": "형용사",
+                    "exHu": "Ez olcsó.",
+                    "exKo": "이것은 쌉니다."
+                },
+                {
+                    "hu": "Vásárol",
+                    "ko": "쇼핑하다 / 사다",
+                    "pron": "[바-샤-롤]",
+                    "pos": "동사",
+                    "exHu": "Szeretek vásárolni.",
+                    "exKo": "나는 쇼핑하는 것을 좋아합니다."
+                },
+                {
+                    "hu": "Bolt",
+                    "ko": "가게",
+                    "pron": "[볼-트]",
+                    "pos": "명사",
+                    "exHu": "Megyek a boltba.",
+                    "exKo": "가게에 갑니다."
+                }
+            ]
+        },
+        {
+            "id": "weather",
+            "title": "날씨",
+            "emoji": "☀️",
+            "words": [
+                {
+                    "hu": "Időjárás",
+                    "ko": "날씨",
+                    "pron": "[이-되-야-라-슈]",
+                    "pos": "명사",
+                    "exHu": "Milyen az időjárás?",
+                    "exKo": "날씨가 어떻습니까?"
+                },
+                {
+                    "hu": "Meleg",
+                    "ko": "따뜻한 / 더운",
+                    "pron": "[멜-레-그]",
+                    "pos": "형용사",
+                    "exHu": "Meleg van ma.",
+                    "exKo": "오늘은 날씨가 덥습니다."
+                },
+                {
+                    "hu": "Hideg",
+                    "ko": "추운",
+                    "pron": "[히-데-그]",
+                    "pos": "형용사",
+                    "exHu": "Hideg a tél.",
+                    "exKo": "겨울은 춥습니다."
+                },
+                {
+                    "hu": "Eső",
+                    "ko": "비",
+                    "pron": "[에-쐬]",
+                    "pos": "명사",
+                    "exHu": "Esik az eső.",
+                    "exKo": "비가 옵니다."
+                },
+                {
+                    "hu": "Hó",
+                    "ko": "눈",
+                    "pron": "[호]",
+                    "pos": "명사",
+                    "exHu": "Hull a hó.",
+                    "exKo": "눈이 내립니다."
+                },
+                {
+                    "hu": "Szél",
+                    "ko": "바람",
+                    "pron": "[쎌]",
+                    "pos": "명사",
+                    "exHu": "Fúj a szél.",
+                    "exKo": "바람이 듭니다."
+                }
+            ]
+        },
+        {
+            "id": "hobbies",
+            "title": "취미와 여가",
+            "emoji": "🎨",
+            "words": [
+                {
+                    "hu": "Olvas",
+                    "ko": "읽다 / 독서하다",
+                    "pron": "[올-버-슈]",
+                    "pos": "동사",
+                    "exHu": "Szeretek olvasni.",
+                    "exKo": "나는 독서를 좋아합니다."
+                },
+                {
+                    "hu": "Zene",
+                    "ko": "음악",
+                    "pron": "[제-네]",
+                    "pos": "명사",
+                    "exHu": "Hallgatom a zenét.",
+                    "exKo": "나는 음악을 듣습니다."
+                },
+                {
+                    "hu": "Fut",
+                    "ko": "달리다",
+                    "pron": "[푸-트]",
+                    "pos": "동사",
+                    "exHu": "Minden reggel futok.",
+                    "exKo": "나는 매일 아침 달립니다."
+                },
+                {
+                    "hu": "Úszik",
+                    "ko": "수영하다",
+                    "pron": "[우-씨-크]",
+                    "pos": "동사",
+                    "exHu": "A Balatonban úszunk.",
+                    "exKo": "우리는 발라톤 호수에서 수영합니다."
+                },
+                {
+                    "hu": "Utazás",
+                    "ko": "여행",
+                    "pron": "[우-터-자-슈]",
+                    "pos": "명사",
+                    "exHu": "Szeretem az utazást.",
+                    "exKo": "나는 여행을 좋아합니다."
+                }
+            ]
+        },
+        {
+            "id": "directions",
+            "title": "길 찾기 / 방향",
+            "emoji": "🗺️",
+            "words": [
+                {
+                    "hu": "Hol",
+                    "ko": "어디에",
+                    "pron": "[홀]",
+                    "pos": "부사",
+                    "exHu": "Hol van a posta?",
+                    "exKo": "우체국이 어디에 있습니까?"
+                },
+                {
+                    "hu": "Itt",
+                    "ko": "여기",
+                    "pron": "[이트]",
+                    "pos": "부사",
+                    "exHu": "Itt vagyok.",
+                    "exKo": "나 여기 있어."
+                },
+                {
+                    "hu": "Ott",
+                    "ko": "저기",
+                    "pron": "[오트]",
+                    "pos": "부사",
+                    "exHu": "Ott van a templom.",
+                    "exKo": "저기에 교회가 있습니다."
+                },
+                {
+                    "hu": "Balra",
+                    "ko": "왼쪽으로",
+                    "pron": "[벌-러]",
+                    "pos": "부사",
+                    "exHu": "Fordulj balra.",
+                    "exKo": "왼쪽으로 도세요."
+                },
+                {
+                    "hu": "Jobbra",
+                    "ko": "오른쪽으로",
+                    "pron": "[욥-브-라]",
+                    "pos": "부사",
+                    "exHu": "Nézz jobbra.",
+                    "exKo": "오른쪽을 보세요."
+                },
+                {
+                    "hu": "Egyenesen",
+                    "ko": "똑바로",
+                    "pron": "[에-졔-네-셴]",
+                    "pos": "부사",
+                    "exHu": "Menj egyenesen.",
+                    "exKo": "똑바로 가세요."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,873 @@
+{
+    "level": "a1",
+    "title": "A1 기초 어휘",
+    "description": "헝가리어의 첫걸음! 일상 대화와 신앙 생활에 꼭 필요한 필수 단어들을 마스터하세요.",
+    "topics": [
+        {
+            "id": "greetings_intro",
+            "title": "인사와 소개",
+            "emoji": "👋",
+            "words": [
+                {
+                    "hu": "Szia",
+                    "ko": "안녕",
+                    "pron": "[씨-어]",
+                    "pos": "감탄사",
+                    "exHu": "Szia, Anna!",
+                    "exKo": "안녕, 안나!"
+                },
+                {
+                    "hu": "Jó reggelt",
+                    "ko": "좋은 아침",
+                    "pron": "[요 레-겔-트]",
+                    "pos": "인사",
+                    "exHu": "Jó reggelt kívánok!",
+                    "exKo": "좋은 아침입니다!"
+                },
+                {
+                    "hu": "Jó napot",
+                    "ko": "안녕하세요 (낮)",
+                    "pron": "[요 너-포-트]",
+                    "pos": "인사",
+                    "exHu": "Jó napot, tanár úr!",
+                    "exKo": "안녕하세요, 선생님!"
+                },
+                {
+                    "hu": "Jó estét",
+                    "ko": "안녕하세요 (저녁)",
+                    "pron": "[요 에-슈-테-트]",
+                    "pos": "인사",
+                    "exHu": "Jó estét mindenkinek.",
+                    "exKo": "모두 평안한 저녁 되세요."
+                },
+                {
+                    "hu": "Jó éjszakát",
+                    "ko": "잘 자요",
+                    "pron": "[요 에이-서-카-트]",
+                    "pos": "인사",
+                    "exHu": "Jó éjszakát, aludj jól.",
+                    "exKo": "잘 자요, 좋은 꿈 꾸세요."
+                },
+                {
+                    "hu": "Viszlát",
+                    "ko": "잘 가 (작별)",
+                    "pron": "[비-슬-라-트]",
+                    "pos": "인사",
+                    "exHu": "Viszlát holnap!",
+                    "exKo": "내일 봐요!"
+                },
+                {
+                    "hu": "Köszönöm",
+                    "ko": "고마워",
+                    "pron": "[쾨-쐬-뇜]",
+                    "pos": "표현",
+                    "exHu": "Köszönöm szépen.",
+                    "exKo": "정말 감사합니다."
+                },
+                {
+                    "hu": "Bocsánat",
+                    "ko": "미안해 / 실례합니다",
+                    "pron": "[보-차-너-트]",
+                    "pos": "표현",
+                    "exHu": "Bocsánat, nem értem.",
+                    "exKo": "죄송합니다, 이해하지 못했습니다."
+                },
+                {
+                    "hu": "Igen",
+                    "ko": "네",
+                    "pron": "[이-겐]",
+                    "pos": "부사",
+                    "exHu": "Igen, kérek.",
+                    "exKo": "네, 부탁합니다."
+                },
+                {
+                    "hu": "Nem",
+                    "ko": "아니요",
+                    "pron": "[넴]",
+                    "pos": "부사",
+                    "exHu": "Nem, köszönöm.",
+                    "exKo": "아니요, 괜찮습니다."
+                }
+            ]
+        },
+        {
+            "id": "church_basics",
+            "title": "교회와 신앙 기초",
+            "emoji": "⛪️",
+            "words": [
+                {
+                    "hu": "Isten",
+                    "ko": "하나님",
+                    "pron": "[이-슈-텐]",
+                    "pos": "명사",
+                    "exHu": "Isten szeret téged.",
+                    "exKo": "하나님은 너를 사랑해."
+                },
+                {
+                    "hu": "Jézus",
+                    "ko": "예수님",
+                    "pron": "[예-주-슈]",
+                    "pos": "명사",
+                    "exHu": "Jézus az Úr.",
+                    "exKo": "예수님은 주님이십니다."
+                },
+                {
+                    "hu": "Szentlélek",
+                    "ko": "성령님",
+                    "pron": "[쎈-트-레-레-크]",
+                    "pos": "명사",
+                    "exHu": "Jöjj, Szentlélek!",
+                    "exKo": "오소서, 성령님!"
+                },
+                {
+                    "hu": "Biblia",
+                    "ko": "성경",
+                    "pron": "[비-브-리-어]",
+                    "pos": "명사",
+                    "exHu": "Olvasom a Bibliát.",
+                    "exKo": "나는 성경을 읽습니다."
+                },
+                {
+                    "hu": "Imádság",
+                    "ko": "기도",
+                    "pron": "[이-마-드-샤-그]",
+                    "pos": "명사",
+                    "exHu": "Az imádság fontos.",
+                    "exKo": "기도는 중요합니다."
+                },
+                {
+                    "hu": "Templom",
+                    "ko": "교회 (건물)",
+                    "pron": "[템-플-롬]",
+                    "pos": "명사",
+                    "exHu": "Templomba megyünk.",
+                    "exKo": "우리는 교회에 갑니다."
+                },
+                {
+                    "hu": "Szeretet",
+                    "ko": "사랑",
+                    "pron": "[쎄-레-테-트]",
+                    "pos": "명사",
+                    "exHu": "Isten a szeretet.",
+                    "exKo": "하나님은 사랑이십니다."
+                },
+                {
+                    "hu": "Hit",
+                    "ko": "믿음",
+                    "pron": "[히-트]",
+                    "pos": "명사",
+                    "exHu": "A hit hallásból van.",
+                    "exKo": "믿음은 들음에서 납니다."
+                },
+                {
+                    "hu": "Ámen",
+                    "ko": "아멘",
+                    "pron": "[아-멘]",
+                    "pos": "감탄사",
+                    "exHu": "Mindenki mondja: Ámen.",
+                    "exKo": "모두가 아멘이라고 말합니다."
+                }
+            ]
+        },
+        {
+            "id": "family_people",
+            "title": "가족과 사람",
+            "emoji": "👨‍👩‍👧‍👦",
+            "words": [
+                {
+                    "hu": "Család",
+                    "ko": "가족",
+                    "pron": "[처-라-드]",
+                    "pos": "명사",
+                    "exHu": "Nagy családom van.",
+                    "exKo": "나는 대가족이 있습니다."
+                },
+                {
+                    "hu": "Anya",
+                    "ko": "어머니 / 엄마",
+                    "pron": "[어-녀]",
+                    "pos": "명사",
+                    "exHu": "Az anya főz.",
+                    "exKo": "어머니가 요리하십니다."
+                },
+                {
+                    "hu": "Apa",
+                    "ko": "아버지 / 아빠",
+                    "pron": "[어-퍼]",
+                    "pos": "명사",
+                    "exHu": "Apa dolgozik.",
+                    "exKo": "아버지는 일하십니다."
+                },
+                {
+                    "hu": "Gyerek",
+                    "ko": "아이",
+                    "pron": "[졔-레-크]",
+                    "pos": "명사",
+                    "exHu": "A gyerek játszik.",
+                    "exKo": "아이가 놉니다."
+                },
+                {
+                    "hu": "Fiú",
+                    "ko": "소년 / 아들",
+                    "pron": "[피-우]",
+                    "pos": "명사",
+                    "exHu": "Ő az én fiam.",
+                    "exKo": "그는 내 아들입니다."
+                },
+                {
+                    "hu": "Lány",
+                    "ko": "소녀 / 딸",
+                    "pron": "[라-니]",
+                    "pos": "명사",
+                    "exHu": "Szép lány.",
+                    "exKo": "아름다운 소녀입니다."
+                },
+                {
+                    "hu": "Barát",
+                    "ko": "친구",
+                    "pron": "[버-라-트]",
+                    "pos": "명사",
+                    "exHu": "Jézus a barátunk.",
+                    "exKo": "예수님은 우리의 친구입니다."
+                },
+                {
+                    "hu": "Ember",
+                    "ko": "사람",
+                    "pron": "[엠-베-르]",
+                    "pos": "명사",
+                    "exHu": "Minden ember bűnös.",
+                    "exKo": "모든 사람은 죄인입니다."
+                }
+            ]
+        },
+        {
+            "id": "numbers_time",
+            "title": "숫자와 시간",
+            "emoji": "⏰",
+            "words": [
+                {
+                    "hu": "Egy",
+                    "ko": "하나 (1)",
+                    "pron": "[에-지]",
+                    "pos": "수사",
+                    "exHu": "Egy Isten van.",
+                    "exKo": "한 분 하나님이 계십니다."
+                },
+                {
+                    "hu": "Kettő",
+                    "ko": "둘 (2)",
+                    "pron": "[켓-퇴]",
+                    "pos": "수사",
+                    "exHu": "Két kezem van.",
+                    "exKo": "나는 두 손이 있습니다."
+                },
+                {
+                    "hu": "Három",
+                    "ko": "셋 (3)",
+                    "pron": "[하-롬]",
+                    "pos": "수사",
+                    "exHu": "Három nap múlva.",
+                    "exKo": "3일 후에."
+                },
+                {
+                    "hu": "Száz",
+                    "ko": "백 (100)",
+                    "pron": "[싸-즈]",
+                    "pos": "수사",
+                    "exHu": "Száz százalék.",
+                    "exKo": "100 퍼센트."
+                },
+                {
+                    "hu": "Ma",
+                    "ko": "오늘",
+                    "pron": "[머]",
+                    "pos": "명사",
+                    "exHu": "Ma van vasárnap.",
+                    "exKo": "오늘은 일요일입니다."
+                },
+                {
+                    "hu": "Holnap",
+                    "ko": "내일",
+                    "pron": "[홀-너-프]",
+                    "pos": "명사",
+                    "exHu": "Holnap találkozunk.",
+                    "exKo": "내일 만나요."
+                },
+                {
+                    "hu": "Most",
+                    "ko": "지금",
+                    "pron": "[모-슈-트]",
+                    "pos": "부사",
+                    "exHu": "Most imádkozzunk.",
+                    "exKo": "지금 기도합시다."
+                },
+                {
+                    "hu": "Idő",
+                    "ko": "시간",
+                    "pron": "[이-되]",
+                    "pos": "명사",
+                    "exHu": "Nincs időm.",
+                    "exKo": "나는 시간이 없습니다."
+                }
+            ]
+        },
+        {
+            "id": "food_drink",
+            "title": "음식과 음료",
+            "emoji": "🍎",
+            "words": [
+                {
+                    "hu": "Víz",
+                    "ko": "물",
+                    "pron": "[비-즈]",
+                    "pos": "명사",
+                    "exHu": "Kérek egy pohár vizet.",
+                    "exKo": "물 한 잔 주세요."
+                },
+                {
+                    "hu": "Kenyér",
+                    "ko": "빵",
+                    "pron": "[케-녜-르]",
+                    "pos": "명사",
+                    "exHu": "Mindennapi kenyerünk.",
+                    "exKo": "우리의 일용할 양식(빵)."
+                },
+                {
+                    "hu": "Alma",
+                    "ko": "사과",
+                    "pron": "[얼-머]",
+                    "pos": "명사",
+                    "exHu": "Piros alma.",
+                    "exKo": "빨간 사과."
+                },
+                {
+                    "hu": "Hús",
+                    "ko": "고기",
+                    "pron": "[후-슈]",
+                    "pos": "명사",
+                    "exHu": "Finom a hús.",
+                    "exKo": "고기가 맛있습니다."
+                },
+                {
+                    "hu": "Tej",
+                    "ko": "우유",
+                    "pron": "[테-이]",
+                    "pos": "명사",
+                    "exHu": "Tejet iszom.",
+                    "exKo": "나는 우유를 마십니다."
+                },
+                {
+                    "hu": "Kávé",
+                    "ko": "커피",
+                    "pron": "[카-베]",
+                    "pos": "명사",
+                    "exHu": "Egy kávét kérek.",
+                    "exKo": "커피 한 잔 주세요."
+                },
+                {
+                    "hu": "Reggeli",
+                    "ko": "아침식사",
+                    "pron": "[레-겔-리]",
+                    "pos": "명사",
+                    "exHu": "A reggeli kész.",
+                    "exKo": "아침 식사가 준비되었습니다."
+                }
+            ]
+        },
+        {
+            "id": "colors",
+            "title": "색깔",
+            "emoji": "🎨",
+            "words": [
+                {
+                    "hu": "Fehér",
+                    "ko": "흰색",
+                    "pron": "[페-헤-르]",
+                    "pos": "형용사",
+                    "exHu": "Fehér mint a hó.",
+                    "exKo": "눈처럼 희다."
+                },
+                {
+                    "hu": "Fekete",
+                    "ko": "검은색",
+                    "pron": "[페-케-테]",
+                    "pos": "형용사",
+                    "exHu": "Fekete a kávé.",
+                    "exKo": "커피는 검다."
+                },
+                {
+                    "hu": "Piros",
+                    "ko": "빨간색",
+                    "pron": "[피-로-슈]",
+                    "pos": "형용사",
+                    "exHu": "Jézus vére piros.",
+                    "exKo": "예수님의 피는 붉다."
+                },
+                {
+                    "hu": "Kék",
+                    "ko": "파란색",
+                    "pron": "[케-크]",
+                    "pos": "형용사",
+                    "exHu": "Az ég kék.",
+                    "exKo": "하늘은 파랗다."
+                },
+                {
+                    "hu": "Zöld",
+                    "ko": "초록색",
+                    "pron": "[죌-드]",
+                    "pos": "형용사",
+                    "exHu": "A fű zöld.",
+                    "exKo": "잔디는 초록색이다."
+                },
+                {
+                    "hu": "Sárga",
+                    "ko": "노란색",
+                    "pron": "[샤-르-거]",
+                    "pos": "형용사",
+                    "exHu": "A nap sárga.",
+                    "exKo": "태양은 노랗다."
+                }
+            ]
+        },
+        {
+            "id": "clothes",
+            "title": "옷과 의류",
+            "emoji": "👕",
+            "words": [
+                {
+                    "hu": "Ruha",
+                    "ko": "옷",
+                    "pron": "[루-허]",
+                    "pos": "명사",
+                    "exHu": "Szép a ruhád.",
+                    "exKo": "너의 옷이 예쁘다."
+                },
+                {
+                    "hu": "Ing",
+                    "ko": "셔츠",
+                    "pron": "[잉-그]",
+                    "pos": "명사",
+                    "exHu": "Fehér inget viselek.",
+                    "exKo": "나는 흰 셔츠를 입고 있다."
+                },
+                {
+                    "hu": "Nadrág",
+                    "ko": "바지",
+                    "pron": "[너-드-라-그]",
+                    "pos": "명사",
+                    "exHu": "Hosszú a nadrág.",
+                    "exKo": "바지가 길다."
+                },
+                {
+                    "hu": "Cipő",
+                    "ko": "신발",
+                    "pron": "[치-푀]",
+                    "pos": "명사",
+                    "exHu": "Vedd le a cipődet.",
+                    "exKo": "신발을 벗으세요."
+                },
+                {
+                    "hu": "Kabát",
+                    "ko": "코트 / 외투",
+                    "pron": "[커-바-트]",
+                    "pos": "명사",
+                    "exHu": "Hideg van, vegyél kabátot.",
+                    "exKo": "추우니까 코트를 입으세요."
+                },
+                {
+                    "hu": "Sapka",
+                    "ko": "모자",
+                    "pron": "[샾-커]",
+                    "pos": "명사",
+                    "exHu": "A sapka meleg.",
+                    "exKo": "모자가 따뜻합니다."
+                }
+            ]
+        },
+        {
+            "id": "animals",
+            "title": "동물",
+            "emoji": "🐶",
+            "words": [
+                {
+                    "hu": "Kutya",
+                    "ko": "개",
+                    "pron": "[쿠-텨]",
+                    "pos": "명사",
+                    "exHu": "A kutya ugat.",
+                    "exKo": "개가 짖습니다."
+                },
+                {
+                    "hu": "Macska",
+                    "ko": "고양이",
+                    "pron": "[머-츠-커]",
+                    "pos": "명사",
+                    "exHu": "A macska alszik.",
+                    "exKo": "고양이가 잡니다."
+                },
+                {
+                    "hu": "Ló",
+                    "ko": "말",
+                    "pron": "[로]",
+                    "pos": "명사",
+                    "exHu": "A lovak futnak.",
+                    "exKo": "말들이 달립니다."
+                },
+                {
+                    "hu": "Bárány",
+                    "ko": "양",
+                    "pron": "[바-라-니]",
+                    "pos": "명사",
+                    "exHu": "Jézus Isten báránya.",
+                    "exKo": "예수님은 하나님의 어린 양입니다."
+                },
+                {
+                    "hu": "Oroszlán",
+                    "ko": "사자",
+                    "pron": "[오-로-슬-란]",
+                    "pos": "명사",
+                    "exHu": "Juda oroszlánja.",
+                    "exKo": "유다의 사자."
+                }
+            ]
+        },
+        {
+            "id": "nature",
+            "title": "자연",
+            "emoji": "🌳",
+            "words": [
+                {
+                    "hu": "Nap",
+                    "ko": "해 / 태양",
+                    "pron": "[너-프]",
+                    "pos": "명사",
+                    "exHu": "Süt a nap.",
+                    "exKo": "해가 비칩니다."
+                },
+                {
+                    "hu": "Hold",
+                    "ko": "달",
+                    "pron": "[홀-드]",
+                    "pos": "명사",
+                    "exHu": "Szép a telihold.",
+                    "exKo": "보름달이 아름답습니다."
+                },
+                {
+                    "hu": "Csillag",
+                    "ko": "별",
+                    "pron": "[칠-러-그]",
+                    "pos": "명사",
+                    "exHu": "Ragyognak a csillagok.",
+                    "exKo": "별들이 빛납니다."
+                },
+                {
+                    "hu": "Fa",
+                    "ko": "나무",
+                    "pron": "[퍼]",
+                    "pos": "명사",
+                    "exHu": "A fa magas.",
+                    "exKo": "나무가 높습니다."
+                },
+                {
+                    "hu": "Virág",
+                    "ko": "꽃",
+                    "pron": "[비-라-그]",
+                    "pos": "명사",
+                    "exHu": "A virág illatos.",
+                    "exKo": "꽃이 향기롭습니다."
+                },
+                {
+                    "hu": "Hegy",
+                    "ko": "산",
+                    "pron": "[헤-지]",
+                    "pos": "명사",
+                    "exHu": "Fölmegyek a hegyre.",
+                    "exKo": "나는 산에 올라갑니다."
+                }
+            ]
+        },
+        {
+            "id": "transport",
+            "title": "교통",
+            "emoji": "🚌",
+            "words": [
+                {
+                    "hu": "Autó",
+                    "ko": "자동차",
+                    "pron": "[어-우-토]",
+                    "pos": "명사",
+                    "exHu": "Az autó gyors.",
+                    "exKo": "자동차가 빠릅니다."
+                },
+                {
+                    "hu": "Busz",
+                    "ko": "버스",
+                    "pron": "[부-스]",
+                    "pos": "명사",
+                    "exHu": "Várom a buszt.",
+                    "exKo": "버스를 기다립니다."
+                },
+                {
+                    "hu": "Vonat",
+                    "ko": "기차",
+                    "pron": "[보-너-트]",
+                    "pos": "명사",
+                    "exHu": "A vonat késik.",
+                    "exKo": "기차가 연착되었습니다."
+                },
+                {
+                    "hu": "Repülő",
+                    "ko": "비행기",
+                    "pron": "[레-퓔-뢰]",
+                    "pos": "명사",
+                    "exHu": "Félek a repülőtől.",
+                    "exKo": "나는 비행기를 무서워합니다."
+                },
+                {
+                    "hu": "Villamos",
+                    "ko": "트램 / 전차",
+                    "pron": "[빌-러-모-슈]",
+                    "pos": "명사",
+                    "exHu": "Budapesten sok a villamos.",
+                    "exKo": "부다페스트에는 트램이 많습니다."
+                }
+            ]
+        },
+        {
+            "id": "house_home",
+            "title": "집과 사물",
+            "emoji": "🏠",
+            "words": [
+                {
+                    "hu": "Ház",
+                    "ko": "집",
+                    "pron": "[하-즈]",
+                    "pos": "명사",
+                    "exHu": "Ez az én házam.",
+                    "exKo": "이것은 나의 집입니다."
+                },
+                {
+                    "hu": "Szoba",
+                    "ko": "방",
+                    "pron": "[쏘-버]",
+                    "pos": "명사",
+                    "exHu": "Tiszta a szoba.",
+                    "exKo": "방이 깨끗합니다."
+                },
+                {
+                    "hu": "Ajtó",
+                    "ko": "문",
+                    "pron": "[어-이-토]",
+                    "pos": "명사",
+                    "exHu": "Nyisd ki az ajtót.",
+                    "exKo": "문을 여세요."
+                },
+                {
+                    "hu": "Ablak",
+                    "ko": "창문",
+                    "pron": "[어-블-러-크]",
+                    "pos": "명사",
+                    "exHu": "Nézz ki az ablakon.",
+                    "exKo": "창밖을 보세요."
+                },
+                {
+                    "hu": "Asztal",
+                    "ko": "책상 / 탁자",
+                    "pron": "[어-스-털]",
+                    "pos": "명사",
+                    "exHu": "A bibliám az asztalon van.",
+                    "exKo": "내 성경이 책상 위에 있습니다."
+                },
+                {
+                    "hu": "Szék",
+                    "ko": "의자",
+                    "pron": "[쎄-크]",
+                    "pos": "명사",
+                    "exHu": "Ülj le a székre.",
+                    "exKo": "의자에 앉으세요."
+                }
+            ]
+        },
+        {
+            "id": "body_parts",
+            "title": "신체",
+            "emoji": "💪",
+            "words": [
+                {
+                    "hu": "Fej",
+                    "ko": "머리",
+                    "pron": "[페-이]",
+                    "pos": "명사",
+                    "exHu": "Fáj a fejem.",
+                    "exKo": "머리가 아픕니다."
+                },
+                {
+                    "hu": "Szem",
+                    "ko": "눈",
+                    "pron": "[쎔]",
+                    "pos": "명사",
+                    "exHu": "Nyisd ki a szemed.",
+                    "exKo": "눈을 뜨세요."
+                },
+                {
+                    "hu": "Kéz",
+                    "ko": "손",
+                    "pron": "[케-즈]",
+                    "pos": "명사",
+                    "exHu": "Emeld fel a kezed.",
+                    "exKo": "손을 드세요."
+                },
+                {
+                    "hu": "Szív",
+                    "ko": "심장 / 마음",
+                    "pron": "[씨-브]",
+                    "pos": "명사",
+                    "exHu": "Isten látja a szívedet.",
+                    "exKo": "하나님은 당신의 마음을 보십니다."
+                },
+                {
+                    "hu": "Láb",
+                    "ko": "다리 / 발",
+                    "pron": "[라-브]",
+                    "pos": "명사",
+                    "exHu": "Fáradt a lábam.",
+                    "exKo": "다리가 피곤합니다."
+                }
+            ]
+        },
+        {
+            "id": "basic_verbs",
+            "title": "필수 동사",
+            "emoji": "🏃",
+            "words": [
+                {
+                    "hu": "Van",
+                    "ko": "있다 / 이다",
+                    "pron": "[번]",
+                    "pos": "동사",
+                    "exHu": "Isten van.",
+                    "exKo": "하나님은 계십니다."
+                },
+                {
+                    "hu": "Megy",
+                    "ko": "가다",
+                    "pron": "[메-지]",
+                    "pos": "동사",
+                    "exHu": "Hova mégy?",
+                    "exKo": "어디 가나요?"
+                },
+                {
+                    "hu": "Jön",
+                    "ko": "오다",
+                    "pron": "[왼]",
+                    "pos": "동사",
+                    "exHu": "Jézus visszajön.",
+                    "exKo": "예수님은 다시 오십니다."
+                },
+                {
+                    "hu": "Eszik",
+                    "ko": "먹다",
+                    "pron": "[에-씨-크]",
+                    "pos": "동사",
+                    "exHu": "Kenyeret eszik.",
+                    "exKo": "빵을 먹습니다."
+                },
+                {
+                    "hu": "Iszik",
+                    "ko": "마시다",
+                    "pron": "[이-씨-크]",
+                    "pos": "동사",
+                    "exHu": "Vizet iszik.",
+                    "exKo": "물을 마십니다."
+                },
+                {
+                    "hu": "Alszik",
+                    "ko": "자다",
+                    "pron": "[얼-씨-크]",
+                    "pos": "동사",
+                    "exHu": "A baba alszik.",
+                    "exKo": "아기가 잡니다."
+                },
+                {
+                    "hu": "Tanul",
+                    "ko": "공부하다",
+                    "pron": "[터-눌]",
+                    "pos": "동사",
+                    "exHu": "Magyarul tanulok.",
+                    "exKo": "나는 헝가리어를 공부합니다."
+                },
+                {
+                    "hu": "Szeret",
+                    "ko": "사랑하다 / 좋아하다",
+                    "pron": "[쎄-레-트]",
+                    "pos": "동사",
+                    "exHu": "Szeretem Istent.",
+                    "exKo": "나는 하나님을 사랑합니다."
+                }
+            ]
+        },
+        {
+            "id": "adjectives",
+            "title": "기초 형용사",
+            "emoji": "✨",
+            "words": [
+                {
+                    "hu": "Jó",
+                    "ko": "좋은",
+                    "pron": "[요]",
+                    "pos": "형용사",
+                    "exHu": "Isten jó.",
+                    "exKo": "하나님은 선하십니다."
+                },
+                {
+                    "hu": "Rossz",
+                    "ko": "나쁜",
+                    "pron": "[로-쓰]",
+                    "pos": "형용사",
+                    "exHu": "Ez rossz hír.",
+                    "exKo": "이건 나쁜 소식입니다."
+                },
+                {
+                    "hu": "Nagy",
+                    "ko": "큰",
+                    "pron": "[너-지]",
+                    "pos": "형용사",
+                    "exHu": "Nagy a te hited.",
+                    "exKo": "네 믿음이 크다."
+                },
+                {
+                    "hu": "Kicsi",
+                    "ko": "작은",
+                    "pron": "[키-치]",
+                    "pos": "형용사",
+                    "exHu": "Kicsi a világ.",
+                    "exKo": "세상은 좁다(작다)."
+                },
+                {
+                    "hu": "Szép",
+                    "ko": "아름다운 / 예쁜",
+                    "pron": "[쎼-프]",
+                    "pos": "형용사",
+                    "exHu": "Szép napunk van.",
+                    "exKo": "아름다운 날입니다."
+                },
+                {
+                    "hu": "Új",
+                    "ko": "새로운",
+                    "pron": "[우-이]",
+                    "pos": "형용사",
+                    "exHu": "Új ének.",
+                    "exKo": "새 노래."
+                },
+                {
+                    "hu": "Régi",
+                    "ko": "오래된",
+                    "pron": "[레-기]",
+                    "pos": "형용사",
+                    "exHu": "Régi barát.",
+                    "exKo": "오랜 친구."
+                }
+            ]
+        }
+    ]
+}

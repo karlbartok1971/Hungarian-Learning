@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Sparkles, RefreshCw, Volume2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { useTTS } from '@/hooks/useTTS';
 
 // 나중에 API에서 받아올 데이터 타입 정의
 interface DailyWord {
@@ -26,6 +27,7 @@ const MOCK_DAILY_WORD: DailyWord = {
 export const WordOfTheDayCard = () => {
     const [isFlipped, setIsFlipped] = useState(false);
     const [isAnimating, setIsAnimating] = useState(false);
+    const { speak, isSpeaking } = useTTS();
 
     // 뒤집기 핸들러
     const handleFlip = () => {
@@ -33,6 +35,12 @@ export const WordOfTheDayCard = () => {
             setIsFlipped(!isFlipped);
             setIsAnimating(true);
         }
+    };
+
+    // 발음 재생 핸들러
+    const handleSpeak = (e: React.MouseEvent) => {
+        e.stopPropagation(); // 카드 뒤집기 방지
+        speak(MOCK_DAILY_WORD.hungarian);
     };
 
     return (
@@ -101,8 +109,25 @@ export const WordOfTheDayCard = () => {
                             <span className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-lg text-sm font-semibold">
                                 {MOCK_DAILY_WORD.partOfSpeech}
                             </span>
-                            <Button size="icon" variant="ghost" className="h-8 w-8 text-gray-400 hover:text-indigo-600">
-                                <Volume2 className="h-5 w-5" />
+                            <Button
+                                size="icon"
+                                variant="ghost"
+                                className={cn(
+                                    "h-8 w-8 text-gray-400 hover:text-indigo-600 transition-all",
+                                    isSpeaking && "text-indigo-600 scale-110 bg-indigo-50"
+                                )}
+                                onClick={handleSpeak}
+                            >
+                                {isSpeaking ? (
+                                    <motion.div
+                                        animate={{ scale: [1, 1.2, 1] }}
+                                        transition={{ repeat: Infinity, duration: 1 }}
+                                    >
+                                        <Volume2 className="h-5 w-5" />
+                                    </motion.div>
+                                ) : (
+                                    <Volume2 className="h-5 w-5" />
+                                )}
                             </Button>
                         </div>
 
