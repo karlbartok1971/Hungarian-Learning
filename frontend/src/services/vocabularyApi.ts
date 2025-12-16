@@ -164,7 +164,7 @@ class VocabularyApiClient {
   private baseUrl: string;
   private headers: HeadersInit;
 
-  constructor(baseUrl: string = 'http://localhost:8000/api') {
+  constructor(baseUrl: string = 'http://localhost:3901/api') {
     this.baseUrl = baseUrl;
     this.headers = {
       'Content-Type': 'application/json',

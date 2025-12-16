@@ -96,7 +96,7 @@ export default function LevelLearningPage() {
 
         setLoading(true);
         // [Hardcoded Fix] 하드코딩 주소 사용 (가장 확실함)
-        const targetUrl = `http://localhost:3901/api/vocabulary/${level}`;
+        const targetUrl = `${API_BASE_URL}/vocabulary/${level}`;
         console.log(`Fetching vocabulary from: ${targetUrl}`);
 
         fetch(targetUrl)

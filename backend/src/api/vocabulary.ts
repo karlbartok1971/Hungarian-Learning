@@ -9,6 +9,7 @@ export const vocabularyRoutes = express.Router();
  * 특정 레벨의 단어장 데이터 반환 (JSON 파일 로드)
  */
 vocabularyRoutes.get('/:level', async (req, res) => {
+  console.log(`[Vocabulary API] Request for level: ${req.params.level}`);
   try {
     const { level } = req.params;
     const safeLevel = level.replace(/[^a-z0-9]/gi, '').toLowerCase();
