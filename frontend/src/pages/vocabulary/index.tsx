@@ -23,6 +23,9 @@ import {
   Zap
 } from 'lucide-react';
 
+import { WordOfTheDayCard } from '@/components/vocabulary/WordOfTheDayCard';
+import { StatsCards } from '@/components/vocabulary/StatsCards';
+
 // Mock 진도 데이터
 const mockProgress = {
   A1: { learned: 48, total: 150, percentage: 32 },
@@ -111,77 +114,22 @@ const VocabularyPage = () => {
 
       <div className="max-w-6xl mx-auto px-4 py-8">
         {/* 헤더 */}
-        <div className="mb-8">
-          <div className="flex items-center justify-between mb-4">
-            <div>
-              <h1 className="text-4xl font-bold text-gray-900 mb-2">
-                어휘 학습 📚
-              </h1>
-              <p className="text-gray-600 text-lg">
-                체계적인 어휘 학습으로 헝가리어 실력을 쌓아보세요
-              </p>
-            </div>
-          </div>
+        <div className="mb-12 text-center text-balance">
+          <h1 className="text-4xl font-extrabold text-gray-900 mb-4 tracking-tight">
+            매일 성장하는 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">어휘력</span> 📈
+          </h1>
+          <p className="text-gray-600 text-lg mb-8">
+            하루 한 단어부터 차근차근, 헝가리어 마스터를 향한 여정을 시작하세요.
+          </p>
 
-          {/* 전체 통계 카드 */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-            <Card className="bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200">
-              <CardContent className="pt-6">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm text-blue-600 font-medium">학습한 단어</p>
-                    <p className="text-3xl font-bold text-blue-900">
-                      {mockStats.totalLearned}
-                    </p>
-                  </div>
-                  <BookOpen className="w-12 h-12 text-blue-400" />
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-green-50 to-green-100 border-green-200">
-              <CardContent className="pt-6">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm text-green-600 font-medium">전체 진도</p>
-                    <p className="text-3xl font-bold text-green-900">
-                      {Math.round((mockStats.totalLearned / mockStats.totalWords) * 100)}%
-                    </p>
-                  </div>
-                  <TrendingUp className="w-12 h-12 text-green-400" />
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-orange-50 to-orange-100 border-orange-200">
-              <CardContent className="pt-6">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm text-orange-600 font-medium">연속 학습</p>
-                    <p className="text-3xl font-bold text-orange-900">
-                      {mockStats.streak}일
-                    </p>
-                  </div>
-                  <Zap className="w-12 h-12 text-orange-400" />
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gradient-to-br from-purple-50 to-purple-100 border-purple-200">
-              <CardContent className="pt-6">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm text-purple-600 font-medium">정확도</p>
-                    <p className="text-3xl font-bold text-purple-900">
-                      {mockStats.accuracy}%
-                    </p>
-                  </div>
-                  <Award className="w-12 h-12 text-purple-400" />
-                </div>
-              </CardContent>
-            </Card>
+          {/* 오늘의 단어 카드 섹션 */}
+          <div className="mb-16">
+            <WordOfTheDayCard />
           </div>
         </div>
+
+        {/* 전체 통계 카드 (StatsCards 컴포넌트 사용) */}
+        <StatsCards stats={mockStats} />
 
         {/* 레벨별 어휘 카드 */}
         <div className="space-y-6">
@@ -192,9 +140,8 @@ const VocabularyPage = () => {
             return (
               <Card
                 key={levelData.level}
-                className={`transition-all duration-200 border-2 ${getColorClasses(levelData.color)} ${
-                  isLocked ? 'opacity-60' : 'hover:shadow-xl'
-                }`}
+                className={`transition-all duration-200 border-2 ${getColorClasses(levelData.color)} ${isLocked ? 'opacity-60' : 'hover:shadow-xl'
+                  }`}
               >
                 <CardHeader>
                   <div className="flex items-start justify-between">
