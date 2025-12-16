@@ -21,7 +21,7 @@ const queryClient = new QueryClient({
 });
 
 // 레이아웃을 사용하지 않을 페이지 목록
-const pagesWithoutLayout = ['/login', '/register', '/auth'];
+const pagesWithoutLayout = ['/login', '/register', '/auth', '/admin'];
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();

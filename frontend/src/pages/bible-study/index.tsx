@@ -16,8 +16,13 @@ import {
   ChevronUp,
   Bookmark,
   Download,
-  MessageSquare
+  MessageSquare,
+  GalleryHorizontalEnd,
+  ArrowLeft
 } from 'lucide-react';
+import useSWR from 'swr';
+import SwipeLearning from '@/components/learning/SwipeLearning';
+import { useRouter } from 'next/router';
 
 interface BibleVerse {
   id: string;
@@ -46,40 +51,21 @@ interface WordAnalysis {
 }
 
 const BibleStudyPage = () => {
-  const [verse, setVerse] = useState<BibleVerse | null>(null);
-  const [loading, setLoading] = useState(true);
   const [showFullAnalysis, setShowFullAnalysis] = useState(false);
   const [hoveredWord, setHoveredWord] = useState<string | null>(null);
+  const [learningMode, setLearningMode] = useState<'study' | 'swipe'>('study');
 
-  useEffect(() => {
-    fetchDailyVerse();
-  }, []);
+  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3901/api';
+  const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
-  const fetchDailyVerse = async () => {
-    try {
-      setLoading(true);
-      // TODO: 실제 사용자 ID 가져오기
-      const userId = 'user_1234';
-      const response = await fetch(`http://localhost:3901/api/bible/daily?userId=${userId}`);
+  const { data, error, isLoading, mutate } = useSWR(
+    `${API_BASE_URL}/bible/daily?userId=user_1234`, // TODO: 실제 유저 ID
+    fetcher
+  );
 
-      if (!response.ok) {
-        throw new Error('성경 구절을 불러오는데 실패했습니다');
-      }
-
-      const data = await response.json();
-
-      if (data.success && data.data.verse) {
-        setVerse(data.data.verse);
-      }
-    } catch (error: any) {
-      console.error('성경 구절 로드 오류:', error);
-    } finally {
-      setLoading(false);
-    }
-  };
+  const verse: BibleVerse | null = data?.success ? data.data.verse : null;
 
   const playAudio = (text: string) => {
-    // TTS 음성 재생
     if ('speechSynthesis' in window) {
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = 'hu-HU';
@@ -98,15 +84,55 @@ const BibleStudyPage = () => {
     }
   };
 
-  if (loading) {
+  // Loading State
+  if (isLoading || !verse) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">오늘의 성경을 불러오는 중...</p>
+      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-indigo-50 to-white">
+        <div className="text-center space-y-4">
+          <div className="relative mx-auto w-16 h-16">
+            <div className="absolute inset-0 border-4 border-indigo-200 rounded-full animate-ping"></div>
+            <div className="absolute inset-0 border-4 border-t-indigo-600 rounded-full animate-spin"></div>
+            <BookOpen className="absolute inset-0 m-auto text-indigo-600" size={24} />
+          </div>
+          <p className="text-indigo-900 font-medium animate-pulse">오늘의 말씀을 준비하고 있습니다...</p>
         </div>
       </div>
     );
+  }
+
+  // Swipe Mode UI
+  if (learningMode === 'swipe') {
+    const swipeWords = verse.grammarAnalysis.map(w => ({
+      hungarian: w.word,
+      korean: w.meaning,
+      pronunciation: w.lemma,
+      example: `${w.pos} | ${w.grammarFeature}`
+    }));
+
+    return (
+      <div className="min-h-screen bg-slate-50 py-10">
+        <div className="max-w-4xl mx-auto px-4">
+          <Button
+            onClick={() => setLearningMode('study')}
+            variant="ghost"
+            className="mb-4 hover:bg-slate-200"
+          >
+            <ArrowLeft className="mr-2 h-4 w-4" /> 말씀으로 돌아가기
+          </Button>
+          <Card className="p-8 shadow-xl bg-white border-0 rounded-3xl">
+            <div className="text-center mb-6">
+              <Badge variant="outline" className="mb-2 bg-indigo-50 text-indigo-600 border-indigo-100">성경 어휘 암기</Badge>
+              <h2 className="text-2xl font-bold">말씀 속 단어 익히기</h2>
+            </div>
+            <SwipeLearning
+              words={swipeWords}
+              onComplete={() => console.log('Training finished')}
+              onExit={() => setLearningMode('study')}
+            />
+          </Card>
+        </div>
+      </div>
+    )
   }
 
   if (!verse) {
@@ -118,7 +144,7 @@ const BibleStudyPage = () => {
             <CardDescription>성경 구절을 찾을 수 없습니다</CardDescription>
           </CardHeader>
           <CardContent>
-            <Button onClick={fetchDailyVerse} className="w-full">
+            <Button onClick={() => mutate()} className="w-full">
               다시 시도
             </Button>
           </CardContent>
@@ -205,19 +231,28 @@ const BibleStudyPage = () => {
             </CardHeader>
 
             <CardContent>
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2 mb-6">
                 {verse.grammarTopics.map((topic) => (
-                  <Badge key={topic} variant="secondary">
-                    {topic}
+                  <Badge key={topic} variant="secondary" className="px-3 py-1 bg-indigo-50 text-indigo-700 hover:bg-indigo-100">
+                    #{topic}
                   </Badge>
                 ))}
               </div>
 
-              {/* 전체보기 버튼 */}
-              <div className="flex items-center justify-center">
+              {/* Action Buttons */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <Button
+                  onClick={() => setLearningMode('swipe')}
+                  className="w-full h-12 text-lg font-bold bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
+                >
+                  <GalleryHorizontalEnd className="w-5 h-5 mr-2" />
+                  단어 스피드 암기하기
+                </Button>
+
+                <Button
+                  variant="outline"
                   onClick={() => setShowFullAnalysis(!showFullAnalysis)}
-                  className="w-full max-w-md"
+                  className="w-full h-12 text-lg border-2"
                 >
                   {showFullAnalysis ? (
                     <>

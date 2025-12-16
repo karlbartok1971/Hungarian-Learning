@@ -3,11 +3,13 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { motion } from 'framer-motion';
 import {
-    Volume2, ArrowRight, ArrowLeft, RotateCcw, CheckCircle2,
-    Sparkles, Keyboard, LayoutGrid, BookOpen, Star, Download
+    ArrowRight, ArrowLeft, Volume2, RotateCcw, CheckCircle2,
+    Sparkles, Keyboard, LayoutGrid, BookOpen, Star, Download, GalleryHorizontalEnd
 } from 'lucide-react';
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
+
+import SwipeLearning from '@/components/learning/SwipeLearning';
 
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
@@ -58,6 +60,7 @@ export default function LevelLearningPage() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isFlipped, setIsFlipped] = useState(false);
     const [isPressingAction, setIsPressingAction] = useState(false);
+    const [learningMode, setLearningMode] = useState<'card' | 'swipe'>('card');
 
     // Bookmark State
     const [savedWords, setSavedWords] = useState<Word[]>([]);
@@ -144,6 +147,7 @@ export default function LevelLearningPage() {
     const handleBackToTopics = () => {
         setSelectedTopic(null);
         setCurrentIndex(0); // Reset index
+        setLearningMode('card'); // Reset mode
     };
 
     // PDF Export Handler
@@ -181,6 +185,46 @@ export default function LevelLearningPage() {
 
     // Learning Handlers
     const currentWords = selectedTopic?.words || [];
+    if (selectedTopic) {
+        // Swipe Mode Rendering
+        if (learningMode === 'swipe') {
+            const swipeWords = selectedTopic.words.map(w => ({
+                hungarian: w.hu,
+                korean: w.ko,
+                pronunciation: w.pron,
+                example: `${w.exHu} (${w.exKo})`
+            }));
+
+            return (
+                <div className="max-w-4xl mx-auto px-4 py-8">
+                    <div className="mb-8 flex items-center justify-between">
+                        <Button
+                            variant="ghost"
+                            onClick={() => setLearningMode('card')}
+                            className="text-gray-600 hover:text-gray-900"
+                        >
+                            <ArrowLeft className="w-5 h-5 mr-2" />
+                            플래시카드 모드로 돌아가기
+                        </Button>
+                        <Badge variant="outline" className="text-lg px-4 py-1 border-purple-200 bg-purple-50 text-purple-700">
+                            ⚡ 스피드 암기 모드
+                        </Badge>
+                    </div>
+
+                    <div className="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 min-h-[700px]">
+                        <SwipeLearning
+                            words={swipeWords}
+                            onComplete={(results) => {
+                                // TODO: Handle results (e.g. save stats)
+                                console.log('Training Complete:', results);
+                            }}
+                            onExit={() => setLearningMode('card')}
+                        />
+                    </div>
+                </div>
+            );
+        }
+    }
     const currentWord = currentWords[currentIndex];
     const progress = currentWords.length > 0 ? Math.round(((currentIndex + 1) / currentWords.length) * 100) : 0;
 
@@ -364,73 +408,46 @@ export default function LevelLearningPage() {
                 {selectedTopic && currentWord && (
                     <div className="w-full min-h-screen flex flex-col items-center px-4 py-10 animate-in zoom-in-95 fade-in duration-500">
                         <div className="w-full max-w-3xl">
-                            {/* Top Bar with Enhanced Design */}
-                            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-10 p-6 bg-white rounded-2xl shadow-sm border border-gray-100">
-                                <div className="flex items-center gap-3">
+                            {/* Learning Header */}
+                            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8 animate-in slide-in-from-top-4 fade-in duration-500">
+                                <div className="flex items-center gap-4">
                                     <Button
-                                        variant="outline"
-                                        className="h-11 px-5 text-base font-medium border-2 border-indigo-200 text-indigo-700 hover:bg-indigo-50 hover:border-indigo-300 transition-all shadow-sm"
+                                        variant="ghost"
+                                        size="icon"
                                         onClick={handleBackToTopics}
+                                        className="rounded-full hover:bg-gray-100"
                                     >
-                                        <LayoutGrid className="mr-2 h-5 w-5" /> 주제 목록
+                                        <ArrowLeft className="w-6 h-6 text-gray-600" />
                                     </Button>
-
-                                    {/* PDF Download Button (Visible only in Saved Words Mode) */}
-                                    {selectedTopic.id === 'saved' && (
-                                        <Button
-                                            variant="outline"
-                                            className="h-11 px-5 text-base font-medium border-2 border-yellow-200 text-yellow-700 hover:bg-yellow-50 hover:border-yellow-400 transition-all shadow-sm group"
-                                            onClick={handleExportPDF}
-                                        >
-                                            <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" /> PDF
-                                        </Button>
-                                    )}
+                                    <div>
+                                        <div className="flex items-center gap-2 text-sm text-gray-500 mb-1">
+                                            <span className="text-2xl">{selectedTopic.emoji}</span>
+                                            <span className="font-medium uppercase tracking-wider">{data?.level} Level</span>
+                                        </div>
+                                        <h2 className="text-2xl font-bold text-gray-900">{selectedTopic.title}</h2>
+                                    </div>
                                 </div>
 
-                                {/* Right Side: Topic Badge & Shortcuts */}
                                 <div className="flex items-center gap-3">
-                                    <Badge className="text-base px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white border-0 shadow-sm">
-                                        {selectedTopic.emoji} {selectedTopic.title}
-                                    </Badge>
-
-                                    {/* 단축키 안내 */}
-                                    <Dialog>
-                                        <DialogTrigger asChild>
-                                            <Button variant="outline" size="sm" className="gap-2 text-gray-500 hover:text-indigo-600 border-dashed h-11 px-4">
-                                                <Keyboard className="w-4 h-4" /> 단축키
-                                            </Button>
-                                        </DialogTrigger>
-                                        <DialogContent className="max-w-md">
-                                            <DialogHeader>
-                                                <DialogTitle>키보드 컨트롤</DialogTitle>
-                                                <DialogDescription>
-                                                    ESC를 누르면 목록으로 돌아갑니다.
-                                                </DialogDescription>
-                                            </DialogHeader>
-                                            <Table>
-                                                <TableHeader>
-                                                    <TableRow>
-                                                        <TableHead>단축키</TableHead>
-                                                        <TableHead>기능</TableHead>
-                                                    </TableRow>
-                                                </TableHeader>
-                                                <TableBody>
-                                                    <TableRow>
-                                                        <TableCell><Badge variant="outline">Space</Badge></TableCell>
-                                                        <TableCell>뒤집기</TableCell>
-                                                    </TableRow>
-                                                    <TableRow>
-                                                        <TableCell><Badge variant="outline">↑</Badge></TableCell>
-                                                        <TableCell>발음 듣기</TableCell>
-                                                    </TableRow>
-                                                    <TableRow>
-                                                        <TableCell><Badge variant="outline">→</Badge></TableCell>
-                                                        <TableCell>다음</TableCell>
-                                                    </TableRow>
-                                                </TableBody>
-                                            </Table>
-                                        </DialogContent>
-                                    </Dialog>
+                                    <Button
+                                        onClick={() => setLearningMode('swipe')}
+                                        className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-md hover:shadow-lg transition-all hover:scale-105"
+                                    >
+                                        <GalleryHorizontalEnd className="w-5 h-5 mr-2" />
+                                        스피드 암기 (Swipe)
+                                    </Button>
+                                    <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-gray-100">
+                                        <span className="text-sm font-medium text-gray-600">진행률</span>
+                                        <div className="w-24 h-2 bg-gray-100 rounded-full overflow-hidden">
+                                            <div
+                                                className="h-full bg-blue-500 transition-all duration-300 ease-out"
+                                                style={{ width: `${((currentIndex + 1) / selectedTopic.words.length) * 100}%` }}
+                                            />
+                                        </div>
+                                        <span className="text-sm font-bold text-blue-600 min-w-[3rem] text-right">
+                                            {Math.round(((currentIndex + 1) / selectedTopic.words.length) * 100)}%
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
 

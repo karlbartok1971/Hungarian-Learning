@@ -79,10 +79,31 @@ router.get('/daily', async (req: Request, res: Response) => {
     }
 
     if (!verse) {
-      return res.status(404).json({
-        success: false,
-        error: '성경 구절을 찾을 수 없습니다',
-      });
+      console.log('⚠️ DB에 사용 가능한 구절이 없어 Mock Data를 반환합니다.');
+      verse = {
+        id: 'mock_gen_1_1',
+        book: '창세기',
+        bookHungarian: 'Teremtés könyve',
+        chapter: 1,
+        verse: 1,
+        textHungarian: 'Kezdetben teremtette Isten az eget és a földet.',
+        textKorean: '태초에 하나님이 천지를 창조하시니라.',
+        grammarAnalysis: [
+          { word: 'Kezdetben', lemma: 'kezdet', pos: 'Noun', meaning: '태초에', grammarFeature: 'Inessive case (-ben)', level: 'A1' },
+          { word: 'teremtette', lemma: 'teremt', pos: 'Verb', meaning: '창조했다', grammarFeature: 'Past tense, Definite mock', level: 'B1' },
+          { word: 'Isten', lemma: 'Isten', pos: 'Noun', meaning: '하나님', grammarFeature: 'Nominative', level: 'A1' },
+          { word: 'az', lemma: 'az', pos: 'Article', meaning: '그', grammarFeature: 'Definite article', level: 'A1' },
+          { word: 'eget', lemma: 'ég', pos: 'Noun', meaning: '하늘을', grammarFeature: 'Accusative (-et)', level: 'A2' },
+          { word: 'és', lemma: 'és', pos: 'Conjunction', meaning: '그리고', grammarFeature: '-', level: 'A1' },
+          { word: 'földet', lemma: 'föld', pos: 'Noun', meaning: '땅을', grammarFeature: 'Accusative (-et)', level: 'A2' }
+        ],
+        difficulty: 'A1',
+        grammarTopics: ['Inessive', 'Accusative', 'Past Tense'],
+        vocabularyCount: 7,
+        theologicalTheme: '창조 (Creation)',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      };
     }
 
     // 사용자의 이 구절 학습 진도 가져오기

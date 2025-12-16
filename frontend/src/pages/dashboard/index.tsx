@@ -297,7 +297,34 @@ const DashboardPage = () => {
           </div>
         </section>
 
-        {/* 2. Stats Grid: 왼쪽에서 순차적으로 착! 착! 착! */}
+        {/* 2. AI Roleplay Banner (New!) */}
+        <section className="animate-in slide-in-from-bottom-8 fade-in duration-700 delay-100 fill-mode-backwards">
+          <Link href="/roleplay">
+            <div className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-emerald-500 to-teal-600 text-white shadow-lg p-6 md:p-8 cursor-pointer hover:shadow-2xl hover:scale-[1.01] transition-all group">
+              <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
+                <MessageCircle className="w-48 h-48 transform -rotate-12 translate-x-10 -translate-y-10" />
+              </div>
+
+              <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+                <div className="space-y-2">
+                  <Badge className="bg-white/20 hover:bg-white/30 text-white border-0 backdrop-blur-sm">
+                    New Feature ✨
+                  </Badge>
+                  <h2 className="text-2xl font-bold">AI와 함께하는 실전 회화 상황극</h2>
+                  <p className="text-emerald-50 max-w-xl">
+                    카페 주문부터 호텔 체크인까지! <br className="hidden md:block" />
+                    현지에서 바로 쓸 수 있는 살아있는 헝가리어, AI 튜터 András와 연습해보세요.
+                  </p>
+                </div>
+                <div className="bg-white text-emerald-600 px-6 py-3 rounded-full font-bold shadow-lg group-hover:bg-emerald-50 transition-colors flex items-center">
+                  대화 시작하기 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </div>
+          </Link>
+        </section>
+
+        {/* 3. 핵심 통계 카드 (Stats Grid) */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* 현재 레벨 */}
           <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group cursor-pointer animate-in slide-in-from-left-5 fade-in duration-500 delay-100 fill-mode-backwards">
