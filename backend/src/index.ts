@@ -19,6 +19,7 @@ import { learningPathRoutes } from './api/learningPath';
 import aiTutorRoutes from './api/aiTutor';
 import grammarLessonsRoutes from './api/grammarLessons';
 import dashboardRoutes from './api/dashboard';
+import { adminRoutes } from './api/admin';
 import bibleRoutes from './api/bible';
 
 // 환경 변수 로드
@@ -61,6 +62,7 @@ app.get('/health', (_, res) => {
 
 // API 라우트 설정
 app.use('/api/auth', authRoutes);
+app.use('/api/admin', adminRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/lessons', lessonRoutes);
 app.use('/api/vocabulary', vocabularyRoutes);

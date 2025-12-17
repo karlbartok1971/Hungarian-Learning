@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import {
-    Users, Database, Activity, Server, Shield,
-    Search, Plus, Save, Trash2, Edit, CheckCircle, AlertTriangle,
-    BookOpen, FileText, Settings, LogOut, Lock
+    Users, Database, Activity, Server,
+    Search, Plus, Trash2, Edit, CheckCircle, AlertTriangle,
+    BookOpen, Settings, LogOut, Lock, Loader2, ArrowLeft
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -14,25 +14,15 @@ import {
     Table, TableBody, TableCell, TableHead, TableHeader, TableRow
 } from "@/components/ui/table";
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
+import { Label } from "@/components/ui/label";
 
-// Mock Data for Admin (Korean)
-const MOCK_STATS = [
-    { label: '총 사용자', value: '1,234', change: '+12%', icon: Users, color: 'text-blue-500' },
-    { label: '학습 데이터', value: '5,600', change: '+54', icon: Database, color: 'text-purple-500' },
-    { label: 'API 요청', value: '45.2k', change: '+8%', icon: Activity, color: 'text-green-500' },
-    { label: '서버 상태', value: '정상', change: '99.9%', icon: Server, color: 'text-emerald-500' }
-];
 
+// Mock Data for Users (Still mock for now)
 const MOCK_USERS = [
     { id: 1, name: '김목사', email: 'pastor.kim@example.com', role: '프리미엄', status: '활성', lastLogin: '2분 전' },
     { id: 2, name: '홍길동', email: 'hong@test.com', role: '일반', status: '활성', lastLogin: '5시간 전' },
     { id: 3, name: '테스트 유저', email: 'test@test.com', role: '일반', status: '비활성', lastLogin: '3일 전' },
-];
-
-const MOCK_CONTENTS = [
-    { id: 1, type: '단어장', title: '필수 동사 50선 (A1)', hidden: false, items: 50 },
-    { id: 2, type: '문법', title: '동사 격 변화 완벽 정리', hidden: false, items: 1 },
-    { id: 3, type: '성경', title: '창세기 1:1 문법 분석', hidden: true, items: 7 },
 ];
 
 export default function AdminDashboard() {
@@ -40,41 +30,189 @@ export default function AdminDashboard() {
     const [password, setPassword] = useState('');
     const [activeTab, setActiveTab] = useState('overview');
 
-    // Simple Client-side Auth for Demo
-    const handleLogin = (e: React.FormEvent) => {
-        e.preventDefault();
+    // Real Data States
+    const [stats, setStats] = useState<any>(null);
+    const [contents, setContents] = useState<any[]>([]);
+    const [loadingStats, setLoadingStats] = useState(false);
+    const [loadingContents, setLoadingContents] = useState(false);
+
+    // CMS Editor States
+    const [selectedLevel, setSelectedLevel] = useState<string | null>(null);
+    const [vocabData, setVocabData] = useState<any[]>([]);
+    const [loadingVocab, setLoadingVocab] = useState(false);
+    const [isSaving, setIsSaving] = useState(false);
+
+    // Edit Modal State
+    const [isEditModalOpen, setIsEditModalOpen] = useState(false);
+    const [editingItem, setEditingItem] = useState<any>({ hungarian: '', korean: '', example: '', example_kr: '' });
+
+    const handleLogin = (e?: React.FormEvent) => {
+        if (e) e.preventDefault();
         if (password === 'admin1234') {
             setIsAuthenticated(true);
         } else {
-            alert('비밀번호가 틀렸습니다. (힌트: admin1234)');
+            alert('잘못된 비밀번호입니다.');
         }
     };
 
+    const fetchStats = async () => {
+        setLoadingStats(true);
+        try {
+            const res = await fetch('http://localhost:3001/api/admin/stats', {
+                headers: { 'x-admin-key': 'admin1234' }
+            });
+            const json = await res.json();
+            if (json.success) {
+                setStats(json.data);
+            }
+        } catch (err) {
+            console.error("Failed to fetch stats", err);
+        } finally {
+            setLoadingStats(false);
+        }
+    };
+
+    const fetchContents = async () => {
+        setLoadingContents(true);
+        try {
+            const res = await fetch('http://localhost:3001/api/admin/contents', {
+                headers: { 'x-admin-key': 'admin1234' }
+            });
+            const json = await res.json();
+            if (json.success) {
+                setContents(json.data);
+            }
+        } catch (err) {
+            console.error("Failed to fetch contents", err);
+        } finally {
+            setLoadingContents(false);
+        }
+    };
+
+    const fetchVocabularyDetail = async (level: string) => {
+        setLoadingVocab(true);
+        setSelectedLevel(level);
+        try {
+            const res = await fetch(`http://localhost:3001/api/admin/vocabulary/${level}`, {
+                headers: { 'x-admin-key': 'admin1234' }
+            });
+            const json = await res.json();
+            if (json.success) {
+                setVocabData(json.data);
+            }
+        } catch (err) {
+            console.error("Failed to fetch vocabulary", err);
+            alert("삭제된 데이터거나 불러올 수 없습니다.");
+            setSelectedLevel(null);
+        } finally {
+            setLoadingVocab(false);
+        }
+    };
+
+    const saveVocabulary = async (newData: any[]) => {
+        if (!selectedLevel) return;
+        setIsSaving(true);
+        try {
+            const res = await fetch(`http://localhost:3001/api/admin/vocabulary/${selectedLevel}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-admin-key': 'admin1234'
+                },
+                body: JSON.stringify(newData)
+            });
+            const json = await res.json();
+            if (json.success) {
+                setVocabData(newData);
+                alert("저장되었습니다.");
+            } else {
+                alert("저장 실패: " + json.message);
+            }
+        } catch (err) {
+            console.error("Failed to save", err);
+            alert("저장 중 오류가 발생했습니다.");
+        } finally {
+            setIsSaving(false);
+        }
+    };
+
+    const handleSaveItem = () => {
+        if (!editingItem.hungarian || !editingItem.korean) {
+            alert("헝가리어와 한국어는 필수입니다.");
+            return;
+        }
+
+        let newData;
+        if (editingItem.index !== undefined) {
+            // Update existing
+            newData = [...vocabData];
+            const { index, ...item } = editingItem;
+            newData[index] = item;
+        } else {
+            // Add new
+            newData = [...vocabData, editingItem];
+        }
+
+        saveVocabulary(newData);
+        setIsEditModalOpen(false);
+        setEditingItem({ hungarian: '', korean: '', example: '', example_kr: '' });
+    };
+
+    const handleDeleteItem = (index: number) => {
+        if (confirm("정말로 이 단어를 삭제하시겠습니까?")) {
+            const newData = vocabData.filter((_, i) => i !== index);
+            saveVocabulary(newData);
+        }
+    };
+
+    const openAddModal = () => {
+        setEditingItem({ hungarian: '', korean: '', example: '', example_kr: '' });
+        setIsEditModalOpen(true);
+    };
+
+    const openEditModal = (item: any, index: number) => {
+        setEditingItem({ ...item, index });
+        setIsEditModalOpen(true);
+    };
+
+
+    useEffect(() => {
+        if (isAuthenticated) {
+            fetchStats();
+            if (activeTab === 'content') {
+                fetchContents();
+                setSelectedLevel(null); // Reset detail view when tab changes
+            }
+        }
+    }, [isAuthenticated, activeTab]);
+
+    const statCards = [
+        { label: '총 사용자 수', value: stats?.users?.total || 'N/A', change: '+12% (12명)', icon: Users, color: 'text-indigo-600 bg-indigo-50' },
+        { label: '총 콘텐츠 수', value: stats?.vocabulary?.total || 'N/A', change: '+5% (2개)', icon: BookOpen, color: 'text-emerald-600 bg-emerald-50' },
+        { label: 'API 호출 수', value: stats?.apiCalls?.total || 'N/A', change: '+8%', icon: Activity, color: 'text-orange-600 bg-orange-50' },
+        { label: '서버 상태', value: stats?.serverStatus || 'N/A', change: 'Stable', icon: CheckCircle, color: 'text-purple-600 bg-purple-50' },
+    ];
+
     if (!isAuthenticated) {
         return (
-            <div className="min-h-screen flex items-center justify-center bg-slate-900">
-                <Card className="w-full max-w-md bg-slate-800 border-slate-700 text-white shadow-2xl">
+            <div className="min-h-screen flex items-center justify-center bg-slate-100">
+                <Card className="w-full max-w-md p-6 shadow-lg border-slate-200">
                     <CardHeader className="text-center">
-                        <div className="mx-auto w-16 h-16 bg-indigo-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-indigo-500/20">
-                            <Shield className="w-8 h-8 text-white" />
-                        </div>
-                        <CardTitle className="text-2xl font-bold">관리자 통제실</CardTitle>
-                        <CardDescription className="text-slate-400">시스템 접근을 위해 인증하세요</CardDescription>
+                        <Lock className="mx-auto h-12 w-12 text-indigo-600 mb-4" />
+                        <CardTitle className="text-2xl font-bold text-slate-800">관리자 로그인</CardTitle>
+                        <CardDescription className="text-slate-500">대시보드에 접근하려면 비밀번호를 입력하세요.</CardDescription>
                     </CardHeader>
                     <CardContent>
                         <form onSubmit={handleLogin} className="space-y-4">
-                            <div className="relative">
-                                <Lock className="absolute left-3 top-3 w-4 h-4 text-slate-500" />
-                                <Input
-                                    type="password"
-                                    placeholder="비밀번호 입력"
-                                    value={password}
-                                    onChange={(e) => setPassword(e.target.value)}
-                                    className="bg-slate-900 border-slate-600 text-white placeholder:text-slate-500 pl-10"
-                                />
-                            </div>
-                            <Button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700 h-10 font-bold">
-                                시스템 접속
+                            <Input
+                                type="password"
+                                placeholder="관리자 비밀번호"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                className="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                            />
+                            <Button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white p-3 rounded-md font-semibold">
+                                로그인
                             </Button>
                         </form>
                     </CardContent>
@@ -171,12 +309,16 @@ export default function AdminDashboard() {
                         {activeTab === 'overview' && (
                             <div className="animate-in fade-in slide-in-from-bottom-4 duration-500 space-y-6">
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                                    {MOCK_STATS.map((stat, idx) => (
+                                    {statCards.map((stat, idx) => (
                                         <Card key={idx} className="border-slate-200 shadow-sm hover:shadow-md transition-shadow">
                                             <CardContent className="p-6 flex items-center justify-between">
                                                 <div>
                                                     <p className="text-sm font-medium text-slate-500">{stat.label}</p>
-                                                    <h3 className="text-2xl font-bold text-slate-900 mt-2">{stat.value}</h3>
+                                                    {loadingStats ? (
+                                                        <Loader2 className="w-6 h-6 animate-spin mt-2 text-slate-400" />
+                                                    ) : (
+                                                        <h3 className="text-2xl font-bold text-slate-900 mt-2">{stat.value}</h3>
+                                                    )}
                                                     <p className="text-xs text-green-600 mt-1 font-medium">{stat.change} <span className="text-slate-400 font-normal">비교: 지난달</span></p>
                                                 </div>
                                                 <div className={`p-4 rounded-2xl bg-slate-50 ${stat.color}`}>
@@ -316,52 +458,149 @@ export default function AdminDashboard() {
                                 <CardHeader className="flex flex-row items-center justify-between">
                                     <div>
                                         <CardTitle>콘텐츠 관리 (CMS)</CardTitle>
-                                        <CardDescription>단어, 문법, 성경 데이터를 관리합니다.</CardDescription>
+                                        <CardDescription>
+                                            {selectedLevel ? `${selectedLevel.toUpperCase()} 단어장 수정 모드` : '단어, 문법, 성경 데이터를 관리합니다.'}
+                                        </CardDescription>
                                     </div>
                                     <div className="flex gap-2">
-                                        <Button variant="outline" className="text-slate-600"><BookOpen className="w-4 h-4 mr-2" /> JSON 가져오기</Button>
-                                        <Button className="bg-indigo-600 hover:bg-indigo-700"><Plus className="w-4 h-4 mr-2" /> 새 콘텐츠 작성</Button>
+                                        {selectedLevel ? (
+                                            <Button variant="outline" onClick={() => setSelectedLevel(null)}>
+                                                <ArrowLeft className="w-4 h-4 mr-2" /> 목록으로
+                                            </Button>
+                                        ) : (
+                                            <>
+                                                <Button variant="outline" className="text-slate-600" onClick={fetchContents}>
+                                                    <Loader2 className={`w-4 h-4 mr-2 ${loadingContents ? 'animate-spin' : ''}`} /> 새로고침
+                                                </Button>
+                                                <Button className="bg-indigo-600 hover:bg-indigo-700"><Plus className="w-4 h-4 mr-2" /> 새 콘텐츠 작성</Button>
+                                            </>
+                                        )}
                                     </div>
                                 </CardHeader>
                                 <CardContent>
-                                    <div className="flex gap-3 mb-6">
-                                        <Button variant="secondary" className="bg-slate-100 text-slate-900 border border-slate-200 shadow-sm">전체 보기</Button>
-                                        <Button variant="ghost" className="text-slate-500 hover:text-slate-900">단어장</Button>
-                                        <Button variant="ghost" className="text-slate-500 hover:text-slate-900">문법</Button>
-                                        <Button variant="ghost" className="text-slate-500 hover:text-slate-900">성경</Button>
-                                    </div>
-                                    <Table>
-                                        <TableHeader>
-                                            <TableRow>
-                                                <TableHead>유형</TableHead>
-                                                <TableHead>제목</TableHead>
-                                                <TableHead>항목 수</TableHead>
-                                                <TableHead>배포 상태</TableHead>
-                                                <TableHead className="text-right">관리</TableHead>
-                                            </TableRow>
-                                        </TableHeader>
-                                        <TableBody>
-                                            {MOCK_CONTENTS.map((content) => (
-                                                <TableRow key={content.id}>
-                                                    <TableCell>
-                                                        <Badge variant="secondary" className="bg-slate-100">{content.type}</Badge>
-                                                    </TableCell>
-                                                    <TableCell className="font-medium text-slate-800">{content.title}</TableCell>
-                                                    <TableCell>{content.items}개</TableCell>
-                                                    <TableCell>
-                                                        {content.hidden ? (
-                                                            <Badge variant="outline" className="text-slate-500 bg-slate-50">작성 중 (비공개)</Badge>
+                                    {!selectedLevel ? (
+                                        <>
+                                            <div className="flex gap-3 mb-6">
+                                                <Button variant="secondary" className="bg-slate-100 text-slate-900 border border-slate-200 shadow-sm">전체 보기</Button>
+                                            </div>
+                                            <Table>
+                                                <TableHeader>
+                                                    <TableRow>
+                                                        <TableHead>유형</TableHead>
+                                                        <TableHead>제목</TableHead>
+                                                        <TableHead>항목 수</TableHead>
+                                                        <TableHead>배포 상태</TableHead>
+                                                        <TableHead className="text-right">관리</TableHead>
+                                                    </TableRow>
+                                                </TableHeader>
+                                                <TableBody>
+                                                    {loadingContents ? (
+                                                        <TableRow>
+                                                            <TableCell colSpan={5} className="text-center py-8 text-slate-500">
+                                                                <Loader2 className="w-6 h-6 animate-spin mx-auto mb-2" />
+                                                                데이터를 불러오는 중입니다...
+                                                            </TableCell>
+                                                        </TableRow>
+                                                    ) : contents.length === 0 ? (
+                                                        <TableRow>
+                                                            <TableCell colSpan={5} className="text-center py-8 text-slate-500">
+                                                                등록된 콘텐츠가 없습니다.
+                                                            </TableCell>
+                                                        </TableRow>
+                                                    ) : (
+                                                        contents.map((content) => (
+                                                            <TableRow key={content.id}>
+                                                                <TableCell>
+                                                                    <Badge variant="secondary" className="bg-slate-100">{content.type}</Badge>
+                                                                </TableCell>
+                                                                <TableCell className="font-medium text-slate-800">{content.title}</TableCell>
+                                                                <TableCell>{content.items}개</TableCell>
+                                                                <TableCell>
+                                                                    {content.hidden ? (
+                                                                        <Badge variant="outline" className="text-slate-500 bg-slate-50">작성 중 (비공개)</Badge>
+                                                                    ) : (
+                                                                        <Badge className="bg-emerald-500 border-none">배포 완료</Badge>
+                                                                    )}
+                                                                </TableCell>
+                                                                <TableCell className="text-right">
+                                                                    <Button
+                                                                        variant="ghost"
+                                                                        size="icon"
+                                                                        className="text-slate-400 hover:text-indigo-600"
+                                                                        onClick={() => fetchVocabularyDetail(content.id)}
+                                                                    >
+                                                                        <Edit className="w-4 h-4" />
+                                                                    </Button>
+                                                                </TableCell>
+                                                            </TableRow>
+                                                        ))
+                                                    )}
+                                                </TableBody>
+                                            </Table>
+                                        </>
+                                    ) : (
+                                        // Editor View
+                                        <div className="space-y-4">
+                                            <div className="flex justify-between items-center bg-slate-50 p-4 rounded-lg border border-slate-200">
+                                                <div className="text-sm text-slate-500">
+                                                    총 <span className="font-bold text-slate-900">{vocabData.length}</span>개의 단어가 등록되어 있습니다.
+                                                </div>
+                                                <Button onClick={openAddModal} className="bg-indigo-600 hover:bg-indigo-700">
+                                                    <Plus className="w-4 h-4 mr-2" /> 단어 추가
+                                                </Button>
+                                            </div>
+
+                                            <div className="bg-white rounded-md border border-slate-200 overflow-hidden">
+                                                <Table>
+                                                    <TableHeader className="bg-slate-50">
+                                                        <TableRow>
+                                                            <TableHead className="w-[200px]">헝가리어</TableHead>
+                                                            <TableHead className="w-[200px]">한국어</TableHead>
+                                                            <TableHead>예문</TableHead>
+                                                            <TableHead className="text-right w-[100px]">관리</TableHead>
+                                                        </TableRow>
+                                                    </TableHeader>
+                                                    <TableBody>
+                                                        {loadingVocab ? (
+                                                            <TableRow>
+                                                                <TableCell colSpan={4} className="text-center py-12 text-slate-500">
+                                                                    <Loader2 className="w-8 h-8 animate-spin mx-auto mb-2 text-indigo-500" />
+                                                                    단어장을 불러오는 중입니다...
+                                                                </TableCell>
+                                                            </TableRow>
+                                                        ) : vocabData.length === 0 ? (
+                                                            <TableRow>
+                                                                <TableCell colSpan={4} className="text-center py-12 text-slate-500">
+                                                                    등록된 단어가 없습니다.
+                                                                </TableCell>
+                                                            </TableRow>
                                                         ) : (
-                                                            <Badge className="bg-emerald-500 border-none">배포 완료</Badge>
+                                                            vocabData.map((item, idx) => (
+                                                                <TableRow key={idx} className="hover:bg-slate-50">
+                                                                    <TableCell className="font-bold text-indigo-900">{item.hungarian}</TableCell>
+                                                                    <TableCell>{item.korean}</TableCell>
+                                                                    <TableCell className="text-xs text-slate-500">
+                                                                        <div className="mb-1">{item.example}</div>
+                                                                        <div className="text-slate-400">{item.example_kr}</div>
+                                                                    </TableCell>
+                                                                    <TableCell className="text-right">
+                                                                        <div className="flex justify-end gap-1">
+                                                                            <Button variant="ghost" size="icon" className="h-8 w-8 text-slate-400 hover:text-indigo-600" onClick={() => openEditModal(item, idx)}>
+                                                                                <Edit className="w-4 h-4" />
+                                                                            </Button>
+                                                                            <Button variant="ghost" size="icon" className="h-8 w-8 text-slate-400 hover:text-red-600" onClick={() => handleDeleteItem(idx)}>
+                                                                                <Trash2 className="w-4 h-4" />
+                                                                            </Button>
+                                                                        </div>
+                                                                    </TableCell>
+                                                                </TableRow>
+                                                            ))
                                                         )}
-                                                    </TableCell>
-                                                    <TableCell className="text-right">
-                                                        <Button variant="ghost" size="icon" className="text-slate-400 hover:text-indigo-600"><Edit className="w-4 h-4" /></Button>
-                                                    </TableCell>
-                                                </TableRow>
-                                            ))}
-                                        </TableBody>
-                                    </Table>
+                                                    </TableBody>
+                                                </Table>
+                                            </div>
+                                        </div>
+                                    )}
                                 </CardContent>
                             </Card>
                         )}
@@ -369,6 +608,59 @@ export default function AdminDashboard() {
                     </div>
                 </main>
             </div>
+
+            {/* Edit/Add Modal */}
+            <Dialog open={isEditModalOpen} onOpenChange={setIsEditModalOpen}>
+                <DialogContent>
+                    <DialogHeader>
+                        <DialogTitle>{editingItem?.index !== undefined ? '단어 수정' : '새 단어 추가'}</DialogTitle>
+                    </DialogHeader>
+                    <div className="grid gap-4 py-4">
+                        <div className="grid grid-cols-4 items-center gap-4">
+                            <Label htmlFor="hungarian" className="text-right">헝가리어</Label>
+                            <Input
+                                id="hungarian"
+                                value={editingItem?.hungarian || ''}
+                                onChange={(e) => setEditingItem({ ...editingItem, hungarian: e.target.value })}
+                                className="col-span-3"
+                            />
+                        </div>
+                        <div className="grid grid-cols-4 items-center gap-4">
+                            <Label htmlFor="korean" className="text-right">한국어</Label>
+                            <Input
+                                id="korean"
+                                value={editingItem?.korean || ''}
+                                onChange={(e) => setEditingItem({ ...editingItem, korean: e.target.value })}
+                                className="col-span-3"
+                            />
+                        </div>
+                        <div className="grid grid-cols-4 items-center gap-4">
+                            <Label htmlFor="example" className="text-right">예문 (헝)</Label>
+                            <Input
+                                id="example"
+                                value={editingItem?.example || ''}
+                                onChange={(e) => setEditingItem({ ...editingItem, example: e.target.value })}
+                                className="col-span-3"
+                            />
+                        </div>
+                        <div className="grid grid-cols-4 items-center gap-4">
+                            <Label htmlFor="example_kr" className="text-right">예문 (한)</Label>
+                            <Input
+                                id="example_kr"
+                                value={editingItem?.example_kr || ''}
+                                onChange={(e) => setEditingItem({ ...editingItem, example_kr: e.target.value })}
+                                className="col-span-3"
+                            />
+                        </div>
+                    </div>
+                    <DialogFooter>
+                        <Button variant="outline" onClick={() => setIsEditModalOpen(false)}>취소</Button>
+                        <Button type="submit" onClick={handleSaveItem} disabled={isSaving}>
+                            {isSaving ? <Loader2 className="w-4 h-4 animate-spin" /> : '저장'}
+                        </Button>
+                    </DialogFooter>
+                </DialogContent>
+            </Dialog>
         </>
     );
 }
