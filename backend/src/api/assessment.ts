@@ -1,8 +1,14 @@
 import express, { Request, Response } from 'express';
 import { asyncHandler } from '../lib/errorHandler';
 import { authenticateToken } from '../lib/auth';
-import { AssessmentService, UserProfile } from '../services/AssessmentService';
-import { CEFRLevel, LearningGoal, AssessmentConfiguration, AssessmentType } from '/Users/cgi/Desktop/Hungarian/shared/types';
+import {
+  AssessmentService,
+  UserProfile,
+  CEFRLevel,
+  LearningGoal,
+  AssessmentConfiguration,
+  AssessmentType
+} from '../services/AssessmentService';
 import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
@@ -69,7 +75,7 @@ assessmentRoutes.post('/start', authenticateToken, asyncHandler(async (req: Requ
   }
 
   const {
-    assessmentType = AssessmentType.LEVEL_PLACEMENT,
+    assessmentType = 'level_placement' as AssessmentType,
     targetLanguage = 'hungarian',
     sourceLanguage = 'korean',
     userGoals
@@ -79,7 +85,7 @@ assessmentRoutes.post('/start', authenticateToken, asyncHandler(async (req: Requ
   const configuration: AssessmentConfiguration = {
     targetLanguage,
     sourceLanguage,
-    primaryGoal: userGoals?.primaryGoal || LearningGoal.SERMON_WRITING,
+    primaryGoal: userGoals?.primaryGoal || 'sermon_preparation' as LearningGoal,
     assessmentType,
     adaptiveMode: true,
     koreanSpecificOptimizations: {
@@ -409,19 +415,13 @@ assessmentRoutes.post('/initial', authenticateToken, asyncHandler(async (req: Re
   }
 
   const {
-    name,
-    email,
-    primaryGoal = 'sermon_writing',
-    languageBackground = ['korean', 'english'],
+    primaryGoal = 'sermon_preparation' as LearningGoal,
     previousHungarianExperience = false
   } = req.body;
 
   const userProfile: UserProfile = {
     id: userId,
-    name: name || 'Anonymous',
-    email: email || 'unknown@email.com',
     primaryGoal,
-    languageBackground,
     previousHungarianExperience
   };
 
