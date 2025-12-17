@@ -275,7 +275,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
     return (
       <div key={item.id} className="mb-0.5">
         <button
-          onClick={() => handleItemClick(item.href, hasSubmenu, item.id)}
+          onClick={() => handleItemClick(item.href, !!hasSubmenu, item.id)}
           className={`
             w-full flex items-center justify-between px-3 py-2.5 text-sm rounded-lg transition-all duration-200 group
             ${level > 0 ? 'pl-9' : ''}
