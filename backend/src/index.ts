@@ -37,10 +37,12 @@ app.use(cors({
   origin: [
     process.env.FRONTEND_URL || 'http://localhost:3700',
     'http://localhost:3900', // 프론트엔드 포트 명시적 허용
-    'http://127.0.0.1:3900'
+    'http://127.0.0.1:3900',
+    'https://hungarian-learning-frontend.vercel.app', // Vercel Frontend
+    'https://*.vercel.app' // Vercel preview URLs
   ],
   credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
