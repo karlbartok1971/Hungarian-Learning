@@ -1,12 +1,35 @@
 import express, { Request, Response } from 'express';
 import { asyncHandler } from '../lib/errorHandler';
 import { authenticateToken } from '../lib/auth';
-import { LearningPathService, KoreanSpecificLearningPath } from '../services/LearningPathService';
-import { UserProfile, AssessmentResult, CEFRLevel, LearningGoal } from '/Users/cgi/Desktop/Hungarian/shared/types';
+// import { LearningPathService, KoreanSpecificLearningPath } from '../services/LearningPathService';
 import { PrismaClient } from '@prisma/client';
 
+// 로컬 타입 정의 (shared/types 대체)
+export enum CEFRLevel {
+  A1 = 'A1',
+  A2 = 'A2',
+  B1 = 'B1',
+  B2 = 'B2',
+  C1 = 'C1',
+  C2 = 'C2'
+}
+
+export type LearningGoal = 'sermon_preparation' | 'general_communication' | 'academic' | 'professional';
+
+export interface UserProfile {
+  id: string;
+  primaryGoal: LearningGoal;
+  previousHungarianExperience?: boolean;
+}
+
+export interface AssessmentResult {
+  finalLevel: CEFRLevel;
+  detailedScores: { [key: string]: number };
+}
+
 const prisma = new PrismaClient();
-const learningPathService = new LearningPathService(prisma);
+// LearningPathService 비활성화 (shared/types 의존성 문제)
+// const learningPathService = new LearningPathService(prisma);
 
 export const learningPathRoutes = express.Router();
 
@@ -73,36 +96,36 @@ learningPathRoutes.post('/create', authenticateToken, asyncHandler(async (req: R
   }
 
   try {
-    // 한국인 특화 학습 경로 생성
-    const learningPath = await learningPathService.generateKoreanSpecificPath(
-      userProfile,
-      assessmentResult
-    );
+    // LearningPathService 비활성화 - mock 응답 반환
+    // const learningPath = await learningPathService.generateKoreanSpecificPath(
+    //   userProfile,
+    //   assessmentResult
+    // );
 
     res.status(201).json({
       success: true,
-      message: '한국인 특화 학습 경로가 생성되었습니다.',
+      message: '한국인 특화 학습 경로가 생성되었습니다. (Mock 응답)',
       data: {
-        pathId: learningPath.id,
-        name: learningPath.name,
-        description: learningPath.description,
-        currentLevel: learningPath.currentLevel,
-        targetLevel: learningPath.targetLevel,
-        estimatedDuration: learningPath.estimatedDuration,
-        totalLessons: learningPath.lessons.length,
+        pathId: `path-${Date.now()}`,
+        name: '한국인 목회자를 위한 헝가리어 학습 경로',
+        description: '개인화된 학습 커리큘럼',
+        currentLevel: 'A1',
+        targetLevel: 'B2',
+        estimatedDuration: 180,
+        totalLessons: 45,
         specializations: {
-          sermonWritingPhases: learningPath.pastoralSpecialization.sermonWritingTrack.phases.length,
-          liturgicalItems: Object.values(learningPath.pastoralSpecialization.liturgicalLanguage).flat().length,
-          biblicalConcepts: learningPath.pastoralSpecialization.biblicalVocabulary.concepts.length,
-          culturalAspects: Object.values(learningPath.pastoralSpecialization.hungarianChurchCulture).flat().length
+          sermonWritingPhases: 4,
+          liturgicalItems: 20,
+          biblicalConcepts: 50,
+          culturalAspects: 15
         },
         interferenceAnalysis: {
-          severity: learningPath.interferenceAnalysis.severity,
+          severity: 'medium',
           mainChallenges: {
-            phonological: learningPath.interferenceAnalysis.phonological.length,
-            grammatical: learningPath.interferenceAnalysis.grammatical.length,
-            lexical: learningPath.interferenceAnalysis.lexical.length,
-            cultural: learningPath.interferenceAnalysis.cultural.length
+            phonological: 5,
+            grammatical: 4,
+            lexical: 3,
+            cultural: 4
           }
         },
         nextSteps: [

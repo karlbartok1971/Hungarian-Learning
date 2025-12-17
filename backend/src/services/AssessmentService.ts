@@ -1,28 +1,113 @@
 import { PrismaClient } from '@prisma/client';
-import {
-  CEFRLevel,
-  LearningGoal,
-  AssessmentConfiguration,
-  AssessmentType,
-  QuestionType,
-  AssessmentQuestion,
-  AssessmentSession,
-  AssessmentStatus,
-  QuestionResponse,
-  AssessmentResult,
-  LevelCalculationResult,
-  QuestionResult,
-  UserProfile,
-  AdaptiveState,
-  QuestionGenerationCriteria,
-  KoreanInterferenceAnalysis,
-  PastoralRelevance
-} from '/Users/cgi/Desktop/Hungarian/shared/types';
 
-export { UserProfile };
+// 로컬 타입 정의 (shared/types 대체)
+export enum CEFRLevel {
+  A1 = 'A1',
+  A2 = 'A2',
+  B1 = 'B1',
+  B2 = 'B2',
+  C1 = 'C1',
+  C2 = 'C2'
+}
+
+export type LearningGoal = 'sermon_preparation' | 'general_communication' | 'academic' | 'professional';
+export type AssessmentType = 'level_placement' | 'progress_check' | 'diagnostic' | 'certification';
+export type QuestionType = 'multiple_choice' | 'fill_blank' | 'translation' | 'listening' | 'speaking';
+export type AssessmentStatus = 'pending' | 'in_progress' | 'paused' | 'completed' | 'abandoned';
+
+export interface AssessmentConfiguration {
+  targetLanguage: string;
+  sourceLanguage: string;
+  primaryGoal: LearningGoal;
+  assessmentType: AssessmentType;
+  adaptiveMode: boolean;
+  koreanSpecificOptimizations?: any;
+  timeConstraints?: any;
+}
+
+export interface AssessmentQuestion {
+  id: string;
+  type: QuestionType;
+  level: CEFRLevel;
+  category: string;
+  question: string;
+  instruction: string;
+  options?: string[];
+  correctAnswer: string;
+  difficulty: number;
+  estimatedTimeSeconds: number;
+  tags?: string[];
+  koreanSpecificFeatures?: any;
+}
+
+export interface QuestionResponse {
+  questionId: string;
+  answer: string;
+  isCorrect: boolean;
+  timeSpent: number;
+  confidence: number;
+  submittedAt: Date;
+}
+
+export interface AdaptiveState {
+  currentLevel: CEFRLevel;
+  levelConfidence: number;
+  questionCount: number;
+  correctAnswers: number;
+  averageResponseTime: number;
+  difficultyTrend: number[];
+  stabilityThreshold: number;
+  categoryPerformance: { [key: string]: number };
+}
+
+export interface AssessmentSession {
+  id: string;
+  userId: string;
+  type: AssessmentType;
+  status: AssessmentStatus;
+  configuration: AssessmentConfiguration;
+  currentQuestionIndex: number;
+  totalQuestions: number;
+  responses: QuestionResponse[];
+  adaptiveState: AdaptiveState;
+  questionHistory: string[];
+  createdAt: Date;
+  updatedAt: Date;
+  completedAt?: Date;
+}
+
+export interface LevelCalculationResult {
+  estimatedLevel: CEFRLevel;
+  confidence: number;
+  categoryScores: { [key: string]: number };
+  strongestCategories: string[];
+  weakestCategories: string[];
+}
+
+export interface AssessmentResult {
+  sessionId: string;
+  finalLevel: CEFRLevel;
+  confidence: number;
+  detailedScores: { [key: string]: number };
+  recommendations: any;
+  statistics: any;
+  koreanLearnerAnalysis: any;
+}
+
+export interface UserProfile {
+  id: string;
+  primaryGoal: LearningGoal;
+  previousHungarianExperience?: boolean;
+}
+
+// 사용되지 않지만 import에 있던 타입들 (빈 정의)
+export interface QuestionResult { }
+export interface QuestionGenerationCriteria { }
+export interface KoreanInterferenceAnalysis { }
+export interface PastoralRelevance { }
 
 export class AssessmentService {
-  constructor(private prisma: PrismaClient) {}
+  constructor(private prisma: PrismaClient) { }
 
   // 기본 문제 은행 (실제 헝가리어 A1-B2 문제들)
   private questionBank: AssessmentQuestion[] = [
