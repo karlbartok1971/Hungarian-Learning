@@ -3,19 +3,17 @@ services:
   - type: web
     name: hungarian-backend
     env: node
-    region: singapore # 한국과 가까운 리전 (싱가포르 또는 오레곤)
+    region: frankfurt # 헝가리와 가장 가까운 리전 (독일)
     plan: free
-    rootCommand: cd backend # 백엔드 디렉토리로 이동
+    rootDir: backend
     buildCommand: npm install && npx prisma generate && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
       - key: DATABASE_URL
-        sync: false # Render 대시보드에서 수동 입력 (보안)
+        sync: false
       - key: DIRECT_URL
-        sync: false # Render 대시보드에서 수동 입력
+        sync: false
 
     autoDeploy: true
-
-# 추후 프론트엔드도 Render에 배포한다면 추가 가능하지만, Vercel이 더 좋음
