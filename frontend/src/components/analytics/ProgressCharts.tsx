@@ -262,7 +262,7 @@ const ProgressCharts: React.FC<ProgressChartsProps> = ({ data }) => {
                         {getTrendIcon(data.recent_activity.trends.study_time_trend)}
                         <Badge variant="outline">
                           {data.recent_activity.trends.study_time_trend === 'increasing' ? '증가' :
-                           data.recent_activity.trends.study_time_trend === 'decreasing' ? '감소' : '안정'}
+                            data.recent_activity.trends.study_time_trend === 'decreasing' ? '감소' : '안정'}
                         </Badge>
                       </div>
                     </div>
@@ -272,7 +272,7 @@ const ProgressCharts: React.FC<ProgressChartsProps> = ({ data }) => {
                         {getTrendIcon(data.recent_activity.trends.accuracy_trend)}
                         <Badge variant="outline">
                           {data.recent_activity.trends.accuracy_trend === 'improving' ? '개선' :
-                           data.recent_activity.trends.accuracy_trend === 'declining' ? '하락' : '안정'}
+                            data.recent_activity.trends.accuracy_trend === 'declining' ? '하락' : '안정'}
                         </Badge>
                       </div>
                     </div>
@@ -282,7 +282,7 @@ const ProgressCharts: React.FC<ProgressChartsProps> = ({ data }) => {
                         {getTrendIcon(data.recent_activity.trends.engagement_trend)}
                         <Badge variant="outline">
                           {data.recent_activity.trends.engagement_trend === 'increasing' ? '증가' :
-                           data.recent_activity.trends.engagement_trend === 'decreasing' ? '감소' : '안정'}
+                            data.recent_activity.trends.engagement_trend === 'decreasing' ? '감소' : '안정'}
                         </Badge>
                       </div>
                     </div>
@@ -324,7 +324,7 @@ const ProgressCharts: React.FC<ProgressChartsProps> = ({ data }) => {
                         return [`${(value * 100).toFixed(1)}%`, '정확도'];
                       }
                       return [value, name === 'study_time_minutes' ? '학습시간(분)' :
-                              name === 'words_practiced' ? '연습 단어 수' : '세션 수'];
+                        name === 'words_practiced' ? '연습 단어 수' : '세션 수'];
                     }}
                     labelFormatter={(label) => `날짜: ${label}`}
                   />
@@ -422,7 +422,7 @@ const ProgressCharts: React.FC<ProgressChartsProps> = ({ data }) => {
                       cx="50%"
                       cy="50%"
                       labelLine={false}
-                      label={({ name, value, percent }) => `${name}: ${value}개 (${(percent).toFixed(0)}%)`}
+                      label={({ name, value, percent }) => `${name}: ${value}개 (${((percent || 0) * 100).toFixed(0)}%)`}
                       outerRadius={80}
                       fill="#8884d8"
                       dataKey="value"
@@ -510,7 +510,7 @@ const ProgressCharts: React.FC<ProgressChartsProps> = ({ data }) => {
                         return [`${(value * 100).toFixed(1)}%`, '정확도'];
                       }
                       return [value, name === 'study_time_minutes' ? '학습시간(분)' :
-                              name === 'words_practiced' ? '연습 단어' : '세션 수'];
+                        name === 'words_practiced' ? '연습 단어' : '세션 수'];
                     }}
                   />
                   <Legend />
