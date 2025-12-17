@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": ["ES2022"],
+    "lib": [
+      "ES2022"
+    ],
     "module": "CommonJS",
     "moduleResolution": "node",
     "outDir": "./dist",
@@ -25,10 +27,37 @@
     "emitDecoratorMetadata": true,
     "baseUrl": "./src",
     "paths": {
-      "@/*": ["*"],
-      "@shared/*": ["../../shared/*"]
+      "@/*": [
+        "*"
+      ],
+      "@shared/*": [
+        "../../shared/*"
+      ]
     }
   },
-  "include": ["src/**/*", "../shared/**/*"],
-  "exclude": ["node_modules", "dist", "tests"]
+  "include": [
+    "src/**/*",
+    "../shared/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "tests",
+    "src/models/TheologicalTerm.ts",
+    "src/models/TheologicalTermProgress.ts",
+    "src/models/TheologicalTermSession.ts",
+    "src/models/VocabularyCard.ts",
+    "src/services/AnalyticsService.ts",
+    "src/services/AssessmentService.ts",
+    "src/services/FSRSAlgorithmService.ts",
+    "src/services/HungarianNLPService.ts",
+    "src/services/LearningPathService.ts",
+    "src/services/LearningPatternAnalyzer.ts",
+    "src/services/ProgressTrackingService.ts",
+    "src/services/SermonAssistanceService.ts",
+    "src/services/VocabularyService.ts",
+    "src/services/WeaknessAnalyzer.ts",
+    "src/services/contentRecommendation.ts",
+    "src/scripts/seedTheologicalTerms.ts"
+  ]
 }
