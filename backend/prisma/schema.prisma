@@ -6,8 +6,9 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 // ==========================================
@@ -201,11 +202,14 @@ model VocabularyItem {
   // 기본 정보
   hungarian    String
   korean       String
+  pronunciation String?          // 발음 표기 (예: [씨-어])
   wordType     WordType          // 품사
 
   // 레벨 및 분류
   level        CEFRLevel
   category     VocabularyCategory
+  topicId      String?           // 토픽 ID (예: greetings_intro, church_basics)
+  topicTitle   String?           // 토픽 제목 (예: 인사와 소개)
   frequencyRank Int?             // 사용 빈도 순위
 
   // 문법 정보
@@ -249,6 +253,9 @@ enum WordType {
   CONJUNCTION // 접속사
   INTERJECTION // 감탄사
   PARTICLE    // 조사
+  NUMERAL     // 수사 (추가)
+  PHRASE      // 관용구/표현 (추가)
+  DETERMINER  // 관사/한정사 (추가)
 }
 
 enum VocabularyCategory {

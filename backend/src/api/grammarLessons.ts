@@ -4,29 +4,26 @@
  */
 
 import { Router, Request, Response } from 'express';
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient, CEFRLevel } from '@prisma/client';
 
 const router = Router();
 const prisma = new PrismaClient();
 
-/**
- * GET /api/grammar-lessons
- * Query Parameters:
- *   - level: 레벨 필터 (A1, A2, B1, B2) - optional
- *
- * Returns: {
- *   success: boolean,
- *   data: GrammarLesson[]
- * }
- */
+// ... (주석 생략)
+
 router.get('/', async (req: Request, res: Response) => {
   try {
     const { level } = req.query;
 
     // 레벨 필터가 있으면 해당 레벨만, 없으면 전체 조회
-    const whereClause: any = level
-      ? { level: level, isPublished: true }
-      : { isPublished: true };
+    let whereClause: any = { isPublished: true };
+
+    if (level && typeof level === 'string') {
+      const parsedLevel = level.toUpperCase();
+      if (Object.values(CEFRLevel).includes(parsedLevel as CEFRLevel)) {
+        whereClause.level = parsedLevel as CEFRLevel;
+      }
+    }
 
     const lessons = await prisma.grammarLesson.findMany({
       where: whereClause,

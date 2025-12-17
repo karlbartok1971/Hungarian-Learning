@@ -15,8 +15,9 @@
     -   **Delete** the top `DATABASE_URL` line (referencing `localhost`).
     -   **Keep** the bottom `DATABASE_URL` with the IPv4 Pooler address:
         ```env
-        DATABASE_URL="postgresql://postgres.vtddxhnpwhyitrgjaiip:Chon990515%5E%5E@aws-0-eu-central-1.pooler.supabase.com:6543/postgres?pgbouncer=true"
-        DIRECT_URL="postgresql://postgres:Chon990515%5E%5E@db.vtddxhnpwhyitrgjaiip.supabase.co:5432/postgres"
+        # Supabase Dashboard > Project Settings > Database > Connection String 에서 확인
+        DATABASE_URL="postgresql://postgres.xxx:[YOUR-PASSWORD]@aws-1-eu-west-1.pooler.supabase.com:6543/postgres?pgbouncer=true"
+        DIRECT_URL="postgresql://postgres.xxx:[YOUR-PASSWORD]@aws-1-eu-west-1.pooler.supabase.com:5432/postgres"
         ```
 
 2.  **Database Migration**

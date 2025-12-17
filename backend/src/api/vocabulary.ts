@@ -1,60 +1,105 @@
 import express from 'express';
-import fs from 'fs/promises';
-import path from 'path';
+import { PrismaClient, CEFRLevel, WordType } from '@prisma/client';
 
 export const vocabularyRoutes = express.Router();
+const prisma = new PrismaClient();
+
+// 품사 역매핑 (WordType -> 한글)
+function mapWordTypeToKorean(type: WordType): string {
+  switch (type) {
+    case WordType.NOUN: return '명사';
+    case WordType.VERB: return '동사';
+    case WordType.ADJECTIVE: return '형용사';
+    case WordType.ADVERB: return '부사';
+    case WordType.PRONOUN: return '대명사';
+    case WordType.PREPOSITION: return '전치사';
+    case WordType.CONJUNCTION: return '접속사';
+    case WordType.INTERJECTION: return '감탄사';
+    case WordType.PARTICLE: return '조사';
+    case WordType.NUMERAL: return '수사';
+    case WordType.PHRASE: return '표현';
+    case WordType.DETERMINER: return '관사';
+    default: return '기타';
+  }
+}
 
 /**
  * GET /api/vocabulary/:level
- * 특정 레벨의 단어장 데이터 반환 (JSON 파일 로드)
+ * 특정 레벨의 단어장 데이터 반환 (Supabase DB 조회)
  */
 vocabularyRoutes.get('/:level', async (req, res) => {
   try {
     const { level } = req.params;
-    const safeLevel = level.replace(/[^a-z0-9]/gi, '').toLowerCase();
+    const targetLevel = level.toUpperCase() as CEFRLevel;
 
-    // 경로 탐색 로직 (index.ts에 있던 것보다 더 정교하게)
-    const possiblePaths = [
-      // 1. 현재 실행 위치 기준 (프로젝트 루트에서 실행 시)
-      path.join(process.cwd(), 'backend/src/data/vocabulary', `${safeLevel}.json`),
-      // 2. src 내부 (개발 환경)
-      path.join(process.cwd(), 'src/data/vocabulary', `${safeLevel}.json`),
-      // 3. __dirname 기준 (현재 파일 위치: src/api/vocabulary.ts -> ../data/vocabulary)
-      path.join(__dirname, '../data/vocabulary', `${safeLevel}.json`),
-    ];
+    // 유효한 레벨인지 확인
+    if (!Object.values(CEFRLevel).includes(targetLevel)) {
+      return res.status(400).json({ error: '유효하지 않은 레벨입니다.' });
+    }
 
-    let filePath = '';
-    let fileFound = false;
+    console.log(`[Vocabulary API] Fetching from DB for level: ${targetLevel}`);
 
-    // 경로 순회하며 파일 찾기
-    for (const p of possiblePaths) {
-      try {
-        await fs.access(p);
-        filePath = p;
-        fileFound = true;
-        console.log(`[Vocabulary API] Found file at: ${p}`);
-        break;
-      } catch (e) {
-        // continue
+    // DB에서 단어 조회
+    const words = await prisma.vocabularyItem.findMany({
+      where: {
+        level: targetLevel,
+        isActive: true
+      },
+      orderBy: [
+        { topicId: 'asc' }, // 토픽별 정렬
+        { hungarian: 'asc' }
+      ]
+    });
+
+    if (words.length === 0) {
+      return res.status(404).json({ error: '데이터가 없습니다.' });
+    }
+
+    // 데이터 그룹핑 (Topic 기준)
+    const topicsMap = new Map<string, any>();
+
+    words.forEach(word => {
+      const topicId = word.topicId || 'misc';
+
+      if (!topicsMap.has(topicId)) {
+        topicsMap.set(topicId, {
+          id: topicId,
+          title: word.topicTitle || '기타',
+          emoji: '📚', // DB에 이모지가 없으면 기본값 (추후 스키마 추가 고려)
+          words: []
+        });
       }
-    }
 
-    if (!fileFound) {
-      console.warn(`[Vocabulary API] File not found. Searched in: ${possiblePaths.join(', ')}`);
-      return res.status(404).json({ error: '해당 레벨의 단어장을 찾을 수 없습니다.' });
-    }
+      // 프론트엔드 포맷으로 단어 변환
+      const wordData = {
+        hu: word.hungarian,
+        ko: word.korean,
+        pron: word.pronunciation || '',
+        pos: mapWordTypeToKorean(word.wordType),
+        exHu: (word.examples as any[])?.[0]?.hu || '',
+        exKo: (word.examples as any[])?.[0]?.ko || ''
+      };
 
-    const data = await fs.readFile(filePath, 'utf-8');
-    const jsonData = JSON.parse(data);
-    res.json(jsonData);
+      topicsMap.get(topicId).words.push(wordData);
+    });
+
+    // 최종 응답 데이터 구성
+    const responseData = {
+      level: level.toLowerCase(),
+      title: `${targetLevel} 필수 어휘`,
+      description: `Supabase에서 불러온 ${targetLevel} 레벨 단어장입니다.`,
+      topics: Array.from(topicsMap.values())
+    };
+
+    res.json(responseData);
 
   } catch (error) {
     console.error('[Vocabulary API] Error:', error);
-    res.status(500).json({ error: '어휘 데이터를 불러오는 중 오류가 발생했습니다.' });
+    res.status(500).json({ error: 'DB에서 어휘 데이터를 불러오는 중 오류가 발생했습니다.' });
   }
 });
 
 // 헬스 체크용
 vocabularyRoutes.get('/status', (_, res) => {
-  res.json({ success: true, message: 'Vocabulary API Active' });
+  res.json({ success: true, message: 'Vocabulary API Active (Supabase Connected)' });
 });
