@@ -8,10 +8,11 @@ import {
   PersonalizedCurriculumSequence,
   ContentSearchCriteria,
   CurriculumSearchResult,
-  LearnerProfile
+  LearnerProfile,
+  CEFRLevel,
+  LearningGoal
 } from '../models/Curriculum';
 import { AssessmentResults } from '../models/Assessment';
-import { CEFRLevel, LearningGoal } from '../../../shared/types';
 
 /**
  * Curriculum Service

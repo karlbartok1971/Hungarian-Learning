@@ -1,31 +1,84 @@
 import { PrismaClient } from '@prisma/client';
-import {
-  CEFRLevel,
-  LearningGoal,
-  KoreanSpecificLearningPath,
-  LanguageInterferenceAnalysis,
-  PastoralSpecialization,
-  AdaptiveFeatures,
-  KoreanLearnerProgressTracking,
-  UserProfile,
-  AssessmentResult,
-  PhonologicalInterference,
-  GrammaticalInterference,
-  LexicalInterference,
-  CulturalInterference,
-  SermonWritingTrack,
-  SermonWritingPhase,
-  BiblicalVocabulary,
-  ChurchCulture,
-  LiturgicalLanguage,
-  Lesson,
-  LessonType
-} from '/Users/cgi/Desktop/Hungarian/shared/types';
 
-export { KoreanSpecificLearningPath };
+// 로컬 타입 정의 (shared/types 대체)
+export enum CEFRLevel {
+  A1 = 'A1',
+  A2 = 'A2',
+  B1 = 'B1',
+  B2 = 'B2',
+  C1 = 'C1',
+  C2 = 'C2'
+}
+
+export type LearningGoal = 'sermon_preparation' | 'general_communication' | 'academic' | 'professional';
+
+// Placeholder 타입 정의
+export interface KoreanSpecificLearningPath {
+  id: string;
+  name: string;
+  description: string;
+  currentLevel: CEFRLevel;
+  targetLevel: CEFRLevel;
+  estimatedDuration: number;
+  lessons: Lesson[];
+  pastoralSpecialization: PastoralSpecialization;
+  interferenceAnalysis: LanguageInterferenceAnalysis;
+}
+
+export interface LanguageInterferenceAnalysis {
+  severity: string;
+  phonological: PhonologicalInterference[];
+  grammatical: GrammaticalInterference[];
+  lexical: LexicalInterference[];
+  cultural: CulturalInterference[];
+}
+
+export interface PhonologicalInterference { issue: string; solution: string; }
+export interface GrammaticalInterference { issue: string; solution: string; }
+export interface LexicalInterference { issue: string; solution: string; }
+export interface CulturalInterference { issue: string; solution: string; }
+
+export interface PastoralSpecialization {
+  sermonWritingTrack: SermonWritingTrack;
+  liturgicalLanguage: LiturgicalLanguage;
+  biblicalVocabulary: BiblicalVocabulary;
+  hungarianChurchCulture: ChurchCulture;
+}
+
+export interface SermonWritingTrack { phases: SermonWritingPhase[]; }
+export interface SermonWritingPhase { name: string; duration: number; }
+export interface LiturgicalLanguage { prayers: string[]; hymns: string[]; }
+export interface BiblicalVocabulary { concepts: string[]; }
+export interface ChurchCulture { traditions: string[]; }
+
+export interface AdaptiveFeatures { adaptiveMode: boolean; }
+export interface KoreanLearnerProgressTracking { progress: number; }
+
+export interface UserProfile {
+  id: string;
+  primaryGoal: LearningGoal;
+  previousHungarianExperience?: boolean;
+}
+
+export interface AssessmentResult {
+  finalLevel: CEFRLevel;
+  detailedScores: { [key: string]: number };
+}
+
+export interface Lesson {
+  id: string;
+  title: string;
+  type: LessonType;
+}
+
+export enum LessonType {
+  VOCABULARY = 'vocabulary',
+  GRAMMAR = 'grammar',
+  PRONUNCIATION = 'pronunciation'
+}
 
 export class LearningPathService {
-  constructor(private prisma: PrismaClient) {}
+  constructor(private prisma: PrismaClient) { }
 
   // === 핵심 메서드들 ===
 

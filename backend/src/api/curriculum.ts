@@ -1,8 +1,19 @@
 import express, { Request, Response } from 'express';
 import { asyncHandler } from '../lib/errorHandler';
 import { authenticateToken } from '../lib/auth';
-import { CEFRLevel, LearningGoal } from '../../../shared/types';
 import { PrismaClient } from '@prisma/client';
+
+// 로컬 타입 정의 (shared/types 대체)
+export enum CEFRLevel {
+  A1 = 'A1',
+  A2 = 'A2',
+  B1 = 'B1',
+  B2 = 'B2',
+  C1 = 'C1',
+  C2 = 'C2'
+}
+
+export type LearningGoal = 'sermon_preparation' | 'general_communication' | 'academic' | 'professional';
 
 // API 응답을 위한 간소화된 인터페이스들
 interface CurriculumApiResponse {

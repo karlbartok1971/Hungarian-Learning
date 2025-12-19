@@ -1,5 +1,16 @@
 import { PrismaClient } from '@prisma/client';
-import { CEFRLevel, LearningGoal } from '../../../shared/types';
+
+// 로컬 타입 정의 (shared/types 대체)
+export enum CEFRLevel {
+  A1 = 'A1',
+  A2 = 'A2',
+  B1 = 'B1',
+  B2 = 'B2',
+  C1 = 'C1',
+  C2 = 'C2'
+}
+
+export type LearningGoal = 'sermon_preparation' | 'general_communication' | 'academic' | 'professional';
 
 const prisma = new PrismaClient();
 
