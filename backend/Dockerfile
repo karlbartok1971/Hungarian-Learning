@@ -1,8 +1,11 @@
-# Node.js 20 LTS 사용
+# Node.js 20 LTS Alpine 사용
 FROM node:20-alpine
 
 # 작업 디렉토리 설정
 WORKDIR /app
+
+# OpenSSL 및 필수 라이브러리 설치 (Prisma용)
+RUN apk add --no-cache openssl openssl-dev libc6-compat
 
 # package.json과 package-lock.json 복사
 COPY package*.json ./
@@ -14,7 +17,7 @@ RUN npm install
 COPY . .
 
 # Prisma 클라이언트 생성
-RUN npx prisma generate || true
+RUN npx prisma generate
 
 # TypeScript 빌드 (에러 무시)
 RUN npm run build || true
